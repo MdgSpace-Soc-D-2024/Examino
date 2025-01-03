@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXAMINO - Online Examination Platform</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="d-flex">
+        <!-- Sidebar -->
+        <nav class="sidebar bg-dark text-white d-flex flex-column" id="sidebar" style="height: 100vh;">
+            <div class="text-center py-3 bg-secondary">
+                <button class="btn btn-link text-white text-decoration-none" id="toggleSidebar" style="font-size: 1.5rem;">EXAMINO</button>
+            </div>
+            <ul class="nav flex-column mt-3">
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-white">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-white">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-white">Contact</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <div class="content flex-grow-1">
+            <div class="container text-center">
+                <h1 class="display-4 mb-4 text-dark">Welcome to EXAMINO</h1>
+                <p class="lead text-muted">Your one-stop platform for online examinations.</p>
+
+                <div class="d-flex justify-content-center my-4">
+                    <button type="button" id = "goToLogin" class="btn btn-outline-primary mx-2"  data-bs-toggle="modal">Login</button>
+                    <button type="button" id = "goToRegister" class="btn btn-primary mx-2" data-bs-toggle="modal">Register</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script> 
+        // Event listener for the Login button
+        document.getElementById('goToLogin').addEventListener('click', function () {
+            // Navigate to the Login page
+            window.location.href = 'login.html';
+        });
+      
+        // Event listener for the Register button
+        document.getElementById('goToRegister').addEventListener('click', function () {
+            // Navigate to the Register page
+            window.location.href = 'register.html';
+        });
+    </script> 
+</body>
+</html>
