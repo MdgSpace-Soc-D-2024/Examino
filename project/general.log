@@ -1,0 +1,46 @@
+2025-01-05 00:19:58,420 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-05 00:22:07,419 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-05 00:22:48,332 (WARNING)- django.request- Not Found: /
+2025-01-05 00:23:01,288 (WARNING)- django.request- Method Not Allowed: /api/login/
+2025-01-05 00:23:21,519 (INFO)- home.views- Login API request received
+2025-01-05 00:23:22,798 (WARNING)- django.request- Unauthorized: /api/login/
+2025-01-05 00:25:26,818 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\home\views.py changed, reloading.
+2025-01-05 00:25:28,170 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-05 00:26:40,584 (INFO)- home.views- Login API request received
+2025-01-05 00:26:41,658 (ERROR)- home.views- Login error: 'User' object has no attribute 'type_of'
+2025-01-05 00:26:41,740 (WARNING)- django.request- Bad Request: /api/login/
+2025-01-05 00:27:19,059 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\home\views.py changed, reloading.
+2025-01-05 00:27:20,158 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-05 00:27:45,431 (INFO)- home.views- Login API request received
+2025-01-05 00:27:46,619 (INFO)- home.views- dhruvi
+2025-01-05 00:27:46,619 (ERROR)- home.views- Login error: 'User' object has no attribute 'type_of'
+2025-01-05 00:27:46,721 (WARNING)- django.request- Bad Request: /api/login/
+2025-01-05 00:37:18,139 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\home\views.py changed, reloading.
+2025-01-05 00:37:19,635 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-05 00:37:40,298 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\home\views.py changed, reloading.
+2025-01-05 00:37:41,833 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-05 00:38:08,130 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\home\views.py changed, reloading.
+2025-01-05 00:38:09,548 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-05 00:38:41,308 (INFO)- home.views- Login API request received
+2025-01-05 00:38:41,315 (INFO)- home.views- Found user object: dhruvi
+2025-01-05 00:38:42,410 (INFO)- home.views- dhruvi
+2025-01-05 00:38:42,419 (ERROR)- home.views- Login error: 'User' object has no attribute 'type_of'
+2025-01-05 00:38:42,489 (WARNING)- django.request- Bad Request: /api/login/
+2025-01-05 00:41:34,711 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\home\admin.py changed, reloading.
+2025-01-05 00:41:35,950 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-05 00:42:46,081 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\project\settings.py changed, reloading.
+2025-01-05 00:42:47,164 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-05 00:43:23,126 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\project\settings.py changed, reloading.
+2025-01-05 00:43:24,507 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-05 00:43:59,818 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-05 00:44:25,228 (INFO)- home.views- Login API request received
+2025-01-05 00:44:25,236 (INFO)- home.views- Found user object: dhruvi
+2025-01-05 00:44:26,320 (INFO)- home.views- dhruvi
+2025-01-05 00:44:26,320 (ERROR)- home.views- Login error: 'User' object has no attribute 'type_of'
+2025-01-05 00:44:26,423 (WARNING)- django.request- Bad Request: /api/login/
+2025-01-05 00:45:15,300 (WARNING)- django.request- Not Found: /
+2025-01-05 00:45:22,809 (WARNING)- django.request- Not Found: /api/admin/
+2025-01-05 00:47:52,319 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\project\settings.py changed, reloading.
+2025-01-05 00:47:53,681 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-05 01:01:03,009 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\project\settings.py changed, reloading.
+2025-01-05 01:01:03,929 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
