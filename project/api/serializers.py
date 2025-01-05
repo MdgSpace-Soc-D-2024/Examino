@@ -39,6 +39,12 @@ class InstituteCodeSerializer(serializers.ModelSerializer):
         model = InstituteCode
         fields = ['institute', 'code']
 
+class ExamsSerializer(serializers.Serializer):
+    class Meta:
+        model = Exams
+        fields = ['class_exam', 'subject', 'date_scheduled', 'questions']
+        
+
 
 #class TeacherCredSerializer(serializers.ModelSerializer):
 #    class Meta:

@@ -2,6 +2,7 @@ from django.urls import path
 from . import views
 from home import views as home_views
 from admin_app import views as admin_views
+from teacher import views as teacher_views
 urlpatterns = [
     path('admin-site/', views.getAdminCred),
     path('admin-site/add-admin/', views.addAdminCred),
@@ -13,4 +14,5 @@ urlpatterns = [
     path('login/', home_views.LoginAPIView.as_view()),
     #path('admin/', admin_views.InstituteCodeView.as_view()),
     path('admin-info/', admin_views.AdminInfoView.as_view()),
+    path('teacher-exam/', teacher_views.ExamsAPIView.as_view()),
 ]

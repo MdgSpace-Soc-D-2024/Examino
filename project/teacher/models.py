@@ -11,8 +11,10 @@ class TeacherCred(models.Model):
 
 
 class Exams(models.Model):
-    examname = models.CharField(max_length=32)
+    class_exam = models.CharField(max_length=50)
+    subject = models.CharField(max_length=32)
     #created = models.DateTimeField(auto_now_add=True)
     date_scheduled = models.DateField()
-    time_start = models.TimeField()
-    time_end = models.TimeField()
+    #time_start = models.TimeField()
+    #time_end = models.TimeField()
+    questions = models.TextField()
