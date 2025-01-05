@@ -19,10 +19,12 @@ document.getElementById("loginModal").addEventListener("submit", async (event) =
             statusCode: 200, 
             method: "POST",
             headers: headers,
+            credentials: "include",
             body: JSON.stringify({ username, password, type_of}),
         });
 
         if (response.ok) {
+            console.log(response)
             const result = await response.json();
             alert('Login successful:' + result.username);
 

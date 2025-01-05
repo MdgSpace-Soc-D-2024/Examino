@@ -17,7 +17,6 @@ class Admin(models.Model):
     
 
 
-
 def generate_unique_code():
     length = 6  
     characters = string.ascii_uppercase + string.digits
