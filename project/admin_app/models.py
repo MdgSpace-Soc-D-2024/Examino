@@ -4,6 +4,7 @@ from home.models import *
 import string
 import random
 
+
 class Admin(models.Model):
     #username = models.ForeignKey(UserNew, on_delete = models.CASCADE, default=0)
     institute = models.CharField(max_length=200)
@@ -34,10 +35,11 @@ class InstituteCode(models.Model):
 
 
 
+#class Courses(models.Model):
+#    institute = models.ForeignKey(Admin, on_delete=models.CASCADE)
+#    coursename = models.CharField(max_length = 100, default='tobenamed')
+#    coursecode = models.IntegerField(unique=True, default = 0)
 
-
-
-class Courses(models.Model):
-    institute = models.ForeignKey(Admin, on_delete=models.CASCADE)
-    coursename = models.CharField(max_length = 100, default='tobenamed')
-    coursecode = models.IntegerField(unique=True, default = 0)
+class InstituteCred(models.Model):
+    classes = models.TextField()
+    courses = models.TextField()
