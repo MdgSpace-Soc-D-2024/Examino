@@ -1,8 +1,8 @@
 from rest_framework import serializers
 from home.models import *
-from admin_app.models import Admin, Courses
-from teacher.models import TeacherCred
-from student.models import StudentCred
+from admin_app.models import *
+from teacher.models import *
+from student.models import *
 from student.views import *
 #from django.contrib.auth.models import User
 #from django.contrib.auth import get_user_model
@@ -31,7 +31,14 @@ class LoginSerializer(serializers.ModelSerializer):
 class AdminSerializer(serializers.ModelSerializer):
     class Meta:
         model = Admin
-        fields = ['institute', 'created']
+        fields = ['institute', 'address', 'email', 'phone']
+
+
+class InstituteCodeSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = InstituteCode
+        fields = ['institute', 'code']
+
 
 class TeacherCredSerializer(serializers.ModelSerializer):
     class Meta:

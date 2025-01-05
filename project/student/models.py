@@ -4,7 +4,7 @@ from django.contrib.auth.models import User
 from admin_app.models import Admin, Courses
 from teacher.models import TeacherCred
 #from project.settings import *
-#from project import settings
+from project import settings
 class StudentCred(models.Model):
     username = models.ForeignKey(UserNew, on_delete=models.CASCADE)
     name = models.CharField(max_length=100)
