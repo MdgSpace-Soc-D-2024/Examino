@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exam Scheduler</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      padding: 20px;
+    }
+    .question-container {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="text-center mb-4">Exam Scheduler</h1>
+
+    <!-- Exam Details -->
+    <div class="card mb-4">
+      <div class="card-body">
+        <h5 class="card-title">Exam Details</h5>
+        <form id="examForm">
+          <div class="mb-3">
+            <label for="subjectSelect" class="form-label">Subject</label>
+            <select class="form-select" id="subjectSelect" required>
+              <option value="" selected disabled>Choose subject</option>
+              <div id="subject-options"><!--<option value="Math">Math</option>
+              <option value="Science">Science</option>
+              <option value="English">English</option>-->
+              </div>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="examDate" class="form-label">Exam Date</label>
+            <input type="date" class="form-control" id="examDate" required>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Add Questions -->
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Add Questions</h5>
+        <div id="questionsContainer"></div>
+        <button id="addQuestionBtn" class="btn btn-primary mt-3">Add Question</button>
+      </div>
+    </div>
+
+    <!-- Submit Button -->
+    <div class="text-center mt-4">
+      <button id="submitBtn" class="btn btn-success">Submit Exam</button>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script_teacher-exam.js"></script>
+</body>
+</html>
