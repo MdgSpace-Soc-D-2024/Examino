@@ -31,13 +31,14 @@ async function fetchClasses() {
 
         const classList = document.getElementById('showClasses');
         classList.innerHTML = ''; // Clear any existing content
-
+        if (classes_data != null){
         classes_data.forEach(cls => {
             const classItem = document.createElement('div');
             classItem.className = 'mb-2';
             classItem.textContent = cls.classes;
             classList.appendChild(classItem);
         });
+        }
     } catch (error) {
         console.error('Error fetching classes:', error);
     }
