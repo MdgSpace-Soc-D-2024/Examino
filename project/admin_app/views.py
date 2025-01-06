@@ -2,7 +2,7 @@ from django.shortcuts import render
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
-from .models import InstituteCode
+from .models import *
 from api.serializers import *
 
 #class InstituteCodeView(APIView):
