@@ -34,9 +34,7 @@ document.getElementById('form-admin-info').addEventListener('submit', async func
 
         if (response.ok) {
             const data = await response.json();
-            // Redirect to the second page with the code
-            const code = data.code;
-            window.location.href = `admin.html`;
+            alert('successful');
         } else {
             alert('Error submitting institute name.');
         }

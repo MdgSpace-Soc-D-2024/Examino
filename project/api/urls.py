@@ -15,4 +15,5 @@ urlpatterns = [
     #path('admin/', admin_views.InstituteCodeView.as_view()),
     path('admin-info/', admin_views.AdminInfoView.as_view()),
     path('teacher-exam/', teacher_views.ExamsAPIView.as_view()),
+    path('admin-class/', admin_views.InstituteClassAPIView.as_view()),
 ]

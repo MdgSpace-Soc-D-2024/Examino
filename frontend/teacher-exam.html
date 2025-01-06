@@ -24,12 +24,22 @@
         <h5 class="card-title">Exam Details</h5>
         <form id="examForm">
           <div class="mb-3">
+              <label for="classSelect" class="form-label">Class</label>
+              <select class="form-select" id="classSelect" required>
+                <option value="" selected disabled>Choose class</option>
+                <div id="class-options"><option value="class1">class 1</option>
+                <option value="class2">class 2</option>
+                <option value="class3">class 3</option>
+                </div>
+              </select>
+          </div>
+          <div class="mb-3">
             <label for="subjectSelect" class="form-label">Subject</label>
             <select class="form-select" id="subjectSelect" required>
               <option value="" selected disabled>Choose subject</option>
-              <div id="subject-options"><!--<option value="Math">Math</option>
+              <div id="subject-options"><option value="Math">Math</option>
               <option value="Science">Science</option>
-              <option value="English">English</option>-->
+              <option value="English">English</option>
               </div>
             </select>
           </div>

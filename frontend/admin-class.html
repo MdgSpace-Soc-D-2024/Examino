@@ -27,29 +27,14 @@
 
         <hr>
         
-    <div id="showClasses">
+        <div id="targetElement" class="p-3 mb-3 "> 
+        </div>
 
+        <h4>Added Classes:</h4>
+        <ul id="showClasses" class="list-group"></ul>
     </div>
 
-    </div>
-
-    <script>
-        // Get elements
-        const addClassBtn = document.getElementById("addClassBtn");
-        const classInput = document.getElementById("classInput");
-        const targetElement = document.getElementById("targetElement");
-
-        // Add event listener to button
-        addClassBtn.addEventListener("click", () => {
-            const className = classInput.value.trim();
-            if (className) {
-                targetElement.classList.add(className);
-                alert(`Class "${className}" added to the institutes' classes.`);
-            } else {
-                alert("Please enter a valid class name.");
-            }
-        });
-
-    </script>
+    <script src="script_admin-class.js"> </script>
 </body>
 </html>
+

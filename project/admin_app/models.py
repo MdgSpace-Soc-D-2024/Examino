@@ -15,8 +15,13 @@ class Admin(models.Model):
 
     def __str__(self):
         return self.institute
-    
+ 
 
+class InstituteClass(models.Model):
+    #institute = models.ForeignKey(Admin, on_delete=models.CASCADE)
+    classes = models.CharField(max_length=50)
+class InstituteCourses(models.Model):
+    courses = models.CharField(max_length=50)
 
 def generate_unique_code():
     length = 6  
@@ -31,15 +36,3 @@ class InstituteCode(models.Model):
         if not self.code:
             self.code = generate_unique_code()
         super().save()
-
-
-
-
-#class Courses(models.Model):
-#    institute = models.ForeignKey(Admin, on_delete=models.CASCADE)
-#    coursename = models.CharField(max_length = 100, default='tobenamed')
-#    coursecode = models.IntegerField(unique=True, default = 0)
-
-class InstituteCred(models.Model):
-    classes = models.TextField()
-    courses = models.TextField()

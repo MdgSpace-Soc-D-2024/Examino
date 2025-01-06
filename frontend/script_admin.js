@@ -1,6 +1,7 @@
 const linktoadmin = document.getElementById('admin-page')
 const logoutlink = document.getElementById('adminLogout')
 const dashboardlink = document.getElementById('Dashboard')
+const addclasseslink = document.getElementById('addClasses')
 let logout_option = false
 
 if (linktoadmin!=null) {
@@ -8,6 +9,12 @@ if (linktoadmin!=null) {
         window.location.href = 'admin.html';
     });
 };
+if (addclasseslink!=null) {
+    addclasseslink.addEventListener('click', function() {
+        window.location.href = 'admin-class.html';
+    });
+};
+
 
 if (logoutlink!=null) {
     logoutlink.addEventListener('click', function() {
