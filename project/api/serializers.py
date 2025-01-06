@@ -39,16 +39,16 @@ class InstituteCodeSerializer(serializers.ModelSerializer):
         model = InstituteCode
         fields = ['institute', 'code']
 
-class ExamsSerializer(serializers.Serializer):
+class ExamsSerializer(serializers.ModelSerializer):
     class Meta:
         model = Exams
         fields = ['class_exam', 'subject', 'date_scheduled', 'questions']
         
-class InstituteClassSerializer(serializers.Serializer):
+class InstituteClassSerializer(serializers.ModelSerializer):
     class Meta:
         model = InstituteClass
         fields = ['classes']
-class InstituteSubjectSerializer(serializers.Serializer):
+class InstituteSubjectSerializer(serializers.ModelSerializer):
     class Meta:
         model = InstituteCourses
         fields = ['courses']
