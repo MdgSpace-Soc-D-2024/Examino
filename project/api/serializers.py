@@ -47,7 +47,7 @@ class ExamsSerializer(serializers.Serializer):
 class InstituteClassSerializer(serializers.Serializer):
     class Meta:
         model = InstituteClass
-        fields = ['classes']
+        fields = '__all__'
 class InstituteSubjectSerializer(serializers.Serializer):
     class Meta:
         model = InstituteCourses
