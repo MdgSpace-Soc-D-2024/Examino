@@ -7,6 +7,8 @@ choice = [
     ('student', 'student')
 ]
 class UserNew(User):
-    type_of = models.CharField(max_length=7, choices = choice)
+    pass
         
-
+class UserType(models.Model):
+    username = models.ForeignKey(UserNew, on_delete=models.CASCADE)
+    type_of = models.CharField(max_length=7, choices = choice)

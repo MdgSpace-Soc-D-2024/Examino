@@ -33,23 +33,25 @@ from student.views import *
 #    type_of = serializers.CharField()
 #    
 class RegisterSerializer(serializers.ModelSerializer):
-    password = serializers.CharField(write_only=True)
+    #password = serializers.CharField(write_only=True)
 
     class Meta:
         model = UserNew
-        fields = ['username', 'password', 'type_of']
+        fields = ['username', 'password']
 
     def create(self, validated_data):
         return UserNew.objects.create_user(**validated_data)
 
 class LoginSerializer(serializers.Serializer):
-    username = serializers.CharField()
-    password = serializers.CharField(write_only=True)
-    type_of = serializers.CharField()
+    class Meta:
+        model = UserNew
+        fields = ['username', 'password']
 
-    def validate(self, data):
-        return data
-    
+
+class UserTypeSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = UserType
+        fields = ['username', 'type_of']
 
     
 class AdminSerializer(serializers.ModelSerializer):

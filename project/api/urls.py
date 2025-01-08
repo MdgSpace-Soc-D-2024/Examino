@@ -10,5 +10,6 @@ urlpatterns = [
     path('teacher-site/', views.getTeacherCred),
     path('teacher-site/add-teacher/', views.addTeacherCred),
     path('register/', home_views.RegisterAPIView.as_view()),
-    path('login/', home_views.LoginAPIView.as_view())
+    path('login/', home_views.LoginAPIView.as_view()),
+    path('type/', home_views.UserTypeAPIView.as_view())
 ]
