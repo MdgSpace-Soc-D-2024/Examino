@@ -39,8 +39,8 @@ class RegisterSerializer(serializers.ModelSerializer):
         model = UserNew
         fields = ['username', 'password']
 
-    def create(self, validated_data):
-        return UserNew.objects.create_user(**validated_data)
+    #def create(self, validated_data):
+    #    return UserNew.objects.create_user(**validated_data)
 
 class LoginSerializer(serializers.Serializer):
     class Meta:
