@@ -43,10 +43,8 @@ class RegisterSerializer(serializers.ModelSerializer):
     #    return UserNew.objects.create_user(**validated_data)
 
 class LoginSerializer(serializers.Serializer):
-    class Meta:
-        model = UserNew
-        fields = ['username', 'password']
-
+    username = serializers.CharField()
+    password = serializers.CharField()
 
 class UserTypeSerializer(serializers.ModelSerializer):
     class Meta:

@@ -442,3 +442,222 @@ TypeError: Object of type User is not JSON serializable
 2025-01-08 23:19:34,088 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
 2025-01-08 23:20:25,671 (INFO)- home.views- api-request-reached
 2025-01-08 23:20:25,690 (WARNING)- django.request- Bad Request: /api/register/
+2025-01-09 10:26:14,412 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-09 10:26:39,192 (INFO)- home.views- api-request-reached
+2025-01-09 10:26:40,246 (INFO)- home.views- dhruvi
+2025-01-09 10:26:40,476 (ERROR)- django.request- Internal Server Error: /api/login/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\response.py", line 74, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\renderers.py", line 100, in render
+    ret = json.dumps(
+          ^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\utils\json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\utils\encoders.py", line 67, in default
+    return super().default(obj)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type User is not JSON serializable
+2025-01-09 10:26:55,717 (INFO)- home.views- api-request-reached
+2025-01-09 10:26:56,867 (INFO)- home.views- dhruvi
+2025-01-09 10:26:56,926 (ERROR)- django.request- Internal Server Error: /api/login/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\response.py", line 74, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\renderers.py", line 100, in render
+    ret = json.dumps(
+          ^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\utils\json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\utils\encoders.py", line 67, in default
+    return super().default(obj)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type User is not JSON serializable
+2025-01-09 10:30:51,903 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\home\views.py changed, reloading.
+2025-01-09 10:30:52,957 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-09 10:31:17,003 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\home\views.py changed, reloading.
+2025-01-09 10:31:17,981 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-09 10:31:33,542 (ERROR)- django.request- Internal Server Error: /api/login/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\response.py", line 74, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\renderers.py", line 100, in render
+    ret = json.dumps(
+          ^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\utils\json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\utils\encoders.py", line 67, in default
+    return super().default(obj)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type User is not JSON serializable
+2025-01-09 11:54:32,072 (ERROR)- django.request- Internal Server Error: /api/login/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\response.py", line 74, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\renderers.py", line 100, in render
+    ret = json.dumps(
+          ^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\utils\json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\utils\encoders.py", line 67, in default
+    return super().default(obj)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type User is not JSON serializable
+2025-01-09 11:54:45,875 (ERROR)- django.request- Internal Server Error: /api/login/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\response.py", line 74, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\renderers.py", line 100, in render
+    ret = json.dumps(
+          ^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\utils\json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\utils\encoders.py", line 67, in default
+    return super().default(obj)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type User is not JSON serializable
+2025-01-09 12:00:31,469 (ERROR)- django.request- Internal Server Error: /api/login/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\response.py", line 74, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\renderers.py", line 100, in render
+    ret = json.dumps(
+          ^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\utils\json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\utils\encoders.py", line 67, in default
+    return super().default(obj)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type User is not JSON serializable
