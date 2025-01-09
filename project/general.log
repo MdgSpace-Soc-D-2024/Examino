@@ -699,3 +699,4 @@ AssertionError: Expected a `Response`, `HttpResponse` or `StreamingHttpResponse`
 2025-01-09 22:12:43,450 (WARNING)- django.request- Method Not Allowed: /api/register/
 2025-01-09 22:26:20,371 (WARNING)- django.request- Bad Request: /api/register/
 2025-01-09 22:26:34,023 (WARNING)- django.request- Bad Request: /api/register/
+2025-01-10 00:32:57,846 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader

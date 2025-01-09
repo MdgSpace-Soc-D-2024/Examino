@@ -1,5 +1,6 @@
 const loginApiUrl = "http://localhost:8000/api/login/"
 const gotoregisterlink = document.getElementById('goToRegister')
+const AUTH_KEY = 'auth_token';
 
 gotoregisterlink.addEventListener('click', function () {
     // Navigate to the register page
@@ -25,6 +26,7 @@ document.getElementById("loginModal").addEventListener("submit", async (event) =
         if (response.ok) {
             const result = await response.json();
             alert('Login successful');
+            localStorage.setItem(AUTH_KEY, result.access);
 
         } else {
             const errorData = await response.json();
