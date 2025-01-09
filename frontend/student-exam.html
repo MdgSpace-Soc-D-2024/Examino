@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Status</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .section-heading {
+            margin: 40px 0 20px;
+            text-align: center;
+            color: #4e54c8;
+        }
+
+        .exam-card {
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+
+        .exam-card:hover {
+            transform: translateY(-10px);
+        }
+    </style>
+</head>
+
+<body>
+    <!--navigation bar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Exam Portal</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Exams</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Results</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-outline-primary ms-3" href="#">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <br>
+    <br>
+    <!-- Exam Status Sections -->
+    <div class="container mt-5">
+        <!-- Live Exams -->
+        <h2 class="section-heading">Live Exams</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card exam-card p-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Chemistry Live Quiz</h5>
+                        <p class="card-text">Ends in: 2 hours</p>
+                        <a href="#" class="btn btn-danger">Join Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Attempted Exams -->
+        <h2 class="section-heading">Attempted Exams</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card exam-card p-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Mathematics Midterm</h5>
+                        <p class="card-text">Attempted on: 2025-01-01</p>
+                        <a href="#" class="btn btn-secondary">View Results</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card exam-card p-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Physics Quiz</h5>
+                        <p class="card-text">Attempted on: 2025-01-05</p>
+                        <a href="#" class="btn btn-secondary">View Results</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Not Yet Attempted Exams -->
+        <h2 class="section-heading">Not Yet Attempted Exams</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card exam-card p-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Biology Assignment</h5>
+                        <p class="card-text">Deadline: 2025-01-15</p>
+                        <a href="#" class="btn btn-primary">Attempt Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card exam-card p-3">
+                    <div class="card-body">
+                        <h5 class="card-title">English Grammar Test</h5>
+                        <p class="card-text">Deadline: 2025-01-20</p>
+                        <a href="#" class="btn btn-primary">Attempt Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <!-- Upcoming Exams -->
+        <h2 class="section-heading">Upcoming Exams</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card exam-card p-3">
+                    <div class="card-body">
+                        <h5 class="card-title">History Midterm</h5>
+                        <p class="card-text">Scheduled on: 2025-01-25</p>
+                        <a href="#" class="btn btn-info">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card exam-card p-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Computer Science Final</h5>
+                        <p class="card-text">Scheduled on: 2025-01-30</p>
+                        <a href="#" class="btn btn-info">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <p>&copy; 2025 Online Examination Portal. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
