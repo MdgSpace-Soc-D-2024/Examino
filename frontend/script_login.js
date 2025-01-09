@@ -24,6 +24,7 @@ document.getElementById("loginModal").addEventListener("submit", async (event) =
         });
 
         if (response.ok) {
+            console.log(response)
             const result = await response.json();
             alert('Login successful');
             localStorage.setItem(AUTH_KEY, result.access);

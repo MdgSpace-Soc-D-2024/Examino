@@ -1,8 +1,8 @@
 from rest_framework import serializers
 from home.models import *
-from admin_app.models import Admin, Courses
-from teacher.models import TeacherCred
-from student.models import StudentCred
+from admin_app.models import *
+from teacher.models import *
+from student.models import *
 from student.views import *
 #from django.contrib.auth.models import User
 #from django.contrib.auth import get_user_model
@@ -55,30 +55,50 @@ class UserTypeSerializer(serializers.ModelSerializer):
 class AdminSerializer(serializers.ModelSerializer):
     class Meta:
         model = Admin
-        fields = ['institute', 'created']
+        fields = ['institute', 'address', 'email', 'phone']
 
-class TeacherCredSerializer(serializers.ModelSerializer):
+
+class InstituteCodeSerializer(serializers.ModelSerializer):
     class Meta:
-        model = TeacherCred
-        fields = ['username', 'institute', 'course']
+        model = InstituteCode
+        fields = ['institute', 'code']
 
-class CourseSerializer(serializers.ModelSerializer):
-    institution = serializers.PrimaryKeyRelatedField(queryset=Courses.objects.all())
+class ExamsSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Courses
-        fields = ['id', 'coursename', 'coursecode']  
-
-
-class StudentCredSerializer(serializers.ModelSerializer):
-    courses = CourseSerializer(many=True, read_only=True) 
-    course_ids = serializers.PrimaryKeyRelatedField(
-        queryset=Courses.objects.all(),
-        many=True,
-        write_only=False,
-        source='courses'
-    ) 
-    
+        model = Exams
+        fields = ['class_exam', 'subject', 'date_scheduled', 'questions']
+        
+class InstituteClassSerializer(serializers.ModelSerializer):
     class Meta:
-        model = StudentCred
-        fields = ['name', 'roll_number', 'courses']
-        read_only_fields = ['roll_number']
+        model = InstituteClass
+        fields = ['classes']
+class InstituteSubjectSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = InstituteCourses
+        fields = ['courses']
+#class TeacherCredSerializer(serializers.ModelSerializer):
+#    class Meta:
+#        model = TeacherCred
+#        fields = ['username', 'institute', 'course']
+#
+#class CourseSerializer(serializers.ModelSerializer):
+#    institution = serializers.PrimaryKeyRelatedField(queryset=Courses.objects.all())
+#    class Meta:
+#        model = Courses
+#        fields = ['id', 'coursename', 'coursecode']  
+#
+#
+#class StudentCredSerializer(serializers.ModelSerializer):
+#    courses = CourseSerializer(many=True, read_only=True) 
+#    course_ids = serializers.PrimaryKeyRelatedField(
+#        queryset=Courses.objects.all(),
+#        many=True,
+#        write_only=False,
+#        source='courses'
+#    ) 
+#    
+#    class Meta:
+#        model = StudentCred
+#        fields = ['name', 'roll_number', 'courses']
+#        read_only_fields = ['roll_number']
+#
