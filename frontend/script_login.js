@@ -24,7 +24,7 @@ document.getElementById("loginModal").addEventListener("submit", async (event) =
 
         if (response.ok) {
             const result = await response.json();
-            alert('Login successful:' + result.username);
+            alert('Login successful');
 
         } else {
             const errorData = await response.json();

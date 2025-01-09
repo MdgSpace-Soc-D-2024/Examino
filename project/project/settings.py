@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'teacher.apps.TeacherConfig',
     'student.apps.StudentConfig',
     'home.apps.HomeConfig',
+    'rest_framework_simplejwt',
 ]
 
 MIDDLEWARE = [
@@ -159,4 +160,12 @@ LOGGING = {
             "style": "{",
         }
     },
+}
+REST_FRAMEWORK = {
+    
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+    )
+    
 }
