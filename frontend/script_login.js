@@ -1,7 +1,7 @@
 const loginApiUrl = "http://localhost:8000/api/login/"
 const gotoregisterlink = document.getElementById('goToRegister')
 const AUTH_KEY = 'auth_token';
-
+const is_admin = false
 gotoregisterlink.addEventListener('click', function () {
     // Navigate to the register page
     window.location.href = 'register.html';
@@ -27,8 +27,8 @@ document.getElementById("loginModal").addEventListener("submit", async (event) =
             console.log(response)
             const result = await response.json();
             alert('Login successful');
-            localStorage.setItem(AUTH_KEY, result.access);
-
+            localStorage.setItem((AUTH_KEY, result.access), (is_admin, true));
+            window.location.href = 'admin.html'
         } else {
             const errorData = await response.json();
             console.error("Login error:", errorData);
