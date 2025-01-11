@@ -1,7 +1,7 @@
 from rest_framework.response import Response
 from rest_framework.decorators import api_view
 from admin_app.models import *
-from rest_framework import generics
+
 from student.models import *
 from .serializers import *
 from teacher.models import *
