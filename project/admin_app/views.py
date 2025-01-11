@@ -33,20 +33,22 @@ class AdminInfoView(APIView):
         return Response(admin_serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 
-class InstituteClassAPIView(APIView):    
+class InstituteClassPOSTAPIView(APIView):    
     def post(self, request):
         serializer = InstituteClassSerializer(data=request.data)
         if serializer.is_valid():
             cred = serializer.save()
             return Response({"message": "Class added successfully"}, status=status.HTTP_201_CREATED)
-        return Response("error", status=status.HTTP_400_BAD_REQUEST)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+    
+class InstituteClassGETAPIView(APIView):
     def get(self, request):
         cred = InstituteClass.objects.all()
         serializer = InstituteClassSerializer(cred, many=True)
-        data = {'data': serializer.data}
-        Response(data)
+        data = serializer.data
+        return Response(data)
 
-class StudentsCredAPIVuew(APIView):
+class StudentsCredAPIView(APIView):
     def post(self, request):
         serializer = StudentCredSerializer(data=request.data)
         if serializer.is_valid():

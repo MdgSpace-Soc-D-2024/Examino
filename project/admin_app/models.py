@@ -1,8 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
 from home.models import *
-import string
-import random
 
 
 class Admin(models.Model):
@@ -16,24 +14,11 @@ class Admin(models.Model):
     def __str__(self):
         return self.institute
  
-
 class InstituteClass(models.Model):
-    #institute = models.ForeignKey(Admin, on_delete=models.CASCADE)
+    institute = models.ForeignKey(Admin, on_delete=models.CASCADE)
     classes = models.CharField(max_length=50)
     
 class InstituteCourses(models.Model):
+    institute = models.ForeignKey(Admin, on_delete=models.CASCADE)
     courses = models.CharField(max_length=50)
 
-def generate_unique_code():
-    length = 6  
-    characters = string.ascii_uppercase + string.digits
-    return ''.join(random.choices(characters, k=length))
-
-class InstituteCode(models.Model):
-    institute = models.ForeignKey(Admin, on_delete=models.CASCADE)
-    code = models.CharField(max_length=10, unique=True, blank=True)
-
-    def save(self):
-        if not self.code:
-            self.code = generate_unique_code()
-        super().save()

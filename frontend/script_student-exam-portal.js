@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     // Fetch questions and student data from Django backend using fetch API
-    fetch('/api/get_exam_data/')
+    fetch('/api//')
         .then(response => response.json())
         .then(data => {
             // Populate student details

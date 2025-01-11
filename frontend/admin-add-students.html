@@ -76,58 +76,7 @@
 
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script>
-    document.getElementById('addStudentBtn').addEventListener('click', function() {
-        // Show the form when the button is clicked
-        document.getElementById('studentForm').classList.remove('d-none');
-    });
-
-    // Function to fetch classes from the Django REST backend
-    function fetchClasses() {
-        // Example API call
-        fetch('/api/get-classes/')
-            .then(response => response.json())
-            .then(data => {
-                const classDropdown = document.getElementById('classDropdown');
-                data.classes.forEach(function(classItem) {
-                    const option = document.createElement('option');
-                    option.value = classItem.id;
-                    option.textContent = classItem.name;
-                    classDropdown.appendChild(option);
-                });
-            })
-            .catch(error => {
-                console.error('Error fetching classes:', error);
-            });
-    }
-
-    // Call fetchClasses on page load to populate the dropdown
-    fetchClasses();
-
-    // Form submission event handler
-    document.getElementById('studentFormFields').addEventListener('submit', function(event) {
-        event.preventDefault();
-        const username = document.getElementById('username').value;
-        const institute = document.getElementById('institute').value;
-        const classId = document.getElementById('classDropdown').value;
-
-        // Example form submission to Django backend
-        fetch('/api/add-student/', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({ username: username, institute: institute, class_id: classId }),
-        })
-        .then(response => response.json())
-        .then(data => {
-            alert('Student added successfully');
-            // Reset form
-            document.getElementById('studentFormFields').reset();
-        })
-        .catch(error => {
-            console.error('Error adding student:', error);
-        });
-    });
+    
 </script>
 
 </body>

@@ -34,34 +34,32 @@ class AdminSerializer(serializers.ModelSerializer):
         fields = ['institute', 'address', 'email', 'phone']
 
 
-class InstituteCodeSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = InstituteCode
-        fields = ['institute', 'code']
 
-class ExamsSerializer(serializers.Serializer):
+
+class ExamsSerializer(serializers.ModelSerializer):
     class Meta:
         model = Exams
         fields = ['class_exam', 'subject', 'date_scheduled', 'questions']
         
-class InstituteClassSerializer(serializers.Serializer):
+class InstituteClassSerializer(serializers.ModelSerializer):
     class Meta:
         model = InstituteClass
-        fields = '__all__'
-class InstituteSubjectSerializer(serializers.Serializer):
+        fields = ['institute', 'classes']
+        
+class InstituteCoursesSerializer(serializers.ModelSerializer):
     class Meta:
         model = InstituteCourses
-        fields = ['courses']
+        fields = ['institute', 'courses']
 #class TeacherCredSerializer(serializers.ModelSerializer):
 #    class Meta:
 #        model = TeacherCred
 #        fields = ['username', 'institute', 'course']
 #
-class CourseSerializer(serializers.ModelSerializer):
-    institution = serializers.PrimaryKeyRelatedField(queryset=InstituteCourses.objects.all())
-    class Meta:
-        model = InstituteCourses
-        fields = ['id', 'courses']  
+#class CourseSerializer(serializers.ModelSerializer):
+#    institution = serializers.PrimaryKeyRelatedField(queryset=InstituteCourses.objects.all())
+#    class Meta:
+#        model = InstituteCourses
+#        fields = ['id', 'courses']  
 
 
 class StudentCredSerializer(serializers.ModelSerializer):
