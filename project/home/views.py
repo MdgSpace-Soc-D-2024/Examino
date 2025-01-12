@@ -35,8 +35,7 @@ class LoginAPIView(APIView):
                     #logger.info(user)
                     refresh = RefreshToken.for_user(user)
 
-                    return Response({'refresh': str(refresh),
-                        'access': str(refresh.access_token)} , status=status.HTTP_200_OK)
+                    return Response({'refresh': str(refresh), 'access': str(refresh.access_token)}, status=status.HTTP_200_OK)
                         
                     #return Response({"message": "Login successful", "username": user}, status=status.HTTP_200_OK)
                     
