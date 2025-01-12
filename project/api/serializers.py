@@ -8,26 +8,50 @@ from student.views import *
 #from django.contrib.auth import get_user_model
 
 #User = get_user_model()
+#class RegisterSerializer(serializers.ModelSerializer):
+#    class Meta:
+#        model = UserNew
+#        fields = ['username', 'password', 'type_of']
+#
+#    #def create(self, validated_data):
+#    #    user = UserNew.objects.create_user(
+#    #        username=validated_data['username'],
+#    #        password=validated_data['password'],
+#    #        type_of = validated_data['type_of']
+#    #    )
+#    #    return user
+#
+#
+##class LoginSerializer(serializers.ModelSerializer):
+##    class Meta:
+##        model = UserNew
+##        fields = ['username', 'password', 'type_of']
+#
+#class LoginSerializer(serializers.Serializer):
+#    username = serializers.CharField()
+#    password = serializers.CharField(write_only=True)
+#    type_of = serializers.CharField()
+#    
 class RegisterSerializer(serializers.ModelSerializer):
+    #password = serializers.CharField(write_only=True)
+
     class Meta:
         model = UserNew
-        fields = ['username', 'password', 'type_of']
+        fields = ['username', 'password']
 
     #def create(self, validated_data):
-    #    user = UserNew.objects.create_user(
-    #        username=validated_data['username'],
-    #        password=validated_data['password'],
-    #        type_of = validated_data['type_of']
-    #    )
-    #    return user
+    #    return UserNew.objects.create_user(**validated_data)
 
+class LoginSerializer(serializers.Serializer):
+    username = serializers.CharField()
+    password = serializers.CharField()
 
-class LoginSerializer(serializers.ModelSerializer):
+class UserTypeSerializer(serializers.ModelSerializer):
     class Meta:
-        model = UserNew
-        fields = ['username', 'password', 'type_of']
+        model = UserType
+        fields = ['username', 'type_of']
 
-        
+    
 class AdminSerializer(serializers.ModelSerializer):
     class Meta:
         model = Admin
@@ -37,11 +61,13 @@ class AdminSerializer(serializers.ModelSerializer):
 
 
 class ExamsSerializer(serializers.ModelSerializer):
+
     class Meta:
         model = Exams
         fields = ['class_exam', 'subject', 'date_scheduled', 'questions']
         
 class InstituteClassSerializer(serializers.ModelSerializer):
+
     class Meta:
         model = InstituteClass
         fields = ['institute', 'classes']

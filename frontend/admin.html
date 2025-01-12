@@ -11,16 +11,17 @@
         <div class="bg-dark text-white p-3 position-fixed" style="width: 250px; height: 100vh;">
             <h2 class="text-center">Admin Panel</h2>
             <ul class="nav flex-column">
-                <li class="nav-item"><a href="#" class="nav-link text-white" id ="Dashboard">Dashboard</a></li>
-                <li class="nav-item"><a href="#" class="nav-link text-white">Manage Exams</a></li>
-                <li class="nav-item"><a href="#" class="nav-link text-white">Students</a></li>
-                <li class="nav-item"><a href="#" class="nav-link text-white">Results</a></li>
-                <li class="nav-item"><a href="#" class="nav-link text-white">Reports</a></li>
+                <li class="nav-item"><a href="#" class="nav-link text-white" class="page active" id="home"> Home </a></li>
+                <li class="nav-item"><a href="#" class="nav-link text-white" class = "page" id ="Dashboard">Dashboard</a></li>
+                <li class="nav-item"><a href="#" class="nav-link text-white" class = "page" id="manageExams">Manage Exams</a></li>
+                <li class="nav-item"><a href="#" class="nav-link text-white" class = "page" id="seeStudents">Students</a></li>
+                <li class="nav-item"><a href="#" class="nav-link text-white" class = "page" id="seeResults">Results</a></li>
+               <!-- <li class="nav-item"><a href="#" class="nav-link text-white" class = "page">Reports</a></li> -->
                 <li class="nav-item">
                     <a href="#settings_collapse" class="nav-link text-white" data-bs-toggle="collapse">Settings</a>
                     <div class="collapse" id="settings_collapse">
                         <ul class="list-unstyled">
-                            <li id="adminLogout"><a href="#" class="text-white">Logout</a></li>
+                            <li id="adminLogout"><a href="#" onclick="logout()" class="text-white">Logout</a></li>
                         </ul>
                     </div>
                 </li>
@@ -30,7 +31,7 @@
         <div class="flex-grow-1" style="margin-left: 250px;">
             <div class="d-flex justify-content-between align-items-center bg-light p-3 rounded mb-4">
                 <h1>Welcome, Admin</h1>
-                <span class="text-dark">Code: <a id = "codeInstitute"></a></span>
+                
                 
             </div>
 

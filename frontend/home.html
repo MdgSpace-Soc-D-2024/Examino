@@ -34,26 +34,32 @@
                 <p class="lead text-muted">Your one-stop platform for online examinations.</p>
 
                 <div class="d-flex justify-content-center my-4">
-                    <button type="button" id = "goToLogin" class="btn btn-outline-primary mx-2"  data-bs-toggle="modal">Login</button>
-                    <button type="button" id = "goToRegister" class="btn btn-primary mx-2" data-bs-toggle="modal">Register</button>
+                    <!-- Dropdown for Login -->
+                    <div class="dropdown">
+                        <button class="btn btn-outline-primary dropdown-toggle mx-2" type="button" id="loginDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            Login
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="loginDropdown">
+                            <li><a class="dropdown-item" href="login_admin.html">As Admin</a></li>
+                            <li><a class="dropdown-item" href="login_teacher.html">As Teacher</a></li>
+                            <li><a class="dropdown-item" href="login_student.html">As Student</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Register Button -->
+                    <div class="dropdown">
+                        <button class="btn btn-primary dropdown-toggle mx-2" type="button" id="registerDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            Register
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="registerDropdown">
+                            <li><a class="dropdown-item" href="register.html"> As Admin </a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script> 
-        // Event listener for the Login button
-        document.getElementById('goToLogin').addEventListener('click', function () {
-            // Navigate to the Login page
-            window.location.href = 'login.html';
-        });
-      
-        // Event listener for the Register button
-        document.getElementById('goToRegister').addEventListener('click', function () {
-            // Navigate to the Register page
-            window.location.href = 'register.html';
-        });
-    </script> 
 </body>
 </html>

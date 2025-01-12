@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
       questionsContainer.appendChild(questionDiv);
     });
 
-    // Handle form submission
+    
     submitBtn.addEventListener("click", () => {
       const classSelected = document.getElementById("classSelect").value;
       const subjectSelected = document.getElementById("subjectSelect").value;
@@ -84,6 +84,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       console.log("Exam Data Submitted:", examData);
       alert("Exam scheduled successfully!");
+      
       document.getElementById("examForm").addEventListener("submit", async (event) => {event.preventDefault();
         try {
           const response = await fetch(teacherexamApiUrl, {
