@@ -5,25 +5,7 @@ const targetElement = document.getElementById("targetElement");
 const showClasses = document.getElementById("showClasses");
 const classgetApiUrl = "http://localhost:8000/api/admin-class/get/"
 const classpostApiUrl = "http://localhost:8000/api/admin-class/post/"
-// Add event listener to button
-//addClassBtn.addEventListener("click", () => {
-//    const className = classInput.value.trim();
-//    if (className) {
-//        // Add class to target element
-//        targetElement.classList.add(className);
-//
-//        // Display the added class in the list
-//        const listItem = document.createElement("li");
-//        listItem.className = "list-group-item";
-//        listItem.textContent = className;
-//        showClasses.appendChild(listItem);
-//
-//        // Clear the input field
-//        classInput.value = "";
-//    } else {
-//        alert("Please enter a valid class name.");
-//    }
-//});
+
 
 async function fetchClasses() {
     try {
@@ -43,7 +25,8 @@ async function fetchClasses() {
     } catch (error) {
         console.error('Error fetching classes:', error);
     }
-}
+};
+
 document.getElementById('addClassBtn').addEventListener('click', async (event) => {event.preventDefault();
     const classInput = document.getElementById('classInput');
     const className = classInput.value.trim();

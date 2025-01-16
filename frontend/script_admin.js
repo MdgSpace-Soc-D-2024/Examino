@@ -2,7 +2,7 @@ const linktoadmin = document.getElementById('admin-page')
 const logoutlink = document.getElementById('adminLogout')
 const dashboardlink = document.getElementById('Dashboard')
 const addclasseslink = document.getElementById('addClasses')
-
+const getusernamelink =  "http://localhost:8000/api/get-username/"
 
 if (linktoadmin!=null) {
     linktoadmin.addEventListener('click', function() {
@@ -38,10 +38,7 @@ function navigateTo(pageId) {
     document.getElementById(pageId).classList.add('active');
     return true;
 }
-//function login() {
-//    localStorage.setItem(AUTH_KEY, 'dummy_token');
-//    alert('Logged in successfully');
-//}
+
 function logout() {
     localStorage.removeItem(AUTH_KEY, is_admin);
     window.location.href = 'home.html'
@@ -63,3 +60,29 @@ if (logoutlink!=null) {
         logout()
     }
 )};
+
+document.addEventListener("DOMContentLoaded", () => {
+    const AUTH_KEY = localStorage.getItem(AUTH_KEY)
+    const headers = {'Content-Type':'application/json',
+        'Access-Control-Allow-Origin':'*',
+        'Access-Control-Allow-Methods':'POST,PATCH,OPTIONS'}
+    try {
+        const response = fetch(getusernamelink, {
+            method: "POST", 
+            headers: headers,
+            body: JSON.stringify({AUTH_KEY})
+        });
+        if (response.ok) {
+            const result = response.json();
+            const username = document.getElementById('username');
+            username.innerHTML = '';
+            username.textContent = result.username
+            
+        } else {
+            console.log('error')
+        }
+    } catch (error){
+        pass
+    }
+
+});

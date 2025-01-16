@@ -1,5 +1,42 @@
 const teacherexamApiUrl = "http://localhost:8000/api/teacher-exam/"
+const classgetApiUrl = "http://localhost:8000/api/admin-class/get/"
+const coursegetApiUrl = "http://localhost:8000/api/admin-courses/get/"
+
+
+
+
+
+
+
 document.addEventListener("DOMContentLoaded", () => {
+  async function fetchClasses() {
+    const response_class = await fetch(classgetApiUrl);
+    const classes_data = await response_class.json();
+    console.log(classes_data)
+    const classDropdown = document.getElementById('classDropdown');
+    classes_data.forEach(cls => {
+        const option = document.createElement('option');
+       // option.value = cls.id;
+        option.textContent = cls.classes;
+        classDropdown.appendChild(option);
+    });
+  };
+  fetchClasses();
+  async function fetchCourses() {
+    const response_course = await fetch(coursegetApiUrl);
+    const courses_data = await response_course.json();
+    console.log(courses_data)
+    const courseDropdown = document.getElementById('courseDropdown');
+    courses_data.forEach(crs => {
+        const option = document.createElement('option');
+       // option.value = cls.id;
+        option.textContent = crs.courses;
+        courseDropdown.appendChild(option);
+    });
+  };
+  
+  
+  fetchCourses();
     const questionsContainer = document.getElementById("questionsContainer");
     const addQuestionBtn = document.getElementById("addQuestionBtn");
     const submitBtn = document.getElementById("submitBtn");
@@ -38,72 +75,72 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     
-    submitBtn.addEventListener("click", () => {
-      const classSelected = document.getElementById("classSelect").value;
-      const subjectSelected = document.getElementById("subjectSelect").value;
+    submitBtn.addEventListener("click", async (event) => {
+      event.preventDefault();
+      const classSelected = document.getElementById("classDropdown").value;
+      const courseSelected = document.getElementById("courseDropdown").value;
       const examDate = document.getElementById("examDate").value;
-
-      if (!classSelected || !subjectSelected || !examDate) {
+    
+      if (!classSelected || !courseSelected || !examDate) {
         alert("Please fill in all exam details.");
         return;
       }
-
+    
       const questions = [];
       document.querySelectorAll(".question-container").forEach((container) => {
         const questionText = container.querySelector(".question-input").value;
         const options = Array.from(container.querySelectorAll(".option-input"), input => input.value);
         const correctAnswer = container.querySelector(".correct-answer").value;
-
+    
         if (!questionText || options.some(opt => !opt) || !correctAnswer) {
           alert("Please complete all questions with valid data.");
           return;
         }
-
+    
         questions.push({
           question: questionText,
           options,
           correctAnswer
         });
       });
-
+    
       if (questions.length === 0) {
         alert("Please add at least one question.");
         return;
       }
-
-      const examData = {
-        class_exam: classSelected,
-        subject: subjectSelected,
-        date_scheduled: examDate,
-        questions
-      };
-      let class_exam = classSelected
-      let subject = subjectSelected
-      let date_scheduled = examDate
     
-
-      console.log("Exam Data Submitted:", examData);
-      alert("Exam scheduled successfully!");
-      
-      document.getElementById("examForm").addEventListener("submit", async (event) => {event.preventDefault();
-        try {
-          const response = await fetch(teacherexamApiUrl, {
-              statusCode: 200,
-              method: "POST",
-              headers: headers,
-              body: JSON.stringify({class_exam, subject, date_scheduled, questions}),
-          });
-          if (response.ok) {
-            const result = await response.json();
-            alert('Exam Created: ')
-          } else {
-            const errorData = await response.json();
-            console.error("Registration error:", errorData);
-            alert("Error")
-          }
-        } catch (error) {
-            console.error("Error:", error);
+      // Serialize questions array to JSON string before sending to backend
+      const examData = {
+        institute: 1,
+        classes: classSelected,
+        courses: courseSelected,
+        date_scheduled: examDate,
+        questions: JSON.stringify(questions) // Convert array to JSON string
+      };
+    
+      const headers = {
+        'Content-Type': 'application/json'
+      };
+    
+      try {
+        const response = await fetch(teacherexamApiUrl, {
+          method: "POST",
+          headers: headers,
+          body: JSON.stringify(examData)
+        });
+    
+        if (response.ok) {
+          const result = await response.json();
+          alert('Exam Created');
+        } else {
+          const errorData = await response.json();
+          console.error("Registration error:", errorData);
+          alert("Error");
         }
-      });
+      } catch (error) {
+        console.error("Error:", error);
+      }
     });
+    
+    
   });

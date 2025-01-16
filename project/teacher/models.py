@@ -11,8 +11,9 @@ class TeacherCred(models.Model):
 
 
 class Exams(models.Model):
-    class_exam = models.CharField(max_length=50)
-    subject = models.CharField(max_length=32)
+    institute = models.ForeignKey(Admin, on_delete=models.CASCADE)
+    classes = models.CharField(max_length=50)
+    courses = models.CharField(max_length=32)
     #created = models.DateTimeField(auto_now_add=True)
     date_scheduled = models.DateField()
     #time_start = models.TimeField()
