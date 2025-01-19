@@ -84,8 +84,8 @@ document.addEventListener("DOMContentLoaded", async () => {
                     if (radio.checked){
                         answers[questionKey] = radio.id;
                     }
-
                 });
+                
                 const payload = {
                     answers: JSON.stringify(answers),
                 };
