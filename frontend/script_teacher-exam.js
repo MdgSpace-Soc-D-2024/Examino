@@ -4,10 +4,6 @@ const coursegetApiUrl = "http://localhost:8000/api/admin-courses/get/"
 
 
 
-
-
-
-
 document.addEventListener("DOMContentLoaded", () => {
   async function fetchClasses() {
     const response_class = await fetch(classgetApiUrl);

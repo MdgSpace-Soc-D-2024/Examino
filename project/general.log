@@ -7258,3 +7258,594 @@ AssertionError: Class ExamsGetSerializer missing "Meta.model" attribute
 2025-01-16 17:38:28,965 (WARNING)- django.request- Unauthorized: /api/student-exam/
 2025-01-16 17:39:35,055 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
 2025-01-16 17:40:32,289 (WARNING)- django.request- Unauthorized: /api/student-exam/
+2025-01-16 22:22:52,272 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-16 22:23:08,705 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\api\urls.py changed, reloading.
+2025-01-16 22:23:09,635 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-16 22:31:23,258 (ERROR)- django.request- Internal Server Error: /api/exams/get
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: getExamAPIView.get() missing 1 required positional argument: 'course'
+2025-01-16 22:33:10,444 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\teacher\views.py changed, reloading.
+2025-01-16 22:33:12,203 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-16 23:05:41,095 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-16 23:14:44,896 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\teacher\views.py changed, reloading.
+2025-01-16 23:14:46,329 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-16 23:18:34,318 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-16 23:21:32,282 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-16 23:21:37,498 (WARNING)- django.request- Not Found: /
+2025-01-16 23:26:18,264 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-16 23:26:19,382 (WARNING)- django.request- Not Found: /api/
+2025-01-16 23:26:24,274 (WARNING)- django.request- Not Found: /api/
+2025-01-16 23:26:25,991 (WARNING)- django.request- Not Found: /api/
+2025-01-16 23:26:45,763 (WARNING)- django.request- Not Found: /api/exams/get/Electrical/
+2025-01-17 00:36:13,430 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-17 00:36:23,751 (WARNING)- django.request- Method Not Allowed: /api/exams/get/${courses}
+2025-01-17 00:42:33,642 (WARNING)- django.request- Method Not Allowed: /api/exams/get/${courses}
+2025-01-17 20:12:22,958 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-17 20:25:39,847 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-17 20:25:41,941 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-17 20:25:55,600 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-17 20:25:58,151 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-17 20:26:41,360 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-17 20:27:33,532 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-17 20:27:38,990 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-17 20:27:41,034 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-17 20:30:23,722 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-17 20:30:30,850 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-17 20:30:44,933 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-17 20:30:59,414 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-17 20:31:02,247 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-17 20:31:10,806 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-17 20:31:13,482 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-17 20:31:21,802 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-17 20:31:24,053 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-17 20:31:33,241 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-17 20:31:34,679 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-17 20:31:34,980 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-17 20:31:35,918 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-17 20:31:37,190 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-17 20:31:38,439 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-17 20:31:38,798 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-17 20:31:39,102 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-17 20:31:39,610 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-17 20:31:40,035 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-17 20:31:40,530 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-17 20:31:40,906 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-17 20:31:41,260 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-17 20:31:42,074 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-17 20:31:52,196 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-17 20:31:57,026 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-17 20:32:01,683 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-17 20:32:02,061 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-17 20:32:02,472 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-17 20:32:02,830 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-17 20:32:03,190 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-17 20:32:03,663 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-17 20:32:04,180 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-17 20:32:04,441 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-17 20:32:04,823 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-17 20:32:05,210 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-17 20:32:05,655 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-17 20:32:06,040 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-17 20:32:06,437 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-17 20:32:06,895 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-17 20:32:07,290 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-17 20:32:07,650 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-17 20:32:08,119 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-17 20:32:08,500 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-17 20:32:08,970 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-17 20:32:09,353 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-17 20:32:09,724 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-17 20:32:10,101 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-17 20:32:10,710 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-17 20:32:11,710 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-17 20:32:12,170 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-17 20:32:12,576 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-17 20:32:12,966 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-17 20:32:13,341 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-17 20:32:13,760 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-17 20:32:14,140 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-17 20:32:14,498 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-17 20:32:14,950 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-17 20:32:15,291 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-18 13:51:22,567 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-18 13:51:36,997 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-18 13:51:39,494 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-18 13:52:43,828 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-18 13:52:47,074 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-18 13:53:02,364 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-18 13:53:35,232 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\api\urls.py changed, reloading.
+2025-01-18 13:53:36,203 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-18 13:53:37,488 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-18 13:53:37,863 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-18 13:53:38,545 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-18 13:53:53,895 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-18 13:53:55,003 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-18 13:54:16,484 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\api\urls.py changed, reloading.
+2025-01-18 13:54:17,847 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-18 13:54:19,929 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-18 13:54:22,813 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-18 13:54:35,504 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-18 13:54:35,930 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-18 13:55:07,103 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-18 13:55:08,397 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-18 13:55:08,704 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-18 13:55:09,104 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-18 13:55:09,534 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-18 13:55:09,878 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-18 13:55:10,316 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-18 13:55:10,704 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-18 13:55:11,174 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-18 13:55:11,554 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-18 13:55:11,873 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-18 13:55:12,276 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-18 13:55:12,704 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-18 13:55:13,081 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-18 13:55:13,520 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-18 13:55:13,906 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-18 13:55:14,397 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-18 13:55:15,353 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-18 13:55:15,669 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-18 13:55:16,097 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-18 13:55:16,484 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-18 13:55:16,863 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-18 13:55:17,324 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-18 13:55:17,842 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-18 13:55:28,924 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-18 13:55:29,227 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-18 13:55:29,865 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-18 13:55:30,215 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-18 13:55:30,579 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-18 13:55:30,953 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-18 13:55:31,388 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-18 13:55:31,786 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-18 13:55:32,252 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-18 13:55:32,557 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-18 13:55:32,977 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-18 13:55:33,388 (WARNING)- django.request- Not Found: /api/exams/get/
+2025-01-18 13:56:02,156 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-18 14:01:14,660 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-18 14:48:32,604 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\models.py changed, reloading.
+2025-01-18 14:48:34,574 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-18 15:04:15,284 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-18 15:04:33,584 (ERROR)- django.request- Internal Server Error: /api/answers/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py", line 15, in post
+    data = serializer.save()
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\serializers.py", line 208, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\serializers.py", line 173, in create
+    raise NotImplementedError('`create()` must be implemented.')
+NotImplementedError: `create()` must be implemented.
+2025-01-18 15:05:10,060 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\api\serializers.py changed, reloading.
+2025-01-18 15:05:11,144 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-18 15:05:41,219 (ERROR)- django.request- Internal Server Error: /api/answers/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py", line 14, in post
+    if serializer.is_valid():
+       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\serializers.py", line 223, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\serializers.py", line 442, in run_validation
+    value = self.to_internal_value(data)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\serializers.py", line 495, in to_internal_value
+    for field in fields:
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\serializers.py", line 378, in _writable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\serializers.py", line 372, in fields
+    for key, value in self.get_fields().items():
+                      ^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\serializers.py", line 1079, in get_fields
+    field_names = self.get_field_names(declared_fields, info)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\serializers.py", line 1151, in get_field_names
+    assert not (fields is None and exclude is None), (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ("Creating a ModelSerializer without either the 'fields' attribute or the 'exclude' attribute has been deprecated since 3.3.0, and is now disallowed. Add an explicit fields = '__all__' to the StudentAnswersSerializer serializer.",)
+2025-01-18 15:06:06,130 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\api\serializers.py changed, reloading.
+2025-01-18 15:06:07,636 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-18 15:06:13,258 (WARNING)- django.request- Bad Request: /api/answers/
+2025-01-18 15:08:28,765 (WARNING)- django.request- Bad Request: /api/answers/
+2025-01-18 16:27:05,933 (WARNING)- django.request- Bad Request: /api/answers/
+2025-01-18 16:27:19,123 (WARNING)- django.request- Bad Request: /api/answers/
+2025-01-18 21:20:01,848 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-18 21:26:44,839 (WARNING)- django.request- Not Found: /api/exams/get/Electrical/
+2025-01-19 16:38:48,006 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-19 16:39:10,136 (WARNING)- django.request- Bad Request: /api/answers/
+2025-01-19 16:42:37,452 (WARNING)- django.request- Bad Request: /api/answers/
+2025-01-19 16:51:28,715 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-19 16:51:30,419 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-19 16:51:44,515 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-19 16:51:45,781 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-19 16:51:57,238 (INFO)- student.views- {'answers': [ErrorDetail(string='This field is required.', code='required')]}
+2025-01-19 16:51:57,615 (ERROR)- django.request- Internal Server Error: /api/answers/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 511, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 423, in finalize_response
+    assert isinstance(response, HttpResponseBase), (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Expected a `Response`, `HttpResponse` or `StreamingHttpResponse` to be returned from the view, but received a `<class 'NoneType'>`
+2025-01-19 16:52:12,033 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-19 16:52:13,345 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-19 16:52:21,730 (INFO)- student.views- {'answers': [ErrorDetail(string='This field is required.', code='required')]}
+2025-01-19 16:52:21,730 (WARNING)- django.request- Bad Request: /api/answers/
+2025-01-19 16:53:03,279 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-19 16:53:04,327 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-19 16:53:11,063 (INFO)- student.views- {'answers': [ErrorDetail(string='This field is required.', code='required')]}
+2025-01-19 16:53:11,063 (WARNING)- django.request- Bad Request: /api/answers/
+2025-01-19 16:55:37,274 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\api\serializers.py changed, reloading.
+2025-01-19 16:55:38,738 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-19 17:05:36,541 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-19 17:13:22,380 (INFO)- student.views- {'answers': [ErrorDetail(string='This field is required.', code='required')]}
+2025-01-19 17:13:22,380 (WARNING)- django.request- Bad Request: /api/answers/
+2025-01-19 17:14:35,328 (INFO)- student.views- {'answers': [ErrorDetail(string='This field is required.', code='required')]}
+2025-01-19 17:14:35,330 (WARNING)- django.request- Bad Request: /api/answers/
+2025-01-19 17:21:08,379 (INFO)- student.views- {'answers': [ErrorDetail(string='This field is required.', code='required')]}
+2025-01-19 17:21:08,395 (WARNING)- django.request- Bad Request: /api/answers/
+2025-01-19 17:23:58,357 (INFO)- student.views- {'answers': [ErrorDetail(string='This field is required.', code='required')]}
+2025-01-19 17:23:58,357 (WARNING)- django.request- Bad Request: /api/answers/
+2025-01-19 17:38:29,025 (INFO)- student.views- {'answers': [ErrorDetail(string='This field is required.', code='required')]}
+2025-01-19 17:38:29,027 (WARNING)- django.request- Bad Request: /api/answers/
+2025-01-19 17:48:49,664 (INFO)- student.views- valid
+2025-01-19 17:48:50,244 (ERROR)- django.request- Internal Server Error: /api/answers/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: student_studentanswers
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py", line 17, in post
+    data = serializer.save()
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\serializers.py", line 208, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\api\serializers.py", line 90, in create
+    return super().create(validated_data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\serializers.py", line 989, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\query.py", line 679, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 891, in save
+    self.save_base(
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 997, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 1160, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 1201, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\sql\compiler.py", line 1836, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: student_studentanswers
+2025-01-19 18:04:28,103 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-19 18:04:48,151 (INFO)- student.views- valid
+2025-01-19 18:04:48,214 (ERROR)- django.request- Internal Server Error: /api/answers/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: student_studentanswers
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py", line 17, in post
+    data = serializer.save()
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\serializers.py", line 208, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\api\serializers.py", line 90, in create
+    return super().create(validated_data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\serializers.py", line 989, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\query.py", line 679, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 891, in save
+    self.save_base(
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 997, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 1160, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 1201, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\sql\compiler.py", line 1836, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: student_studentanswers
+2025-01-19 18:13:24,712 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\api\serializers.py changed, reloading.
+2025-01-19 18:13:25,760 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-19 18:13:37,465 (INFO)- student.views- valid
+2025-01-19 18:13:37,587 (ERROR)- django.request- Internal Server Error: /api/answers/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: student_studentanswers
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py", line 17, in post
+    data = serializer.save()
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\serializers.py", line 208, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\serializers.py", line 989, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\query.py", line 679, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 891, in save
+    self.save_base(
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 997, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 1160, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 1201, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\sql\compiler.py", line 1836, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: student_studentanswers

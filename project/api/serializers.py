@@ -81,3 +81,20 @@ class StudentCredSerializer(serializers.ModelSerializer):
         model = StudentCred
         fields = ['username', 'institute', 'classes']
         
+class StudentAnswersSerializer(serializers.ModelSerializer):
+
+    #def create(self, validated_data):
+    #    # Convert JSON string back to Python object
+    #    answers_json = validated_data.pop('answers')
+    #    validated_data['answers'] = json.loads(answers_json)
+    #    return super().create(validated_data)
+#
+    #def to_representation(self, instance):
+    #    # Convert questions field back to JSON string for the response
+    #    representation = super().to_representation(instance)
+    #    representation['answers'] = json.loads(instance.answers)  # Convert string to list
+    #    return representation
+    
+    class Meta:
+        model = StudentAnswers
+        fields = ['answers']

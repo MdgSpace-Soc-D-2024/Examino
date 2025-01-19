@@ -17,6 +17,11 @@ class StudentCred(models.Model):
     def __str__(self):
         return self.username
     
+class StudentAnswers(models.Model):
+    answers = models.TextField()
+
+
+    
 #class Solutions(models.Model):
 #    student = models.ForeignKey(StudentCred, on_delete=models.CASCADE)
 #    answers = models.TextField

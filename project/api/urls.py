@@ -4,6 +4,7 @@ from home import views as home_views
 from admin_app import views as admin_views
 from teacher import views as teacher_views
 from student import views as student_views
+
 urlpatterns = [
     path('register/', home_views.RegisterAPIView.as_view()),
     path('login/', home_views.LoginAPIView.as_view()),
@@ -15,7 +16,6 @@ urlpatterns = [
     path('get-username/', home_views.AuthCodeAPIView.as_view()),
     path('admin-courses/post/', admin_views.InstituteCoursesPOSTAPIView.as_view()),
     path('admin-courses/get/', admin_views.InstituteCoursesGETAPIView.as_view()),
-    path('exams/get', teacher_views.getExamAPIView.as_view()),
-    path('exams/<str:courses>', student_views.GiveExams.as_view()),
-    path('student-exam/', student_views.StudentExamsView.as_view())
+    path('exams/get/', teacher_views.getExamAPIView.as_view()),  
+    path('answers/', student_views.StudentAnswersAPIView.as_view()),
 ]

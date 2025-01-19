@@ -1,20 +1,30 @@
 from django.shortcuts import render
 from .models import *
-from api.serializers import ExamsGetSerializer
+from api.serializers import ExamsGetSerializer, StudentAnswersSerializer
 from rest_framework.views import APIView
-from rest_framework.generics import RetrieveAPIView
+from rest_framework.response import Response
+from rest_framework import status
 from teacher.models import Exams
-from teacher import views as teacher_views
-from rest_framework.generics import ListAPIView
-from rest_framework.permissions import IsAuthenticated
+import logging
+logger = logging.getLogger(__name__)
 
+
+class StudentAnswersAPIView(APIView):
+    def post(self, request):
+        serializer = StudentAnswersSerializer(data = request.data)
+        if serializer.is_valid():
+            logger.info('valid')
+            data = serializer.save()
+            return Response({"message": "Exam submitted successfully."}, status = status.HTTP_201_CREATED)
+        logger.info(serializer.errors)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 #class GiveExams(APIView):
 #    def customurl(self, request, urlreq):
 #        exams = Exams.objects.all()
 #        urlreq = exams.courses
-#        teacher_views.getExamAPIView.get(request, urlreq)
-#
+        
+
 #class GiveExams(RetrieveAPIView):
 #    exams = Exams.objects.all()
 #    serializer_class = ExamsGetSerializer
