@@ -85,4 +85,9 @@ class StudentAnswersSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = StudentAnswers
-        fields = ['answers']
+        fields = ['courses', 'answers']
+
+class StudentMarksSerializer(serializers.Serializer):
+    class Meta:
+        model = StudentMarks
+        fields = ['marks', 'courses']

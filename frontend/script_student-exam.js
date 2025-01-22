@@ -3,8 +3,8 @@ const linktoseeexams = "http://localhost:8000/api/exams/get"
 document.addEventListener('DOMContentLoaded', async(event) => { event.preventDefault(); 
       
     try{
-      const reponse =  await fetch(linktoseeexams)
-      const data = await reponse.json();
+      const response =  await fetch(linktoseeexams)
+      const data = await response.json();
       
       const examsContainer = document.getElementById('exam-scheduled');
       data.forEach(exam => {
@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', async(event) => { event.preventDef
                       <div class="card-body">
                           <h5 class="card-title">${exam.courses}</h5>
                           <p class="card-text">Scheduled on: ${exam.date_scheduled}</p>
-                          
+                          <a href="student-exam-portal.html?course=${exam.courses}"> TAKE EXAM </a>
                       </div>
                   </div>
               </div>

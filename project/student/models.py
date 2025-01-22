@@ -18,8 +18,12 @@ class StudentCred(models.Model):
         return self.username
     
 class StudentAnswers(models.Model):
+    courses = models.CharField(max_length=50)
     answers = models.TextField()
 
+class StudentMarks(models.Model):
+    marks = models.IntegerField()
+    courses = models.CharField(max_length=50)
 
     
 #class Solutions(models.Model):
