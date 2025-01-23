@@ -1,5 +1,5 @@
-const classgetApiUrl = "http://localhost:8000/api/admin-class/get/"
-const addstudentApiUrl = "http://localhost:8000/api/admin-add-students/"
+const coursegetApiUrl = "http://localhost:8000/api/admin-courses/get/"
+const addstudentApiUrl = "http://localhost:8000/api/admin-add-teachers/"
 
 function getJSON(key) {
     return JSON.parse(window.localStorage.getItem(key));
@@ -13,36 +13,35 @@ document.addEventListener('DOMContentLoaded', () => {
     const IS_ADMIN = getJSON('is_admin');
     
     if (!AUTH_KEY || IS_ADMIN !== true) {
-        alert('Access denied. Please log in as an admin.');
-        window.location.href = 'login.html'; // Redirect to login page
+        alert('Access denied. Please log in as a teacher.');
+        window.location.href = 'login-teacher.html'; // Redirect to login page
     }
 });
 
-document.getElementById('addStudentBtn').addEventListener('click', function() {
+document.getElementById('addTeacherBtn').addEventListener('click', function() {
     // Show the form when the button is clicked
-    document.getElementById('studentForm').classList.remove('d-none');
+    document.getElementById('teacherForm').classList.remove('d-none');
 });
 
 // Function to fetch classes from the Django REST backend
-async function fetchClasses() {
-    const response_class = await fetch(classgetApiUrl);
-    const classes_data = await response_class.json();
-    console.log(classes_data)
-    const classDropdown = document.getElementById('classDropdown');
-    classes_data.forEach(cls => {
+async function fetchCourses() {
+    const response_course = await fetch(coursegetApiUrl);
+    const courses_data = await response_course.json();
+    console.log(courses_data)
+    const courseDropdown = document.getElementById('courseDropdown');
+    courses_data.forEach(crs => {
         const option = document.createElement('option');
-       // option.value = cls.id;
-        option.textContent = cls.classes;
-        classDropdown.appendChild(option);
+        option.textContent = crs.courses;
+        courseDropdown.appendChild(option);
     });
 };
 
-fetchClasses();
+fetchCourses();
 
-document.getElementById('studentFormFields').addEventListener('submit', async (event) => {event.preventDefault();
+document.getElementById('teacherFormFields').addEventListener('submit', async (event) => {event.preventDefault();
     const username = document.getElementById('username').value;
     const institute = document.getElementById('institute').value;
-    const classes = document.getElementById('classDropdown').value;
+    const courses = document.getElementById('courseDropdown').value;
 
     // Example form submission to Django backend
     try{
@@ -51,7 +50,7 @@ document.getElementById('studentFormFields').addEventListener('submit', async (e
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify({ username: username, institute: 1, classes: classes }),
+            body: JSON.stringify({ username: username, institute: 1, classes: courses }),
         });
         if (response.ok) {
             const result = await response.json();

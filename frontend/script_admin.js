@@ -1,88 +1,98 @@
-const linktoadmin = document.getElementById('admin-page')
-const logoutlink = document.getElementById('adminLogout')
-const dashboardlink = document.getElementById('Dashboard')
-const addclasseslink = document.getElementById('addClasses')
+const addClasses = document.getElementById("addClasses")
+const gotoadmininfo = document.getElementById("Dashboard")
+const addCourses = document.getElementById("addCourses")
+//const addClasses = document.getElementById("addClasses")
 const getusernamelink =  "http://localhost:8000/api/get-username/"
 
-if (linktoadmin!=null) {
-    linktoadmin.addEventListener('click', function() {
-        window.location.href = 'admin.html';
-    });
-};
-if (addclasseslink!=null) {
-    addclasseslink.addEventListener('click', function() {
-        window.location.href = 'admin-class.html';
-    });
-};
-
-if (dashboardlink!=null) {
-    dashboardlink.addEventListener('click', function() {
-        window.location.href = 'admin-info.html';
-        
-    });
-};
-
-const protectedRoutes = ['Dashboard', 'manageExams', 'seeStudents', 'seeResults'];
-const AUTH_KEY = 'auth_token'
-function isAuthenticated() {
-    return (localStorage.getItem(AUTH_KEY) !== null) && (localStorage.getItem(is_admin !== true));
+function getJSON(key) {
+    return JSON.parse(window.localStorage.getItem(key));
 }
-function navigateTo(pageId) {
-    if (protectedRoutes.includes(pageId) && !isAuthenticated()) {
-        alert('Please login to access this page');
-        return false;
+function clearJSON() {
+    window.localStorage.clear();
+}
+
+
+//const AUTH_KEY = 'auth_token'
+//const IS_ADMIN = false
+document.addEventListener('DOMContentLoaded', async() => {
+    //const AUTH_KEY = window.localStorage.getItem(AUTH_KEY)
+    //const IS_ADMIN = window.localStorage.getItem(is_admin)
+    
+    const AUTH_KEY = getJSON('AUTH_KEY')
+    const IS_ADMIN = getJSON('is_admin')
+    
+    if (!AUTH_KEY || IS_ADMIN !== true) {
+        alert('Access denied. Please log in as an admin.');
+        window.location.href = 'login.html'; // Redirect to login page
     }
-    document.querySelectorAll('.page').forEach(page => {
-        page.classList.remove('active');
-    });
-    document.getElementById(pageId).classList.add('active');
-    return true;
+    else {
+        const usernameElement = document.getElementById('username');
+        const getUsernameURL = 'http://localhost:8000/api/get-username/';
+        if (AUTH_KEY && usernameElement) {
+            try {
+                console.log('abc')
+                const response = await fetch(getUsernameURL, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        //'Authorization': `Bearer ${AUTH_KEY}`, // If API expects a Bearer token
+                    },
+                    body: JSON.stringify({ AUTH_KEY }),
+                });
+                if (response.ok) {
+                    const data = await response.json();
+                    console.log(data)
+                    usernameElement.textContent = data.username || 'Admin'; // Display username or fallback to 'Admin'
+                } else {
+                    console.error('Failed to fetch username');
+                }
+            } catch (error) {
+                console.error('Error fetching username:', error);
+            }
+}   
+    }
+});
+
+if (gotoadmininfo) {
+    gotoadmininfo.addEventListener("click", () => {
+        window.location.href = 'admin-info.html';
+    })
+    
+}
+if (addClasses) {
+    addClasses.addEventListener("click", () => {
+        window.location.href = 'admin-class.html';
+    })
+    
+}
+if (addCourses) {
+    addCourses.addEventListener("click", () => {
+        window.location.href = 'admin-courses.html';
+    })
+    
 }
 
 function logout() {
-    localStorage.removeItem(AUTH_KEY, is_admin);
-    window.location.href = 'home.html'
+    clearJSON(); // Clear all local storage data
     alert('Logged out successfully');
-}
-document.getElementById('navigation').addEventListener('click', (e) => {
-    if (e.target.dataset.page) {
-        e.preventDefault();
-        navigateTo(e.target.dataset.page);
-    }
-})
-const currentPage = document.querySelector('.active').id;
-if (protectedRoutes.includes(currentPage) && !isAuthenticated()) {
-    navigateTo('home');
+    window.location.href = 'login.html'; // Redirect to login page
 }
 
-if (logoutlink!=null) {
-    logoutlink.addEventListener('click', function() {
-        logout()
-    }
-)};
 
-document.addEventListener("DOMContentLoaded", () => {
-    const AUTH_KEY = localStorage.getItem(AUTH_KEY)
-    const headers = {'Content-Type':'application/json',
-        'Access-Control-Allow-Origin':'*',
-        'Access-Control-Allow-Methods':'POST,PATCH,OPTIONS'}
-    try {
-        const response = fetch(getusernamelink, {
-            method: "POST", 
-            headers: headers,
-            body: JSON.stringify({AUTH_KEY})
-        });
-        if (response.ok) {
-            const result = response.json();
-            const username = document.getElementById('username');
-            username.innerHTML = '';
-            username.textContent = result.username
-            
-        } else {
-            console.log('error')
-        }
-    } catch (error){
-        pass
-    }
+const logoutLink = document.getElementById('adminLogout');
+if (logoutLink) {
+    logoutLink.addEventListener('click', (event) => {
+        event.preventDefault();
+        logout();
+    });
+}
 
-});
+
+//function isAuthenticated() {
+//    return (AUTH_KEY !== null) && (IS_ADMIN === true);
+//}
+
+
+
+
+

@@ -19,4 +19,5 @@ urlpatterns = [
     path('exams/get/', teacher_views.getExamAPIView.as_view()),  
     path('answers/', student_views.StudentAnswersAPIView.as_view()),
     path('results/', student_views.MarksGetAPIView.as_view()),
+    path('admin-add-teachers/', teacher_views.TeacherCredAPIView.as_view())
 ]

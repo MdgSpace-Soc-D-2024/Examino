@@ -23,4 +23,11 @@ class getExamAPIView(APIView):
         data = serializer.data
         #logger.info(data)
         return Response(data)
+class TeacherCredAPIView(APIView):
+    def post(self, request):
+        serializer = TeacherCredSerializer(data = request.data)
+        if serializer.is_valid():
+            data = serializer.save()
+            return Response({"message": "Teacher added successfully"}, status= status.HTTP_201_CREATED)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 

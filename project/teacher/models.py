@@ -5,9 +5,9 @@ from admin_app.models import *
 #from project.settings import AUTH_USER_MODEL
 
 class TeacherCred(models.Model):
-    username = models.ForeignKey(UserNew, on_delete=models.CASCADE)
+    username = models.CharField(max_length = 100)
     institute = models.ForeignKey(Admin, on_delete=models.CASCADE)
-    
+    courses = models.CharField(max_length=32)
 
 
 class Exams(models.Model):

@@ -1,11 +1,14 @@
 const loginApiUrl = "http://localhost:8000/api/login/"
 const gotoregisterlink = document.getElementById('goToRegister')
-const AUTH_KEY = 'auth_token';
-const is_admin = false
+const AUTH_KEY = 'AUTH_KEY';
+const is_admin = 'is_admin';
 gotoregisterlink.addEventListener('click', function () {
     // Navigate to the register page
     window.location.href = 'register.html';
 });
+function setJSON(key, value) {
+    window.localStorage.setItem(key, value);
+}
 
 document.getElementById("loginModal").addEventListener("submit", async (event) => {event.preventDefault();
     const username = document.getElementById("loginUsername").value
@@ -27,7 +30,12 @@ document.getElementById("loginModal").addEventListener("submit", async (event) =
             console.log(response)
             const result = await response.json();
             alert('Login successful');
-            localStorage.setItem((AUTH_KEY, result.access), (is_admin, true));
+
+            setJSON('AUTH_KEY', result.access);
+            setJSON('is_admin', true);
+            //window.localStorage.setItem(AUTH_KEY, result.access);
+            //window.localStorage.setItem(is_admin, true)
+            //
             window.location.href = 'admin.html'
         } else {
             const errorData = await response.json();

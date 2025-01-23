@@ -1,6 +1,23 @@
 const getexamlink = "http://localhost:8000/api/exams/get/";
 const postanswerslink = "http://localhost:8000/api/answers/";
-
+//function getJSON(key) {
+//    return JSON.parse(window.localStorage.getItem(key));
+//}
+//function clearJSON() {
+//    window.localStorage.clear();
+//}
+//
+//
+//
+//document.addEventListener('DOMContentLoaded', () => {
+//    const AUTH_KEY = JSON.stringify(getJSON('AUTH_KEY'));
+//    const IS_STUDENT = getJSON('is_student');
+//    
+//    if (!AUTH_KEY || IS_STUDENT !== true) {
+//        alert('Access denied. Please log in as a student.');
+//        window.location.href = 'login-student.html'; // Redirect to login page
+//    }
+//});
 document.addEventListener("DOMContentLoaded", async () => {
     try {
         const params = new URLSearchParams(window.location.search);

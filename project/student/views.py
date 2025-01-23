@@ -69,13 +69,13 @@ def checkanswer():
 checkanswer()
 
 class MarksGetAPIView(APIView):
+    marks_list = checkanswer()
+    marks_st = marks_list[0]
+    courses = marks_list[1]
     def get(self, request):
-        marks_list = checkanswer()
-        marks_st = marks_list[0]
-        courses = marks_list[1]
         student_marks = StudentMarks(
-            marks = marks_st,
-            courses = courses
+            marks = self.marks_st,
+            courses = self.courses
         )
         student_marks.save()
         marks = StudentMarks.objects.all()

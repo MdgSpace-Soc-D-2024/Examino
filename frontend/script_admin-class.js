@@ -6,6 +6,24 @@ const showClasses = document.getElementById("showClasses");
 const classgetApiUrl = "http://localhost:8000/api/admin-class/get/"
 const classpostApiUrl = "http://localhost:8000/api/admin-class/post/"
 
+function getJSON(key) {
+    return JSON.parse(window.localStorage.getItem(key));
+}
+function clearJSON() {
+    window.localStorage.clear();
+}
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const AUTH_KEY = JSON.stringify(getJSON('AUTH_KEY'));
+    const IS_ADMIN = getJSON('is_admin');
+    
+    if (!AUTH_KEY || IS_ADMIN !== true) {
+        alert('Access denied. Please log in as an admin.');
+        window.location.href = 'login.html'; // Redirect to login page
+    }
+});
 
 async function fetchClasses() {
     try {

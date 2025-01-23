@@ -17,6 +17,26 @@ const admininfoApiUrl = "http://localhost:8000/api/admin-info/"
 //        body: JSON.stringify({institute, address, phone, email}),
 //    });
 //});
+
+function getJSON(key) {
+    return JSON.parse(window.localStorage.getItem(key));
+}
+function clearJSON() {
+    window.localStorage.clear();
+}
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const AUTH_KEY = JSON.stringify(getJSON('AUTH_KEY'));
+    const IS_ADMIN = getJSON('is_admin');
+    
+    if (!AUTH_KEY || IS_ADMIN !== true) {
+        alert('Access denied. Please log in as an admin.');
+        window.location.href = 'login.html'; // Redirect to login page
+    }
+});
+
 document.getElementById('form-admin-info').addEventListener('submit', async function (event) {
     event.preventDefault();
 

@@ -91,3 +91,8 @@ class StudentMarksSerializer(serializers.Serializer):
     class Meta:
         model = StudentMarks
         fields = ['marks', 'courses']
+
+class TeacherCredSerializer(serializers.Serializer):
+    class Meta:
+        model = TeacherCred
+        fields = ['username', 'institute', 'courses']
