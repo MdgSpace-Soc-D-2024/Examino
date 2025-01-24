@@ -6,9 +6,13 @@ from admin_app.models import *
 
 class TeacherCred(models.Model):
     username = models.CharField(max_length = 100)
+    email = models.EmailField()
     institute = models.ForeignKey(Admin, on_delete=models.CASCADE)
     courses = models.CharField(max_length=32)
+    password = models.CharField(max_length = 100)
 
+    def __str__(self):
+        return self.username
 
 class Exams(models.Model):
     institute = models.ForeignKey(Admin, on_delete=models.CASCADE)

@@ -2,24 +2,22 @@ const teacherexamApiUrl = "http://localhost:8000/api/teacher-exam/"
 const classgetApiUrl = "http://localhost:8000/api/admin-class/get/"
 const coursegetApiUrl = "http://localhost:8000/api/admin-courses/get/"
 
-//function getJSON(key) {
-//    return JSON.parse(window.localStorage.getItem(key));
-//}
-//function clearJSON() {
-//    window.localStorage.clear();
-//}
-//
-//
-//
-//document.addEventListener('DOMContentLoaded', () => {
-//    const AUTH_KEY = JSON.stringify(getJSON('AUTH_KEY'));
-//    const IS_TEACHER = getJSON('is_teacher');
-//    
-//    if (!AUTH_KEY || IS_TEACHER !== true) {
-//        alert('Access denied. Please log in as a teacher.');
-//        window.location.href = 'login-teacher.html'; // Redirect to login page
-//    }
-//});
+function getJSON(key) {
+    return JSON.parse(window.localStorage.getItem(key));
+}
+function clearJSON() {
+    window.localStorage.clear();
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    const AUTH_KEY = JSON.stringify(getJSON('AUTH_KEY'));
+    const IS_TEACHER = getJSON('is_teacher');
+    
+    if (!AUTH_KEY || IS_TEACHER !== true) {
+        alert('Access denied. Please log in as a teacher.');
+        window.location.href = 'login-teacher.html'; // Redirect to login page
+    }
+});
 
 document.addEventListener("DOMContentLoaded", () => {
   async function fetchClasses() {

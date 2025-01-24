@@ -4,6 +4,8 @@ from admin_app.models import *
 from teacher.models import *
 from student.models import *
 
+import string
+import secrets
 import json
 #from django.contrib.auth.models import User
 #from django.contrib.auth import get_user_model
@@ -24,11 +26,14 @@ class LoginSerializer(serializers.Serializer):
     username = serializers.CharField()
     password = serializers.CharField()
 
-class UserTypeSerializer(serializers.ModelSerializer):
+#class UserTypeSerializer(serializers.ModelSerializer):
+#    class Meta:
+#        model = UserType
+#        fields = ['username', 'type_of']
+class LoginTeacherSerializer(serializers.ModelSerializer):
     class Meta:
-        model = UserType
-        fields = ['username', 'type_of']
-
+        model = TeacherCred
+        fields = ['username', 'password']
     
 class AdminSerializer(serializers.ModelSerializer):
     class Meta:
@@ -79,7 +84,21 @@ class StudentCredSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = StudentCred
-        fields = ['username', 'institute', 'classes']
+        fields = ['username', 'email', 'institute', 'classes']
+
+    def create(self, validated_data):
+        def generate_password(length=12):
+            alphabet = string.ascii_letters + string.digits + string.punctuation
+            password = ''.join(secrets.choice(alphabet) for _ in range(length))
+            return password
+
+        password = generate_password()
+
+        student = StudentCred.objects.create(**validated_data)
+        student.password = password
+        student.save()
+
+        return student
         
 class StudentAnswersSerializer(serializers.ModelSerializer):
 
@@ -87,12 +106,33 @@ class StudentAnswersSerializer(serializers.ModelSerializer):
         model = StudentAnswers
         fields = ['courses', 'answers']
 
-class StudentMarksSerializer(serializers.Serializer):
+class StudentMarksSerializer(serializers.ModelSerializer):
     class Meta:
         model = StudentMarks
         fields = ['marks', 'courses']
 
-class TeacherCredSerializer(serializers.Serializer):
+class TeacherCredSerializer(serializers.ModelSerializer):
     class Meta:
         model = TeacherCred
-        fields = ['username', 'institute', 'courses']
+        fields = ['username', 'email', 'institute', 'courses']
+   
+    def create(self, validated_data):
+        def generate_password(length=12):
+            alphabet = string.ascii_letters + string.digits + string.punctuation
+            password = ''.join(secrets.choice(alphabet) for _ in range(length))
+            return password
+
+        password = generate_password()
+
+        teacher = TeacherCred.objects.create(**validated_data)
+        teacher.password = password
+        teacher.save()
+
+
+        #send_mail(
+        #    subject="Your Login Credentials",
+        #    message=f"Hello {teacher.username},\n\nYour login credentials are:\nUsername: {teacher.username}\nPassword: {password}.",
+        #    from_email="dhruvi.purohit06@gmail.com",
+        #    recipient_list=[teacher.email],
+        #)
+        return teacher

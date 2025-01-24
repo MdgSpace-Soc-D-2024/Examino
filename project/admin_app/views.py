@@ -47,14 +47,7 @@ class InstituteCoursesPOSTAPIView(APIView):
             return Response({"message": "Course added successfully"}, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
-class StudentsCredAPIView(APIView):
-    def post(self, request):
-        serializer = StudentCredSerializer(data=request.data)
-        
-        if serializer.is_valid():
-            data = serializer.save()
-            return Response({'message': 'Student added successfully'}, status=status.HTTP_201_CREATED)
-        return Response('error', status=status.HTTP_400_BAD_REQUEST)
+
     
       
 

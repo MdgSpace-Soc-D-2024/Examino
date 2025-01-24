@@ -8,11 +8,10 @@ from admin_app.models import *
 
 class StudentCred(models.Model):
     username = models.CharField(max_length=100)
-    #name = models.CharField(max_length=100)
-    #roll_number = models.PositiveIntegerField(unique=True, blank=True, null=True)
+    email = models.EmailField(unique=True)
     institute = models.ForeignKey(Admin, on_delete=models.CASCADE)
-    #courses = models.ManyToManyField(In, related_name='students')
     classes = models.CharField(max_length=50)
+    password = models.CharField(max_length=100)
 
     def __str__(self):
         return self.username

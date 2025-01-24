@@ -1,6 +1,9 @@
 const linktostudenthome = document.getElementById('studentHome')
 const linktogiveexams = document.getElementById('exams')
 const linktoseeresults = document.getElementById('results')
+const btnresults = document.getElementById('resultsbtn')
+const btnexam = document.getElementById('examsbtn')
+
 
 //function getJSON(key) {
 //    return JSON.parse(window.localStorage.getItem(key));
@@ -29,8 +32,18 @@ if (linktogiveexams!=null) {
         window.location.href = 'student-exam.html';
     });
 }
-
-
+if (btnexam!=null) {
+    btnexam.addEventListener('click', function () {
+        window.location.href = 'student-exam.html';
+    });
+}
+if (linktoseeresults!=null) {
 linktoseeresults.addEventListener('click', function () {
     window.location.href = 'student-result.html';
 });
+}
+if (btnresults!=null) {
+    btnresults.addEventListener('click', function () {
+        window.location.href = 'student-result.html';
+    });
+}

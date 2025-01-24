@@ -1,5 +1,5 @@
 const coursegetApiUrl = "http://localhost:8000/api/admin-courses/get/"
-const addstudentApiUrl = "http://localhost:8000/api/admin-add-teachers/"
+const addteacherApiUrl = "http://localhost:8000/api/admin-add-teachers/"
 
 function getJSON(key) {
     return JSON.parse(window.localStorage.getItem(key));
@@ -8,13 +8,14 @@ function clearJSON() {
     window.localStorage.clear();
 }
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', (event) => {
+    event.preventDefault();
     const AUTH_KEY = JSON.stringify(getJSON('AUTH_KEY'));
     const IS_ADMIN = getJSON('is_admin');
     
     if (!AUTH_KEY || IS_ADMIN !== true) {
-        alert('Access denied. Please log in as a teacher.');
-        window.location.href = 'login-teacher.html'; // Redirect to login page
+        alert('Access denied. Please log in as an admin.');
+        window.location.href = 'login.html'; // Redirect to login page
     }
 });
 
@@ -38,28 +39,31 @@ async function fetchCourses() {
 
 fetchCourses();
 
-document.getElementById('teacherFormFields').addEventListener('submit', async (event) => {event.preventDefault();
+document.getElementById('teacherFormFields').addEventListener('submit', async (event) => {
+    event.preventDefault();
     const username = document.getElementById('username').value;
+    const email = document.getElementById('email').value
     const institute = document.getElementById('institute').value;
     const courses = document.getElementById('courseDropdown').value;
 
     // Example form submission to Django backend
     try{
-        const response = await fetch(addstudentApiUrl, {
+        const response = await fetch(addteacherApiUrl, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify({ username: username, institute: 1, classes: courses }),
+            body: JSON.stringify({ username: username, email: email, institute: 1, courses: courses }),
         });
-        if (response.ok) {
-            const result = await response.json();
-            alert('Student added successfully')
-            document.getElementById('studentFormFields').reset();
-        } else {
+        if (!response.ok) {
             const errorData = await response.json();
             console.error("Adding error:", errorData);
             alert("Error during adding. Check console for details.")
+            
+        } else {
+            const result = await response.json();
+            alert('Teacher added successfully')
+            document.getElementById('teacherFormFields').reset();
 
         }
     } catch(error) {

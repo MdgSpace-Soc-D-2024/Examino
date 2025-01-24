@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin - Add Students</title>
+    <title>Admin - Add Teachers</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         body {
@@ -39,31 +39,35 @@
 <body>
 
 <div class="container">
-    <h2 class="text-center mb-4">Admin Portal - Add Students</h2>
+    <h2 class="text-center mb-4">Admin Portal - Add Teachers</h2>
     
     <!-- Add Student Button -->
     <div class="text-center add-student-btn">
-        <button id="addStudentBtn" class="btn btn-primary">Add Student</button>
+        <button id="addTeacherBtn" class="btn btn-primary">Add Teacher</button>
     </div>
     
     <!-- Student Form (Initially Hidden) -->
-    <div id="studentForm" class="d-none">
-        <form id="studentFormFields">
+    <div id="teacherForm" class="d-none">
+        <form id="teacherFormFields">
             <div class="form-row">
                 <div class="form-group">
-                    <label for="username">Student Username:</label>
-                    <input type="text" class="form-control" id="username" placeholder="Enter student username" required>
+                    <label for="username">Teacher Username:</label>
+                    <input type="text" class="form-control" id="username" placeholder="Enter teacher username" required>
                 </div>
-                
+                <div class="form-group">
+                    <label for="email">Teacher Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter teacher email" required>
+                </div>
                 <div class="form-group">
                     <label for="institute">Institute Name:</label>
                     <input type="text" class="form-control" id="institute" value="IITR" readonly>
                 </div>
+                
 
                 <div class="form-group">
-                    <label for="class">Class:</label>
-                    <select class="form-control" id="classDropdown" required>
-                        <option value="">Select a class</option>
+                    <label for="course">Course:</label>
+                    <select class="form-control" id="courseDropdown" required>
+                        <option value="">Select a course</option>
                         <!-- Options will be populated by JavaScript -->
                     </select>
                 </div>
@@ -75,7 +79,7 @@
 </div>
 
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-<script src="script_admin-add-students.js"></script>
+<script src="script_add-teachers.js"></script>
 
 </body>
 </html>

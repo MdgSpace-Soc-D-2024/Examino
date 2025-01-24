@@ -12,12 +12,8 @@ function clearJSON() {
 }
 
 
-//const AUTH_KEY = 'auth_token'
-//const IS_ADMIN = false
 document.addEventListener('DOMContentLoaded', async() => {
-    //const AUTH_KEY = window.localStorage.getItem(AUTH_KEY)
-    //const IS_ADMIN = window.localStorage.getItem(is_admin)
-    
+
     const AUTH_KEY = getJSON('AUTH_KEY')
     const IS_ADMIN = getJSON('is_admin')
     
@@ -35,14 +31,14 @@ document.addEventListener('DOMContentLoaded', async() => {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
-                        //'Authorization': `Bearer ${AUTH_KEY}`, // If API expects a Bearer token
+                        
                     },
                     body: JSON.stringify({ AUTH_KEY }),
                 });
                 if (response.ok) {
                     const data = await response.json();
                     console.log(data)
-                    usernameElement.textContent = data.username || 'Admin'; // Display username or fallback to 'Admin'
+                    usernameElement.textContent = data.username || 'Admin'; 
                 } else {
                     console.error('Failed to fetch username');
                 }
@@ -61,21 +57,21 @@ if (gotoadmininfo) {
 }
 if (addClasses) {
     addClasses.addEventListener("click", () => {
-        window.location.href = 'admin-class.html';
+        window.location.href = 'add-class.html';
     })
     
 }
 if (addCourses) {
     addCourses.addEventListener("click", () => {
-        window.location.href = 'admin-courses.html';
+        window.location.href = 'add-courses.html';
     })
     
 }
 
 function logout() {
-    clearJSON(); // Clear all local storage data
+    clearJSON(); 
     alert('Logged out successfully');
-    window.location.href = 'login.html'; // Redirect to login page
+    window.location.href = './home.html'; 
 }
 
 
@@ -87,10 +83,6 @@ if (logoutLink) {
     });
 }
 
-
-//function isAuthenticated() {
-//    return (AUTH_KEY !== null) && (IS_ADMIN === true);
-//}
 
 
 
