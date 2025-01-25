@@ -41,6 +41,7 @@ class TeacherCredAPIView(APIView):
         serializer = TeacherCredSerializer(data = request.data)
         if serializer.is_valid():
             teacher = serializer.save()
+            refresh = RefreshToken.for_user(teacher)
             #logger.info(teacher)
             send_mail(
             subject="Your Login Credentials",

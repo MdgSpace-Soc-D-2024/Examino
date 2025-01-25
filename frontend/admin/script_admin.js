@@ -57,7 +57,7 @@ if (gotoadmininfo) {
 }
 if (addClasses) {
     addClasses.addEventListener("click", () => {
-        window.location.href = 'add-class.html';
+        window.location.href = 'add-classes.html';
     })
     
 }
@@ -71,7 +71,7 @@ if (addCourses) {
 function logout() {
     clearJSON(); 
     alert('Logged out successfully');
-    window.location.href = './home.html'; 
+    window.location.href = '../home.html'; 
 }
 
 

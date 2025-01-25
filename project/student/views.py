@@ -16,9 +16,11 @@ logger = logging.getLogger(__name__)
 class StudentCredAPIView(APIView):
     def post(self, request):
         serializer = StudentCredSerializer(data = request.data)
+
         if serializer.is_valid():
             student = serializer.save()
-            
+            refresh = RefreshToken.for_user(student)
+
             send_mail(
             subject="Your Login Credentials",
             message=f"Hello {student.username},\n\nYour login credentials are:\n Student Username: {student.username}\nPassword: {student.password}. \n\n Regards, \n {student.institute}",
@@ -38,12 +40,9 @@ class LoginStudentAPIView(APIView):
                 password = serializer.data["password"]
                 
                 user = authenticate(username=username, password=password)
-                if user is not None:
-                    
+                if user is not None:               
                     refresh = RefreshToken.for_user(user)
-
                     return Response({'refresh': str(refresh), 'access': str(refresh.access_token)}, status=status.HTTP_200_OK)
-                    
                 else:
                     return Response({"error": "Invalid credentials"}, status=status.HTTP_401_UNAUTHORIZED)
             else:

@@ -13,15 +13,20 @@ import json
 #User = get_user_model()
     
 class RegisterSerializer(serializers.ModelSerializer):
-    #password = serializers.CharField(write_only=True)
-
     class Meta:
         model = UserNew
         fields = ['username', 'password']
 
-    #def create(self, validated_data):
-    #    return UserNew.objects.create_user(**validated_data)
+    def create(self, validated_data):
+       
+        user = UserNew(
+            username=validated_data['username']
+        )
+        user.set_password(validated_data['password'])  
+        user.save()
+        return user
 
+   
 class LoginSerializer(serializers.Serializer):
     username = serializers.CharField()
     password = serializers.CharField()
