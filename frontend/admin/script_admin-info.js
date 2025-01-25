@@ -38,7 +38,7 @@ document.getElementById('form-admin-info').addEventListener('submit', async func
         const response = await fetch(admininfoApiUrl, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ institute, address, email, phone })
+            body: JSON.stringify({ AUTHKEY, institute, address, email, phone })
         });
 
         if (response.ok) {

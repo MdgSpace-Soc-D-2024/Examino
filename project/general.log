@@ -26079,3 +26079,4 @@ django.db.utils.OperationalError: no such column: admin_app_admin.username_id
 2025-01-25 21:33:41,900 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
 2025-01-25 21:34:31,079 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\teacher\models.py changed, reloading.
 2025-01-25 21:34:32,142 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-26 00:55:20,632 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
