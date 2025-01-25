@@ -12,11 +12,18 @@ document.addEventListener('DOMContentLoaded', (event) => {
     event.preventDefault();
     const AUTH_KEY = JSON.stringify(getJSON('AUTH_KEY'));
     const IS_ADMIN = getJSON('is_admin');
-    
+    const institute = getJSON('institute');
+
     if (!AUTH_KEY || IS_ADMIN !== true) {
         alert('Access denied. Please log in as an admin.');
-        window.location.href = 'login.html'; // Redirect to login page
+        window.location.href = 'login.html';
     }
+    else if (!institute) {
+        alert('Give institute details first.')
+        window.location.href = 'admin-info.html';
+    }
+         
+    
 });
 
 document.getElementById('addTeacherBtn').addEventListener('click', function() {
@@ -30,10 +37,18 @@ async function fetchCourses() {
     const courses_data = await response_course.json();
     console.log(courses_data)
     const courseDropdown = document.getElementById('courseDropdown');
+    const n = 0;
     courses_data.forEach(crs => {
-        const option = document.createElement('option');
-        option.textContent = crs.courses;
-        courseDropdown.appendChild(option);
+        if (crs.institute == institute) {
+            const option = document.createElement('option');
+            option.textContent = crs.courses;
+            courseDropdown.appendChild(option);
+            n+=1
+        }
+    if (n == 0){
+        alert('Add courses first.')
+        window.location.href = 'add-courses.html'
+    }
     });
 };
 
@@ -43,7 +58,7 @@ document.getElementById('teacherFormFields').addEventListener('submit', async (e
     event.preventDefault();
     const username = document.getElementById('username').value;
     const email = document.getElementById('email').value
-    const institute = document.getElementById('institute').value;
+    const institute = getJSON('institute');
     const courses = document.getElementById('courseDropdown').value;
 
     // Example form submission to Django backend
@@ -53,7 +68,7 @@ document.getElementById('teacherFormFields').addEventListener('submit', async (e
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify({ username: username, email: email, institute: 1, courses: courses }),
+            body: JSON.stringify({ username: username, email: email, institute: institute, courses: courses }),
         });
         if (!response.ok) {
             const errorData = await response.json();

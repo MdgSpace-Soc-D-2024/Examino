@@ -1,22 +1,9 @@
 const admininfoApiUrl = "http://localhost:8000/api/admin-info/"
 
-//document.getElementById("form-admin-info").addEventListener("submit", async (event) => {event.preventDefault();
-//    const institute = document.getElementById("institute").value
-//    const address = document.getElementById("address").value
-//    const phone = document.getElementById("phone").value
-//    const email = document.getElementById("email").value
-//    
-//    const headers = {'Content-Type':'application/json',
-//        'Access-Control-Allow-Origin':'*',
-//        'Access-Control-Allow-Methods':'POST,PATCH,OPTIONS'}
-//
-//    const response = await fetch(admininfoApiUrl, {
-//        statusCode: 200, 
-//        method: "POST",
-//        headers: headers,
-//        body: JSON.stringify({institute, address, phone, email}),
-//    });
-//});
+
+function setJSON(key, value) {
+    window.localStorage.setItem(key, value);
+}
 
 function getJSON(key) {
     return JSON.parse(window.localStorage.getItem(key));
@@ -44,6 +31,8 @@ document.getElementById('form-admin-info').addEventListener('submit', async func
     const address = document.getElementById("address").value
     const phone = document.getElementById("phone").value
     const email = document.getElementById("email").value
+
+    setJSON('institute', institute)
 
     try {
         const response = await fetch(admininfoApiUrl, {
