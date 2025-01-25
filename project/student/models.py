@@ -2,9 +2,6 @@ from django.db import models
 from home.models import *
 from django.contrib.auth.models import User
 from admin_app.models import *
-#from teacher.models import TeacherCred
-#from project.settings import *
-#from project import settings
 
 class StudentCred(models.Model):
     username = models.CharField(max_length=100)
@@ -17,16 +14,14 @@ class StudentCred(models.Model):
         return self.username
     
 class StudentAnswers(models.Model):
+    username = models.ForeignKey(StudentCred, on_delete=models.CASCADE)
     courses = models.CharField(max_length=50)
     answers = models.TextField()
 
 class StudentMarks(models.Model):
+    username = models.ForeignKey(StudentCred, on_delete=models.CASCADE)
     marks = models.IntegerField()
     courses = models.CharField(max_length=50)
 
-    
-#class Solutions(models.Model):
-#    student = models.ForeignKey(StudentCred, on_delete=models.CASCADE)
-#    answers = models.TextField
-#    classes = StudentCred.objects.filter(username = student).classes
+
     

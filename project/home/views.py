@@ -48,12 +48,6 @@ class LoginAPIView(APIView):
         except:
             pass
             
-             
-
-#from django.contrib.auth.models import User
-
-#Example data.
-#access_token_str = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX3BrIjoxLCJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiY29sZF9zdHVmZiI6IuKYgyIsImV4cCI6MTIzNDU2LCJqdGkiOiJmZDJmOWQ1ZTFhN2M0MmU4OTQ5MzVlMzYyYmNhOGJjYSJ9.NHlztMGER7UADHZJlxNG0WSi22a2KaYSfd1S-AuT7lU'
 
 def get_user_simplejwt(access_token_str):
     access_token_obj = AccessToken(access_token_str)

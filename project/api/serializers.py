@@ -3,7 +3,9 @@ from home.models import *
 from admin_app.models import *
 from teacher.models import *
 from student.models import *
-
+from rest_framework_simplejwt.tokens import RefreshToken
+from rest_framework_simplejwt.tokens import AccessToken
+#from rest_framework.response import Response
 import string
 import secrets
 import json
@@ -31,10 +33,7 @@ class LoginSerializer(serializers.Serializer):
     username = serializers.CharField()
     password = serializers.CharField()
 
-#class UserTypeSerializer(serializers.ModelSerializer):
-#    class Meta:
-#        model = UserType
-#        fields = ['username', 'type_of']
+
 class LoginTeacherSerializer(serializers.ModelSerializer):
     class Meta:
         model = TeacherCred
@@ -107,14 +106,35 @@ class StudentCredSerializer(serializers.ModelSerializer):
         
 class StudentAnswersSerializer(serializers.ModelSerializer):
 
+    AUTHKEY = serializers.CharField()
     class Meta:
         model = StudentAnswers
-        fields = ['courses', 'answers']
+        fields = ['AUTHKEY', 'courses', 'answers']
+
+    def create(self, validated_data):   
+        def get_user_simplejwt(access_token_str):
+            access_token_obj = AccessToken(access_token_str)
+            username=access_token_obj['username']
+            #user=StudentCred.objects.get(username=username)
+            content =  {'user':username}
+            return content
+        
+        username = get_user_simplejwt(validated_data['AUTHKEY']).get('user')
+        student = StudentAnswers.objects.create(**validated_data)
+        student.username = username
+        student.save()
+
+        return student
+    
+
+
 
 class StudentMarksSerializer(serializers.ModelSerializer):
+    #AUTHKEY = serializers.CharField()
     class Meta:
         model = StudentMarks
         fields = ['marks', 'courses']
+
 
 class TeacherCredSerializer(serializers.ModelSerializer):
     class Meta:
@@ -133,11 +153,14 @@ class TeacherCredSerializer(serializers.ModelSerializer):
         teacher.password = password
         teacher.save()
 
-
-        #send_mail(
-        #    subject="Your Login Credentials",
-        #    message=f"Hello {teacher.username},\n\nYour login credentials are:\nUsername: {teacher.username}\nPassword: {password}.",
-        #    from_email="dhruvi.purohit06@gmail.com",
-        #    recipient_list=[teacher.email],
-        #)
         return teacher
+    
+
+
+#class AuthCodeAPIView(APIView):
+#    def post(self, request):
+#        serializer = AuthCodeSerializer(data=request.data)
+#        if serializer.is_valid():
+#            content = get_user_simplejwt(serializer.data['AUTHKEY'])
+#            
+#            return Response(content)
