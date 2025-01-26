@@ -18,11 +18,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
         alert('Access denied. Please log in as an admin.');
         window.location.href = 'login.html';
     }
-    else if (AUTH_KEY && IS_ADMIN === true && !institute){
-        alert('Add institute data first')
-        window.location.href = 'admin-info.html'
-    }
-    
 });
 
 document.getElementById('addTeacherBtn').addEventListener('click', function() {

@@ -1,9 +1,11 @@
 const addClasses = document.getElementById("addClasses")
 const gotoadmininfo = document.getElementById("Dashboard")
 const addCourses = document.getElementById("addCourses")
-//const addClasses = document.getElementById("addClasses")
-const getusernamelink =  "http://localhost:8000/api/get-username/"
-
+const usernameElement = document.getElementById('username')
+const getusernamelink =  "http://localhost:8000/api/admin-info/get/"
+function setJSON(key, value){
+    window.localStorage.setItem(key, value)
+}
 function getJSON(key) {
     return JSON.parse(window.localStorage.getItem(key));
 }
@@ -11,41 +13,36 @@ function clearJSON() {
     window.localStorage.clear();
 }
 
-
-document.addEventListener('DOMContentLoaded', async() => {
-
-    const AUTH_KEY = getJSON('AUTH_KEY')
+document.addEventListener('DOMContentLoaded', async(event) => {
+    event.preventDefault();
+    const AUTHKEY = window.localStorage.getItem('AUTH_KEY')
     const IS_ADMIN = getJSON('is_admin')
     
-    if (!AUTH_KEY || IS_ADMIN !== true) {
+    if (!AUTHKEY || IS_ADMIN !== true) {
         alert('Access denied. Please log in as an admin.');
         window.location.href = 'login.html'; // Redirect to login page
-    }
-    else {
-        const usernameElement = document.getElementById('username');
-        const getUsernameURL = 'http://localhost:8000/api/get-username/';
-        if (AUTH_KEY && usernameElement) {
-            try {
-                console.log('abc')
-                const response = await fetch(getUsernameURL, {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                        
-                    },
-                    body: JSON.stringify({ AUTH_KEY }),
-                });
-                if (response.ok) {
-                    const data = await response.json();
-                    console.log(data)
-                    usernameElement.textContent = data.username || 'Admin'; 
-                } else {
-                    console.error('Failed to fetch username');
-                }
-            } catch (error) {
-                console.error('Error fetching username:', error);
+    } else {
+        console.log('hello')
+        try {
+            console.log('abc')
+            const response = await fetch(getusernamelink, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',   
+                },
+                body: JSON.stringify({AUTHKEY}),
+            });
+            if (response.ok) {
+                const data = await response.json();
+                console.log(data.institute)
+                usernameElement.textContent = 'Welcome, ' + data.username;
+                setJSON('institute', data.institute)
+            } else {
+                console.error('Failed to fetch username');
             }
-}   
+        } catch (error) {
+            console.error('Error fetching username:', error);
+        }
     }
 });
 

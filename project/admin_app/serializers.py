@@ -64,3 +64,10 @@ class InstituteCoursesSerializer(serializers.ModelSerializer):
         courses = InstituteCourses.objects.create(institute=institute, **validated_data)
         courses.save
         return courses
+    
+class AdminDataToFrontendSerializer(serializers.Serializer):
+    AUTHKEY = serializers.CharField()
+    
+class AdminDataUsernameSerializer(serializers.Serializer):
+    username = serializers.CharField()
+    institute = serializers.CharField()

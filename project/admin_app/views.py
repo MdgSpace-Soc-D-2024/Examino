@@ -48,8 +48,32 @@ class InstituteCoursesPOSTAPIView(APIView):
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 
-    
-      
+class AdminDataToFrontendAPIView(APIView):
+    def post(self, request):
+        serializer = AdminDataToFrontendSerializer(data = request.data)
+        if serializer.is_valid():  
+            AUTHKEY = serializer.data['AUTHKEY']
+            logger.info(AUTHKEY)
 
+            def get_user_simplejwt(token):
+                try:
+                    validated_token = AccessToken(token)
+                    user = JWTAuthentication().get_user(validated_token)
+                    logger.info(user)
+                    return user
+                except:
+                    raise "Authentication failed"
+
+            username = get_user_simplejwt(AUTHKEY)
+            try:
+                admin = Admin.objects.get(username=username)
+                institute = admin.institute
+            except:
+                institute = None
+            serializer = AdminDataUsernameSerializer({'username':username, 'institute':institute})
+            return Response(serializer.data)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+    
         
             
