@@ -8,6 +8,7 @@ choice = [
 ]
 class UserNew(User):
     pass
+
         
 class UserType(models.Model):
     username = models.ForeignKey(UserNew, on_delete=models.CASCADE)

@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from api.serializers import *
+from .serializers import *
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
@@ -8,6 +8,7 @@ import logging
 from home.models import *
 from rest_framework_simplejwt.tokens import RefreshToken
 from rest_framework_simplejwt.tokens import AccessToken
+
 #from .middlewares import auth, guest
 logger = logging.getLogger(__name__)
 class RegisterAPIView(APIView):
@@ -48,19 +49,9 @@ class LoginAPIView(APIView):
             pass
             
 
-def get_user_simplejwt(access_token_str):
-    access_token_obj = AccessToken(access_token_str)
-    username=access_token_obj['username']
-    user=UserNew.objects.get(username=username)
-    content =  {'user':username}
-    return Response(content)
 
-class AuthCodeAPIView(APIView):
-    def post(self, request):
-        serializer = AuthCodeSerializer(data=request.data)
-        if serializer.is_valid():
-            content = get_user_simplejwt(serializer.data['AUTHKEY'])
-            
-            return Response(content)
+
+
+
         
 

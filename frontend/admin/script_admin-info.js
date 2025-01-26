@@ -15,7 +15,7 @@ function clearJSON() {
 
 
 document.addEventListener('DOMContentLoaded', () => {
-    const AUTH_KEY = JSON.stringify(getJSON('AUTH_KEY'));
+    const AUTH_KEY = getJSON('AUTH_KEY');
     const IS_ADMIN = getJSON('is_admin');
     
     if (!AUTH_KEY || IS_ADMIN !== true) {
@@ -26,7 +26,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
 document.getElementById('form-admin-info').addEventListener('submit', async function (event) {
     event.preventDefault();
-
+    
+    const AUTHKEY = window.localStorage.getItem('AUTH_KEY');
+    //console.log(AUTH_KEY)
     const institute = document.getElementById("institute").value
     const address = document.getElementById("address").value
     const phone = document.getElementById("phone").value
@@ -35,17 +37,20 @@ document.getElementById('form-admin-info').addEventListener('submit', async func
     setJSON('institute', institute)
 
     try {
+        console.log('abc')
         const response = await fetch(admininfoApiUrl, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ AUTHKEY, institute, address, email, phone })
+            body: JSON.stringify({AUTHKEY, institute, address, email, phone })
         });
 
         if (response.ok) {
             const data = await response.json();
+            
             alert('successful');
         } else {
-            alert('Error submitting institute name.');
+            console.log('not hello')
+            alert('Error submitting institute details.');
         }
     } catch (error) {
         console.error('Error:', error);

@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from .models import *
-from api.serializers import *
+from .serializers import *
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
@@ -33,7 +33,7 @@ class StudentCredAPIView(APIView):
 class LoginStudentAPIView(APIView):
     def post(self, request):
         try:
-            serializer = LoginSerializer(data=request.data)
+            serializer = LoginStudentSerializer(data=request.data)
             
             if serializer.is_valid():
                 username = serializer.data["username"]

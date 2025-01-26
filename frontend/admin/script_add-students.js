@@ -7,14 +7,18 @@ function getJSON(key) {
 function clearJSON() {
     window.localStorage.clear();
 }
-
+const institute = null;
 document.addEventListener('DOMContentLoaded', () => {
     const AUTH_KEY = JSON.stringify(getJSON('AUTH_KEY'));
     const IS_ADMIN = getJSON('is_admin');
-    
+    const institute = getJSON('institute')
     if (!AUTH_KEY || IS_ADMIN !== true) {
         alert('Access denied. Please log in as an admin.');
         window.location.href = 'login.html'; // Redirect to login page
+    }
+    else if (AUTH_KEY && IS_ADMIN === true && !institute){
+        alert('Add institute data first')
+        window.location.href = 'admin-info.html'
     }
 });
 

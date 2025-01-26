@@ -1,12 +1,11 @@
 from django.shortcuts import render
 from rest_framework.views import APIView
 from teacher.models import *
-from api.serializers import *
+from .serializers import *
 from rest_framework.response import Response
 from rest_framework import status
 from django.contrib.auth import authenticate
 from rest_framework_simplejwt.tokens import RefreshToken
-from rest_framework_simplejwt.tokens import AccessToken
 from django.core.mail import send_mail
 
 import logging
@@ -15,8 +14,7 @@ logger = logging.getLogger(__name__)
 class LoginTeacherAPIView(APIView):
     def post(self, request):
         try:
-            serializer = LoginSerializer(data=request.data)
-            #logger.info("api-request-reached")
+            serializer = LoginTeacherSerializer(data=request.data)
             if serializer.is_valid():
                 username = serializer.data["username"]
                 password = serializer.data["password"]
@@ -42,7 +40,6 @@ class TeacherCredAPIView(APIView):
         if serializer.is_valid():
             teacher = serializer.save()
             refresh = RefreshToken.for_user(teacher)
-            #logger.info(teacher)
             send_mail(
             subject="Your Login Credentials",
             message=f"Hello {teacher.username},\n\nYour login credentials are:\n Teachern Username: {teacher.username}\nPassword: {teacher.password}.",
@@ -58,7 +55,6 @@ class ExamsAPIView(APIView):
     def post(self, request): 
         serializer = ExamsSerializer(data=request.data)
         if serializer.is_valid():
-            #logger.info('valid')
             data = serializer.save()
             return Response({"message": "Exam created successfully"}, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
@@ -68,5 +64,4 @@ class getExamAPIView(APIView):
         exams = Exams.objects.all()
         serializer = ExamsGetSerializer(exams, many=True)
         data = serializer.data
-        #logger.info(data)
         return Response(data)

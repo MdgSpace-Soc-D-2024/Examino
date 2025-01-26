@@ -7,7 +7,7 @@ function getJSON(key) {
 function clearJSON() {
     window.localStorage.clear();
 }
-
+const institute = null;
 document.addEventListener('DOMContentLoaded', (event) => {
     event.preventDefault();
     const AUTH_KEY = JSON.stringify(getJSON('AUTH_KEY'));
@@ -18,11 +18,10 @@ document.addEventListener('DOMContentLoaded', (event) => {
         alert('Access denied. Please log in as an admin.');
         window.location.href = 'login.html';
     }
-    else if (!institute) {
-        alert('Give institute details first.')
-        window.location.href = 'admin-info.html';
+    else if (AUTH_KEY && IS_ADMIN === true && !institute){
+        alert('Add institute data first')
+        window.location.href = 'admin-info.html'
     }
-         
     
 });
 
@@ -40,10 +39,11 @@ async function fetchCourses() {
     const n = 0;
     courses_data.forEach(crs => {
         if (crs.institute == institute) {
+            const n = n+1
             const option = document.createElement('option');
             option.textContent = crs.courses;
             courseDropdown.appendChild(option);
-            n+=1
+            
         }
     if (n == 0){
         alert('Add courses first.')
