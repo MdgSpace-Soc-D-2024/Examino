@@ -25684,3 +25684,8 @@ Traceback (most recent call last):
 django.db.utils.OperationalError: no such column: student_studentanswers.username_id
 2025-01-25 13:18:59,696 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\models.py changed, reloading.
 2025-01-25 13:19:00,789 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-26 17:24:32,822 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-26 17:24:54,223 (WARNING)- django.request- Not Found: /
+2025-01-26 17:25:32,187 (WARNING)- django.request- Unauthorized: /api/login-teacher/
+2025-01-26 17:51:14,227 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\teacher\views.py changed, reloading.
+2025-01-26 17:51:18,973 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader

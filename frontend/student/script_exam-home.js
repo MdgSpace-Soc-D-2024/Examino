@@ -6,8 +6,6 @@ const linktoseeexams = "http://localhost:8000/api/exams/get"
 //    window.localStorage.clear();
 //}
 //
-//
-//
 //document.addEventListener('DOMContentLoaded', () => {
 //    const AUTH_KEY = JSON.stringify(getJSON('AUTH_KEY'));
 //    const IS_STUDENT = getJSON('is_student');
