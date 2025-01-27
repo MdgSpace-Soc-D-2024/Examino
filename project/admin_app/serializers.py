@@ -13,13 +13,13 @@ import logging
 logger = logging.getLogger(__name__)
 
 def get_user_simplejwt(token):
-            try:
-                validated_token = AccessToken(token)
-                user = JWTAuthentication().get_user(validated_token)
-                logger.info(user)
-                return user
-            except:
-                raise "Authentication failed"
+    try:
+        validated_token = AccessToken(token)
+        user = JWTAuthentication().get_user(validated_token)
+        logger.info(user)
+        return user
+    except:
+        raise "Authentication failed"
             
 class AdminSerializer(serializers.ModelSerializer):
     AUTHKEY = serializers.CharField()

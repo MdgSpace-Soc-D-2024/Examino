@@ -38,18 +38,12 @@ class InstituteCoursesGETAPIView(APIView):
         serializer = AUTHKEYSerializer(data = request.data)
         if serializer.is_valid():  
             AUTHKEY = serializer.data['AUTHKEY']
-            logger.info(AUTHKEY)
+            #logger.info(AUTHKEY)
             username = get_user_simplejwt(AUTHKEY)
-            try:
-                admin = Admin.objects.get(username=username)
-                institute = admin.institute
-                logger.info(institute)
-                courses = InstituteCourses.objects.get(institute=institute)
-                logger.info(courses)
-            except:
-                institute = None
-                courses = None
-            serializer = InstituteGETCoursesSerializer({'institute':institute, 'courses': courses}, many=True)
+            institute = Admin.objects.get(username=username)
+            courses = InstituteCourses.objects.get(institute=institute)
+            logger.info(institute)
+            serializer = InstituteGETCoursesSerializer({'institute': institute, 'courses': courses.courses}, many=True)
             return Response(serializer.data)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
         
@@ -66,7 +60,7 @@ def get_user_simplejwt(token):
     try:
         validated_token = AccessToken(token)
         user = JWTAuthentication().get_user(validated_token)
-        logger.info(user)
+        #logger.info(user)
         return user
     except:
         raise "Authentication failed"
