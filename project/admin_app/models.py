@@ -16,6 +16,8 @@ class Admin(models.Model):
 class InstituteClass(models.Model):
     institute = models.ForeignKey(Admin, on_delete=models.CASCADE)
     classes = models.CharField(max_length=50)
+
+
     
 class InstituteCourses(models.Model):
     institute = models.ForeignKey(Admin, on_delete=models.CASCADE)

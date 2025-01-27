@@ -3,6 +3,7 @@ const gotoadmininfo = document.getElementById("Dashboard")
 const addCourses = document.getElementById("addCourses")
 const usernameElement = document.getElementById('username')
 const getusernamelink =  "http://localhost:8000/api/admin-info/get/"
+
 function setJSON(key, value){
     window.localStorage.setItem(key, value)
 }
