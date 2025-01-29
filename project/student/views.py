@@ -38,13 +38,15 @@ class LoginStudentAPIView(APIView):
             if serializer.is_valid():
                 username = serializer.data["username"]
                 password = serializer.data["password"]
-                
-                user = authenticate(username=username, password=password)
-                if user is not None:               
-                    refresh = RefreshToken.for_user(user)
-                    return Response({'refresh': str(refresh), 'access': str(refresh.access_token)}, status=status.HTTP_200_OK)
-                else:
-                    return Response({"error": "Invalid credentials"}, status=status.HTTP_401_UNAUTHORIZED)
+                students = StudentCred.objects.all()
+
+                for student in students:
+                    if username == student.username:
+                        student_req = StudentCred.objects.filter(username = username).first()
+                        if password == student_req.password:
+                            return Response({'message': 'Login Successful', 'username': username}, status = status.HTTP_200_OK)
+                        return Response({"error": "Invalid credentials"}, status=status.HTTP_401_UNAUTHORIZED)
+                    return Response({'message': "Username doesn't exist"}, status=status.HTTP_401_UNAUTHORIZED)
             else:
                 return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)       
         except:

@@ -3,6 +3,7 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
 from .models import *
+from teacher.models import *
 from .serializers import *
 import logging
 import json
@@ -25,6 +26,7 @@ class InstituteClassPOSTAPIView(APIView):
             cred = serializer.save()
             return Response({"message": "Class added successfully"}, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
     
     
 class InstituteClassesGETAPIView(APIView):
@@ -37,10 +39,10 @@ class InstituteClassesGETAPIView(APIView):
             classes = InstituteClass.objects.filter(institute=institute)
 
             classList = json.dumps([class_data.classes for class_data in classes])
-            print(type(classList))
+           # print(type(classList))
 
             serializer = InstituteGETClassesSerializer(data = {'institute': institute.institute, 'classes': classList})
-            print(serializer)
+            #print(serializer)
             
             if serializer.is_valid():
                 return Response(serializer.data, status=status.HTTP_200_OK)
@@ -56,7 +58,6 @@ class InstituteCoursesGETAPIView(APIView):
             institute = Admin.objects.get(username=username)
             courses = InstituteCourses.objects.filter(institute=institute)
             courseList = json.dumps([course.courses for course in courses])
-            print(type(courseList))
 
             serializer = InstituteGETCoursesSerializer(data = {'institute': institute.institute, 'courses': courseList})
             
@@ -73,8 +74,6 @@ class InstituteCoursesPOSTAPIView(APIView):
             return Response({"message": "Course added successfully"}, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
     
-
-
 class AdminDataToFrontendAPIView(APIView):
     def post(self, request):
         serializer = AUTHKEYSerializer(data = request.data)

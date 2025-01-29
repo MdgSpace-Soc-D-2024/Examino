@@ -31504,3 +31504,102 @@ AttributeError: 'NoneType' object has no attribute 'split'
 2025-01-29 18:11:22,485 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
 2025-01-29 18:11:24,362 (INFO)- admin_app.serializers- dhruvi
 2025-01-29 18:11:25,694 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 21:25:13,418 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-29 21:25:39,873 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDMwMTM4LCJpYXQiOjE3MzgxNjYxMzgsImp0aSI6IjU4Mjg1ZDlhYjczNTRiOTM5N2ZhMTk4NzU5ZWVmY2MyIiwidXNlcl9pZCI6MTJ9.9d9qQZhDgwQxYL1kXP0_Bg2uFe5R4kgRn6DLPgO_tdo
+2025-01-29 21:25:39,883 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 21:25:58,776 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDMwMTM4LCJpYXQiOjE3MzgxNjYxMzgsImp0aSI6IjU4Mjg1ZDlhYjczNTRiOTM5N2ZhMTk4NzU5ZWVmY2MyIiwidXNlcl9pZCI6MTJ9.9d9qQZhDgwQxYL1kXP0_Bg2uFe5R4kgRn6DLPgO_tdo
+2025-01-29 21:25:58,779 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 21:25:58,987 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\teacher\views.py changed, reloading.
+2025-01-29 21:26:00,241 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-29 21:26:01,327 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDMwMTM4LCJpYXQiOjE3MzgxNjYxMzgsImp0aSI6IjU4Mjg1ZDlhYjczNTRiOTM5N2ZhMTk4NzU5ZWVmY2MyIiwidXNlcl9pZCI6MTJ9.9d9qQZhDgwQxYL1kXP0_Bg2uFe5R4kgRn6DLPgO_tdo
+2025-01-29 21:26:01,347 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 21:26:01,865 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDMwMTM4LCJpYXQiOjE3MzgxNjYxMzgsImp0aSI6IjU4Mjg1ZDlhYjczNTRiOTM5N2ZhMTk4NzU5ZWVmY2MyIiwidXNlcl9pZCI6MTJ9.9d9qQZhDgwQxYL1kXP0_Bg2uFe5R4kgRn6DLPgO_tdo
+2025-01-29 21:26:01,867 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 21:26:02,208 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDMwMTM4LCJpYXQiOjE3MzgxNjYxMzgsImp0aSI6IjU4Mjg1ZDlhYjczNTRiOTM5N2ZhMTk4NzU5ZWVmY2MyIiwidXNlcl9pZCI6MTJ9.9d9qQZhDgwQxYL1kXP0_Bg2uFe5R4kgRn6DLPgO_tdo
+2025-01-29 21:26:02,214 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 21:26:02,514 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDMwMTM4LCJpYXQiOjE3MzgxNjYxMzgsImp0aSI6IjU4Mjg1ZDlhYjczNTRiOTM5N2ZhMTk4NzU5ZWVmY2MyIiwidXNlcl9pZCI6MTJ9.9d9qQZhDgwQxYL1kXP0_Bg2uFe5R4kgRn6DLPgO_tdo
+2025-01-29 21:26:02,530 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 21:26:02,994 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDMwMTM4LCJpYXQiOjE3MzgxNjYxMzgsImp0aSI6IjU4Mjg1ZDlhYjczNTRiOTM5N2ZhMTk4NzU5ZWVmY2MyIiwidXNlcl9pZCI6MTJ9.9d9qQZhDgwQxYL1kXP0_Bg2uFe5R4kgRn6DLPgO_tdo
+2025-01-29 21:26:02,999 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 21:26:03,396 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDMwMTM4LCJpYXQiOjE3MzgxNjYxMzgsImp0aSI6IjU4Mjg1ZDlhYjczNTRiOTM5N2ZhMTk4NzU5ZWVmY2MyIiwidXNlcl9pZCI6MTJ9.9d9qQZhDgwQxYL1kXP0_Bg2uFe5R4kgRn6DLPgO_tdo
+2025-01-29 21:26:03,404 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 21:26:03,665 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\teacher\views.py changed, reloading.
+2025-01-29 21:26:04,596 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-29 21:26:08,587 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\teacher\views.py changed, reloading.
+2025-01-29 21:26:09,901 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-29 21:26:10,463 (INFO)- teacher.views- <QuerySet [<TeacherCred: Dhruvi>]>
+2025-01-29 21:26:10,658 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDMwMTM4LCJpYXQiOjE3MzgxNjYxMzgsImp0aSI6IjU4Mjg1ZDlhYjczNTRiOTM5N2ZhMTk4NzU5ZWVmY2MyIiwidXNlcl9pZCI6MTJ9.9d9qQZhDgwQxYL1kXP0_Bg2uFe5R4kgRn6DLPgO_tdo
+2025-01-29 21:26:10,674 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 21:26:10,881 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDMwMTM4LCJpYXQiOjE3MzgxNjYxMzgsImp0aSI6IjU4Mjg1ZDlhYjczNTRiOTM5N2ZhMTk4NzU5ZWVmY2MyIiwidXNlcl9pZCI6MTJ9.9d9qQZhDgwQxYL1kXP0_Bg2uFe5R4kgRn6DLPgO_tdo
+2025-01-29 21:26:10,881 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 21:26:11,280 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDMwMTM4LCJpYXQiOjE3MzgxNjYxMzgsImp0aSI6IjU4Mjg1ZDlhYjczNTRiOTM5N2ZhMTk4NzU5ZWVmY2MyIiwidXNlcl9pZCI6MTJ9.9d9qQZhDgwQxYL1kXP0_Bg2uFe5R4kgRn6DLPgO_tdo
+2025-01-29 21:26:11,287 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 21:26:11,825 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDMwMTM4LCJpYXQiOjE3MzgxNjYxMzgsImp0aSI6IjU4Mjg1ZDlhYjczNTRiOTM5N2ZhMTk4NzU5ZWVmY2MyIiwidXNlcl9pZCI6MTJ9.9d9qQZhDgwQxYL1kXP0_Bg2uFe5R4kgRn6DLPgO_tdo
+2025-01-29 21:26:11,827 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 21:26:53,051 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-29 21:26:53,588 (INFO)- teacher.views- <QuerySet [<TeacherCred: Dhruvi>]>
+2025-01-29 21:26:54,305 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDMwMTM4LCJpYXQiOjE3MzgxNjYxMzgsImp0aSI6IjU4Mjg1ZDlhYjczNTRiOTM5N2ZhMTk4NzU5ZWVmY2MyIiwidXNlcl9pZCI6MTJ9.9d9qQZhDgwQxYL1kXP0_Bg2uFe5R4kgRn6DLPgO_tdo
+2025-01-29 21:26:54,342 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 21:27:02,333 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDMwMTM4LCJpYXQiOjE3MzgxNjYxMzgsImp0aSI6IjU4Mjg1ZDlhYjczNTRiOTM5N2ZhMTk4NzU5ZWVmY2MyIiwidXNlcl9pZCI6MTJ9.9d9qQZhDgwQxYL1kXP0_Bg2uFe5R4kgRn6DLPgO_tdo
+2025-01-29 21:27:02,341 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 21:27:02,818 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\admin_app\views.py changed, reloading.
+2025-01-29 21:27:03,967 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-29 21:27:04,496 (INFO)- teacher.views- <QuerySet [<TeacherCred: Dhruvi>]>
+2025-01-29 21:27:04,902 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDMwMTM4LCJpYXQiOjE3MzgxNjYxMzgsImp0aSI6IjU4Mjg1ZDlhYjczNTRiOTM5N2ZhMTk4NzU5ZWVmY2MyIiwidXNlcl9pZCI6MTJ9.9d9qQZhDgwQxYL1kXP0_Bg2uFe5R4kgRn6DLPgO_tdo
+2025-01-29 21:27:04,924 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 21:27:05,335 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDMwMTM4LCJpYXQiOjE3MzgxNjYxMzgsImp0aSI6IjU4Mjg1ZDlhYjczNTRiOTM5N2ZhMTk4NzU5ZWVmY2MyIiwidXNlcl9pZCI6MTJ9.9d9qQZhDgwQxYL1kXP0_Bg2uFe5R4kgRn6DLPgO_tdo
+2025-01-29 21:27:05,336 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 21:27:05,747 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDMwMTM4LCJpYXQiOjE3MzgxNjYxMzgsImp0aSI6IjU4Mjg1ZDlhYjczNTRiOTM5N2ZhMTk4NzU5ZWVmY2MyIiwidXNlcl9pZCI6MTJ9.9d9qQZhDgwQxYL1kXP0_Bg2uFe5R4kgRn6DLPgO_tdo
+2025-01-29 21:27:05,747 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 21:27:06,137 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDMwMTM4LCJpYXQiOjE3MzgxNjYxMzgsImp0aSI6IjU4Mjg1ZDlhYjczNTRiOTM5N2ZhMTk4NzU5ZWVmY2MyIiwidXNlcl9pZCI6MTJ9.9d9qQZhDgwQxYL1kXP0_Bg2uFe5R4kgRn6DLPgO_tdo
+2025-01-29 21:27:06,138 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 21:27:06,542 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDMwMTM4LCJpYXQiOjE3MzgxNjYxMzgsImp0aSI6IjU4Mjg1ZDlhYjczNTRiOTM5N2ZhMTk4NzU5ZWVmY2MyIiwidXNlcl9pZCI6MTJ9.9d9qQZhDgwQxYL1kXP0_Bg2uFe5R4kgRn6DLPgO_tdo
+2025-01-29 21:27:06,552 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 21:27:06,943 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDMwMTM4LCJpYXQiOjE3MzgxNjYxMzgsImp0aSI6IjU4Mjg1ZDlhYjczNTRiOTM5N2ZhMTk4NzU5ZWVmY2MyIiwidXNlcl9pZCI6MTJ9.9d9qQZhDgwQxYL1kXP0_Bg2uFe5R4kgRn6DLPgO_tdo
+2025-01-29 21:27:06,945 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 21:27:07,325 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDMwMTM4LCJpYXQiOjE3MzgxNjYxMzgsImp0aSI6IjU4Mjg1ZDlhYjczNTRiOTM5N2ZhMTk4NzU5ZWVmY2MyIiwidXNlcl9pZCI6MTJ9.9d9qQZhDgwQxYL1kXP0_Bg2uFe5R4kgRn6DLPgO_tdo
+2025-01-29 21:27:07,329 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 21:27:07,751 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDMwMTM4LCJpYXQiOjE3MzgxNjYxMzgsImp0aSI6IjU4Mjg1ZDlhYjczNTRiOTM5N2ZhMTk4NzU5ZWVmY2MyIiwidXNlcl9pZCI6MTJ9.9d9qQZhDgwQxYL1kXP0_Bg2uFe5R4kgRn6DLPgO_tdo
+2025-01-29 21:27:07,764 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 21:27:08,144 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDMwMTM4LCJpYXQiOjE3MzgxNjYxMzgsImp0aSI6IjU4Mjg1ZDlhYjczNTRiOTM5N2ZhMTk4NzU5ZWVmY2MyIiwidXNlcl9pZCI6MTJ9.9d9qQZhDgwQxYL1kXP0_Bg2uFe5R4kgRn6DLPgO_tdo
+2025-01-29 21:27:08,144 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 21:27:08,555 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDMwMTM4LCJpYXQiOjE3MzgxNjYxMzgsImp0aSI6IjU4Mjg1ZDlhYjczNTRiOTM5N2ZhMTk4NzU5ZWVmY2MyIiwidXNlcl9pZCI6MTJ9.9d9qQZhDgwQxYL1kXP0_Bg2uFe5R4kgRn6DLPgO_tdo
+2025-01-29 21:27:08,559 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 21:27:08,991 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDMwMTM4LCJpYXQiOjE3MzgxNjYxMzgsImp0aSI6IjU4Mjg1ZDlhYjczNTRiOTM5N2ZhMTk4NzU5ZWVmY2MyIiwidXNlcl9pZCI6MTJ9.9d9qQZhDgwQxYL1kXP0_Bg2uFe5R4kgRn6DLPgO_tdo
+2025-01-29 21:27:08,996 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 21:27:09,418 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDMwMTM4LCJpYXQiOjE3MzgxNjYxMzgsImp0aSI6IjU4Mjg1ZDlhYjczNTRiOTM5N2ZhMTk4NzU5ZWVmY2MyIiwidXNlcl9pZCI6MTJ9.9d9qQZhDgwQxYL1kXP0_Bg2uFe5R4kgRn6DLPgO_tdo
+2025-01-29 21:27:09,422 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 21:27:09,768 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDMwMTM4LCJpYXQiOjE3MzgxNjYxMzgsImp0aSI6IjU4Mjg1ZDlhYjczNTRiOTM5N2ZhMTk4NzU5ZWVmY2MyIiwidXNlcl9pZCI6MTJ9.9d9qQZhDgwQxYL1kXP0_Bg2uFe5R4kgRn6DLPgO_tdo
+2025-01-29 21:27:09,768 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 21:27:10,180 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDMwMTM4LCJpYXQiOjE3MzgxNjYxMzgsImp0aSI6IjU4Mjg1ZDlhYjczNTRiOTM5N2ZhMTk4NzU5ZWVmY2MyIiwidXNlcl9pZCI6MTJ9.9d9qQZhDgwQxYL1kXP0_Bg2uFe5R4kgRn6DLPgO_tdo
+2025-01-29 21:27:10,186 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 21:27:10,623 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDMwMTM4LCJpYXQiOjE3MzgxNjYxMzgsImp0aSI6IjU4Mjg1ZDlhYjczNTRiOTM5N2ZhMTk4NzU5ZWVmY2MyIiwidXNlcl9pZCI6MTJ9.9d9qQZhDgwQxYL1kXP0_Bg2uFe5R4kgRn6DLPgO_tdo
+2025-01-29 21:27:10,623 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 21:27:11,036 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDMwMTM4LCJpYXQiOjE3MzgxNjYxMzgsImp0aSI6IjU4Mjg1ZDlhYjczNTRiOTM5N2ZhMTk4NzU5ZWVmY2MyIiwidXNlcl9pZCI6MTJ9.9d9qQZhDgwQxYL1kXP0_Bg2uFe5R4kgRn6DLPgO_tdo
+2025-01-29 21:27:11,036 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 21:27:11,757 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDMwMTM4LCJpYXQiOjE3MzgxNjYxMzgsImp0aSI6IjU4Mjg1ZDlhYjczNTRiOTM5N2ZhMTk4NzU5ZWVmY2MyIiwidXNlcl9pZCI6MTJ9.9d9qQZhDgwQxYL1kXP0_Bg2uFe5R4kgRn6DLPgO_tdo
+2025-01-29 21:27:11,757 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 21:27:25,099 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDMwMTM4LCJpYXQiOjE3MzgxNjYxMzgsImp0aSI6IjU4Mjg1ZDlhYjczNTRiOTM5N2ZhMTk4NzU5ZWVmY2MyIiwidXNlcl9pZCI6MTJ9.9d9qQZhDgwQxYL1kXP0_Bg2uFe5R4kgRn6DLPgO_tdo
+2025-01-29 21:27:25,103 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 21:27:25,395 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDMwMTM4LCJpYXQiOjE3MzgxNjYxMzgsImp0aSI6IjU4Mjg1ZDlhYjczNTRiOTM5N2ZhMTk4NzU5ZWVmY2MyIiwidXNlcl9pZCI6MTJ9.9d9qQZhDgwQxYL1kXP0_Bg2uFe5R4kgRn6DLPgO_tdo
+2025-01-29 21:27:25,411 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 21:27:25,911 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDMwMTM4LCJpYXQiOjE3MzgxNjYxMzgsImp0aSI6IjU4Mjg1ZDlhYjczNTRiOTM5N2ZhMTk4NzU5ZWVmY2MyIiwidXNlcl9pZCI6MTJ9.9d9qQZhDgwQxYL1kXP0_Bg2uFe5R4kgRn6DLPgO_tdo
+2025-01-29 21:27:25,914 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 21:27:26,284 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDMwMTM4LCJpYXQiOjE3MzgxNjYxMzgsImp0aSI6IjU4Mjg1ZDlhYjczNTRiOTM5N2ZhMTk4NzU5ZWVmY2MyIiwidXNlcl9pZCI6MTJ9.9d9qQZhDgwQxYL1kXP0_Bg2uFe5R4kgRn6DLPgO_tdo
+2025-01-29 21:27:26,284 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 21:27:26,722 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDMwMTM4LCJpYXQiOjE3MzgxNjYxMzgsImp0aSI6IjU4Mjg1ZDlhYjczNTRiOTM5N2ZhMTk4NzU5ZWVmY2MyIiwidXNlcl9pZCI6MTJ9.9d9qQZhDgwQxYL1kXP0_Bg2uFe5R4kgRn6DLPgO_tdo
+2025-01-29 21:27:26,726 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 21:27:27,130 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDMwMTM4LCJpYXQiOjE3MzgxNjYxMzgsImp0aSI6IjU4Mjg1ZDlhYjczNTRiOTM5N2ZhMTk4NzU5ZWVmY2MyIiwidXNlcl9pZCI6MTJ9.9d9qQZhDgwQxYL1kXP0_Bg2uFe5R4kgRn6DLPgO_tdo
+2025-01-29 21:27:27,130 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 21:27:27,575 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDMwMTM4LCJpYXQiOjE3MzgxNjYxMzgsImp0aSI6IjU4Mjg1ZDlhYjczNTRiOTM5N2ZhMTk4NzU5ZWVmY2MyIiwidXNlcl9pZCI6MTJ9.9d9qQZhDgwQxYL1kXP0_Bg2uFe5R4kgRn6DLPgO_tdo
+2025-01-29 21:27:27,575 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 21:27:27,929 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDMwMTM4LCJpYXQiOjE3MzgxNjYxMzgsImp0aSI6IjU4Mjg1ZDlhYjczNTRiOTM5N2ZhMTk4NzU5ZWVmY2MyIiwidXNlcl9pZCI6MTJ9.9d9qQZhDgwQxYL1kXP0_Bg2uFe5R4kgRn6DLPgO_tdo
+2025-01-29 21:27:27,939 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 21:27:28,357 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDMwMTM4LCJpYXQiOjE3MzgxNjYxMzgsImp0aSI6IjU4Mjg1ZDlhYjczNTRiOTM5N2ZhMTk4NzU5ZWVmY2MyIiwidXNlcl9pZCI6MTJ9.9d9qQZhDgwQxYL1kXP0_Bg2uFe5R4kgRn6DLPgO_tdo
+2025-01-29 21:27:28,360 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 21:27:28,801 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDMwMTM4LCJpYXQiOjE3MzgxNjYxMzgsImp0aSI6IjU4Mjg1ZDlhYjczNTRiOTM5N2ZhMTk4NzU5ZWVmY2MyIiwidXNlcl9pZCI6MTJ9.9d9qQZhDgwQxYL1kXP0_Bg2uFe5R4kgRn6DLPgO_tdo
+2025-01-29 21:27:28,801 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 22:32:04,470 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-29 22:32:05,421 (INFO)- teacher.views- <QuerySet [<TeacherCred: Dhruvi>]>
+2025-01-29 22:32:08,094 (WARNING)- django.request- Not Found: /
+2025-01-29 22:34:29,378 (WARNING)- django.request- Unauthorized: /api/login-teacher/

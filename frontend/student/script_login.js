@@ -29,7 +29,7 @@ document.getElementById("loginModal").addEventListener("submit", async (event) =
             const result = await response.json();
             alert('Login successful');
 
-            setJSON('AUTH_KEY', result.access);
+            setJSON('AUTH_KEY', result.username);
             setJSON('is_teacher', true);
             
             window.location.href = 'student.html'
