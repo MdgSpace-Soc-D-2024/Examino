@@ -29,35 +29,40 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 async function fetchCourses() {
-    const AUTH_KEY = window.localStorage.getItem('AUTH_KEY')
+    const AUTHKEY = window.localStorage.getItem('AUTH_KEY')
     try {
         const response = await fetch(coursegetApiUrl, {
-            method: 'POST',
+            method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
+                'Authorization': `Bearer ${AUTHKEY}`,
             },
-            body: JSON.stringify({ AUTHKEY: AUTH_KEY}),
         });
 
         if (response.ok) {
             const courses_data = await response.json();
-            console.log(courses_data)
-            courseInput.value = '';
-            const courseList = document.getElementById('showCourses');
-            courseList.innerHTML = ''; 
-            if (courses_data != null){
-            courses_data.forEach(crs => {
-                console.log(crs.institute)
-                const courseItem = document.createElement('div');
-                courseItem.className = 'mb-2';
-                courseItem.textContent = crs.courses;
-                courseList.appendChild(courseItem);
-        }); 
-        } else {
-            const errorData = await response.json();
-            alert(`Error adding course: ${errorData.detail || 'Unknown error'}`);
-        }
-    }
+            // console.log(courses_data)
+            const mycourses = courses_data.courses
+            try {
+                courseInput.value = '';
+                const courseList = document.getElementById('showCourses');
+                courseList.innerHTML = ''; 
+                var objs = JSON.parse(mycourses);
+                console.log(objs)
+                objs.forEach(obj => {
+                    const courseItem = document.createElement('div');
+                    courseItem.className = 'mb-2';
+                    courseItem.textContent += obj;
+                    courseList.appendChild(courseItem);
+                });
+            } catch (ex) {
+                console.error(ex);
+            }
+         } else {
+             const errorData = await response.json();
+             alert(`Error adding course: ${errorData.detail || 'Unknown error'}`);
+         }
+    
     } catch (error) {
         console.error('Error adding course:', error);
     }

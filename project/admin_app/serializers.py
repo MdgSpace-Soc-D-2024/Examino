@@ -36,17 +36,20 @@ class AdminSerializer(serializers.ModelSerializer):
 
         return admin
     
-class InstituteClassSerializer(serializers.ModelSerializer):
+class InstituteClassesSerializer(serializers.ModelSerializer):
+    AUTHKEY = serializers.CharField()
     class Meta:
         model = InstituteClass
-        fields = ['id', 'institute', 'classes']
-    def create(self, validated_data):
-        institute = validated_data.pop('institute')
-        institute = Admin.objects.get(institute=institute)
-        classes = InstituteClass.objects.create(institute=institute, **validated_data)
-        classes.save
+        fields = ['AUTHKEY', 'classes']
+    def create(self, validated_data):   
+        username = get_user_simplejwt(validated_data['AUTHKEY'])
+        validated_data.pop('AUTHKEY')
+        
+        user = UserNew.objects.get(username = username)
+        institute = Admin.objects.get(username = user)
+        classes = InstituteClass.objects.create(institute=institute, classes=validated_data['classes'])
+        classes.save()
         return classes
-
 
         
 class InstituteCoursesSerializer(serializers.ModelSerializer):
@@ -69,6 +72,9 @@ class InstituteGETCoursesSerializer(serializers.Serializer):
      institute = serializers.CharField()
      courses = serializers.CharField()
     
+class InstituteGETClassesSerializer(serializers.Serializer):
+     institute = serializers.CharField()
+     classes = serializers.CharField()
 class AUTHKEYSerializer(serializers.Serializer):
     AUTHKEY = serializers.CharField()
     

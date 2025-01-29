@@ -30,29 +30,49 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 async function fetchClasses() {
+    const AUTHKEY = window.localStorage.getItem('AUTH_KEY')
     try {
-        const response = await fetch(classgetApiUrl);
-        const classes_data = await response.json();
-
-        const classList = document.getElementById('showClasses');
-        classList.innerHTML = ''; // Clear any existing content
-        if (classes_data != null){
-        classes_data.forEach(cls => {
-            const classItem = document.createElement('div');
-            classItem.className = 'mb-2';
-            classItem.textContent = cls.classes;
-            classList.appendChild(classItem);
+        const response = await fetch(classgetApiUrl, {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': `Bearer ${AUTHKEY}`,
+            },
         });
+
+        if (response.ok) {
+            const classes_data = await response.json();
+            const myclasses = classes_data.classes
+            try {
+                classInput.value = '';
+                const classList = document.getElementById('showClasses');
+                classList.innerHTML = ''; 
+                var objs = JSON.parse(myclasses);
+                console.log(objs)
+                objs.forEach(obj => {
+                    const classItem = document.createElement('div');
+                    classItem.className = 'mb-2';
+                    classItem.textContent += obj;
+                    classList.appendChild(classItem);
+                });
+            } catch (ex) {
+                console.error(ex);
+            }
+        } else {
+            const errorData = await response.json();
+            alert(`Error adding class: ${errorData.detail || 'Unknown error'}`);
         }
+    
     } catch (error) {
-        console.error('Error fetching classes:', error);
-    }
-};
+        console.error('Error adding classes:', error);
+    }   
+}
+
 
 document.getElementById('addClassBtn').addEventListener('click', async (event) => {event.preventDefault();
     const classInput = document.getElementById('classInput');
     const className = classInput.value.trim();
-
+    const AUTHKEY = window.localStorage.getItem('AUTH_KEY')
     if (!className) {
         alert('Please enter a valid class name.');
         return;
@@ -64,13 +84,12 @@ document.getElementById('addClassBtn').addEventListener('click', async (event) =
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify({ AUTHKEY: AUTH_KEY,classes: className }),
+            body: JSON.stringify({ AUTHKEY: AUTHKEY,classes: className }),
 
         });
 
         if (response.ok) {
-            classInput.value = ''; // Clear input
-            //await fetchClasses(); // Refresh class list
+            classInput.value = ''; 
         } else {
             const errorData = await response.json();
             alert(`Error adding class: ${errorData.detail || 'Unknown error'}`);

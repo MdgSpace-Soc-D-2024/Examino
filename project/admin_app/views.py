@@ -5,7 +5,17 @@ from rest_framework import status
 from .models import *
 from .serializers import *
 import logging
+import json
 logger = logging.getLogger(__name__)
+
+def get_user_simplejwt(token):
+    try:
+        validated_token = AccessToken(token)
+        user = JWTAuthentication().get_user(validated_token)
+        #logger.info(user)
+        return user
+    except:
+        raise "Authentication failed"
 
 class AdminInfoView(APIView):
     def post(self, request):
@@ -18,33 +28,54 @@ class AdminInfoView(APIView):
 
 class InstituteClassPOSTAPIView(APIView):    
     def post(self, request):
-        serializer = InstituteClassSerializer(data=request.data)
+        serializer = InstituteClassesSerializer(data=request.data)
         if serializer.is_valid():
             cred = serializer.save()
             return Response({"message": "Class added successfully"}, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
     
     
-class InstituteClassGETAPIView(APIView):
+class InstituteClassesGETAPIView(APIView):
     def get(self, request):
-        cred = InstituteClass.objects.all()
-        serializer = InstituteClassSerializer(cred, many=True)
-        data = serializer.data
-        return Response(data)
+        serializer = AUTHKEYSerializer(data = {'AUTHKEY': (request.headers.get('Authorization')).split()[1]})
+        if serializer.is_valid():  
+            AUTHKEY = serializer.data['AUTHKEY']
+            username = get_user_simplejwt(AUTHKEY)
+            institute = Admin.objects.get(username=username)
+            classes = InstituteClass.objects.filter(institute=institute)
+
+            classList = json.dumps([class_data.classes for class_data in classes])
+            print(type(classList))
+
+            serializer = InstituteGETClassesSerializer(data = {'institute': institute.institute, 'classes': classList})
+            print(serializer)
+            
+            if serializer.is_valid():
+                return Response(serializer.data, status=status.HTTP_200_OK)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
     
 
 class InstituteCoursesGETAPIView(APIView):
-    def post(self, request):
-        serializer = AUTHKEYSerializer(data = request.data)
+    def get(self, request):
+        serializer = AUTHKEYSerializer(data = {'AUTHKEY': (request.headers.get('Authorization')).split()[1]})
         if serializer.is_valid():  
             AUTHKEY = serializer.data['AUTHKEY']
-            #logger.info(AUTHKEY)
             username = get_user_simplejwt(AUTHKEY)
             institute = Admin.objects.get(username=username)
-            courses = InstituteCourses.objects.get(institute=institute)
-            logger.info(institute)
-            serializer = InstituteGETCoursesSerializer({'institute': institute, 'courses': courses.courses}, many=True)
-            return Response(serializer.data)
+            courses = InstituteCourses.objects.filter(institute=institute)
+            # print(type(list(courses.values())[0]))
+            courseList = json.dumps([course.courses for course in courses])
+            # courseList = [course.courses for course in courses]
+
+            # courseObj = {key : value for key, value in enumerate(courseList)}
+            print(type(courseList))
+
+            serializer = InstituteGETCoursesSerializer(data = {'institute': institute.institute, 'courses': courseList})
+            print(serializer)
+            # print(1)
+            if serializer.is_valid():
+            #     print(2)
+                return Response(serializer.data, status=status.HTTP_200_OK)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
         
     
@@ -56,14 +87,7 @@ class InstituteCoursesPOSTAPIView(APIView):
             return Response({"message": "Course added successfully"}, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
     
-def get_user_simplejwt(token):
-    try:
-        validated_token = AccessToken(token)
-        user = JWTAuthentication().get_user(validated_token)
-        #logger.info(user)
-        return user
-    except:
-        raise "Authentication failed"
+
 
 class AdminDataToFrontendAPIView(APIView):
     def post(self, request):
