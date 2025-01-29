@@ -16,44 +16,66 @@ function clearJSON() {
 
 
 document.addEventListener('DOMContentLoaded', () => {
-    const AUTH_KEY = JSON.stringify(getJSON('AUTH_KEY'));
-    const IS_ADMIN = getJSON('is_admin');
-    
-    if (!AUTH_KEY || IS_ADMIN !== true) {
+    const AUTH_KEY = window.localStorage.getItem('AUTH_KEY');
+    const IS_ADMIN = getJSON('is_admin')
+    if (!AUTH_KEY || IS_ADMIN != true) {
         alert('Access denied. Please log in as an admin.');
         window.location.href = 'login.html'; // Redirect to login page
     }
-    else if (AUTH_KEY && IS_ADMIN === true && !institute){
-        alert('Add institute data first')
-        window.location.href = 'admin-info.html'
-    }
+    //else if (AUTH_KEY && IS_ADMIN === true && !institute){
+    //    alert('Add institute data first')
+    //    window.location.href = 'admin-info.html'
+    //}
 });
 
 async function fetchCourses() {
+    const AUTHKEY = window.localStorage.getItem('AUTH_KEY')
     try {
-        const response = await fetch(coursegetApiUrl);
-        const courses_data = await response.json();
-
-        const courseList = document.getElementById('showCourses');
-        courseList.innerHTML = ''; 
-        if (courses_data != null){
-        courses_data.forEach(crs => {
-            const courseItem = document.createElement('div');
-            courseItem.className = 'mb-2';
-            courseItem.textContent = crs.courses;
-            courseList.appendChild(courseItem);
+        const response = await fetch(coursegetApiUrl, {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': `Bearer ${AUTHKEY}`,
+            },
         });
-        }
+
+        if (response.ok) {
+            const courses_data = await response.json();
+            // console.log(courses_data)
+            const mycourses = courses_data.courses
+            try {
+                courseInput.value = '';
+                const courseList = document.getElementById('showCourses');
+                courseList.innerHTML = ''; 
+                var objs = JSON.parse(mycourses);
+                console.log(objs)
+                objs.forEach(obj => {
+                    const courseItem = document.createElement('div');
+                    courseItem.className = 'mb-2';
+                    courseItem.textContent += obj;
+                    courseList.appendChild(courseItem);
+                });
+            } catch (ex) {
+                console.error(ex);
+            }
+         } else {
+             const errorData = await response.json();
+             alert(`Error adding course: ${errorData.detail || 'Unknown error'}`);
+         }
+    
     } catch (error) {
-        console.error('Error fetching courses:', error);
+        console.error('Error adding course:', error);
     }
-};
+        //const response = await fetch(coursegetApiUrl);
+}        //const courses_data = await response.json();
+
 
 document.getElementById("addCourseBtn").addEventListener('click', async (event) => {event.preventDefault();
-    
-    const coursename = courseInput.value.trim();
-
-    if (!coursename) {
+    const courseInput = document.getElementById('courseInput');
+    const courses = courseInput.value.trim();
+    const institute = window.localStorage.getItem('institute')
+    const AUTHKEY = window.localStorage.getItem('AUTH_KEY')
+    if (!courses) {
         alert('Please enter a valid course name.');
         return;
     }
@@ -64,7 +86,7 @@ document.getElementById("addCourseBtn").addEventListener('click', async (event) 
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify({ institute: 1,courses: coursename }),
+            body: JSON.stringify({ AUTHKEY: AUTHKEY, courses: courses }),
         });
 
         if (response.ok) {

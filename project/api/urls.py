@@ -14,7 +14,7 @@ urlpatterns = [
     path('admin-info/get/', admin_views.AdminDataToFrontendAPIView.as_view()),   
     path('teacher-exam/', teacher_views.ExamsAPIView.as_view()),
     path('admin-class/post/', admin_views.InstituteClassPOSTAPIView.as_view()),
-    path('admin-class/get/', admin_views.InstituteClassGETAPIView.as_view()),
+    path('admin-class/get/', admin_views.InstituteClassesGETAPIView.as_view()),
     path('admin-add-students/', student_views.StudentCredAPIView.as_view()),
     path('admin-courses/post/', admin_views.InstituteCoursesPOSTAPIView.as_view()),
     path('admin-courses/get/', admin_views.InstituteCoursesGETAPIView.as_view()),

@@ -14,10 +14,16 @@ class Admin(models.Model):
         return self.institute
  
 class InstituteClass(models.Model):
-    institute = models.ForeignKey(Admin, on_delete=models.CASCADE)
-    classes = models.CharField(max_length=50)
-    
+    institute= models.ForeignKey(Admin, on_delete=models.CASCADE)
+    classes = models.CharField(max_length=50, unique=True)
+
+    def __str__(self):
+        return self.classes
+
 class InstituteCourses(models.Model):
     institute = models.ForeignKey(Admin, on_delete=models.CASCADE)
-    courses = models.CharField(max_length=50)
+    courses = models.CharField(max_length=50, unique=True)
+
+    def __str__(self):
+        return self.courses
 
