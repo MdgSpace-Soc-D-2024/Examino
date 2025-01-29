@@ -11,7 +11,30 @@ import secrets
 import json
 import logging
 logger = logging.getLogger(__name__)
+from admin_app.serializers import get_user_simplejwt
 
+class TeacherCredSerializer(serializers.ModelSerializer):
+    AUTHKEY = serializers.CharField()
+    class Meta:
+        model = TeacherCred
+        fields = ['username', 'email', 'AUTHKEY', 'courses']
+   
+    def create(self, validated_data):
+        def generate_password(length=12):
+            alphabet = string.ascii_letters + string.digits + string.punctuation
+            password = ''.join(secrets.choice(alphabet) for _ in range(length))
+            return password
+
+        password = generate_password()
+        username = get_user_simplejwt(validated_data['AUTHKEY'])
+        validated_data.pop('AUTHKEY')
+        user = UserNew.objects.get(username = username)
+        institute = Admin.objects.get(username = user)
+        teacher = TeacherCred.objects.create(institute=institute, **validated_data)
+        teacher.password = password
+        teacher.save()
+
+        return teacher
 
 class LoginTeacherSerializer(serializers.ModelSerializer):
     class Meta:
@@ -41,24 +64,3 @@ class ExamsGetSerializer(serializers.ModelSerializer):
         model = Exams
         fields = '__all__' 
 
-class TeacherCredSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = TeacherCred
-        fields = ['username', 'email', 'institute', 'courses']
-   
-    def create(self, validated_data):
-        def generate_password(length=12):
-            alphabet = string.ascii_letters + string.digits + string.punctuation
-            password = ''.join(secrets.choice(alphabet) for _ in range(length))
-            return password
-
-        password = generate_password()
-        
-        institute = validated_data.pop('institute')
-        institute = Admin.objects.get(institute=institute)
-        teacher = TeacherCred.objects.create(institute=institute, **validated_data)
-
-        teacher.password = password
-        teacher.save()
-
-        return teacher

@@ -30,7 +30,6 @@ class LoginTeacherAPIView(APIView):
         except:
             pass
             
-
 class TeacherCredAPIView(APIView):
     def post(self, request):
         serializer = TeacherCredSerializer(data = request.data)

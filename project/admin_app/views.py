@@ -7,15 +7,7 @@ from .serializers import *
 import logging
 import json
 logger = logging.getLogger(__name__)
-
-def get_user_simplejwt(token):
-    try:
-        validated_token = AccessToken(token)
-        user = JWTAuthentication().get_user(validated_token)
-        #logger.info(user)
-        return user
-    except:
-        raise "Authentication failed"
+from admin_app.serializers import get_user_simplejwt
 
 class AdminInfoView(APIView):
     def post(self, request):
@@ -63,18 +55,12 @@ class InstituteCoursesGETAPIView(APIView):
             username = get_user_simplejwt(AUTHKEY)
             institute = Admin.objects.get(username=username)
             courses = InstituteCourses.objects.filter(institute=institute)
-            # print(type(list(courses.values())[0]))
             courseList = json.dumps([course.courses for course in courses])
-            # courseList = [course.courses for course in courses]
-
-            # courseObj = {key : value for key, value in enumerate(courseList)}
             print(type(courseList))
 
             serializer = InstituteGETCoursesSerializer(data = {'institute': institute.institute, 'courses': courseList})
-            print(serializer)
-            # print(1)
+            
             if serializer.is_valid():
-            #     print(2)
                 return Response(serializer.data, status=status.HTTP_200_OK)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
         

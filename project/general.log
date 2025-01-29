@@ -31089,3 +31089,418 @@ Traceback (most recent call last):
     serializer = AUTHKEYSerializer(data = {'AUTHKEY': (request.headers.get('Authorization')).split()[1]})
                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 AttributeError: 'NoneType' object has no attribute 'split'
+2025-01-29 12:59:47,321 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-29 12:59:56,202 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM4OTk3NDk3LCJpYXQiOjE3MzgxMzM0OTcsImp0aSI6ImRjYzcxNjYyM2U4NDRjMzVhMGNkODljNmJiNmNmNGE1IiwidXNlcl9pZCI6MTJ9.14tRVSvS_LV_wl2Ql_Vnxd4-kQ5ckbrGZ-btybOHAH4
+2025-01-29 12:59:56,231 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 12:59:58,535 (ERROR)- django.request- Internal Server Error: /api/admin-class/get/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\admin_app\views.py", line 32, in get
+    serializer = AUTHKEYSerializer(data = {'AUTHKEY': (request.headers.get('Authorization')).split()[1]})
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'split'
+2025-01-29 13:00:00,834 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM4OTk3NDk3LCJpYXQiOjE3MzgxMzM0OTcsImp0aSI6ImRjYzcxNjYyM2U4NDRjMzVhMGNkODljNmJiNmNmNGE1IiwidXNlcl9pZCI6MTJ9.14tRVSvS_LV_wl2Ql_Vnxd4-kQ5ckbrGZ-btybOHAH4
+2025-01-29 13:00:00,840 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 13:00:02,091 (ERROR)- django.request- Internal Server Error: /api/admin-courses/get/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\admin_app\views.py", line 52, in get
+    serializer = AUTHKEYSerializer(data = {'AUTHKEY': (request.headers.get('Authorization')).split()[1]})
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'split'
+2025-01-29 13:00:17,269 (ERROR)- django.request- Internal Server Error: /api/admin-courses/get/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\admin_app\views.py", line 52, in get
+    serializer = AUTHKEYSerializer(data = {'AUTHKEY': (request.headers.get('Authorization')).split()[1]})
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'split'
+2025-01-29 13:00:39,690 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-29 13:00:48,167 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM4OTk5ODQ2LCJpYXQiOjE3MzgxMzU4NDYsImp0aSI6IjA2YzVjZWY0ZTA0MjRhNmY5YzhmYzA2NTliMWRiNWZlIiwidXNlcl9pZCI6MTJ9.hQ0ey7AJksCuwctLOoRgDl88LkF-rcyW_kL8Ql8aufM
+2025-01-29 13:00:48,167 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 13:00:50,659 (ERROR)- django.request- Internal Server Error: /api/admin-courses/get/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\admin_app\views.py", line 52, in get
+    serializer = AUTHKEYSerializer(data = {'AUTHKEY': (request.headers.get('Authorization')).split()[1]})
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'split'
+2025-01-29 13:24:53,191 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM4OTk5ODQ2LCJpYXQiOjE3MzgxMzU4NDYsImp0aSI6IjA2YzVjZWY0ZTA0MjRhNmY5YzhmYzA2NTliMWRiNWZlIiwidXNlcl9pZCI6MTJ9.hQ0ey7AJksCuwctLOoRgDl88LkF-rcyW_kL8Ql8aufM
+2025-01-29 13:24:53,235 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 13:24:56,195 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 13:24:58,884 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM4OTk5ODQ2LCJpYXQiOjE3MzgxMzU4NDYsImp0aSI6IjA2YzVjZWY0ZTA0MjRhNmY5YzhmYzA2NTliMWRiNWZlIiwidXNlcl9pZCI6MTJ9.hQ0ey7AJksCuwctLOoRgDl88LkF-rcyW_kL8Ql8aufM
+2025-01-29 13:24:58,900 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 13:25:01,594 (ERROR)- django.request- Internal Server Error: /api/admin-courses/get/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\admin_app\views.py", line 52, in get
+    serializer = AUTHKEYSerializer(data = {'AUTHKEY': (request.headers.get('Authorization')).split()[1]})
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'split'
+2025-01-29 13:25:48,430 (ERROR)- django.request- Internal Server Error: /api/admin-courses/get/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\admin_app\views.py", line 52, in get
+    serializer = AUTHKEYSerializer(data = {'AUTHKEY': (request.headers.get('Authorization')).split()[1]})
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'split'
+2025-01-29 13:26:40,446 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\teacher\serializers.py changed, reloading.
+2025-01-29 13:26:41,793 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-29 17:07:47,232 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-29 17:07:48,959 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:07,263 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDE0Njg1LCJpYXQiOjE3MzgxNTA2ODUsImp0aSI6ImE0Zjg1NTcyMmU5NDQ2YjFiOTExZmZiODJjNTEwZDdkIiwidXNlcl9pZCI6MTJ9.G__nkZd-wQiVe59fR9JOg3L9lJ6oopyjcxWIofuiSrU
+2025-01-29 17:08:07,263 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:08,072 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDE0Njg1LCJpYXQiOjE3MzgxNTA2ODUsImp0aSI6ImE0Zjg1NTcyMmU5NDQ2YjFiOTExZmZiODJjNTEwZDdkIiwidXNlcl9pZCI6MTJ9.G__nkZd-wQiVe59fR9JOg3L9lJ6oopyjcxWIofuiSrU
+2025-01-29 17:08:08,072 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:08,773 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDE0Njg1LCJpYXQiOjE3MzgxNTA2ODUsImp0aSI6ImE0Zjg1NTcyMmU5NDQ2YjFiOTExZmZiODJjNTEwZDdkIiwidXNlcl9pZCI6MTJ9.G__nkZd-wQiVe59fR9JOg3L9lJ6oopyjcxWIofuiSrU
+2025-01-29 17:08:08,773 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:09,014 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDE0Njg1LCJpYXQiOjE3MzgxNTA2ODUsImp0aSI6ImE0Zjg1NTcyMmU5NDQ2YjFiOTExZmZiODJjNTEwZDdkIiwidXNlcl9pZCI6MTJ9.G__nkZd-wQiVe59fR9JOg3L9lJ6oopyjcxWIofuiSrU
+2025-01-29 17:08:09,018 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:09,689 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDE0Njg1LCJpYXQiOjE3MzgxNTA2ODUsImp0aSI6ImE0Zjg1NTcyMmU5NDQ2YjFiOTExZmZiODJjNTEwZDdkIiwidXNlcl9pZCI6MTJ9.G__nkZd-wQiVe59fR9JOg3L9lJ6oopyjcxWIofuiSrU
+2025-01-29 17:08:09,699 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:10,042 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDE0Njg1LCJpYXQiOjE3MzgxNTA2ODUsImp0aSI6ImE0Zjg1NTcyMmU5NDQ2YjFiOTExZmZiODJjNTEwZDdkIiwidXNlcl9pZCI6MTJ9.G__nkZd-wQiVe59fR9JOg3L9lJ6oopyjcxWIofuiSrU
+2025-01-29 17:08:10,042 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:10,449 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDE0Njg1LCJpYXQiOjE3MzgxNTA2ODUsImp0aSI6ImE0Zjg1NTcyMmU5NDQ2YjFiOTExZmZiODJjNTEwZDdkIiwidXNlcl9pZCI6MTJ9.G__nkZd-wQiVe59fR9JOg3L9lJ6oopyjcxWIofuiSrU
+2025-01-29 17:08:10,458 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:10,846 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDE0Njg1LCJpYXQiOjE3MzgxNTA2ODUsImp0aSI6ImE0Zjg1NTcyMmU5NDQ2YjFiOTExZmZiODJjNTEwZDdkIiwidXNlcl9pZCI6MTJ9.G__nkZd-wQiVe59fR9JOg3L9lJ6oopyjcxWIofuiSrU
+2025-01-29 17:08:10,848 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:11,236 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDE0Njg1LCJpYXQiOjE3MzgxNTA2ODUsImp0aSI6ImE0Zjg1NTcyMmU5NDQ2YjFiOTExZmZiODJjNTEwZDdkIiwidXNlcl9pZCI6MTJ9.G__nkZd-wQiVe59fR9JOg3L9lJ6oopyjcxWIofuiSrU
+2025-01-29 17:08:11,239 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:11,613 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDE0Njg1LCJpYXQiOjE3MzgxNTA2ODUsImp0aSI6ImE0Zjg1NTcyMmU5NDQ2YjFiOTExZmZiODJjNTEwZDdkIiwidXNlcl9pZCI6MTJ9.G__nkZd-wQiVe59fR9JOg3L9lJ6oopyjcxWIofuiSrU
+2025-01-29 17:08:11,619 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:11,987 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDE0Njg1LCJpYXQiOjE3MzgxNTA2ODUsImp0aSI6ImE0Zjg1NTcyMmU5NDQ2YjFiOTExZmZiODJjNTEwZDdkIiwidXNlcl9pZCI6MTJ9.G__nkZd-wQiVe59fR9JOg3L9lJ6oopyjcxWIofuiSrU
+2025-01-29 17:08:11,987 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:12,528 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDE0Njg1LCJpYXQiOjE3MzgxNTA2ODUsImp0aSI6ImE0Zjg1NTcyMmU5NDQ2YjFiOTExZmZiODJjNTEwZDdkIiwidXNlcl9pZCI6MTJ9.G__nkZd-wQiVe59fR9JOg3L9lJ6oopyjcxWIofuiSrU
+2025-01-29 17:08:12,530 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:12,854 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDE0Njg1LCJpYXQiOjE3MzgxNTA2ODUsImp0aSI6ImE0Zjg1NTcyMmU5NDQ2YjFiOTExZmZiODJjNTEwZDdkIiwidXNlcl9pZCI6MTJ9.G__nkZd-wQiVe59fR9JOg3L9lJ6oopyjcxWIofuiSrU
+2025-01-29 17:08:12,854 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:13,246 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDE0Njg1LCJpYXQiOjE3MzgxNTA2ODUsImp0aSI6ImE0Zjg1NTcyMmU5NDQ2YjFiOTExZmZiODJjNTEwZDdkIiwidXNlcl9pZCI6MTJ9.G__nkZd-wQiVe59fR9JOg3L9lJ6oopyjcxWIofuiSrU
+2025-01-29 17:08:13,249 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:13,710 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDE0Njg1LCJpYXQiOjE3MzgxNTA2ODUsImp0aSI6ImE0Zjg1NTcyMmU5NDQ2YjFiOTExZmZiODJjNTEwZDdkIiwidXNlcl9pZCI6MTJ9.G__nkZd-wQiVe59fR9JOg3L9lJ6oopyjcxWIofuiSrU
+2025-01-29 17:08:13,715 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:14,080 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDE0Njg1LCJpYXQiOjE3MzgxNTA2ODUsImp0aSI6ImE0Zjg1NTcyMmU5NDQ2YjFiOTExZmZiODJjNTEwZDdkIiwidXNlcl9pZCI6MTJ9.G__nkZd-wQiVe59fR9JOg3L9lJ6oopyjcxWIofuiSrU
+2025-01-29 17:08:14,082 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:14,469 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDE0Njg1LCJpYXQiOjE3MzgxNTA2ODUsImp0aSI6ImE0Zjg1NTcyMmU5NDQ2YjFiOTExZmZiODJjNTEwZDdkIiwidXNlcl9pZCI6MTJ9.G__nkZd-wQiVe59fR9JOg3L9lJ6oopyjcxWIofuiSrU
+2025-01-29 17:08:14,470 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:14,876 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDE0Njg1LCJpYXQiOjE3MzgxNTA2ODUsImp0aSI6ImE0Zjg1NTcyMmU5NDQ2YjFiOTExZmZiODJjNTEwZDdkIiwidXNlcl9pZCI6MTJ9.G__nkZd-wQiVe59fR9JOg3L9lJ6oopyjcxWIofuiSrU
+2025-01-29 17:08:14,880 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:15,311 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDE0Njg1LCJpYXQiOjE3MzgxNTA2ODUsImp0aSI6ImE0Zjg1NTcyMmU5NDQ2YjFiOTExZmZiODJjNTEwZDdkIiwidXNlcl9pZCI6MTJ9.G__nkZd-wQiVe59fR9JOg3L9lJ6oopyjcxWIofuiSrU
+2025-01-29 17:08:15,316 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:15,769 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDE0Njg1LCJpYXQiOjE3MzgxNTA2ODUsImp0aSI6ImE0Zjg1NTcyMmU5NDQ2YjFiOTExZmZiODJjNTEwZDdkIiwidXNlcl9pZCI6MTJ9.G__nkZd-wQiVe59fR9JOg3L9lJ6oopyjcxWIofuiSrU
+2025-01-29 17:08:15,773 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:16,054 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:16,594 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:16,967 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:17,400 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:17,824 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:18,631 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:19,228 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:19,621 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:20,016 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:20,491 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:20,847 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:21,183 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:21,434 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:21,740 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:22,132 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:22,731 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:22,984 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:23,677 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:24,401 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:24,733 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:25,126 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:25,553 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:26,015 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:26,342 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:26,879 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:27,127 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:27,532 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:27,969 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:28,383 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:28,745 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:29,193 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:29,579 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:30,053 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:30,384 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:30,873 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:31,237 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:31,641 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:32,044 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:32,428 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:32,908 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:33,531 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:34,365 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDE0Njg1LCJpYXQiOjE3MzgxNTA2ODUsImp0aSI6ImE0Zjg1NTcyMmU5NDQ2YjFiOTExZmZiODJjNTEwZDdkIiwidXNlcl9pZCI6MTJ9.G__nkZd-wQiVe59fR9JOg3L9lJ6oopyjcxWIofuiSrU
+2025-01-29 17:08:34,368 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:34,765 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDE0Njg1LCJpYXQiOjE3MzgxNTA2ODUsImp0aSI6ImE0Zjg1NTcyMmU5NDQ2YjFiOTExZmZiODJjNTEwZDdkIiwidXNlcl9pZCI6MTJ9.G__nkZd-wQiVe59fR9JOg3L9lJ6oopyjcxWIofuiSrU
+2025-01-29 17:08:34,765 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:35,031 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDE0Njg1LCJpYXQiOjE3MzgxNTA2ODUsImp0aSI6ImE0Zjg1NTcyMmU5NDQ2YjFiOTExZmZiODJjNTEwZDdkIiwidXNlcl9pZCI6MTJ9.G__nkZd-wQiVe59fR9JOg3L9lJ6oopyjcxWIofuiSrU
+2025-01-29 17:08:35,031 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:35,641 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDE0Njg1LCJpYXQiOjE3MzgxNTA2ODUsImp0aSI6ImE0Zjg1NTcyMmU5NDQ2YjFiOTExZmZiODJjNTEwZDdkIiwidXNlcl9pZCI6MTJ9.G__nkZd-wQiVe59fR9JOg3L9lJ6oopyjcxWIofuiSrU
+2025-01-29 17:08:35,657 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:56,472 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDE0NzM0LCJpYXQiOjE3MzgxNTA3MzQsImp0aSI6ImFmNmQ2ZGQ4YmVjZjQ3YzM5NTE5YjZkMDY2MmFiY2I1IiwidXNlcl9pZCI6MTJ9.C97A8NdAUxbmzDeTAjUNQv4GYlnBixfWjPhHvsk08PI
+2025-01-29 17:08:56,478 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:59,098 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:09:26,303 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:09:38,256 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:09:39,951 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:09:54,599 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:09:55,948 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:09:56,436 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:09:56,736 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:09:57,209 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:09:57,550 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:09:58,018 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:09:58,318 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:09:58,754 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:09:59,154 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:09:59,556 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:09:59,953 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:10:00,293 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:10:00,895 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:10:01,845 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:10:02,358 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:10:02,639 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:10:03,207 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:10:45,179 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\teacher\serializers.py changed, reloading.
+2025-01-29 17:10:46,307 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-29 17:30:24,426 (WARNING)- django.request- Not Found: /
+2025-01-29 17:30:50,828 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDE2MDQ5LCJpYXQiOjE3MzgxNTIwNDksImp0aSI6ImQxZGNhMzA0M2U0NjQwYjdiMzNjZGQxMTFmOWY0ZGNhIiwidXNlcl9pZCI6MTJ9.9KX2gKArYE3OZyTMlNW9ni5GeUVMv86XikKPN2mIl60
+2025-01-29 17:30:50,828 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:30:52,217 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:31:44,373 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:31:45,403 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:32:02,701 (WARNING)- django.request- Bad Request: /api/admin-add-teachers/
+2025-01-29 17:34:33,243 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:34:35,412 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:35:03,044 (WARNING)- django.request- Bad Request: /api/admin-add-teachers/
+2025-01-29 17:35:18,196 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:35:19,731 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:35:37,404 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:35:38,089 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:35:51,709 (WARNING)- django.request- Not Found: /
+2025-01-29 17:35:57,830 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:35:58,431 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:35:59,033 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:35:59,440 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:35:59,845 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:36:00,281 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:36:00,776 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:36:01,187 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:36:01,577 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:36:01,974 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:36:02,370 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:36:02,797 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:36:03,350 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:36:03,839 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:36:04,441 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:36:04,912 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:36:05,375 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:36:05,843 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:36:06,738 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:36:07,131 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:36:22,852 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\teacher\models.py changed, reloading.
+2025-01-29 17:36:24,400 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-29 17:36:25,409 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:36:25,740 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:36:26,938 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:36:37,771 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:36:38,341 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:36:39,175 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:36:39,926 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:37:29,525 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:37:41,044 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:37:42,195 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:37:42,881 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:37:43,486 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:37:43,879 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:37:44,642 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:37:45,100 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:37:46,519 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:37:46,897 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:37:47,305 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:37:47,778 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:37:48,426 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:37:48,874 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:37:50,387 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:39:12,412 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:39:12,783 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:39:13,148 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:39:13,500 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:39:13,880 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:39:14,333 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:39:14,749 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:39:15,098 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:39:15,497 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:39:15,825 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:39:16,315 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:39:16,664 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:39:17,044 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:39:17,487 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:39:17,926 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:39:18,282 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:39:18,794 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:47:24,209 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\serializers.py changed, reloading.
+2025-01-29 17:47:25,506 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-29 17:47:37,519 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\serializers.py changed, reloading.
+2025-01-29 17:47:38,546 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-29 17:47:40,628 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\serializers.py changed, reloading.
+2025-01-29 17:47:41,574 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-29 18:00:00,684 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-29 18:00:36,144 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDE3ODM0LCJpYXQiOjE3MzgxNTM4MzQsImp0aSI6Ijk5MmU3ZjJlM2U2YTQyNGViNzgzMjQxMWEyODE0ZThjIiwidXNlcl9pZCI6MTJ9.n6kwgAJcafDu4Yvyvt4DvsVHuE8LZ8Z5l0_Xrd2vzc4
+2025-01-29 18:00:36,150 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 18:00:41,578 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 18:01:01,914 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 18:01:02,514 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 18:01:15,474 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 18:01:20,364 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 18:09:01,714 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-29 18:09:02,809 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 18:09:03,036 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 18:09:03,623 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 18:09:05,506 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 18:09:06,434 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 18:09:08,480 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDE3ODM0LCJpYXQiOjE3MzgxNTM4MzQsImp0aSI6Ijk5MmU3ZjJlM2U2YTQyNGViNzgzMjQxMWEyODE0ZThjIiwidXNlcl9pZCI6MTJ9.n6kwgAJcafDu4Yvyvt4DvsVHuE8LZ8Z5l0_Xrd2vzc4
+2025-01-29 18:09:08,484 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 18:09:09,938 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 18:09:39,045 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 18:09:40,300 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 18:09:57,129 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 18:09:57,754 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 18:09:59,621 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 18:10:07,444 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDE4NDA1LCJpYXQiOjE3MzgxNTQ0MDUsImp0aSI6IjE0NjQ5NjUzYTgyNTQ1MWQ5MjVhYWU3YjhhMjM0ZmZkIiwidXNlcl9pZCI6MTJ9.E7poiMSp54fksfRxTn9HbsICJ3LbyftB9hnUCUC5eDg
+2025-01-29 18:10:07,454 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 18:10:11,817 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 18:10:33,536 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 18:10:44,516 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 18:10:45,297 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 18:10:46,354 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 18:10:48,180 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 18:11:22,485 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-29 18:11:24,362 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 18:11:25,694 (INFO)- admin_app.serializers- dhruvi

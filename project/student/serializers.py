@@ -11,7 +11,7 @@ import secrets
 import json
 import logging
 logger = logging.getLogger(__name__)
-
+from admin_app.serializers import get_user_simplejwt
 
 class LoginStudentSerializer(serializers.ModelSerializer):
     class Meta:
@@ -20,10 +20,10 @@ class LoginStudentSerializer(serializers.ModelSerializer):
 
 
 class StudentCredSerializer(serializers.ModelSerializer):
-
+    AUTHKEY = serializers.CharField()
     class Meta:
         model = StudentCred
-        fields = ['username', 'email', 'institute', 'classes']
+        fields = ['username', 'email', 'AUTHKEY', 'classes']
 
     def create(self, validated_data):
         def generate_password(length=12):
@@ -32,11 +32,11 @@ class StudentCredSerializer(serializers.ModelSerializer):
             return password
 
         password = generate_password()
-
-        institute = validated_data.pop('institute')
-        institute = Admin.objects.get(institute=institute)
+        username = get_user_simplejwt(validated_data['AUTHKEY'])
+        validated_data.pop('AUTHKEY')
+        user = UserNew.objects.get(username = username)
+        institute = Admin.objects.get(username = user)
         student = StudentCred.objects.create(institute=institute, **validated_data)
-
         student.password = password
         student.save()
 
@@ -50,14 +50,6 @@ class StudentAnswersSerializer(serializers.ModelSerializer):
         fields = ['AUTHKEY', 'courses', 'answers']
 
     def create(self, validated_data):   
-        def get_user_simplejwt(access_token_str):
-            
-            access_token_obj = AccessToken(access_token_str)
-            username=access_token_obj['username']
-            #user=StudentCred.objects.get(username=username)
-            content =  {'user':username}
-            return content
-        
         username = get_user_simplejwt(validated_data['AUTHKEY']).get('user')
         student = StudentAnswers.objects.create(**validated_data)
         student.username = username
