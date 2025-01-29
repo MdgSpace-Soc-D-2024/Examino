@@ -31603,3 +31603,8 @@ AttributeError: 'NoneType' object has no attribute 'split'
 2025-01-29 22:32:05,421 (INFO)- teacher.views- <QuerySet [<TeacherCred: Dhruvi>]>
 2025-01-29 22:32:08,094 (WARNING)- django.request- Not Found: /
 2025-01-29 22:34:29,378 (WARNING)- django.request- Unauthorized: /api/login-teacher/
+2025-01-30 03:07:33,336 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-30 03:07:34,320 (INFO)- teacher.views- <QuerySet [<TeacherCred: Dhruvi>]>
+2025-01-30 03:13:51,373 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-30 03:13:51,950 (INFO)- teacher.views- <QuerySet [<TeacherCred: Dhruvi>]>
+2025-01-30 03:17:01,788 (WARNING)- django.request- Not Found: /api/results/
