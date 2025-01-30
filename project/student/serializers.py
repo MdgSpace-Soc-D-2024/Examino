@@ -63,3 +63,5 @@ class StudentMarksSerializer(serializers.ModelSerializer):
         model = StudentMarks
         fields = ['marks', 'courses']
 
+
+

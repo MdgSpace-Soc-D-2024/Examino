@@ -1,6 +1,6 @@
 const teacherexamApiUrl = "http://localhost:8000/api/teacher-exam/"
-const classgetApiUrl = "http://localhost:8000/api/admin-class/get/"
-const coursegetApiUrl = "http://localhost:8000/api/admin-courses/get/"
+const classgetApiUrl = "http://localhost:8000/api/admin-class/teacher/get/"
+const coursegetApiUrl = "http://localhost:8000/api/admin-courses/teacher/get/"
 
 function getJSON(key) {
     return JSON.parse(window.localStorage.getItem(key));
@@ -21,32 +21,83 @@ document.addEventListener('DOMContentLoaded', () => {
 
 document.addEventListener("DOMContentLoaded", () => {
   async function fetchClasses() {
-    const response_class = await fetch(classgetApiUrl);
-    const classes_data = await response_class.json();
-    console.log(classes_data)
-    const classDropdown = document.getElementById('classDropdown');
-    classes_data.forEach(cls => {
-        const option = document.createElement('option');
-       // option.value = cls.id;
-        option.textContent = cls.classes;
-        classDropdown.appendChild(option);
-    });
-  };
+    const AUTHKEY = window.localStorage.getItem('AUTH_KEY')
+    try {
+        const response = await fetch(classgetApiUrl, {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json',
+                'username': `Bearer ${AUTHKEY}`,
+            },
+        });
+
+        if (response.ok) {
+            const classes_data = await response.json();
+            
+            const myclasses = classes_data.classes
+            try {
+                const classDropdown = document.getElementById('classDropdown');
+                
+                var objs = JSON.parse(myclasses);
+                console.log(objs)
+                objs.forEach(obj => {
+                    const option = document.createElement('option');
+                    option.textContent += obj
+                    classDropdown.appendChild(option);
+                });
+            } catch (ex) {
+                console.error(ex);
+            }
+         } else {
+             const errorData = await response.json();
+             alert(`Error adding class: ${errorData.detail || 'Unknown error'}`);
+         }
+    
+    } catch (error) {
+        console.error('Error adding class:', error);
+    }
+        
+  } 
+
   fetchClasses();
   async function fetchCourses() {
-    const response_course = await fetch(coursegetApiUrl);
-    const courses_data = await response_course.json();
-    console.log(courses_data)
-    const courseDropdown = document.getElementById('courseDropdown');
-    courses_data.forEach(crs => {
-        const option = document.createElement('option');
-       // option.value = cls.id;
-        option.textContent = crs.courses;
-        courseDropdown.appendChild(option);
-    });
-  };
-  
-  
+    const AUTHKEY = window.localStorage.getItem('AUTH_KEY')
+    try {
+        const response = await fetch(coursegetApiUrl, {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json',
+                'username': `Bearer ${AUTHKEY}`,
+            },
+        });
+
+        if (response.ok) {
+            const courses_data = await response.json();
+            // console.log(courses_data)
+            const mycourses = courses_data.courses
+            try {
+                const courseDropdown = document.getElementById('courseDropdown');
+                
+                var objs = JSON.parse(mycourses);
+                console.log(objs)
+                objs.forEach(obj => {
+                    const option = document.createElement('option');
+                    option.textContent += obj
+                    courseDropdown.appendChild(option);
+                });
+            } catch (ex) {
+                console.error(ex);
+            }
+         } else {
+             const errorData = await response.json();
+             alert(`Error adding course: ${errorData.detail || 'Unknown error'}`);
+         }
+    
+    } catch (error) {
+        console.error('Error adding course:', error);
+    }
+        
+  } 
   fetchCourses();
     const questionsContainer = document.getElementById("questionsContainer");
     const addQuestionBtn = document.getElementById("addQuestionBtn");
@@ -119,10 +170,10 @@ document.addEventListener("DOMContentLoaded", () => {
         alert("Please add at least one question.");
         return;
       }
-    
+      const AUTHKEY = window.localStorage.getItem('AUTH_KEY')
       // Serialize questions array to JSON string before sending to backend
       const examData = {
-        institute: 1,
+        AUTHKEY: AUTHKEY,
         classes: classSelected,
         courses: courseSelected,
         date_scheduled: examDate,

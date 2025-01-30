@@ -11,7 +11,6 @@ function getJSON(key) {
 function clearJSON() {
     window.localStorage.clear();
 }
-console.log(window.localStorage.getItem('AUTH_KEY'))
 
 document.addEventListener('DOMContentLoaded', () => {
     const AUTH_KEY = window.localStorage.getItem('AUTH_KEY');
@@ -28,7 +27,6 @@ function logout() {
     alert('Logged out successfully');
     window.location.href = '../home.html'; 
 }
-
 
 const logoutLink = document.getElementById('Logout');
 if (logoutLink) {

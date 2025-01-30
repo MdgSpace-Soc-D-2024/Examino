@@ -31608,3 +31608,1028 @@ AttributeError: 'NoneType' object has no attribute 'split'
 2025-01-30 03:13:51,373 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
 2025-01-30 03:13:51,950 (INFO)- teacher.views- <QuerySet [<TeacherCred: Dhruvi>]>
 2025-01-30 03:17:01,788 (WARNING)- django.request- Not Found: /api/results/
+2025-01-30 03:50:29,188 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-30 03:50:30,179 (INFO)- teacher.views- <QuerySet [<TeacherCred: Dhruvi>]>
+2025-01-30 03:50:49,011 (ERROR)- django.request- Internal Server Error: /api/admin-class/get/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\admin_app\views.py", line 34, in get
+    serializer = AUTHKEYSerializer(data = {'AUTHKEY': (request.headers.get('Authorization')).split()[1]})
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'split'
+2025-01-30 03:50:49,039 (ERROR)- django.request- Internal Server Error: /api/admin-courses/get/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\admin_app\views.py", line 54, in get
+    serializer = AUTHKEYSerializer(data = {'AUTHKEY': (request.headers.get('Authorization')).split()[1]})
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'split'
+2025-01-30 03:50:51,478 (ERROR)- django.request- Internal Server Error: /api/admin-class/get/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\admin_app\views.py", line 34, in get
+    serializer = AUTHKEYSerializer(data = {'AUTHKEY': (request.headers.get('Authorization')).split()[1]})
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'split'
+2025-01-30 03:50:51,509 (ERROR)- django.request- Internal Server Error: /api/admin-courses/get/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\admin_app\views.py", line 54, in get
+    serializer = AUTHKEYSerializer(data = {'AUTHKEY': (request.headers.get('Authorization')).split()[1]})
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'split'
+2025-01-30 03:50:51,799 (ERROR)- django.request- Internal Server Error: /api/admin-class/get/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\admin_app\views.py", line 34, in get
+    serializer = AUTHKEYSerializer(data = {'AUTHKEY': (request.headers.get('Authorization')).split()[1]})
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'split'
+2025-01-30 03:50:51,838 (ERROR)- django.request- Internal Server Error: /api/admin-courses/get/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\admin_app\views.py", line 54, in get
+    serializer = AUTHKEYSerializer(data = {'AUTHKEY': (request.headers.get('Authorization')).split()[1]})
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'split'
+2025-01-30 03:50:52,209 (ERROR)- django.request- Internal Server Error: /api/admin-class/get/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\admin_app\views.py", line 34, in get
+    serializer = AUTHKEYSerializer(data = {'AUTHKEY': (request.headers.get('Authorization')).split()[1]})
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'split'
+2025-01-30 03:50:52,229 (ERROR)- django.request- Internal Server Error: /api/admin-courses/get/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\admin_app\views.py", line 54, in get
+    serializer = AUTHKEYSerializer(data = {'AUTHKEY': (request.headers.get('Authorization')).split()[1]})
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'split'
+2025-01-30 03:50:52,589 (ERROR)- django.request- Internal Server Error: /api/admin-class/get/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\admin_app\views.py", line 34, in get
+    serializer = AUTHKEYSerializer(data = {'AUTHKEY': (request.headers.get('Authorization')).split()[1]})
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'split'
+2025-01-30 03:50:52,633 (ERROR)- django.request- Internal Server Error: /api/admin-courses/get/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\admin_app\views.py", line 54, in get
+    serializer = AUTHKEYSerializer(data = {'AUTHKEY': (request.headers.get('Authorization')).split()[1]})
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'split'
+2025-01-30 03:50:52,999 (ERROR)- django.request- Internal Server Error: /api/admin-class/get/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\admin_app\views.py", line 34, in get
+    serializer = AUTHKEYSerializer(data = {'AUTHKEY': (request.headers.get('Authorization')).split()[1]})
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'split'
+2025-01-30 03:50:53,039 (ERROR)- django.request- Internal Server Error: /api/admin-courses/get/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\admin_app\views.py", line 54, in get
+    serializer = AUTHKEYSerializer(data = {'AUTHKEY': (request.headers.get('Authorization')).split()[1]})
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'split'
+2025-01-30 03:50:53,620 (ERROR)- django.request- Internal Server Error: /api/admin-class/get/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\admin_app\views.py", line 34, in get
+    serializer = AUTHKEYSerializer(data = {'AUTHKEY': (request.headers.get('Authorization')).split()[1]})
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'split'
+2025-01-30 03:50:53,639 (ERROR)- django.request- Internal Server Error: /api/admin-courses/get/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\admin_app\views.py", line 54, in get
+    serializer = AUTHKEYSerializer(data = {'AUTHKEY': (request.headers.get('Authorization')).split()[1]})
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'split'
+2025-01-30 03:50:54,288 (ERROR)- django.request- Internal Server Error: /api/admin-class/get/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\admin_app\views.py", line 34, in get
+    serializer = AUTHKEYSerializer(data = {'AUTHKEY': (request.headers.get('Authorization')).split()[1]})
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'split'
+2025-01-30 03:50:54,309 (ERROR)- django.request- Internal Server Error: /api/admin-courses/get/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\admin_app\views.py", line 54, in get
+    serializer = AUTHKEYSerializer(data = {'AUTHKEY': (request.headers.get('Authorization')).split()[1]})
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'split'
+2025-01-30 03:50:54,724 (ERROR)- django.request- Internal Server Error: /api/admin-class/get/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\admin_app\views.py", line 34, in get
+    serializer = AUTHKEYSerializer(data = {'AUTHKEY': (request.headers.get('Authorization')).split()[1]})
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'split'
+2025-01-30 03:50:54,740 (ERROR)- django.request- Internal Server Error: /api/admin-courses/get/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\admin_app\views.py", line 54, in get
+    serializer = AUTHKEYSerializer(data = {'AUTHKEY': (request.headers.get('Authorization')).split()[1]})
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'split'
+2025-01-30 03:50:55,078 (ERROR)- django.request- Internal Server Error: /api/admin-class/get/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\admin_app\views.py", line 34, in get
+    serializer = AUTHKEYSerializer(data = {'AUTHKEY': (request.headers.get('Authorization')).split()[1]})
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'split'
+2025-01-30 03:50:55,106 (ERROR)- django.request- Internal Server Error: /api/admin-courses/get/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\admin_app\views.py", line 54, in get
+    serializer = AUTHKEYSerializer(data = {'AUTHKEY': (request.headers.get('Authorization')).split()[1]})
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'split'
+2025-01-30 03:50:55,468 (ERROR)- django.request- Internal Server Error: /api/admin-class/get/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\admin_app\views.py", line 34, in get
+    serializer = AUTHKEYSerializer(data = {'AUTHKEY': (request.headers.get('Authorization')).split()[1]})
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'split'
+2025-01-30 03:50:55,488 (ERROR)- django.request- Internal Server Error: /api/admin-courses/get/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\admin_app\views.py", line 54, in get
+    serializer = AUTHKEYSerializer(data = {'AUTHKEY': (request.headers.get('Authorization')).split()[1]})
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'split'
+2025-01-30 03:54:57,739 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-30 03:54:58,509 (INFO)- teacher.views- <QuerySet [<TeacherCred: Dhruvi>]>
+2025-01-30 03:55:08,699 (WARNING)- django.request- Unauthorized: /api/admin-class/get/
+2025-01-30 03:55:08,701 (WARNING)- django.request- Unauthorized: /api/admin-courses/get/
+2025-01-30 03:55:29,190 (WARNING)- django.request- Unauthorized: /api/admin-class/get/
+2025-01-30 03:55:29,213 (WARNING)- django.request- Unauthorized: /api/admin-courses/get/
+2025-01-30 03:55:51,191 (ERROR)- django.request- Internal Server Error: /api/admin-class/get/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\admin_app\views.py", line 34, in get
+    serializer = AUTHKEYSerializer(data = {'AUTHKEY': (request.headers.get('Authorization')).split()[1]})
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'split'
+2025-01-30 12:10:21,041 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-30 12:10:22,421 (INFO)- teacher.views- <QuerySet [<TeacherCred: Dhruvi>]>
+2025-01-30 12:10:28,026 (WARNING)- django.request- Unauthorized: /api/admin-class/teacher/get/
+2025-01-30 12:10:28,047 (WARNING)- django.request- Unauthorized: /api/admin-courses/teacher/get/
+2025-01-30 12:11:02,201 (WARNING)- django.request- Unauthorized: /api/admin-class/teacher/get/
+2025-01-30 12:11:02,211 (WARNING)- django.request- Unauthorized: /api/admin-courses/teacher/get/
+2025-01-30 12:12:52,926 (WARNING)- django.request- Unauthorized: /api/admin-courses/teacher/get/
+2025-01-30 12:13:33,711 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\teacher\views.py changed, reloading.
+2025-01-30 12:13:34,501 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-30 12:13:34,881 (INFO)- teacher.views- <QuerySet [<TeacherCred: Dhruvi>]>
+2025-01-30 12:13:41,812 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\teacher\views.py changed, reloading.
+2025-01-30 12:13:43,776 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-30 12:13:47,393 (INFO)- teacher.views- <QuerySet [<TeacherCred: Dhruvi>]>
+2025-01-30 12:14:02,316 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\teacher\views.py changed, reloading.
+2025-01-30 12:14:05,984 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-30 12:14:11,016 (WARNING)- django.request- Bad Request: /api/admin-class/teacher/get/
+2025-01-30 12:14:11,051 (WARNING)- django.request- Bad Request: /api/admin-courses/teacher/get/
+2025-01-30 12:14:22,531 (WARNING)- django.request- Bad Request: /api/admin-class/teacher/get/
+2025-01-30 12:14:22,545 (WARNING)- django.request- Bad Request: /api/admin-courses/teacher/get/
+2025-01-30 12:14:41,646 (WARNING)- django.request- Bad Request: /api/admin-courses/teacher/get/
+2025-01-30 12:14:41,647 (WARNING)- django.request- Bad Request: /api/admin-class/teacher/get/
+2025-01-30 12:14:45,146 (WARNING)- django.request- Bad Request: /api/admin-class/teacher/get/
+2025-01-30 12:14:45,193 (WARNING)- django.request- Bad Request: /api/admin-courses/teacher/get/
+2025-01-30 12:14:48,961 (WARNING)- django.request- Bad Request: /api/admin-class/teacher/get/
+2025-01-30 12:14:49,034 (WARNING)- django.request- Bad Request: /api/admin-courses/teacher/get/
+2025-01-30 12:14:56,891 (WARNING)- django.request- Bad Request: /api/admin-courses/teacher/get/
+2025-01-30 12:14:56,908 (WARNING)- django.request- Bad Request: /api/admin-class/teacher/get/
+2025-01-30 12:15:54,614 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\teacher\views.py changed, reloading.
+2025-01-30 12:15:55,296 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-30 12:16:02,271 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\teacher\views.py changed, reloading.
+2025-01-30 12:16:03,196 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-30 12:16:12,870 (INFO)- teacher.views- IITR
+2025-01-30 12:16:12,871 (WARNING)- django.request- Bad Request: /api/admin-class/teacher/get/
+2025-01-30 12:16:12,887 (WARNING)- django.request- Bad Request: /api/admin-courses/teacher/get/
+2025-01-30 12:16:29,861 (INFO)- teacher.views- IITR
+2025-01-30 12:16:29,861 (WARNING)- django.request- Bad Request: /api/admin-courses/teacher/get/
+2025-01-30 12:16:29,861 (WARNING)- django.request- Bad Request: /api/admin-class/teacher/get/
+2025-01-30 12:17:31,441 (INFO)- teacher.views- IITR
+2025-01-30 12:17:31,447 (WARNING)- django.request- Bad Request: /api/admin-class/teacher/get/
+2025-01-30 12:17:31,455 (WARNING)- django.request- Bad Request: /api/admin-courses/teacher/get/
+2025-01-30 12:17:31,796 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\teacher\views.py changed, reloading.
+2025-01-30 12:17:32,751 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-30 12:17:50,824 (INFO)- teacher.views- IITR
+2025-01-30 12:17:50,835 (WARNING)- django.request- Bad Request: /api/admin-class/teacher/get/
+2025-01-30 12:17:50,895 (WARNING)- django.request- Bad Request: /api/admin-courses/teacher/get/
+2025-01-30 12:18:12,331 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\teacher\serializers.py changed, reloading.
+2025-01-30 12:18:14,104 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-30 12:18:16,161 (INFO)- teacher.views- IITR
+2025-01-30 12:18:16,166 (WARNING)- django.request- Bad Request: /api/admin-class/teacher/get/
+2025-01-30 12:18:16,561 (INFO)- teacher.views- IITR
+2025-01-30 12:18:16,571 (WARNING)- django.request- Bad Request: /api/admin-class/teacher/get/
+2025-01-30 12:18:16,607 (WARNING)- django.request- Bad Request: /api/admin-courses/teacher/get/
+2025-01-30 12:18:21,205 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\teacher\serializers.py changed, reloading.
+2025-01-30 12:18:22,971 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-30 12:18:34,681 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\teacher\serializers.py changed, reloading.
+2025-01-30 12:18:36,509 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-30 12:22:47,514 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-30 12:22:48,782 (INFO)- teacher.views- IITR
+2025-01-30 12:22:49,901 (ERROR)- django.request- Internal Server Error: /api/admin-class/teacher/get/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\teacher\views.py", line 67, in get
+    serializer = AUTHKEYSerializer(data = {'AUTHKEY': (request.headers.get('username')).split()[1]})
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'split'
+2025-01-30 12:23:02,951 (INFO)- teacher.views- IITR
+2025-01-30 12:23:03,419 (INFO)- teacher.views- IITR
+2025-01-30 12:23:03,796 (INFO)- teacher.views- IITR
+2025-01-30 12:23:04,305 (INFO)- teacher.views- IITR
+2025-01-30 12:23:04,753 (INFO)- teacher.views- IITR
+2025-01-30 12:23:05,161 (INFO)- teacher.views- IITR
+2025-01-30 12:23:05,621 (INFO)- teacher.views- IITR
+2025-01-30 12:23:07,281 (INFO)- teacher.views- IITR
+2025-01-30 12:23:08,551 (INFO)- teacher.views- IITR
+2025-01-30 12:23:09,366 (INFO)- teacher.views- IITR
+2025-01-30 12:23:10,636 (INFO)- teacher.views- IITR
+2025-01-30 12:23:11,183 (INFO)- teacher.views- IITR
+2025-01-30 12:23:12,044 (INFO)- teacher.views- IITR
+2025-01-30 12:23:12,741 (INFO)- teacher.views- IITR
+2025-01-30 12:23:47,009 (INFO)- teacher.views- IITR
+2025-01-30 12:24:14,611 (INFO)- teacher.views- IITR
+2025-01-30 12:24:15,041 (INFO)- teacher.views- IITR
+2025-01-30 12:24:15,433 (INFO)- teacher.views- IITR
+2025-01-30 12:24:15,840 (INFO)- teacher.views- IITR
+2025-01-30 12:24:16,260 (INFO)- teacher.views- IITR
+2025-01-30 12:24:16,636 (INFO)- teacher.views- IITR
+2025-01-30 12:24:17,046 (INFO)- teacher.views- IITR
+2025-01-30 12:24:17,471 (INFO)- teacher.views- IITR
+2025-01-30 12:24:17,864 (INFO)- teacher.views- IITR
+2025-01-30 12:24:18,225 (INFO)- teacher.views- IITR
+2025-01-30 12:24:18,759 (INFO)- teacher.views- IITR
+2025-01-30 12:24:19,212 (INFO)- teacher.views- IITR
+2025-01-30 12:24:19,581 (INFO)- teacher.views- IITR
+2025-01-30 12:24:19,941 (INFO)- teacher.views- IITR
+2025-01-30 12:24:20,401 (INFO)- teacher.views- IITR
+2025-01-30 12:24:20,851 (INFO)- teacher.views- IITR
+2025-01-30 12:24:21,242 (INFO)- teacher.views- IITR
+2025-01-30 12:24:21,711 (INFO)- teacher.views- IITR
+2025-01-30 12:24:22,120 (INFO)- teacher.views- IITR
+2025-01-30 12:24:22,461 (INFO)- teacher.views- IITR
+2025-01-30 12:24:22,903 (INFO)- teacher.views- IITR
+2025-01-30 12:24:23,356 (INFO)- teacher.views- IITR
+2025-01-30 12:24:23,894 (INFO)- teacher.views- IITR
+2025-01-30 12:24:26,873 (INFO)- teacher.views- IITR
+2025-01-30 12:24:27,191 (INFO)- teacher.views- IITR
+2025-01-30 12:24:27,581 (INFO)- teacher.views- IITR
+2025-01-30 12:24:28,035 (INFO)- teacher.views- IITR
+2025-01-30 12:24:28,474 (INFO)- teacher.views- IITR
+2025-01-30 12:24:28,935 (INFO)- teacher.views- IITR
+2025-01-30 12:24:29,361 (INFO)- teacher.views- IITR
+2025-01-30 12:24:29,821 (INFO)- teacher.views- IITR
+2025-01-30 12:24:30,949 (INFO)- teacher.views- IITR
+2025-01-30 12:24:31,356 (INFO)- teacher.views- IITR
+2025-01-30 12:24:31,927 (INFO)- teacher.views- IITR
+2025-01-30 12:24:32,393 (INFO)- teacher.views- IITR
+2025-01-30 12:24:32,800 (INFO)- teacher.views- IITR
+2025-01-30 12:24:33,321 (INFO)- teacher.views- IITR
+2025-01-30 12:24:33,815 (INFO)- teacher.views- IITR
+2025-01-30 12:24:34,351 (INFO)- teacher.views- IITR
+2025-01-30 12:24:34,891 (INFO)- teacher.views- IITR
+2025-01-30 12:24:35,514 (INFO)- teacher.views- IITR
+2025-01-30 12:24:35,951 (INFO)- teacher.views- IITR
+2025-01-30 12:24:37,532 (INFO)- teacher.views- IITR
+2025-01-30 12:24:38,041 (INFO)- teacher.views- IITR
+2025-01-30 12:24:47,102 (INFO)- teacher.views- IITR
+2025-01-30 12:24:47,471 (INFO)- teacher.views- IITR
+2025-01-30 12:24:47,814 (INFO)- teacher.views- IITR
+2025-01-30 12:24:48,301 (INFO)- teacher.views- IITR
+2025-01-30 12:24:48,795 (INFO)- teacher.views- IITR
+2025-01-30 12:24:49,286 (INFO)- teacher.views- IITR
+2025-01-30 12:24:50,256 (INFO)- teacher.views- IITR
+2025-01-30 12:24:50,591 (INFO)- teacher.views- IITR
+2025-01-30 12:24:51,121 (INFO)- teacher.views- IITR
+2025-01-30 12:24:51,576 (INFO)- teacher.views- IITR
+2025-01-30 12:24:52,031 (INFO)- teacher.views- IITR
+2025-01-30 12:24:52,391 (INFO)- teacher.views- IITR
+2025-01-30 12:24:52,791 (INFO)- teacher.views- IITR
+2025-01-30 12:24:53,251 (INFO)- teacher.views- IITR
+2025-01-30 12:24:53,757 (INFO)- teacher.views- IITR
+2025-01-30 12:24:54,311 (INFO)- teacher.views- IITR
+2025-01-30 12:24:55,231 (INFO)- teacher.views- IITR
+2025-01-30 12:24:55,667 (INFO)- teacher.views- IITR
+2025-01-30 12:24:56,210 (INFO)- teacher.views- IITR
+2025-01-30 12:24:56,621 (INFO)- teacher.views- IITR
+2025-01-30 12:24:57,296 (INFO)- teacher.views- IITR
+2025-01-30 12:24:57,781 (INFO)- teacher.views- IITR
+2025-01-30 12:24:58,301 (INFO)- teacher.views- IITR
+2025-01-30 12:25:09,981 (INFO)- teacher.views- IITR
+2025-01-30 12:25:10,311 (INFO)- teacher.views- IITR
+2025-01-30 12:25:10,805 (INFO)- teacher.views- IITR
+2025-01-30 12:25:11,181 (INFO)- teacher.views- IITR
+2025-01-30 12:25:11,711 (INFO)- teacher.views- IITR
+2025-01-30 12:25:12,142 (INFO)- teacher.views- IITR
+2025-01-30 12:25:12,675 (INFO)- teacher.views- IITR
+2025-01-30 12:25:13,286 (INFO)- teacher.views- IITR
+2025-01-30 12:25:13,941 (INFO)- teacher.views- IITR
+2025-01-30 12:25:14,444 (INFO)- teacher.views- IITR
+2025-01-30 12:25:23,819 (INFO)- teacher.views- IITR
+2025-01-30 12:25:24,131 (INFO)- teacher.views- IITR
+2025-01-30 12:25:24,586 (INFO)- teacher.views- IITR
+2025-01-30 12:25:25,141 (INFO)- teacher.views- IITR
+2025-01-30 12:25:26,141 (INFO)- teacher.views- IITR
+2025-01-30 12:25:26,491 (INFO)- teacher.views- IITR
+2025-01-30 12:25:26,851 (INFO)- teacher.views- IITR
+2025-01-30 12:25:27,281 (INFO)- teacher.views- IITR
+2025-01-30 12:25:27,741 (INFO)- teacher.views- IITR
+2025-01-30 12:25:28,205 (INFO)- teacher.views- IITR
+2025-01-30 12:25:28,542 (INFO)- teacher.views- IITR
+2025-01-30 12:25:29,068 (INFO)- teacher.views- IITR
+2025-01-30 12:25:29,501 (INFO)- teacher.views- IITR
+2025-01-30 12:25:30,091 (INFO)- teacher.views- IITR
+2025-01-30 12:25:40,898 (INFO)- teacher.views- IITR
+2025-01-30 12:25:41,371 (INFO)- teacher.views- IITR
+2025-01-30 12:25:41,911 (INFO)- teacher.views- IITR
+2025-01-30 12:25:42,322 (INFO)- teacher.views- IITR
+2025-01-30 12:25:42,881 (INFO)- teacher.views- IITR
+2025-01-30 12:25:43,346 (INFO)- teacher.views- IITR
+2025-01-30 12:25:43,850 (INFO)- teacher.views- IITR
+2025-01-30 12:25:44,350 (INFO)- teacher.views- IITR
+2025-01-30 12:25:44,794 (INFO)- teacher.views- IITR
+2025-01-30 12:25:45,416 (INFO)- teacher.views- IITR
+2025-01-30 12:25:45,823 (INFO)- teacher.views- IITR
+2025-01-30 12:25:46,481 (INFO)- teacher.views- IITR
+2025-01-30 12:25:46,966 (INFO)- teacher.views- IITR
+2025-01-30 12:25:47,641 (INFO)- teacher.views- IITR
+2025-01-30 12:25:48,291 (INFO)- teacher.views- IITR
+2025-01-30 12:26:20,931 (INFO)- teacher.views- IITR
+2025-01-30 12:26:31,851 (INFO)- teacher.views- IITR
+2025-01-30 12:26:32,347 (INFO)- teacher.views- IITR
+2025-01-30 12:26:32,731 (INFO)- teacher.views- IITR
+2025-01-30 12:26:33,114 (INFO)- teacher.views- IITR
+2025-01-30 12:26:33,446 (INFO)- teacher.views- IITR
+2025-01-30 12:26:33,876 (INFO)- teacher.views- IITR
+2025-01-30 12:26:34,271 (INFO)- teacher.views- IITR
+2025-01-30 12:26:34,717 (INFO)- teacher.views- IITR
+2025-01-30 12:26:35,171 (INFO)- teacher.views- IITR
+2025-01-30 12:26:35,543 (INFO)- teacher.views- IITR
+2025-01-30 12:26:35,941 (INFO)- teacher.views- IITR
+2025-01-30 12:26:36,321 (INFO)- teacher.views- IITR
+2025-01-30 12:26:36,756 (INFO)- teacher.views- IITR
+2025-01-30 12:26:37,162 (INFO)- teacher.views- IITR
+2025-01-30 12:26:37,615 (INFO)- teacher.views- IITR
+2025-01-30 12:26:37,986 (INFO)- teacher.views- IITR
+2025-01-30 12:26:38,381 (INFO)- teacher.views- IITR
+2025-01-30 12:26:39,007 (INFO)- teacher.views- IITR
+2025-01-30 12:26:39,912 (INFO)- teacher.views- IITR
+2025-01-30 12:26:40,371 (INFO)- teacher.views- IITR
+2025-01-30 12:26:41,008 (INFO)- teacher.views- IITR
+2025-01-30 12:26:41,651 (INFO)- teacher.views- IITR
+2025-01-30 12:26:55,913 (INFO)- teacher.views- IITR
+2025-01-30 12:27:07,001 (INFO)- teacher.views- IITR
+2025-01-30 12:27:07,541 (INFO)- teacher.views- IITR
+2025-01-30 12:27:08,086 (INFO)- teacher.views- IITR
+2025-01-30 12:27:08,618 (INFO)- teacher.views- IITR
+2025-01-30 12:27:08,999 (INFO)- teacher.views- IITR
+2025-01-30 12:27:09,365 (INFO)- teacher.views- IITR
+2025-01-30 12:27:09,766 (INFO)- teacher.views- IITR
+2025-01-30 12:27:10,168 (INFO)- teacher.views- IITR
+2025-01-30 12:27:10,566 (INFO)- teacher.views- IITR
+2025-01-30 12:27:10,927 (INFO)- teacher.views- IITR
+2025-01-30 12:27:11,413 (INFO)- teacher.views- IITR
+2025-01-30 12:27:11,861 (INFO)- teacher.views- IITR
+2025-01-30 12:27:21,074 (INFO)- teacher.views- IITR
+2025-01-30 12:27:21,531 (INFO)- teacher.views- IITR
+2025-01-30 12:27:22,028 (INFO)- teacher.views- IITR
+2025-01-30 12:27:22,606 (INFO)- teacher.views- IITR
+2025-01-30 12:27:23,129 (INFO)- teacher.views- IITR
+2025-01-30 12:27:23,816 (INFO)- teacher.views- IITR
+2025-01-30 12:27:24,522 (INFO)- teacher.views- IITR
+2025-01-30 12:28:03,367 (INFO)- teacher.views- IITR
+2025-01-30 12:28:03,785 (INFO)- teacher.views- IITR
+2025-01-30 12:28:04,166 (INFO)- teacher.views- IITR
+2025-01-30 12:28:04,490 (INFO)- teacher.views- IITR
+2025-01-30 12:28:04,914 (INFO)- teacher.views- IITR
+2025-01-30 12:28:05,406 (INFO)- teacher.views- IITR
+2025-01-30 12:28:05,761 (INFO)- teacher.views- IITR
+2025-01-30 12:28:06,219 (INFO)- teacher.views- IITR
+2025-01-30 12:28:06,626 (INFO)- teacher.views- IITR
+2025-01-30 12:28:07,054 (INFO)- teacher.views- IITR
+2025-01-30 12:28:07,492 (INFO)- teacher.views- IITR
+2025-01-30 12:28:08,221 (INFO)- teacher.views- IITR
+2025-01-30 12:28:21,766 (INFO)- teacher.views- IITR
+2025-01-30 12:28:22,483 (INFO)- teacher.views- IITR
+2025-01-30 12:28:23,081 (INFO)- teacher.views- IITR
+2025-01-30 12:28:23,601 (INFO)- teacher.views- IITR
+2025-01-30 12:28:24,181 (INFO)- teacher.views- IITR
+2025-01-30 12:28:24,790 (INFO)- teacher.views- IITR
+2025-01-30 12:28:25,700 (INFO)- teacher.views- IITR
+2025-01-30 12:28:26,171 (INFO)- teacher.views- IITR
+2025-01-30 12:28:27,216 (INFO)- teacher.views- IITR
+2025-01-30 12:28:27,803 (INFO)- teacher.views- IITR
+2025-01-30 12:28:28,431 (INFO)- teacher.views- IITR
+2025-01-30 12:28:29,528 (INFO)- teacher.views- IITR
+2025-01-30 12:28:38,115 (INFO)- teacher.views- IITR
+2025-01-30 12:28:46,571 (INFO)- teacher.views- IITR
+2025-01-30 12:28:47,011 (INFO)- teacher.views- IITR
+2025-01-30 12:28:47,421 (INFO)- teacher.views- IITR
+2025-01-30 12:28:47,877 (INFO)- teacher.views- IITR
+2025-01-30 12:28:48,321 (INFO)- teacher.views- IITR
+2025-01-30 12:28:48,686 (INFO)- teacher.views- IITR
+2025-01-30 12:28:49,201 (INFO)- teacher.views- IITR
+2025-01-30 12:28:50,455 (INFO)- teacher.views- IITR
+2025-01-30 12:28:51,928 (INFO)- teacher.views- IITR
+2025-01-30 12:28:52,521 (INFO)- teacher.views- IITR
+2025-01-30 12:29:52,876 (INFO)- teacher.views- IITR
+2025-01-30 12:29:53,143 (INFO)- teacher.views- IITR
+2025-01-30 12:29:53,661 (INFO)- teacher.views- IITR
+2025-01-30 12:29:54,038 (INFO)- teacher.views- IITR
+2025-01-30 12:29:54,356 (INFO)- teacher.views- IITR
+2025-01-30 12:29:54,800 (INFO)- teacher.views- IITR
+2025-01-30 12:29:55,171 (INFO)- teacher.views- IITR
+2025-01-30 12:29:55,610 (INFO)- teacher.views- IITR
+2025-01-30 12:29:56,040 (INFO)- teacher.views- IITR
+2025-01-30 12:29:56,403 (INFO)- teacher.views- IITR
+2025-01-30 12:29:56,955 (INFO)- teacher.views- IITR
+2025-01-30 12:30:01,801 (INFO)- teacher.views- IITR
+2025-01-30 12:30:02,530 (INFO)- teacher.views- IITR
+2025-01-30 12:30:02,901 (INFO)- teacher.views- IITR
+2025-01-30 12:30:03,296 (INFO)- teacher.views- IITR
+2025-01-30 12:30:03,856 (INFO)- teacher.views- IITR
+2025-01-30 12:30:04,276 (INFO)- teacher.views- IITR
+2025-01-30 12:30:04,716 (INFO)- teacher.views- IITR
+2025-01-30 12:30:05,155 (INFO)- teacher.views- IITR
+2025-01-30 12:30:05,784 (INFO)- teacher.views- IITR
+2025-01-30 12:30:06,406 (INFO)- teacher.views- IITR
+2025-01-30 12:30:07,981 (INFO)- teacher.views- IITR
+2025-01-30 12:30:13,334 (INFO)- teacher.views- IITR
+2025-01-30 12:30:13,602 (INFO)- teacher.views- IITR
+2025-01-30 12:30:14,035 (INFO)- teacher.views- IITR
+2025-01-30 12:30:14,490 (INFO)- teacher.views- IITR
+2025-01-30 12:30:14,993 (INFO)- teacher.views- IITR
+2025-01-30 12:30:20,536 (INFO)- teacher.views- IITR
+2025-01-30 12:30:24,634 (INFO)- teacher.views- IITR
+2025-01-30 12:30:24,981 (INFO)- teacher.views- IITR
+2025-01-30 12:30:25,322 (INFO)- teacher.views- IITR
+2025-01-30 12:30:25,787 (INFO)- teacher.views- IITR
+2025-01-30 12:30:26,141 (INFO)- teacher.views- IITR
+2025-01-30 12:30:26,765 (INFO)- teacher.views- IITR
+2025-01-30 12:30:27,861 (INFO)- teacher.views- IITR
+2025-01-30 12:30:28,258 (INFO)- teacher.views- IITR
+2025-01-30 12:30:28,652 (INFO)- teacher.views- IITR
+2025-01-30 12:30:29,278 (INFO)- teacher.views- IITR
+2025-01-30 12:30:30,074 (INFO)- teacher.views- IITR
+2025-01-30 12:30:30,516 (INFO)- teacher.views- IITR
+2025-01-30 12:31:01,964 (INFO)- teacher.views- IITR
+2025-01-30 12:31:33,973 (INFO)- teacher.views- IITR
+2025-01-30 12:31:44,913 (INFO)- teacher.views- IITR
+2025-01-30 12:31:45,411 (INFO)- teacher.views- IITR
+2025-01-30 12:31:45,778 (INFO)- teacher.views- IITR
+2025-01-30 12:31:46,174 (INFO)- teacher.views- IITR
+2025-01-30 12:31:46,602 (INFO)- teacher.views- IITR
+2025-01-30 12:31:47,011 (INFO)- teacher.views- IITR
+2025-01-30 12:31:47,450 (INFO)- teacher.views- IITR
+2025-01-30 12:31:47,995 (INFO)- teacher.views- IITR
+2025-01-30 12:34:14,634 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-30 12:34:16,649 (INFO)- teacher.views- IITR
+2025-01-30 12:34:17,024 (INFO)- teacher.views- IITR
+2025-01-30 12:34:17,681 (INFO)- teacher.views- IITR
+2025-01-30 12:34:18,249 (INFO)- teacher.views- IITR
+2025-01-30 12:34:18,993 (INFO)- teacher.views- IITR
+2025-01-30 12:34:20,943 (INFO)- teacher.views- IITR
+2025-01-30 12:34:29,097 (INFO)- teacher.views- IITR
+2025-01-30 12:34:39,395 (INFO)- teacher.views- IITR
+2025-01-30 12:34:52,170 (INFO)- teacher.views- IITR
+2025-01-30 12:34:52,616 (INFO)- teacher.views- IITR
+2025-01-30 12:36:51,290 (INFO)- teacher.views- IITR
+2025-01-30 12:39:00,584 (INFO)- teacher.views- IITR
+2025-01-30 12:39:05,592 (INFO)- teacher.views- IITR
+2025-01-30 12:39:26,758 (INFO)- teacher.views- IITR
+2025-01-30 12:39:40,803 (INFO)- teacher.views- IITR
+2025-01-30 12:39:41,098 (INFO)- teacher.views- IITR
+2025-01-30 12:39:41,463 (INFO)- teacher.views- IITR
+2025-01-30 12:39:41,859 (INFO)- teacher.views- IITR
+2025-01-30 12:39:42,380 (INFO)- teacher.views- IITR
+2025-01-30 12:39:42,855 (INFO)- teacher.views- IITR
+2025-01-30 12:39:43,170 (INFO)- teacher.views- IITR
+2025-01-30 12:39:43,772 (INFO)- teacher.views- IITR
+2025-01-30 12:39:44,166 (INFO)- teacher.views- IITR
+2025-01-30 12:39:44,751 (INFO)- teacher.views- IITR
+2025-01-30 12:39:45,210 (INFO)- teacher.views- IITR
+2025-01-30 12:39:45,840 (INFO)- teacher.views- IITR
+2025-01-30 12:39:46,646 (INFO)- teacher.views- IITR
+2025-01-30 12:39:48,867 (INFO)- teacher.views- IITR
+2025-01-30 12:40:17,848 (INFO)- teacher.views- IITR
+2025-01-30 12:40:18,348 (INFO)- teacher.views- IITR
+2025-01-30 12:40:18,830 (INFO)- teacher.views- IITR
+2025-01-30 12:42:05,294 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-30 12:42:23,212 (WARNING)- django.request- Not Found: /
+2025-01-30 12:42:23,365 (WARNING)- django.request- Not Found: /
+2025-01-30 12:42:23,433 (WARNING)- django.request- Not Found: /favicon.ico
+2025-01-30 12:43:28,577 (WARNING)- django.request- Method Not Allowed: /api/login-teacher/
+2025-01-30 12:43:34,583 (WARNING)- django.request- Method Not Allowed: /api/login-teacher/

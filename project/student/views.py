@@ -9,7 +9,7 @@ from django.contrib.auth import authenticate
 from rest_framework_simplejwt.tokens import RefreshToken
 from rest_framework_simplejwt.tokens import AccessToken
 from django.core.mail import send_mail
-
+from admin_app.serializers import *
 import logging
 logger = logging.getLogger(__name__)
 
@@ -63,7 +63,41 @@ class StudentAnswersAPIView(APIView):
         
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
     
+class InstituteClassesGETAPIView(APIView):
+    def get(self, request):
+        serializer = AUTHKEYSerializer(data = {'AUTHKEY': (request.headers.get('Authorization')).split()[1]})
+        if serializer.is_valid():  
+            username = serializer.data['AUTHKEY']
+            user = StudentCred.objects.get(username=username)
+            institute = user.institute
+            classes = InstituteClass.objects.filter(institute=institute)
 
+            classList = json.dumps([class_data.classes for class_data in classes])
+           # print(type(classList))
+
+            serializer = InstituteGETClassesSerializer(data = {'institute': institute, 'classes': classList})
+            #print(serializer)
+            
+            if serializer.is_valid():
+                return Response(serializer.data, status=status.HTTP_200_OK)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+    
+
+class InstituteCoursesGETAPIView(APIView):
+    def get(self, request):
+        serializer = AUTHKEYSerializer(data = {'AUTHKEY': (request.headers.get('Authorization')).split()[1]})
+        if serializer.is_valid():  
+            username = serializer.data['AUTHKEY']
+            user = StudentCred.objects.get(username=username)
+            institute = user.institute
+            courses = InstituteCourses.objects.filter(institute=institute)
+            courseList = json.dumps([course.courses for course in courses])
+
+            serializer = InstituteGETCoursesSerializer(data = {'institute': institute, 'courses': courseList})
+            
+            if serializer.is_valid():
+                return Response(serializer.data, status=status.HTTP_200_OK)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
                         
             
 
