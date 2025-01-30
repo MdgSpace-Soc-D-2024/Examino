@@ -31089,3 +31089,1547 @@ Traceback (most recent call last):
     serializer = AUTHKEYSerializer(data = {'AUTHKEY': (request.headers.get('Authorization')).split()[1]})
                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 AttributeError: 'NoneType' object has no attribute 'split'
+2025-01-29 12:59:47,321 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-29 12:59:56,202 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM4OTk3NDk3LCJpYXQiOjE3MzgxMzM0OTcsImp0aSI6ImRjYzcxNjYyM2U4NDRjMzVhMGNkODljNmJiNmNmNGE1IiwidXNlcl9pZCI6MTJ9.14tRVSvS_LV_wl2Ql_Vnxd4-kQ5ckbrGZ-btybOHAH4
+2025-01-29 12:59:56,231 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 12:59:58,535 (ERROR)- django.request- Internal Server Error: /api/admin-class/get/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\admin_app\views.py", line 32, in get
+    serializer = AUTHKEYSerializer(data = {'AUTHKEY': (request.headers.get('Authorization')).split()[1]})
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'split'
+2025-01-29 13:00:00,834 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM4OTk3NDk3LCJpYXQiOjE3MzgxMzM0OTcsImp0aSI6ImRjYzcxNjYyM2U4NDRjMzVhMGNkODljNmJiNmNmNGE1IiwidXNlcl9pZCI6MTJ9.14tRVSvS_LV_wl2Ql_Vnxd4-kQ5ckbrGZ-btybOHAH4
+2025-01-29 13:00:00,840 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 13:00:02,091 (ERROR)- django.request- Internal Server Error: /api/admin-courses/get/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\admin_app\views.py", line 52, in get
+    serializer = AUTHKEYSerializer(data = {'AUTHKEY': (request.headers.get('Authorization')).split()[1]})
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'split'
+2025-01-29 13:00:17,269 (ERROR)- django.request- Internal Server Error: /api/admin-courses/get/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\admin_app\views.py", line 52, in get
+    serializer = AUTHKEYSerializer(data = {'AUTHKEY': (request.headers.get('Authorization')).split()[1]})
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'split'
+2025-01-29 13:00:39,690 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-29 13:00:48,167 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM4OTk5ODQ2LCJpYXQiOjE3MzgxMzU4NDYsImp0aSI6IjA2YzVjZWY0ZTA0MjRhNmY5YzhmYzA2NTliMWRiNWZlIiwidXNlcl9pZCI6MTJ9.hQ0ey7AJksCuwctLOoRgDl88LkF-rcyW_kL8Ql8aufM
+2025-01-29 13:00:48,167 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 13:00:50,659 (ERROR)- django.request- Internal Server Error: /api/admin-courses/get/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\admin_app\views.py", line 52, in get
+    serializer = AUTHKEYSerializer(data = {'AUTHKEY': (request.headers.get('Authorization')).split()[1]})
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'split'
+2025-01-29 13:24:53,191 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM4OTk5ODQ2LCJpYXQiOjE3MzgxMzU4NDYsImp0aSI6IjA2YzVjZWY0ZTA0MjRhNmY5YzhmYzA2NTliMWRiNWZlIiwidXNlcl9pZCI6MTJ9.hQ0ey7AJksCuwctLOoRgDl88LkF-rcyW_kL8Ql8aufM
+2025-01-29 13:24:53,235 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 13:24:56,195 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 13:24:58,884 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM4OTk5ODQ2LCJpYXQiOjE3MzgxMzU4NDYsImp0aSI6IjA2YzVjZWY0ZTA0MjRhNmY5YzhmYzA2NTliMWRiNWZlIiwidXNlcl9pZCI6MTJ9.hQ0ey7AJksCuwctLOoRgDl88LkF-rcyW_kL8Ql8aufM
+2025-01-29 13:24:58,900 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 13:25:01,594 (ERROR)- django.request- Internal Server Error: /api/admin-courses/get/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\admin_app\views.py", line 52, in get
+    serializer = AUTHKEYSerializer(data = {'AUTHKEY': (request.headers.get('Authorization')).split()[1]})
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'split'
+2025-01-29 13:25:48,430 (ERROR)- django.request- Internal Server Error: /api/admin-courses/get/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\admin_app\views.py", line 52, in get
+    serializer = AUTHKEYSerializer(data = {'AUTHKEY': (request.headers.get('Authorization')).split()[1]})
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'split'
+2025-01-29 13:26:40,446 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\teacher\serializers.py changed, reloading.
+2025-01-29 13:26:41,793 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-29 17:07:47,232 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-29 17:07:48,959 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:07,263 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDE0Njg1LCJpYXQiOjE3MzgxNTA2ODUsImp0aSI6ImE0Zjg1NTcyMmU5NDQ2YjFiOTExZmZiODJjNTEwZDdkIiwidXNlcl9pZCI6MTJ9.G__nkZd-wQiVe59fR9JOg3L9lJ6oopyjcxWIofuiSrU
+2025-01-29 17:08:07,263 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:08,072 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDE0Njg1LCJpYXQiOjE3MzgxNTA2ODUsImp0aSI6ImE0Zjg1NTcyMmU5NDQ2YjFiOTExZmZiODJjNTEwZDdkIiwidXNlcl9pZCI6MTJ9.G__nkZd-wQiVe59fR9JOg3L9lJ6oopyjcxWIofuiSrU
+2025-01-29 17:08:08,072 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:08,773 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDE0Njg1LCJpYXQiOjE3MzgxNTA2ODUsImp0aSI6ImE0Zjg1NTcyMmU5NDQ2YjFiOTExZmZiODJjNTEwZDdkIiwidXNlcl9pZCI6MTJ9.G__nkZd-wQiVe59fR9JOg3L9lJ6oopyjcxWIofuiSrU
+2025-01-29 17:08:08,773 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:09,014 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDE0Njg1LCJpYXQiOjE3MzgxNTA2ODUsImp0aSI6ImE0Zjg1NTcyMmU5NDQ2YjFiOTExZmZiODJjNTEwZDdkIiwidXNlcl9pZCI6MTJ9.G__nkZd-wQiVe59fR9JOg3L9lJ6oopyjcxWIofuiSrU
+2025-01-29 17:08:09,018 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:09,689 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDE0Njg1LCJpYXQiOjE3MzgxNTA2ODUsImp0aSI6ImE0Zjg1NTcyMmU5NDQ2YjFiOTExZmZiODJjNTEwZDdkIiwidXNlcl9pZCI6MTJ9.G__nkZd-wQiVe59fR9JOg3L9lJ6oopyjcxWIofuiSrU
+2025-01-29 17:08:09,699 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:10,042 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDE0Njg1LCJpYXQiOjE3MzgxNTA2ODUsImp0aSI6ImE0Zjg1NTcyMmU5NDQ2YjFiOTExZmZiODJjNTEwZDdkIiwidXNlcl9pZCI6MTJ9.G__nkZd-wQiVe59fR9JOg3L9lJ6oopyjcxWIofuiSrU
+2025-01-29 17:08:10,042 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:10,449 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDE0Njg1LCJpYXQiOjE3MzgxNTA2ODUsImp0aSI6ImE0Zjg1NTcyMmU5NDQ2YjFiOTExZmZiODJjNTEwZDdkIiwidXNlcl9pZCI6MTJ9.G__nkZd-wQiVe59fR9JOg3L9lJ6oopyjcxWIofuiSrU
+2025-01-29 17:08:10,458 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:10,846 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDE0Njg1LCJpYXQiOjE3MzgxNTA2ODUsImp0aSI6ImE0Zjg1NTcyMmU5NDQ2YjFiOTExZmZiODJjNTEwZDdkIiwidXNlcl9pZCI6MTJ9.G__nkZd-wQiVe59fR9JOg3L9lJ6oopyjcxWIofuiSrU
+2025-01-29 17:08:10,848 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:11,236 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDE0Njg1LCJpYXQiOjE3MzgxNTA2ODUsImp0aSI6ImE0Zjg1NTcyMmU5NDQ2YjFiOTExZmZiODJjNTEwZDdkIiwidXNlcl9pZCI6MTJ9.G__nkZd-wQiVe59fR9JOg3L9lJ6oopyjcxWIofuiSrU
+2025-01-29 17:08:11,239 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:11,613 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDE0Njg1LCJpYXQiOjE3MzgxNTA2ODUsImp0aSI6ImE0Zjg1NTcyMmU5NDQ2YjFiOTExZmZiODJjNTEwZDdkIiwidXNlcl9pZCI6MTJ9.G__nkZd-wQiVe59fR9JOg3L9lJ6oopyjcxWIofuiSrU
+2025-01-29 17:08:11,619 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:11,987 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDE0Njg1LCJpYXQiOjE3MzgxNTA2ODUsImp0aSI6ImE0Zjg1NTcyMmU5NDQ2YjFiOTExZmZiODJjNTEwZDdkIiwidXNlcl9pZCI6MTJ9.G__nkZd-wQiVe59fR9JOg3L9lJ6oopyjcxWIofuiSrU
+2025-01-29 17:08:11,987 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:12,528 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDE0Njg1LCJpYXQiOjE3MzgxNTA2ODUsImp0aSI6ImE0Zjg1NTcyMmU5NDQ2YjFiOTExZmZiODJjNTEwZDdkIiwidXNlcl9pZCI6MTJ9.G__nkZd-wQiVe59fR9JOg3L9lJ6oopyjcxWIofuiSrU
+2025-01-29 17:08:12,530 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:12,854 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDE0Njg1LCJpYXQiOjE3MzgxNTA2ODUsImp0aSI6ImE0Zjg1NTcyMmU5NDQ2YjFiOTExZmZiODJjNTEwZDdkIiwidXNlcl9pZCI6MTJ9.G__nkZd-wQiVe59fR9JOg3L9lJ6oopyjcxWIofuiSrU
+2025-01-29 17:08:12,854 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:13,246 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDE0Njg1LCJpYXQiOjE3MzgxNTA2ODUsImp0aSI6ImE0Zjg1NTcyMmU5NDQ2YjFiOTExZmZiODJjNTEwZDdkIiwidXNlcl9pZCI6MTJ9.G__nkZd-wQiVe59fR9JOg3L9lJ6oopyjcxWIofuiSrU
+2025-01-29 17:08:13,249 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:13,710 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDE0Njg1LCJpYXQiOjE3MzgxNTA2ODUsImp0aSI6ImE0Zjg1NTcyMmU5NDQ2YjFiOTExZmZiODJjNTEwZDdkIiwidXNlcl9pZCI6MTJ9.G__nkZd-wQiVe59fR9JOg3L9lJ6oopyjcxWIofuiSrU
+2025-01-29 17:08:13,715 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:14,080 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDE0Njg1LCJpYXQiOjE3MzgxNTA2ODUsImp0aSI6ImE0Zjg1NTcyMmU5NDQ2YjFiOTExZmZiODJjNTEwZDdkIiwidXNlcl9pZCI6MTJ9.G__nkZd-wQiVe59fR9JOg3L9lJ6oopyjcxWIofuiSrU
+2025-01-29 17:08:14,082 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:14,469 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDE0Njg1LCJpYXQiOjE3MzgxNTA2ODUsImp0aSI6ImE0Zjg1NTcyMmU5NDQ2YjFiOTExZmZiODJjNTEwZDdkIiwidXNlcl9pZCI6MTJ9.G__nkZd-wQiVe59fR9JOg3L9lJ6oopyjcxWIofuiSrU
+2025-01-29 17:08:14,470 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:14,876 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDE0Njg1LCJpYXQiOjE3MzgxNTA2ODUsImp0aSI6ImE0Zjg1NTcyMmU5NDQ2YjFiOTExZmZiODJjNTEwZDdkIiwidXNlcl9pZCI6MTJ9.G__nkZd-wQiVe59fR9JOg3L9lJ6oopyjcxWIofuiSrU
+2025-01-29 17:08:14,880 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:15,311 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDE0Njg1LCJpYXQiOjE3MzgxNTA2ODUsImp0aSI6ImE0Zjg1NTcyMmU5NDQ2YjFiOTExZmZiODJjNTEwZDdkIiwidXNlcl9pZCI6MTJ9.G__nkZd-wQiVe59fR9JOg3L9lJ6oopyjcxWIofuiSrU
+2025-01-29 17:08:15,316 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:15,769 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDE0Njg1LCJpYXQiOjE3MzgxNTA2ODUsImp0aSI6ImE0Zjg1NTcyMmU5NDQ2YjFiOTExZmZiODJjNTEwZDdkIiwidXNlcl9pZCI6MTJ9.G__nkZd-wQiVe59fR9JOg3L9lJ6oopyjcxWIofuiSrU
+2025-01-29 17:08:15,773 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:16,054 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:16,594 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:16,967 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:17,400 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:17,824 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:18,631 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:19,228 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:19,621 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:20,016 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:20,491 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:20,847 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:21,183 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:21,434 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:21,740 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:22,132 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:22,731 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:22,984 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:23,677 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:24,401 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:24,733 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:25,126 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:25,553 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:26,015 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:26,342 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:26,879 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:27,127 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:27,532 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:27,969 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:28,383 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:28,745 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:29,193 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:29,579 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:30,053 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:30,384 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:30,873 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:31,237 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:31,641 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:32,044 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:32,428 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:32,908 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:33,531 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:34,365 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDE0Njg1LCJpYXQiOjE3MzgxNTA2ODUsImp0aSI6ImE0Zjg1NTcyMmU5NDQ2YjFiOTExZmZiODJjNTEwZDdkIiwidXNlcl9pZCI6MTJ9.G__nkZd-wQiVe59fR9JOg3L9lJ6oopyjcxWIofuiSrU
+2025-01-29 17:08:34,368 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:34,765 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDE0Njg1LCJpYXQiOjE3MzgxNTA2ODUsImp0aSI6ImE0Zjg1NTcyMmU5NDQ2YjFiOTExZmZiODJjNTEwZDdkIiwidXNlcl9pZCI6MTJ9.G__nkZd-wQiVe59fR9JOg3L9lJ6oopyjcxWIofuiSrU
+2025-01-29 17:08:34,765 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:35,031 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDE0Njg1LCJpYXQiOjE3MzgxNTA2ODUsImp0aSI6ImE0Zjg1NTcyMmU5NDQ2YjFiOTExZmZiODJjNTEwZDdkIiwidXNlcl9pZCI6MTJ9.G__nkZd-wQiVe59fR9JOg3L9lJ6oopyjcxWIofuiSrU
+2025-01-29 17:08:35,031 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:35,641 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDE0Njg1LCJpYXQiOjE3MzgxNTA2ODUsImp0aSI6ImE0Zjg1NTcyMmU5NDQ2YjFiOTExZmZiODJjNTEwZDdkIiwidXNlcl9pZCI6MTJ9.G__nkZd-wQiVe59fR9JOg3L9lJ6oopyjcxWIofuiSrU
+2025-01-29 17:08:35,657 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:56,472 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDE0NzM0LCJpYXQiOjE3MzgxNTA3MzQsImp0aSI6ImFmNmQ2ZGQ4YmVjZjQ3YzM5NTE5YjZkMDY2MmFiY2I1IiwidXNlcl9pZCI6MTJ9.C97A8NdAUxbmzDeTAjUNQv4GYlnBixfWjPhHvsk08PI
+2025-01-29 17:08:56,478 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:08:59,098 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:09:26,303 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:09:38,256 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:09:39,951 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:09:54,599 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:09:55,948 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:09:56,436 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:09:56,736 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:09:57,209 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:09:57,550 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:09:58,018 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:09:58,318 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:09:58,754 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:09:59,154 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:09:59,556 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:09:59,953 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:10:00,293 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:10:00,895 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:10:01,845 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:10:02,358 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:10:02,639 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:10:03,207 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:10:45,179 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\teacher\serializers.py changed, reloading.
+2025-01-29 17:10:46,307 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-29 17:30:24,426 (WARNING)- django.request- Not Found: /
+2025-01-29 17:30:50,828 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDE2MDQ5LCJpYXQiOjE3MzgxNTIwNDksImp0aSI6ImQxZGNhMzA0M2U0NjQwYjdiMzNjZGQxMTFmOWY0ZGNhIiwidXNlcl9pZCI6MTJ9.9KX2gKArYE3OZyTMlNW9ni5GeUVMv86XikKPN2mIl60
+2025-01-29 17:30:50,828 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:30:52,217 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:31:44,373 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:31:45,403 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:32:02,701 (WARNING)- django.request- Bad Request: /api/admin-add-teachers/
+2025-01-29 17:34:33,243 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:34:35,412 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:35:03,044 (WARNING)- django.request- Bad Request: /api/admin-add-teachers/
+2025-01-29 17:35:18,196 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:35:19,731 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:35:37,404 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:35:38,089 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:35:51,709 (WARNING)- django.request- Not Found: /
+2025-01-29 17:35:57,830 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:35:58,431 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:35:59,033 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:35:59,440 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:35:59,845 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:36:00,281 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:36:00,776 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:36:01,187 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:36:01,577 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:36:01,974 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:36:02,370 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:36:02,797 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:36:03,350 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:36:03,839 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:36:04,441 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:36:04,912 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:36:05,375 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:36:05,843 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:36:06,738 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:36:07,131 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:36:22,852 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\teacher\models.py changed, reloading.
+2025-01-29 17:36:24,400 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-29 17:36:25,409 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:36:25,740 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:36:26,938 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:36:37,771 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:36:38,341 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:36:39,175 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:36:39,926 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:37:29,525 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:37:41,044 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:37:42,195 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:37:42,881 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:37:43,486 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:37:43,879 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:37:44,642 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:37:45,100 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:37:46,519 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:37:46,897 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:37:47,305 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:37:47,778 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:37:48,426 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:37:48,874 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:37:50,387 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:39:12,412 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:39:12,783 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:39:13,148 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:39:13,500 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:39:13,880 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:39:14,333 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:39:14,749 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:39:15,098 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:39:15,497 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:39:15,825 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:39:16,315 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:39:16,664 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:39:17,044 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:39:17,487 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:39:17,926 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:39:18,282 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:39:18,794 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 17:47:24,209 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\serializers.py changed, reloading.
+2025-01-29 17:47:25,506 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-29 17:47:37,519 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\serializers.py changed, reloading.
+2025-01-29 17:47:38,546 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-29 17:47:40,628 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\serializers.py changed, reloading.
+2025-01-29 17:47:41,574 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-29 18:00:00,684 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-29 18:00:36,144 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDE3ODM0LCJpYXQiOjE3MzgxNTM4MzQsImp0aSI6Ijk5MmU3ZjJlM2U2YTQyNGViNzgzMjQxMWEyODE0ZThjIiwidXNlcl9pZCI6MTJ9.n6kwgAJcafDu4Yvyvt4DvsVHuE8LZ8Z5l0_Xrd2vzc4
+2025-01-29 18:00:36,150 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 18:00:41,578 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 18:01:01,914 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 18:01:02,514 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 18:01:15,474 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 18:01:20,364 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 18:09:01,714 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-29 18:09:02,809 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 18:09:03,036 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 18:09:03,623 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 18:09:05,506 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 18:09:06,434 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 18:09:08,480 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDE3ODM0LCJpYXQiOjE3MzgxNTM4MzQsImp0aSI6Ijk5MmU3ZjJlM2U2YTQyNGViNzgzMjQxMWEyODE0ZThjIiwidXNlcl9pZCI6MTJ9.n6kwgAJcafDu4Yvyvt4DvsVHuE8LZ8Z5l0_Xrd2vzc4
+2025-01-29 18:09:08,484 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 18:09:09,938 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 18:09:39,045 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 18:09:40,300 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 18:09:57,129 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 18:09:57,754 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 18:09:59,621 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 18:10:07,444 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDE4NDA1LCJpYXQiOjE3MzgxNTQ0MDUsImp0aSI6IjE0NjQ5NjUzYTgyNTQ1MWQ5MjVhYWU3YjhhMjM0ZmZkIiwidXNlcl9pZCI6MTJ9.E7poiMSp54fksfRxTn9HbsICJ3LbyftB9hnUCUC5eDg
+2025-01-29 18:10:07,454 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 18:10:11,817 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 18:10:33,536 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 18:10:44,516 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 18:10:45,297 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 18:10:46,354 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 18:10:48,180 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 18:11:22,485 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-29 18:11:24,362 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 18:11:25,694 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 21:25:13,418 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-29 21:25:39,873 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDMwMTM4LCJpYXQiOjE3MzgxNjYxMzgsImp0aSI6IjU4Mjg1ZDlhYjczNTRiOTM5N2ZhMTk4NzU5ZWVmY2MyIiwidXNlcl9pZCI6MTJ9.9d9qQZhDgwQxYL1kXP0_Bg2uFe5R4kgRn6DLPgO_tdo
+2025-01-29 21:25:39,883 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 21:25:58,776 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDMwMTM4LCJpYXQiOjE3MzgxNjYxMzgsImp0aSI6IjU4Mjg1ZDlhYjczNTRiOTM5N2ZhMTk4NzU5ZWVmY2MyIiwidXNlcl9pZCI6MTJ9.9d9qQZhDgwQxYL1kXP0_Bg2uFe5R4kgRn6DLPgO_tdo
+2025-01-29 21:25:58,779 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 21:25:58,987 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\teacher\views.py changed, reloading.
+2025-01-29 21:26:00,241 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-29 21:26:01,327 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDMwMTM4LCJpYXQiOjE3MzgxNjYxMzgsImp0aSI6IjU4Mjg1ZDlhYjczNTRiOTM5N2ZhMTk4NzU5ZWVmY2MyIiwidXNlcl9pZCI6MTJ9.9d9qQZhDgwQxYL1kXP0_Bg2uFe5R4kgRn6DLPgO_tdo
+2025-01-29 21:26:01,347 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 21:26:01,865 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDMwMTM4LCJpYXQiOjE3MzgxNjYxMzgsImp0aSI6IjU4Mjg1ZDlhYjczNTRiOTM5N2ZhMTk4NzU5ZWVmY2MyIiwidXNlcl9pZCI6MTJ9.9d9qQZhDgwQxYL1kXP0_Bg2uFe5R4kgRn6DLPgO_tdo
+2025-01-29 21:26:01,867 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 21:26:02,208 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDMwMTM4LCJpYXQiOjE3MzgxNjYxMzgsImp0aSI6IjU4Mjg1ZDlhYjczNTRiOTM5N2ZhMTk4NzU5ZWVmY2MyIiwidXNlcl9pZCI6MTJ9.9d9qQZhDgwQxYL1kXP0_Bg2uFe5R4kgRn6DLPgO_tdo
+2025-01-29 21:26:02,214 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 21:26:02,514 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDMwMTM4LCJpYXQiOjE3MzgxNjYxMzgsImp0aSI6IjU4Mjg1ZDlhYjczNTRiOTM5N2ZhMTk4NzU5ZWVmY2MyIiwidXNlcl9pZCI6MTJ9.9d9qQZhDgwQxYL1kXP0_Bg2uFe5R4kgRn6DLPgO_tdo
+2025-01-29 21:26:02,530 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 21:26:02,994 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDMwMTM4LCJpYXQiOjE3MzgxNjYxMzgsImp0aSI6IjU4Mjg1ZDlhYjczNTRiOTM5N2ZhMTk4NzU5ZWVmY2MyIiwidXNlcl9pZCI6MTJ9.9d9qQZhDgwQxYL1kXP0_Bg2uFe5R4kgRn6DLPgO_tdo
+2025-01-29 21:26:02,999 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 21:26:03,396 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDMwMTM4LCJpYXQiOjE3MzgxNjYxMzgsImp0aSI6IjU4Mjg1ZDlhYjczNTRiOTM5N2ZhMTk4NzU5ZWVmY2MyIiwidXNlcl9pZCI6MTJ9.9d9qQZhDgwQxYL1kXP0_Bg2uFe5R4kgRn6DLPgO_tdo
+2025-01-29 21:26:03,404 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 21:26:03,665 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\teacher\views.py changed, reloading.
+2025-01-29 21:26:04,596 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-29 21:26:08,587 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\teacher\views.py changed, reloading.
+2025-01-29 21:26:09,901 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-29 21:26:10,463 (INFO)- teacher.views- <QuerySet [<TeacherCred: Dhruvi>]>
+2025-01-29 21:26:10,658 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDMwMTM4LCJpYXQiOjE3MzgxNjYxMzgsImp0aSI6IjU4Mjg1ZDlhYjczNTRiOTM5N2ZhMTk4NzU5ZWVmY2MyIiwidXNlcl9pZCI6MTJ9.9d9qQZhDgwQxYL1kXP0_Bg2uFe5R4kgRn6DLPgO_tdo
+2025-01-29 21:26:10,674 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 21:26:10,881 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDMwMTM4LCJpYXQiOjE3MzgxNjYxMzgsImp0aSI6IjU4Mjg1ZDlhYjczNTRiOTM5N2ZhMTk4NzU5ZWVmY2MyIiwidXNlcl9pZCI6MTJ9.9d9qQZhDgwQxYL1kXP0_Bg2uFe5R4kgRn6DLPgO_tdo
+2025-01-29 21:26:10,881 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 21:26:11,280 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDMwMTM4LCJpYXQiOjE3MzgxNjYxMzgsImp0aSI6IjU4Mjg1ZDlhYjczNTRiOTM5N2ZhMTk4NzU5ZWVmY2MyIiwidXNlcl9pZCI6MTJ9.9d9qQZhDgwQxYL1kXP0_Bg2uFe5R4kgRn6DLPgO_tdo
+2025-01-29 21:26:11,287 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 21:26:11,825 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDMwMTM4LCJpYXQiOjE3MzgxNjYxMzgsImp0aSI6IjU4Mjg1ZDlhYjczNTRiOTM5N2ZhMTk4NzU5ZWVmY2MyIiwidXNlcl9pZCI6MTJ9.9d9qQZhDgwQxYL1kXP0_Bg2uFe5R4kgRn6DLPgO_tdo
+2025-01-29 21:26:11,827 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 21:26:53,051 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-29 21:26:53,588 (INFO)- teacher.views- <QuerySet [<TeacherCred: Dhruvi>]>
+2025-01-29 21:26:54,305 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDMwMTM4LCJpYXQiOjE3MzgxNjYxMzgsImp0aSI6IjU4Mjg1ZDlhYjczNTRiOTM5N2ZhMTk4NzU5ZWVmY2MyIiwidXNlcl9pZCI6MTJ9.9d9qQZhDgwQxYL1kXP0_Bg2uFe5R4kgRn6DLPgO_tdo
+2025-01-29 21:26:54,342 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 21:27:02,333 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDMwMTM4LCJpYXQiOjE3MzgxNjYxMzgsImp0aSI6IjU4Mjg1ZDlhYjczNTRiOTM5N2ZhMTk4NzU5ZWVmY2MyIiwidXNlcl9pZCI6MTJ9.9d9qQZhDgwQxYL1kXP0_Bg2uFe5R4kgRn6DLPgO_tdo
+2025-01-29 21:27:02,341 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 21:27:02,818 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\admin_app\views.py changed, reloading.
+2025-01-29 21:27:03,967 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-29 21:27:04,496 (INFO)- teacher.views- <QuerySet [<TeacherCred: Dhruvi>]>
+2025-01-29 21:27:04,902 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDMwMTM4LCJpYXQiOjE3MzgxNjYxMzgsImp0aSI6IjU4Mjg1ZDlhYjczNTRiOTM5N2ZhMTk4NzU5ZWVmY2MyIiwidXNlcl9pZCI6MTJ9.9d9qQZhDgwQxYL1kXP0_Bg2uFe5R4kgRn6DLPgO_tdo
+2025-01-29 21:27:04,924 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 21:27:05,335 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDMwMTM4LCJpYXQiOjE3MzgxNjYxMzgsImp0aSI6IjU4Mjg1ZDlhYjczNTRiOTM5N2ZhMTk4NzU5ZWVmY2MyIiwidXNlcl9pZCI6MTJ9.9d9qQZhDgwQxYL1kXP0_Bg2uFe5R4kgRn6DLPgO_tdo
+2025-01-29 21:27:05,336 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 21:27:05,747 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDMwMTM4LCJpYXQiOjE3MzgxNjYxMzgsImp0aSI6IjU4Mjg1ZDlhYjczNTRiOTM5N2ZhMTk4NzU5ZWVmY2MyIiwidXNlcl9pZCI6MTJ9.9d9qQZhDgwQxYL1kXP0_Bg2uFe5R4kgRn6DLPgO_tdo
+2025-01-29 21:27:05,747 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 21:27:06,137 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDMwMTM4LCJpYXQiOjE3MzgxNjYxMzgsImp0aSI6IjU4Mjg1ZDlhYjczNTRiOTM5N2ZhMTk4NzU5ZWVmY2MyIiwidXNlcl9pZCI6MTJ9.9d9qQZhDgwQxYL1kXP0_Bg2uFe5R4kgRn6DLPgO_tdo
+2025-01-29 21:27:06,138 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 21:27:06,542 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDMwMTM4LCJpYXQiOjE3MzgxNjYxMzgsImp0aSI6IjU4Mjg1ZDlhYjczNTRiOTM5N2ZhMTk4NzU5ZWVmY2MyIiwidXNlcl9pZCI6MTJ9.9d9qQZhDgwQxYL1kXP0_Bg2uFe5R4kgRn6DLPgO_tdo
+2025-01-29 21:27:06,552 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 21:27:06,943 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDMwMTM4LCJpYXQiOjE3MzgxNjYxMzgsImp0aSI6IjU4Mjg1ZDlhYjczNTRiOTM5N2ZhMTk4NzU5ZWVmY2MyIiwidXNlcl9pZCI6MTJ9.9d9qQZhDgwQxYL1kXP0_Bg2uFe5R4kgRn6DLPgO_tdo
+2025-01-29 21:27:06,945 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 21:27:07,325 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDMwMTM4LCJpYXQiOjE3MzgxNjYxMzgsImp0aSI6IjU4Mjg1ZDlhYjczNTRiOTM5N2ZhMTk4NzU5ZWVmY2MyIiwidXNlcl9pZCI6MTJ9.9d9qQZhDgwQxYL1kXP0_Bg2uFe5R4kgRn6DLPgO_tdo
+2025-01-29 21:27:07,329 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 21:27:07,751 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDMwMTM4LCJpYXQiOjE3MzgxNjYxMzgsImp0aSI6IjU4Mjg1ZDlhYjczNTRiOTM5N2ZhMTk4NzU5ZWVmY2MyIiwidXNlcl9pZCI6MTJ9.9d9qQZhDgwQxYL1kXP0_Bg2uFe5R4kgRn6DLPgO_tdo
+2025-01-29 21:27:07,764 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 21:27:08,144 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDMwMTM4LCJpYXQiOjE3MzgxNjYxMzgsImp0aSI6IjU4Mjg1ZDlhYjczNTRiOTM5N2ZhMTk4NzU5ZWVmY2MyIiwidXNlcl9pZCI6MTJ9.9d9qQZhDgwQxYL1kXP0_Bg2uFe5R4kgRn6DLPgO_tdo
+2025-01-29 21:27:08,144 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 21:27:08,555 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDMwMTM4LCJpYXQiOjE3MzgxNjYxMzgsImp0aSI6IjU4Mjg1ZDlhYjczNTRiOTM5N2ZhMTk4NzU5ZWVmY2MyIiwidXNlcl9pZCI6MTJ9.9d9qQZhDgwQxYL1kXP0_Bg2uFe5R4kgRn6DLPgO_tdo
+2025-01-29 21:27:08,559 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 21:27:08,991 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDMwMTM4LCJpYXQiOjE3MzgxNjYxMzgsImp0aSI6IjU4Mjg1ZDlhYjczNTRiOTM5N2ZhMTk4NzU5ZWVmY2MyIiwidXNlcl9pZCI6MTJ9.9d9qQZhDgwQxYL1kXP0_Bg2uFe5R4kgRn6DLPgO_tdo
+2025-01-29 21:27:08,996 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 21:27:09,418 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDMwMTM4LCJpYXQiOjE3MzgxNjYxMzgsImp0aSI6IjU4Mjg1ZDlhYjczNTRiOTM5N2ZhMTk4NzU5ZWVmY2MyIiwidXNlcl9pZCI6MTJ9.9d9qQZhDgwQxYL1kXP0_Bg2uFe5R4kgRn6DLPgO_tdo
+2025-01-29 21:27:09,422 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 21:27:09,768 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDMwMTM4LCJpYXQiOjE3MzgxNjYxMzgsImp0aSI6IjU4Mjg1ZDlhYjczNTRiOTM5N2ZhMTk4NzU5ZWVmY2MyIiwidXNlcl9pZCI6MTJ9.9d9qQZhDgwQxYL1kXP0_Bg2uFe5R4kgRn6DLPgO_tdo
+2025-01-29 21:27:09,768 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 21:27:10,180 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDMwMTM4LCJpYXQiOjE3MzgxNjYxMzgsImp0aSI6IjU4Mjg1ZDlhYjczNTRiOTM5N2ZhMTk4NzU5ZWVmY2MyIiwidXNlcl9pZCI6MTJ9.9d9qQZhDgwQxYL1kXP0_Bg2uFe5R4kgRn6DLPgO_tdo
+2025-01-29 21:27:10,186 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 21:27:10,623 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDMwMTM4LCJpYXQiOjE3MzgxNjYxMzgsImp0aSI6IjU4Mjg1ZDlhYjczNTRiOTM5N2ZhMTk4NzU5ZWVmY2MyIiwidXNlcl9pZCI6MTJ9.9d9qQZhDgwQxYL1kXP0_Bg2uFe5R4kgRn6DLPgO_tdo
+2025-01-29 21:27:10,623 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 21:27:11,036 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDMwMTM4LCJpYXQiOjE3MzgxNjYxMzgsImp0aSI6IjU4Mjg1ZDlhYjczNTRiOTM5N2ZhMTk4NzU5ZWVmY2MyIiwidXNlcl9pZCI6MTJ9.9d9qQZhDgwQxYL1kXP0_Bg2uFe5R4kgRn6DLPgO_tdo
+2025-01-29 21:27:11,036 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 21:27:11,757 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDMwMTM4LCJpYXQiOjE3MzgxNjYxMzgsImp0aSI6IjU4Mjg1ZDlhYjczNTRiOTM5N2ZhMTk4NzU5ZWVmY2MyIiwidXNlcl9pZCI6MTJ9.9d9qQZhDgwQxYL1kXP0_Bg2uFe5R4kgRn6DLPgO_tdo
+2025-01-29 21:27:11,757 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 21:27:25,099 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDMwMTM4LCJpYXQiOjE3MzgxNjYxMzgsImp0aSI6IjU4Mjg1ZDlhYjczNTRiOTM5N2ZhMTk4NzU5ZWVmY2MyIiwidXNlcl9pZCI6MTJ9.9d9qQZhDgwQxYL1kXP0_Bg2uFe5R4kgRn6DLPgO_tdo
+2025-01-29 21:27:25,103 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 21:27:25,395 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDMwMTM4LCJpYXQiOjE3MzgxNjYxMzgsImp0aSI6IjU4Mjg1ZDlhYjczNTRiOTM5N2ZhMTk4NzU5ZWVmY2MyIiwidXNlcl9pZCI6MTJ9.9d9qQZhDgwQxYL1kXP0_Bg2uFe5R4kgRn6DLPgO_tdo
+2025-01-29 21:27:25,411 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 21:27:25,911 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDMwMTM4LCJpYXQiOjE3MzgxNjYxMzgsImp0aSI6IjU4Mjg1ZDlhYjczNTRiOTM5N2ZhMTk4NzU5ZWVmY2MyIiwidXNlcl9pZCI6MTJ9.9d9qQZhDgwQxYL1kXP0_Bg2uFe5R4kgRn6DLPgO_tdo
+2025-01-29 21:27:25,914 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 21:27:26,284 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDMwMTM4LCJpYXQiOjE3MzgxNjYxMzgsImp0aSI6IjU4Mjg1ZDlhYjczNTRiOTM5N2ZhMTk4NzU5ZWVmY2MyIiwidXNlcl9pZCI6MTJ9.9d9qQZhDgwQxYL1kXP0_Bg2uFe5R4kgRn6DLPgO_tdo
+2025-01-29 21:27:26,284 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 21:27:26,722 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDMwMTM4LCJpYXQiOjE3MzgxNjYxMzgsImp0aSI6IjU4Mjg1ZDlhYjczNTRiOTM5N2ZhMTk4NzU5ZWVmY2MyIiwidXNlcl9pZCI6MTJ9.9d9qQZhDgwQxYL1kXP0_Bg2uFe5R4kgRn6DLPgO_tdo
+2025-01-29 21:27:26,726 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 21:27:27,130 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDMwMTM4LCJpYXQiOjE3MzgxNjYxMzgsImp0aSI6IjU4Mjg1ZDlhYjczNTRiOTM5N2ZhMTk4NzU5ZWVmY2MyIiwidXNlcl9pZCI6MTJ9.9d9qQZhDgwQxYL1kXP0_Bg2uFe5R4kgRn6DLPgO_tdo
+2025-01-29 21:27:27,130 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 21:27:27,575 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDMwMTM4LCJpYXQiOjE3MzgxNjYxMzgsImp0aSI6IjU4Mjg1ZDlhYjczNTRiOTM5N2ZhMTk4NzU5ZWVmY2MyIiwidXNlcl9pZCI6MTJ9.9d9qQZhDgwQxYL1kXP0_Bg2uFe5R4kgRn6DLPgO_tdo
+2025-01-29 21:27:27,575 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 21:27:27,929 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDMwMTM4LCJpYXQiOjE3MzgxNjYxMzgsImp0aSI6IjU4Mjg1ZDlhYjczNTRiOTM5N2ZhMTk4NzU5ZWVmY2MyIiwidXNlcl9pZCI6MTJ9.9d9qQZhDgwQxYL1kXP0_Bg2uFe5R4kgRn6DLPgO_tdo
+2025-01-29 21:27:27,939 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 21:27:28,357 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDMwMTM4LCJpYXQiOjE3MzgxNjYxMzgsImp0aSI6IjU4Mjg1ZDlhYjczNTRiOTM5N2ZhMTk4NzU5ZWVmY2MyIiwidXNlcl9pZCI6MTJ9.9d9qQZhDgwQxYL1kXP0_Bg2uFe5R4kgRn6DLPgO_tdo
+2025-01-29 21:27:28,360 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 21:27:28,801 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDMwMTM4LCJpYXQiOjE3MzgxNjYxMzgsImp0aSI6IjU4Mjg1ZDlhYjczNTRiOTM5N2ZhMTk4NzU5ZWVmY2MyIiwidXNlcl9pZCI6MTJ9.9d9qQZhDgwQxYL1kXP0_Bg2uFe5R4kgRn6DLPgO_tdo
+2025-01-29 21:27:28,801 (INFO)- admin_app.serializers- dhruvi
+2025-01-29 22:32:04,470 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-29 22:32:05,421 (INFO)- teacher.views- <QuerySet [<TeacherCred: Dhruvi>]>
+2025-01-29 22:32:08,094 (WARNING)- django.request- Not Found: /
+2025-01-29 22:34:29,378 (WARNING)- django.request- Unauthorized: /api/login-teacher/
+2025-01-30 03:07:33,336 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-30 03:07:34,320 (INFO)- teacher.views- <QuerySet [<TeacherCred: Dhruvi>]>
+2025-01-30 03:13:51,373 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-30 03:13:51,950 (INFO)- teacher.views- <QuerySet [<TeacherCred: Dhruvi>]>
+2025-01-30 03:17:01,788 (WARNING)- django.request- Not Found: /api/results/
+2025-01-30 03:50:29,188 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-30 03:50:30,179 (INFO)- teacher.views- <QuerySet [<TeacherCred: Dhruvi>]>
+2025-01-30 03:50:49,011 (ERROR)- django.request- Internal Server Error: /api/admin-class/get/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\admin_app\views.py", line 34, in get
+    serializer = AUTHKEYSerializer(data = {'AUTHKEY': (request.headers.get('Authorization')).split()[1]})
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'split'
+2025-01-30 03:50:49,039 (ERROR)- django.request- Internal Server Error: /api/admin-courses/get/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\admin_app\views.py", line 54, in get
+    serializer = AUTHKEYSerializer(data = {'AUTHKEY': (request.headers.get('Authorization')).split()[1]})
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'split'
+2025-01-30 03:50:51,478 (ERROR)- django.request- Internal Server Error: /api/admin-class/get/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\admin_app\views.py", line 34, in get
+    serializer = AUTHKEYSerializer(data = {'AUTHKEY': (request.headers.get('Authorization')).split()[1]})
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'split'
+2025-01-30 03:50:51,509 (ERROR)- django.request- Internal Server Error: /api/admin-courses/get/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\admin_app\views.py", line 54, in get
+    serializer = AUTHKEYSerializer(data = {'AUTHKEY': (request.headers.get('Authorization')).split()[1]})
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'split'
+2025-01-30 03:50:51,799 (ERROR)- django.request- Internal Server Error: /api/admin-class/get/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\admin_app\views.py", line 34, in get
+    serializer = AUTHKEYSerializer(data = {'AUTHKEY': (request.headers.get('Authorization')).split()[1]})
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'split'
+2025-01-30 03:50:51,838 (ERROR)- django.request- Internal Server Error: /api/admin-courses/get/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\admin_app\views.py", line 54, in get
+    serializer = AUTHKEYSerializer(data = {'AUTHKEY': (request.headers.get('Authorization')).split()[1]})
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'split'
+2025-01-30 03:50:52,209 (ERROR)- django.request- Internal Server Error: /api/admin-class/get/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\admin_app\views.py", line 34, in get
+    serializer = AUTHKEYSerializer(data = {'AUTHKEY': (request.headers.get('Authorization')).split()[1]})
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'split'
+2025-01-30 03:50:52,229 (ERROR)- django.request- Internal Server Error: /api/admin-courses/get/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\admin_app\views.py", line 54, in get
+    serializer = AUTHKEYSerializer(data = {'AUTHKEY': (request.headers.get('Authorization')).split()[1]})
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'split'
+2025-01-30 03:50:52,589 (ERROR)- django.request- Internal Server Error: /api/admin-class/get/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\admin_app\views.py", line 34, in get
+    serializer = AUTHKEYSerializer(data = {'AUTHKEY': (request.headers.get('Authorization')).split()[1]})
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'split'
+2025-01-30 03:50:52,633 (ERROR)- django.request- Internal Server Error: /api/admin-courses/get/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\admin_app\views.py", line 54, in get
+    serializer = AUTHKEYSerializer(data = {'AUTHKEY': (request.headers.get('Authorization')).split()[1]})
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'split'
+2025-01-30 03:50:52,999 (ERROR)- django.request- Internal Server Error: /api/admin-class/get/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\admin_app\views.py", line 34, in get
+    serializer = AUTHKEYSerializer(data = {'AUTHKEY': (request.headers.get('Authorization')).split()[1]})
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'split'
+2025-01-30 03:50:53,039 (ERROR)- django.request- Internal Server Error: /api/admin-courses/get/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\admin_app\views.py", line 54, in get
+    serializer = AUTHKEYSerializer(data = {'AUTHKEY': (request.headers.get('Authorization')).split()[1]})
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'split'
+2025-01-30 03:50:53,620 (ERROR)- django.request- Internal Server Error: /api/admin-class/get/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\admin_app\views.py", line 34, in get
+    serializer = AUTHKEYSerializer(data = {'AUTHKEY': (request.headers.get('Authorization')).split()[1]})
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'split'
+2025-01-30 03:50:53,639 (ERROR)- django.request- Internal Server Error: /api/admin-courses/get/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\admin_app\views.py", line 54, in get
+    serializer = AUTHKEYSerializer(data = {'AUTHKEY': (request.headers.get('Authorization')).split()[1]})
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'split'
+2025-01-30 03:50:54,288 (ERROR)- django.request- Internal Server Error: /api/admin-class/get/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\admin_app\views.py", line 34, in get
+    serializer = AUTHKEYSerializer(data = {'AUTHKEY': (request.headers.get('Authorization')).split()[1]})
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'split'
+2025-01-30 03:50:54,309 (ERROR)- django.request- Internal Server Error: /api/admin-courses/get/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\admin_app\views.py", line 54, in get
+    serializer = AUTHKEYSerializer(data = {'AUTHKEY': (request.headers.get('Authorization')).split()[1]})
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'split'
+2025-01-30 03:50:54,724 (ERROR)- django.request- Internal Server Error: /api/admin-class/get/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\admin_app\views.py", line 34, in get
+    serializer = AUTHKEYSerializer(data = {'AUTHKEY': (request.headers.get('Authorization')).split()[1]})
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'split'
+2025-01-30 03:50:54,740 (ERROR)- django.request- Internal Server Error: /api/admin-courses/get/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\admin_app\views.py", line 54, in get
+    serializer = AUTHKEYSerializer(data = {'AUTHKEY': (request.headers.get('Authorization')).split()[1]})
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'split'
+2025-01-30 03:50:55,078 (ERROR)- django.request- Internal Server Error: /api/admin-class/get/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\admin_app\views.py", line 34, in get
+    serializer = AUTHKEYSerializer(data = {'AUTHKEY': (request.headers.get('Authorization')).split()[1]})
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'split'
+2025-01-30 03:50:55,106 (ERROR)- django.request- Internal Server Error: /api/admin-courses/get/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\admin_app\views.py", line 54, in get
+    serializer = AUTHKEYSerializer(data = {'AUTHKEY': (request.headers.get('Authorization')).split()[1]})
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'split'
+2025-01-30 03:50:55,468 (ERROR)- django.request- Internal Server Error: /api/admin-class/get/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\admin_app\views.py", line 34, in get
+    serializer = AUTHKEYSerializer(data = {'AUTHKEY': (request.headers.get('Authorization')).split()[1]})
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'split'
+2025-01-30 03:50:55,488 (ERROR)- django.request- Internal Server Error: /api/admin-courses/get/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\admin_app\views.py", line 54, in get
+    serializer = AUTHKEYSerializer(data = {'AUTHKEY': (request.headers.get('Authorization')).split()[1]})
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'split'
+2025-01-30 03:54:57,739 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-30 03:54:58,509 (INFO)- teacher.views- <QuerySet [<TeacherCred: Dhruvi>]>
+2025-01-30 03:55:08,699 (WARNING)- django.request- Unauthorized: /api/admin-class/get/
+2025-01-30 03:55:08,701 (WARNING)- django.request- Unauthorized: /api/admin-courses/get/
+2025-01-30 03:55:29,190 (WARNING)- django.request- Unauthorized: /api/admin-class/get/
+2025-01-30 03:55:29,213 (WARNING)- django.request- Unauthorized: /api/admin-courses/get/
+2025-01-30 03:55:51,191 (ERROR)- django.request- Internal Server Error: /api/admin-class/get/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\admin_app\views.py", line 34, in get
+    serializer = AUTHKEYSerializer(data = {'AUTHKEY': (request.headers.get('Authorization')).split()[1]})
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'split'
+2025-01-30 12:10:21,041 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-30 12:10:22,421 (INFO)- teacher.views- <QuerySet [<TeacherCred: Dhruvi>]>
+2025-01-30 12:10:28,026 (WARNING)- django.request- Unauthorized: /api/admin-class/teacher/get/
+2025-01-30 12:10:28,047 (WARNING)- django.request- Unauthorized: /api/admin-courses/teacher/get/
+2025-01-30 12:11:02,201 (WARNING)- django.request- Unauthorized: /api/admin-class/teacher/get/
+2025-01-30 12:11:02,211 (WARNING)- django.request- Unauthorized: /api/admin-courses/teacher/get/
+2025-01-30 12:12:52,926 (WARNING)- django.request- Unauthorized: /api/admin-courses/teacher/get/
+2025-01-30 12:13:33,711 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\teacher\views.py changed, reloading.
+2025-01-30 12:13:34,501 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-30 12:13:34,881 (INFO)- teacher.views- <QuerySet [<TeacherCred: Dhruvi>]>
+2025-01-30 12:13:41,812 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\teacher\views.py changed, reloading.
+2025-01-30 12:13:43,776 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-30 12:13:47,393 (INFO)- teacher.views- <QuerySet [<TeacherCred: Dhruvi>]>
+2025-01-30 12:14:02,316 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\teacher\views.py changed, reloading.
+2025-01-30 12:14:05,984 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-30 12:14:11,016 (WARNING)- django.request- Bad Request: /api/admin-class/teacher/get/
+2025-01-30 12:14:11,051 (WARNING)- django.request- Bad Request: /api/admin-courses/teacher/get/
+2025-01-30 12:14:22,531 (WARNING)- django.request- Bad Request: /api/admin-class/teacher/get/
+2025-01-30 12:14:22,545 (WARNING)- django.request- Bad Request: /api/admin-courses/teacher/get/
+2025-01-30 12:14:41,646 (WARNING)- django.request- Bad Request: /api/admin-courses/teacher/get/
+2025-01-30 12:14:41,647 (WARNING)- django.request- Bad Request: /api/admin-class/teacher/get/
+2025-01-30 12:14:45,146 (WARNING)- django.request- Bad Request: /api/admin-class/teacher/get/
+2025-01-30 12:14:45,193 (WARNING)- django.request- Bad Request: /api/admin-courses/teacher/get/
+2025-01-30 12:14:48,961 (WARNING)- django.request- Bad Request: /api/admin-class/teacher/get/
+2025-01-30 12:14:49,034 (WARNING)- django.request- Bad Request: /api/admin-courses/teacher/get/
+2025-01-30 12:14:56,891 (WARNING)- django.request- Bad Request: /api/admin-courses/teacher/get/
+2025-01-30 12:14:56,908 (WARNING)- django.request- Bad Request: /api/admin-class/teacher/get/
+2025-01-30 12:15:54,614 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\teacher\views.py changed, reloading.
+2025-01-30 12:15:55,296 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-30 12:16:02,271 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\teacher\views.py changed, reloading.
+2025-01-30 12:16:03,196 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-30 12:16:12,870 (INFO)- teacher.views- IITR
+2025-01-30 12:16:12,871 (WARNING)- django.request- Bad Request: /api/admin-class/teacher/get/
+2025-01-30 12:16:12,887 (WARNING)- django.request- Bad Request: /api/admin-courses/teacher/get/
+2025-01-30 12:16:29,861 (INFO)- teacher.views- IITR
+2025-01-30 12:16:29,861 (WARNING)- django.request- Bad Request: /api/admin-courses/teacher/get/
+2025-01-30 12:16:29,861 (WARNING)- django.request- Bad Request: /api/admin-class/teacher/get/
+2025-01-30 12:17:31,441 (INFO)- teacher.views- IITR
+2025-01-30 12:17:31,447 (WARNING)- django.request- Bad Request: /api/admin-class/teacher/get/
+2025-01-30 12:17:31,455 (WARNING)- django.request- Bad Request: /api/admin-courses/teacher/get/
+2025-01-30 12:17:31,796 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\teacher\views.py changed, reloading.
+2025-01-30 12:17:32,751 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-30 12:17:50,824 (INFO)- teacher.views- IITR
+2025-01-30 12:17:50,835 (WARNING)- django.request- Bad Request: /api/admin-class/teacher/get/
+2025-01-30 12:17:50,895 (WARNING)- django.request- Bad Request: /api/admin-courses/teacher/get/
+2025-01-30 12:18:12,331 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\teacher\serializers.py changed, reloading.
+2025-01-30 12:18:14,104 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-30 12:18:16,161 (INFO)- teacher.views- IITR
+2025-01-30 12:18:16,166 (WARNING)- django.request- Bad Request: /api/admin-class/teacher/get/
+2025-01-30 12:18:16,561 (INFO)- teacher.views- IITR
+2025-01-30 12:18:16,571 (WARNING)- django.request- Bad Request: /api/admin-class/teacher/get/
+2025-01-30 12:18:16,607 (WARNING)- django.request- Bad Request: /api/admin-courses/teacher/get/
+2025-01-30 12:18:21,205 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\teacher\serializers.py changed, reloading.
+2025-01-30 12:18:22,971 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-30 12:18:34,681 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\teacher\serializers.py changed, reloading.
+2025-01-30 12:18:36,509 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-30 12:22:47,514 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-30 12:22:48,782 (INFO)- teacher.views- IITR
+2025-01-30 12:22:49,901 (ERROR)- django.request- Internal Server Error: /api/admin-class/teacher/get/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\teacher\views.py", line 67, in get
+    serializer = AUTHKEYSerializer(data = {'AUTHKEY': (request.headers.get('username')).split()[1]})
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'split'
+2025-01-30 12:23:02,951 (INFO)- teacher.views- IITR
+2025-01-30 12:23:03,419 (INFO)- teacher.views- IITR
+2025-01-30 12:23:03,796 (INFO)- teacher.views- IITR
+2025-01-30 12:23:04,305 (INFO)- teacher.views- IITR
+2025-01-30 12:23:04,753 (INFO)- teacher.views- IITR
+2025-01-30 12:23:05,161 (INFO)- teacher.views- IITR
+2025-01-30 12:23:05,621 (INFO)- teacher.views- IITR
+2025-01-30 12:23:07,281 (INFO)- teacher.views- IITR
+2025-01-30 12:23:08,551 (INFO)- teacher.views- IITR
+2025-01-30 12:23:09,366 (INFO)- teacher.views- IITR
+2025-01-30 12:23:10,636 (INFO)- teacher.views- IITR
+2025-01-30 12:23:11,183 (INFO)- teacher.views- IITR
+2025-01-30 12:23:12,044 (INFO)- teacher.views- IITR
+2025-01-30 12:23:12,741 (INFO)- teacher.views- IITR
+2025-01-30 12:23:47,009 (INFO)- teacher.views- IITR
+2025-01-30 12:24:14,611 (INFO)- teacher.views- IITR
+2025-01-30 12:24:15,041 (INFO)- teacher.views- IITR
+2025-01-30 12:24:15,433 (INFO)- teacher.views- IITR
+2025-01-30 12:24:15,840 (INFO)- teacher.views- IITR
+2025-01-30 12:24:16,260 (INFO)- teacher.views- IITR
+2025-01-30 12:24:16,636 (INFO)- teacher.views- IITR
+2025-01-30 12:24:17,046 (INFO)- teacher.views- IITR
+2025-01-30 12:24:17,471 (INFO)- teacher.views- IITR
+2025-01-30 12:24:17,864 (INFO)- teacher.views- IITR
+2025-01-30 12:24:18,225 (INFO)- teacher.views- IITR
+2025-01-30 12:24:18,759 (INFO)- teacher.views- IITR
+2025-01-30 12:24:19,212 (INFO)- teacher.views- IITR
+2025-01-30 12:24:19,581 (INFO)- teacher.views- IITR
+2025-01-30 12:24:19,941 (INFO)- teacher.views- IITR
+2025-01-30 12:24:20,401 (INFO)- teacher.views- IITR
+2025-01-30 12:24:20,851 (INFO)- teacher.views- IITR
+2025-01-30 12:24:21,242 (INFO)- teacher.views- IITR
+2025-01-30 12:24:21,711 (INFO)- teacher.views- IITR
+2025-01-30 12:24:22,120 (INFO)- teacher.views- IITR
+2025-01-30 12:24:22,461 (INFO)- teacher.views- IITR
+2025-01-30 12:24:22,903 (INFO)- teacher.views- IITR
+2025-01-30 12:24:23,356 (INFO)- teacher.views- IITR
+2025-01-30 12:24:23,894 (INFO)- teacher.views- IITR
+2025-01-30 12:24:26,873 (INFO)- teacher.views- IITR
+2025-01-30 12:24:27,191 (INFO)- teacher.views- IITR
+2025-01-30 12:24:27,581 (INFO)- teacher.views- IITR
+2025-01-30 12:24:28,035 (INFO)- teacher.views- IITR
+2025-01-30 12:24:28,474 (INFO)- teacher.views- IITR
+2025-01-30 12:24:28,935 (INFO)- teacher.views- IITR
+2025-01-30 12:24:29,361 (INFO)- teacher.views- IITR
+2025-01-30 12:24:29,821 (INFO)- teacher.views- IITR
+2025-01-30 12:24:30,949 (INFO)- teacher.views- IITR
+2025-01-30 12:24:31,356 (INFO)- teacher.views- IITR
+2025-01-30 12:24:31,927 (INFO)- teacher.views- IITR
+2025-01-30 12:24:32,393 (INFO)- teacher.views- IITR
+2025-01-30 12:24:32,800 (INFO)- teacher.views- IITR
+2025-01-30 12:24:33,321 (INFO)- teacher.views- IITR
+2025-01-30 12:24:33,815 (INFO)- teacher.views- IITR
+2025-01-30 12:24:34,351 (INFO)- teacher.views- IITR
+2025-01-30 12:24:34,891 (INFO)- teacher.views- IITR
+2025-01-30 12:24:35,514 (INFO)- teacher.views- IITR
+2025-01-30 12:24:35,951 (INFO)- teacher.views- IITR
+2025-01-30 12:24:37,532 (INFO)- teacher.views- IITR
+2025-01-30 12:24:38,041 (INFO)- teacher.views- IITR
+2025-01-30 12:24:47,102 (INFO)- teacher.views- IITR
+2025-01-30 12:24:47,471 (INFO)- teacher.views- IITR
+2025-01-30 12:24:47,814 (INFO)- teacher.views- IITR
+2025-01-30 12:24:48,301 (INFO)- teacher.views- IITR
+2025-01-30 12:24:48,795 (INFO)- teacher.views- IITR
+2025-01-30 12:24:49,286 (INFO)- teacher.views- IITR
+2025-01-30 12:24:50,256 (INFO)- teacher.views- IITR
+2025-01-30 12:24:50,591 (INFO)- teacher.views- IITR
+2025-01-30 12:24:51,121 (INFO)- teacher.views- IITR
+2025-01-30 12:24:51,576 (INFO)- teacher.views- IITR
+2025-01-30 12:24:52,031 (INFO)- teacher.views- IITR
+2025-01-30 12:24:52,391 (INFO)- teacher.views- IITR
+2025-01-30 12:24:52,791 (INFO)- teacher.views- IITR
+2025-01-30 12:24:53,251 (INFO)- teacher.views- IITR
+2025-01-30 12:24:53,757 (INFO)- teacher.views- IITR
+2025-01-30 12:24:54,311 (INFO)- teacher.views- IITR
+2025-01-30 12:24:55,231 (INFO)- teacher.views- IITR
+2025-01-30 12:24:55,667 (INFO)- teacher.views- IITR
+2025-01-30 12:24:56,210 (INFO)- teacher.views- IITR
+2025-01-30 12:24:56,621 (INFO)- teacher.views- IITR
+2025-01-30 12:24:57,296 (INFO)- teacher.views- IITR
+2025-01-30 12:24:57,781 (INFO)- teacher.views- IITR
+2025-01-30 12:24:58,301 (INFO)- teacher.views- IITR
+2025-01-30 12:25:09,981 (INFO)- teacher.views- IITR
+2025-01-30 12:25:10,311 (INFO)- teacher.views- IITR
+2025-01-30 12:25:10,805 (INFO)- teacher.views- IITR
+2025-01-30 12:25:11,181 (INFO)- teacher.views- IITR
+2025-01-30 12:25:11,711 (INFO)- teacher.views- IITR
+2025-01-30 12:25:12,142 (INFO)- teacher.views- IITR
+2025-01-30 12:25:12,675 (INFO)- teacher.views- IITR
+2025-01-30 12:25:13,286 (INFO)- teacher.views- IITR
+2025-01-30 12:25:13,941 (INFO)- teacher.views- IITR
+2025-01-30 12:25:14,444 (INFO)- teacher.views- IITR
+2025-01-30 12:25:23,819 (INFO)- teacher.views- IITR
+2025-01-30 12:25:24,131 (INFO)- teacher.views- IITR
+2025-01-30 12:25:24,586 (INFO)- teacher.views- IITR
+2025-01-30 12:25:25,141 (INFO)- teacher.views- IITR
+2025-01-30 12:25:26,141 (INFO)- teacher.views- IITR
+2025-01-30 12:25:26,491 (INFO)- teacher.views- IITR
+2025-01-30 12:25:26,851 (INFO)- teacher.views- IITR
+2025-01-30 12:25:27,281 (INFO)- teacher.views- IITR
+2025-01-30 12:25:27,741 (INFO)- teacher.views- IITR
+2025-01-30 12:25:28,205 (INFO)- teacher.views- IITR
+2025-01-30 12:25:28,542 (INFO)- teacher.views- IITR
+2025-01-30 12:25:29,068 (INFO)- teacher.views- IITR
+2025-01-30 12:25:29,501 (INFO)- teacher.views- IITR
+2025-01-30 12:25:30,091 (INFO)- teacher.views- IITR
+2025-01-30 12:25:40,898 (INFO)- teacher.views- IITR
+2025-01-30 12:25:41,371 (INFO)- teacher.views- IITR
+2025-01-30 12:25:41,911 (INFO)- teacher.views- IITR
+2025-01-30 12:25:42,322 (INFO)- teacher.views- IITR
+2025-01-30 12:25:42,881 (INFO)- teacher.views- IITR
+2025-01-30 12:25:43,346 (INFO)- teacher.views- IITR
+2025-01-30 12:25:43,850 (INFO)- teacher.views- IITR
+2025-01-30 12:25:44,350 (INFO)- teacher.views- IITR
+2025-01-30 12:25:44,794 (INFO)- teacher.views- IITR
+2025-01-30 12:25:45,416 (INFO)- teacher.views- IITR
+2025-01-30 12:25:45,823 (INFO)- teacher.views- IITR
+2025-01-30 12:25:46,481 (INFO)- teacher.views- IITR
+2025-01-30 12:25:46,966 (INFO)- teacher.views- IITR
+2025-01-30 12:25:47,641 (INFO)- teacher.views- IITR
+2025-01-30 12:25:48,291 (INFO)- teacher.views- IITR
+2025-01-30 12:26:20,931 (INFO)- teacher.views- IITR
+2025-01-30 12:26:31,851 (INFO)- teacher.views- IITR
+2025-01-30 12:26:32,347 (INFO)- teacher.views- IITR
+2025-01-30 12:26:32,731 (INFO)- teacher.views- IITR
+2025-01-30 12:26:33,114 (INFO)- teacher.views- IITR
+2025-01-30 12:26:33,446 (INFO)- teacher.views- IITR
+2025-01-30 12:26:33,876 (INFO)- teacher.views- IITR
+2025-01-30 12:26:34,271 (INFO)- teacher.views- IITR
+2025-01-30 12:26:34,717 (INFO)- teacher.views- IITR
+2025-01-30 12:26:35,171 (INFO)- teacher.views- IITR
+2025-01-30 12:26:35,543 (INFO)- teacher.views- IITR
+2025-01-30 12:26:35,941 (INFO)- teacher.views- IITR
+2025-01-30 12:26:36,321 (INFO)- teacher.views- IITR
+2025-01-30 12:26:36,756 (INFO)- teacher.views- IITR
+2025-01-30 12:26:37,162 (INFO)- teacher.views- IITR
+2025-01-30 12:26:37,615 (INFO)- teacher.views- IITR
+2025-01-30 12:26:37,986 (INFO)- teacher.views- IITR
+2025-01-30 12:26:38,381 (INFO)- teacher.views- IITR
+2025-01-30 12:26:39,007 (INFO)- teacher.views- IITR
+2025-01-30 12:26:39,912 (INFO)- teacher.views- IITR
+2025-01-30 12:26:40,371 (INFO)- teacher.views- IITR
+2025-01-30 12:26:41,008 (INFO)- teacher.views- IITR
+2025-01-30 12:26:41,651 (INFO)- teacher.views- IITR
+2025-01-30 12:26:55,913 (INFO)- teacher.views- IITR
+2025-01-30 12:27:07,001 (INFO)- teacher.views- IITR
+2025-01-30 12:27:07,541 (INFO)- teacher.views- IITR
+2025-01-30 12:27:08,086 (INFO)- teacher.views- IITR
+2025-01-30 12:27:08,618 (INFO)- teacher.views- IITR
+2025-01-30 12:27:08,999 (INFO)- teacher.views- IITR
+2025-01-30 12:27:09,365 (INFO)- teacher.views- IITR
+2025-01-30 12:27:09,766 (INFO)- teacher.views- IITR
+2025-01-30 12:27:10,168 (INFO)- teacher.views- IITR
+2025-01-30 12:27:10,566 (INFO)- teacher.views- IITR
+2025-01-30 12:27:10,927 (INFO)- teacher.views- IITR
+2025-01-30 12:27:11,413 (INFO)- teacher.views- IITR
+2025-01-30 12:27:11,861 (INFO)- teacher.views- IITR
+2025-01-30 12:27:21,074 (INFO)- teacher.views- IITR
+2025-01-30 12:27:21,531 (INFO)- teacher.views- IITR
+2025-01-30 12:27:22,028 (INFO)- teacher.views- IITR
+2025-01-30 12:27:22,606 (INFO)- teacher.views- IITR
+2025-01-30 12:27:23,129 (INFO)- teacher.views- IITR
+2025-01-30 12:27:23,816 (INFO)- teacher.views- IITR
+2025-01-30 12:27:24,522 (INFO)- teacher.views- IITR
+2025-01-30 12:28:03,367 (INFO)- teacher.views- IITR
+2025-01-30 12:28:03,785 (INFO)- teacher.views- IITR
+2025-01-30 12:28:04,166 (INFO)- teacher.views- IITR
+2025-01-30 12:28:04,490 (INFO)- teacher.views- IITR
+2025-01-30 12:28:04,914 (INFO)- teacher.views- IITR
+2025-01-30 12:28:05,406 (INFO)- teacher.views- IITR
+2025-01-30 12:28:05,761 (INFO)- teacher.views- IITR
+2025-01-30 12:28:06,219 (INFO)- teacher.views- IITR
+2025-01-30 12:28:06,626 (INFO)- teacher.views- IITR
+2025-01-30 12:28:07,054 (INFO)- teacher.views- IITR
+2025-01-30 12:28:07,492 (INFO)- teacher.views- IITR
+2025-01-30 12:28:08,221 (INFO)- teacher.views- IITR
+2025-01-30 12:28:21,766 (INFO)- teacher.views- IITR
+2025-01-30 12:28:22,483 (INFO)- teacher.views- IITR
+2025-01-30 12:28:23,081 (INFO)- teacher.views- IITR
+2025-01-30 12:28:23,601 (INFO)- teacher.views- IITR
+2025-01-30 12:28:24,181 (INFO)- teacher.views- IITR
+2025-01-30 12:28:24,790 (INFO)- teacher.views- IITR
+2025-01-30 12:28:25,700 (INFO)- teacher.views- IITR
+2025-01-30 12:28:26,171 (INFO)- teacher.views- IITR
+2025-01-30 12:28:27,216 (INFO)- teacher.views- IITR
+2025-01-30 12:28:27,803 (INFO)- teacher.views- IITR
+2025-01-30 12:28:28,431 (INFO)- teacher.views- IITR
+2025-01-30 12:28:29,528 (INFO)- teacher.views- IITR
+2025-01-30 12:28:38,115 (INFO)- teacher.views- IITR
+2025-01-30 12:28:46,571 (INFO)- teacher.views- IITR
+2025-01-30 12:28:47,011 (INFO)- teacher.views- IITR
+2025-01-30 12:28:47,421 (INFO)- teacher.views- IITR
+2025-01-30 12:28:47,877 (INFO)- teacher.views- IITR
+2025-01-30 12:28:48,321 (INFO)- teacher.views- IITR
+2025-01-30 12:28:48,686 (INFO)- teacher.views- IITR
+2025-01-30 12:28:49,201 (INFO)- teacher.views- IITR
+2025-01-30 12:28:50,455 (INFO)- teacher.views- IITR
+2025-01-30 12:28:51,928 (INFO)- teacher.views- IITR
+2025-01-30 12:28:52,521 (INFO)- teacher.views- IITR
+2025-01-30 12:29:52,876 (INFO)- teacher.views- IITR
+2025-01-30 12:29:53,143 (INFO)- teacher.views- IITR
+2025-01-30 12:29:53,661 (INFO)- teacher.views- IITR
+2025-01-30 12:29:54,038 (INFO)- teacher.views- IITR
+2025-01-30 12:29:54,356 (INFO)- teacher.views- IITR
+2025-01-30 12:29:54,800 (INFO)- teacher.views- IITR
+2025-01-30 12:29:55,171 (INFO)- teacher.views- IITR
+2025-01-30 12:29:55,610 (INFO)- teacher.views- IITR
+2025-01-30 12:29:56,040 (INFO)- teacher.views- IITR
+2025-01-30 12:29:56,403 (INFO)- teacher.views- IITR
+2025-01-30 12:29:56,955 (INFO)- teacher.views- IITR
+2025-01-30 12:30:01,801 (INFO)- teacher.views- IITR
+2025-01-30 12:30:02,530 (INFO)- teacher.views- IITR
+2025-01-30 12:30:02,901 (INFO)- teacher.views- IITR
+2025-01-30 12:30:03,296 (INFO)- teacher.views- IITR
+2025-01-30 12:30:03,856 (INFO)- teacher.views- IITR
+2025-01-30 12:30:04,276 (INFO)- teacher.views- IITR
+2025-01-30 12:30:04,716 (INFO)- teacher.views- IITR
+2025-01-30 12:30:05,155 (INFO)- teacher.views- IITR
+2025-01-30 12:30:05,784 (INFO)- teacher.views- IITR
+2025-01-30 12:30:06,406 (INFO)- teacher.views- IITR
+2025-01-30 12:30:07,981 (INFO)- teacher.views- IITR
+2025-01-30 12:30:13,334 (INFO)- teacher.views- IITR
+2025-01-30 12:30:13,602 (INFO)- teacher.views- IITR
+2025-01-30 12:30:14,035 (INFO)- teacher.views- IITR
+2025-01-30 12:30:14,490 (INFO)- teacher.views- IITR
+2025-01-30 12:30:14,993 (INFO)- teacher.views- IITR
+2025-01-30 12:30:20,536 (INFO)- teacher.views- IITR
+2025-01-30 12:30:24,634 (INFO)- teacher.views- IITR
+2025-01-30 12:30:24,981 (INFO)- teacher.views- IITR
+2025-01-30 12:30:25,322 (INFO)- teacher.views- IITR
+2025-01-30 12:30:25,787 (INFO)- teacher.views- IITR
+2025-01-30 12:30:26,141 (INFO)- teacher.views- IITR
+2025-01-30 12:30:26,765 (INFO)- teacher.views- IITR
+2025-01-30 12:30:27,861 (INFO)- teacher.views- IITR
+2025-01-30 12:30:28,258 (INFO)- teacher.views- IITR
+2025-01-30 12:30:28,652 (INFO)- teacher.views- IITR
+2025-01-30 12:30:29,278 (INFO)- teacher.views- IITR
+2025-01-30 12:30:30,074 (INFO)- teacher.views- IITR
+2025-01-30 12:30:30,516 (INFO)- teacher.views- IITR
+2025-01-30 12:31:01,964 (INFO)- teacher.views- IITR
+2025-01-30 12:31:33,973 (INFO)- teacher.views- IITR
+2025-01-30 12:31:44,913 (INFO)- teacher.views- IITR
+2025-01-30 12:31:45,411 (INFO)- teacher.views- IITR
+2025-01-30 12:31:45,778 (INFO)- teacher.views- IITR
+2025-01-30 12:31:46,174 (INFO)- teacher.views- IITR
+2025-01-30 12:31:46,602 (INFO)- teacher.views- IITR
+2025-01-30 12:31:47,011 (INFO)- teacher.views- IITR
+2025-01-30 12:31:47,450 (INFO)- teacher.views- IITR
+2025-01-30 12:31:47,995 (INFO)- teacher.views- IITR
+2025-01-30 12:34:14,634 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-30 12:34:16,649 (INFO)- teacher.views- IITR
+2025-01-30 12:34:17,024 (INFO)- teacher.views- IITR
+2025-01-30 12:34:17,681 (INFO)- teacher.views- IITR
+2025-01-30 12:34:18,249 (INFO)- teacher.views- IITR
+2025-01-30 12:34:18,993 (INFO)- teacher.views- IITR
+2025-01-30 12:34:20,943 (INFO)- teacher.views- IITR
+2025-01-30 12:34:29,097 (INFO)- teacher.views- IITR
+2025-01-30 12:34:39,395 (INFO)- teacher.views- IITR
+2025-01-30 12:34:52,170 (INFO)- teacher.views- IITR
+2025-01-30 12:34:52,616 (INFO)- teacher.views- IITR
+2025-01-30 12:36:51,290 (INFO)- teacher.views- IITR
+2025-01-30 12:39:00,584 (INFO)- teacher.views- IITR
+2025-01-30 12:39:05,592 (INFO)- teacher.views- IITR
+2025-01-30 12:39:26,758 (INFO)- teacher.views- IITR
+2025-01-30 12:39:40,803 (INFO)- teacher.views- IITR
+2025-01-30 12:39:41,098 (INFO)- teacher.views- IITR
+2025-01-30 12:39:41,463 (INFO)- teacher.views- IITR
+2025-01-30 12:39:41,859 (INFO)- teacher.views- IITR
+2025-01-30 12:39:42,380 (INFO)- teacher.views- IITR
+2025-01-30 12:39:42,855 (INFO)- teacher.views- IITR
+2025-01-30 12:39:43,170 (INFO)- teacher.views- IITR
+2025-01-30 12:39:43,772 (INFO)- teacher.views- IITR
+2025-01-30 12:39:44,166 (INFO)- teacher.views- IITR
+2025-01-30 12:39:44,751 (INFO)- teacher.views- IITR
+2025-01-30 12:39:45,210 (INFO)- teacher.views- IITR
+2025-01-30 12:39:45,840 (INFO)- teacher.views- IITR
+2025-01-30 12:39:46,646 (INFO)- teacher.views- IITR
+2025-01-30 12:39:48,867 (INFO)- teacher.views- IITR
+2025-01-30 12:40:17,848 (INFO)- teacher.views- IITR
+2025-01-30 12:40:18,348 (INFO)- teacher.views- IITR
+2025-01-30 12:40:18,830 (INFO)- teacher.views- IITR
+2025-01-30 12:42:05,294 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-30 12:42:23,212 (WARNING)- django.request- Not Found: /
+2025-01-30 12:42:23,365 (WARNING)- django.request- Not Found: /
+2025-01-30 12:42:23,433 (WARNING)- django.request- Not Found: /favicon.ico
+2025-01-30 12:43:28,577 (WARNING)- django.request- Method Not Allowed: /api/login-teacher/
+2025-01-30 12:43:34,583 (WARNING)- django.request- Method Not Allowed: /api/login-teacher/

@@ -12,7 +12,7 @@ class TeacherCred(models.Model):
     password = models.CharField(max_length = 100)
 
     def __str__(self):
-        return self.password
+        return self.username
 
 class Exams(models.Model):
     institute = models.ForeignKey(Admin, on_delete=models.CASCADE)

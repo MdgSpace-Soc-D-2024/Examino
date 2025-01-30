@@ -66,10 +66,8 @@ async function fetchCourses() {
     } catch (error) {
         console.error('Error adding course:', error);
     }
-        //const response = await fetch(coursegetApiUrl);
-}        //const courses_data = await response.json();
-
-
+        
+}       
 document.getElementById("addCourseBtn").addEventListener('click', async (event) => {event.preventDefault();
     const courseInput = document.getElementById('courseInput');
     const courses = courseInput.value.trim();

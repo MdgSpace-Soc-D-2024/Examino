@@ -11,40 +11,13 @@ import secrets
 import json
 import logging
 logger = logging.getLogger(__name__)
-
-
-class LoginTeacherSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = TeacherCred
-        fields = ['username', 'password']
-    
-
-class ExamsSerializer(serializers.ModelSerializer):
-    def create(self, validated_data):
-        # Convert JSON string back to Python object
-        questions_json = validated_data.pop('questions')
-        validated_data['questions'] = json.loads(questions_json)
-        return super().create(validated_data)
-
-    def to_representation(self, instance):
-        # Convert questions field back to JSON string for the response
-        representation = super().to_representation(instance)
-        representation['questions'] = json.loads(instance.questions)  # Convert string to list
-        return representation
-
-    class Meta:
-        model = Exams
-        fields = ['institute', 'classes', 'courses', 'date_scheduled', 'questions']
-
-class ExamsGetSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Exams
-        fields = '__all__' 
+from admin_app.serializers import get_user_simplejwt
 
 class TeacherCredSerializer(serializers.ModelSerializer):
+    AUTHKEY = serializers.CharField()
     class Meta:
         model = TeacherCred
-        fields = ['username', 'email', 'institute', 'courses']
+        fields = ['username', 'email', 'AUTHKEY', 'courses']
    
     def create(self, validated_data):
         def generate_password(length=12):
@@ -53,12 +26,57 @@ class TeacherCredSerializer(serializers.ModelSerializer):
             return password
 
         password = generate_password()
-        
-        institute = validated_data.pop('institute')
-        institute = Admin.objects.get(institute=institute)
+        username = get_user_simplejwt(validated_data['AUTHKEY'])
+        validated_data.pop('AUTHKEY')
+        user = UserNew.objects.get(username = username)
+        institute = Admin.objects.get(username = user)
         teacher = TeacherCred.objects.create(institute=institute, **validated_data)
-
         teacher.password = password
         teacher.save()
 
         return teacher
+
+class LoginTeacherSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = TeacherCred
+        fields = ['username', 'password']
+    
+
+class ExamsSerializer(serializers.ModelSerializer):
+
+    AUTHKEY = serializers.CharField()
+
+    class Meta:
+        model = Exams
+        fields = ['AUTHKEY', 'classes', 'courses', 'date_scheduled', 'questions']
+    def create(self, validated_data):
+        username = validated_data['AUTHKEY']
+        user = TeacherCred.objects.get(username = username)
+        institute = user.institute
+        validated_data.pop('AUTHKEY')
+        # Convert JSON string back to Python object
+        questions_json = validated_data.pop('questions')
+        validated_data['questions'] = json.loads(questions_json)
+        exam = Exams.objects.create(institute=institute, **validated_data)
+        exam.save()
+        return exam
+    
+    def to_representation(self, instance):
+        # Convert questions field back to JSON string for the response
+        representation = super().to_representation(instance)
+        representation['questions'] = json.loads(instance.questions)  # Convert string to list
+        return representation
+
+    
+
+class ExamsGetSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Exams
+        fields = '__all__' 
+
+class InstituteCoursesGetSerializerTeacher(serializers.Serializer):
+    courses = serializers.CharField()
+
+class InstituteClassesGetSerializerTeacher(serializers.Serializer):
+    classes = serializers.CharField()
+

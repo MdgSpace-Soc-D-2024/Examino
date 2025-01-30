@@ -11,35 +11,63 @@ const institute = null;
 document.addEventListener('DOMContentLoaded', () => {
     const AUTH_KEY = JSON.stringify(getJSON('AUTH_KEY'));
     const IS_ADMIN = getJSON('is_admin');
-    const institute = getJSON('institute')
+    //const institute = getJSON('institute')
     if (!AUTH_KEY || IS_ADMIN !== true) {
         alert('Access denied. Please log in as an admin.');
         window.location.href = 'login.html'; // Redirect to login page
     }
-    else if (AUTH_KEY && IS_ADMIN === true && !institute){
-        alert('Add institute data first')
-        window.location.href = 'admin-info.html'
-    }
+    //else if (AUTH_KEY && IS_ADMIN === true && !institute){
+    //    alert('Add institute data first')
+    //    window.location.href = 'admin-info.html'
+    //}
 });
 
 document.getElementById('addStudentBtn').addEventListener('click', function() {
     // Show the form when the button is clicked
     document.getElementById('studentForm').classList.remove('d-none');
 });
+institutefixed = document.getElementById('institute')
+institutefixed.value = window.localStorage.getItem('institute')
 
 // Function to fetch classes from the Django REST backend
 async function fetchClasses() {
-    const response_class = await fetch(classgetApiUrl);
-    const classes_data = await response_class.json();
-    console.log(classes_data)
-    const classDropdown = document.getElementById('classDropdown');
-    classes_data.forEach(cls => {
-        const option = document.createElement('option');
-       // option.value = cls.id;
-        option.textContent = cls.classes;
-        classDropdown.appendChild(option);
-    });
-};
+    const AUTHKEY = window.localStorage.getItem('AUTH_KEY')
+    try {
+        const response = await fetch(classgetApiUrl, {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': `Bearer ${AUTHKEY}`,
+            },
+        });
+
+        if (response.ok) {
+            const classes_data = await response.json();
+            
+            const myclasses = classes_data.classes
+            try {
+                const classDropdown = document.getElementById('classDropdown');
+                
+                var objs = JSON.parse(myclasses);
+                console.log(objs)
+                objs.forEach(obj => {
+                    const option = document.createElement('option');
+                    option.textContent += obj
+                    classDropdown.appendChild(option);
+                });
+            } catch (ex) {
+                console.error(ex);
+            }
+         } else {
+             const errorData = await response.json();
+             alert(`Error adding class: ${errorData.detail || 'Unknown error'}`);
+         }
+    
+    } catch (error) {
+        console.error('Error adding class:', error);
+    }
+        
+} 
 
 fetchClasses();
 
@@ -47,7 +75,7 @@ document.getElementById('studentFormFields').addEventListener('submit', async (e
     event.preventDefault();
     const username = document.getElementById('username').value;
     const email = document.getElementById('email').value;
-    const institute = document.getElementById('institute').value;
+    const AUTHKEY = window.localStorage.getItem('AUTH_KEY')
     const classes = document.getElementById('classDropdown').value;
 
     // Example form submission to Django backend
@@ -57,7 +85,7 @@ document.getElementById('studentFormFields').addEventListener('submit', async (e
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify({ username: username, email: email, institute: 1, classes: classes }),
+            body: JSON.stringify({ username, email, AUTHKEY, classes }),
         });
         if (!response.ok) {
             const errorData = await response.json();

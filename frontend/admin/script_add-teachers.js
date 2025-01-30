@@ -1,18 +1,18 @@
 const coursegetApiUrl = "http://localhost:8000/api/admin-courses/get/"
 const addteacherApiUrl = "http://localhost:8000/api/admin-add-teachers/"
 
-//function getJSON(key) {
-//    return JSON.parse(window.localStorage.getItem(key));
-//}
+function getJSON(key) {
+    return JSON.parse(window.localStorage.getItem(key));
+}
 function clearJSON() {
     window.localStorage.clear();
 }
 const institute = null;
 document.addEventListener('DOMContentLoaded', (event) => {
     event.preventDefault();
-    const AUTH_KEY = JSON.stringify(getJSON('AUTH_KEY'));
+    const AUTH_KEY = window.localStorage.getItem('AUTH_KEY');
     const IS_ADMIN = getJSON('is_admin');
-    const institute = window.localStorage.getItem('institute')
+    //const institute = window.localStorage.getItem('institute')
 
     if (!AUTH_KEY || IS_ADMIN !== true) {
         alert('Access denied. Please log in as an admin.');
@@ -25,20 +25,46 @@ document.getElementById('addTeacherBtn').addEventListener('click', function() {
     document.getElementById('teacherForm').classList.remove('d-none');
 });
 
-// Function to fetch classes from the Django REST backend
+institutefixed = document.getElementById('institute')
+institutefixed.value = window.localStorage.getItem('institute')
 async function fetchCourses() {
-    const institute = window.localStorage.getItem('institute')
-    const response_course = await fetch(coursegetApiUrl);
-    const courses_data = await response_course.json();
-    console.log(courses_data)
-    const courseDropdown = document.getElementById('courseDropdown');
-    courses_data.forEach(crs => {
-        const option = document.createElement('option');
-        option.textContent = crs.courses;
-        courseDropdown.appendChild(option);
+    const AUTHKEY = window.localStorage.getItem('AUTH_KEY')
+    try {
+        const response = await fetch(coursegetApiUrl, {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': `Bearer ${AUTHKEY}`,
+            },
+        });
+
+        if (response.ok) {
+            const courses_data = await response.json();
+            // console.log(courses_data)
+            const mycourses = courses_data.courses
+            try {
+                const courseDropdown = document.getElementById('courseDropdown');
+                
+                var objs = JSON.parse(mycourses);
+                console.log(objs)
+                objs.forEach(obj => {
+                    const option = document.createElement('option');
+                    option.textContent += obj
+                    courseDropdown.appendChild(option);
+                });
+            } catch (ex) {
+                console.error(ex);
+            }
+         } else {
+             const errorData = await response.json();
+             alert(`Error adding course: ${errorData.detail || 'Unknown error'}`);
+         }
     
-    });
-};
+    } catch (error) {
+        console.error('Error adding course:', error);
+    }
+        
+} 
 
 fetchCourses();
 
@@ -46,9 +72,10 @@ document.getElementById('teacherFormFields').addEventListener('submit', async (e
     event.preventDefault();
     const username = document.getElementById('username').value;
     const email = document.getElementById('email').value
-    const institute = window.localStorage.getItem('institute')
+    const AUTHKEY = window.localStorage.getItem('AUTH_KEY')
     const courses = document.getElementById('courseDropdown').value;
-
+    console.log(AUTHKEY)
+    
     // Example form submission to Django backend
     try{
         const response = await fetch(addteacherApiUrl, {
@@ -56,7 +83,7 @@ document.getElementById('teacherFormFields').addEventListener('submit', async (e
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify({ username, email, institute,courses }),
+            body: JSON.stringify({ username, email, AUTHKEY, courses }),
         });
         if (!response.ok) {
             const errorData = await response.json();

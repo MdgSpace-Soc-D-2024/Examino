@@ -15,7 +15,7 @@ document.getElementById("loginModal").addEventListener("submit", async (event) =
         'Access-Control-Allow-Origin':'*',
         'Access-Control-Allow-Methods':'POST,PATCH,OPTIONS'}
     try {
-        console.log("hello login")
+       // console.log("hello login")
         const response = await fetch(loginApiUrl, {
             statusCode: 200, 
             method: "POST",
@@ -28,7 +28,7 @@ document.getElementById("loginModal").addEventListener("submit", async (event) =
             const result = await response.json();
             alert('Login successful');
 
-            setJSON('AUTH_KEY', result.access);
+            setJSON('AUTH_KEY', result.username);
             setJSON('is_teacher', true);
             //window.localStorage.setItem(AUTH_KEY, result.access);
             //window.localStorage.setItem(is_admin, true)

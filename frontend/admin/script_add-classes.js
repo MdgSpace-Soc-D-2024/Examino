@@ -77,7 +77,7 @@ document.getElementById('addClassBtn').addEventListener('click', async (event) =
         alert('Please enter a valid class name.');
         return;
     }
-
+    
     try {
         const response = await fetch(classpostApiUrl, {
             method: 'POST',

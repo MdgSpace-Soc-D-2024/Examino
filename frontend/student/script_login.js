@@ -28,9 +28,9 @@ document.getElementById("loginModal").addEventListener("submit", async (event) =
             console.log(response)
             const result = await response.json();
             alert('Login successful');
-
-            setJSON('AUTH_KEY', result.access);
-            setJSON('is_teacher', true);
+            
+            setJSON('AUTH_KEY', result.username);
+            setJSON('is_student', true);
             
             window.location.href = 'student.html'
         } else {
