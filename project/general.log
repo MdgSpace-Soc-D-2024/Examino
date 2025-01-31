@@ -42066,3 +42066,1601 @@ AttributeError: 'NoneType' object has no attribute 'questions'
 2025-01-31 21:19:53,841 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
 2025-01-31 21:19:54,734 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
 2025-01-31 21:19:55,711 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:25:18,174 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 21:25:19,695 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:25:42,280 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:25:45,643 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:25:46,368 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:26:08,143 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:26:22,835 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:26:34,022 (INFO)- student.views- StudentAnswersSerializer(data={'AUTHKEY': 'student1', 'courses': 'python', 'answers': "{'question1':'q1a1','question2':'q2a1'}"}):
+    AUTHKEY = CharField()
+    courses = CharField(max_length=50)
+    answers = CharField(style={'base_template': 'textarea.html'})
+2025-01-31 21:26:34,022 (INFO)- student.views- hello
+2025-01-31 21:26:34,022 (INFO)- student.views- {'question1': 'q1a1', 'question2': 'q2a1'}
+2025-01-31 21:26:34,033 (INFO)- student.views- python
+2025-01-31 21:26:34,033 (INFO)- student.views- student1
+2025-01-31 21:26:34,256 (ERROR)- django.request- Internal Server Error: /api/answers/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py", line 107, in post
+    questions_answers_str = exam.questions
+                            ^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'questions'
+2025-01-31 21:26:34,279 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:26:50,817 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:28:53,770 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 21:28:54,700 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 21:28:55,671 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:29:08,071 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 21:29:09,006 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 21:29:09,887 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:29:10,436 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:29:11,122 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:29:11,330 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 21:29:12,360 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 21:29:13,425 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:29:13,634 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:29:14,292 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:29:19,192 (INFO)- student.views- StudentAnswersSerializer(data={'AUTHKEY': 'student1', 'courses': 'python', 'answers': "{'question1':'q1a1','question2':'q2a1'}"}):
+    AUTHKEY = CharField()
+    courses = CharField(max_length=50)
+    answers = CharField(style={'base_template': 'textarea.html'})
+2025-01-31 21:29:19,208 (INFO)- student.views- hello
+2025-01-31 21:29:19,208 (INFO)- student.views- {'question1': 'q1a1', 'question2': 'q2a1'}
+2025-01-31 21:29:19,208 (INFO)- student.views- python
+2025-01-31 21:29:19,210 (INFO)- student.views- student1
+2025-01-31 21:29:19,325 (ERROR)- django.request- Internal Server Error: /api/answers/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py", line 103, in post
+    exam = Exams.objects.filter(institute=student_data, classes = student_data.classes, courses=serializer.validated_data['courses']).first()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\sql\query.py", line 1609, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\sql\query.py", line 1641, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\sql\query.py", line 1528, in build_filter
+    self.check_related_objects(join_info.final_field, value, join_info.opts)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\sql\query.py", line 1342, in check_related_objects
+    self.check_query_object_type(value, opts, field)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\sql\query.py", line 1319, in check_query_object_type
+    raise ValueError(
+ValueError: Cannot query "student1": Must be "Admin" instance.
+2025-01-31 21:29:24,150 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:29:39,730 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:30:09,310 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:30:09,885 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 21:30:10,940 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 21:30:11,802 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:30:12,001 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:30:12,434 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:30:15,181 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 21:30:16,690 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 21:30:29,625 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 21:30:30,770 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 21:30:31,910 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:31:08,850 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:31:23,936 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:31:44,975 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:31:45,127 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 21:31:46,102 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 21:31:47,194 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:31:47,444 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:31:52,408 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:31:52,542 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 21:31:53,861 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 21:31:55,655 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 21:31:56,640 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 21:31:57,744 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:31:58,360 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:31:58,952 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 21:31:59,835 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 21:32:00,794 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:32:04,970 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:32:05,183 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 21:32:06,085 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 21:32:07,255 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:32:07,681 (INFO)- student.views- StudentAnswersSerializer(data={'AUTHKEY': 'student1', 'courses': 'python', 'answers': "{'question1':'q1a1','question2':'q2a1'}"}):
+    AUTHKEY = CharField()
+    courses = CharField(max_length=50)
+    answers = CharField(style={'base_template': 'textarea.html'})
+2025-01-31 21:32:07,685 (INFO)- student.views- hello
+2025-01-31 21:32:07,685 (INFO)- student.views- {'question1': 'q1a1', 'question2': 'q2a1'}
+2025-01-31 21:32:07,685 (INFO)- student.views- python
+2025-01-31 21:32:07,685 (INFO)- student.views- student1
+2025-01-31 21:32:07,760 (ERROR)- django.request- Internal Server Error: /api/answers/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py", line 107, in post
+    questions_answers_str = exam.questions
+                            ^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'questions'
+2025-01-31 21:32:07,945 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:32:29,586 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:32:41,945 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:32:42,750 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 21:32:43,880 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 21:32:44,882 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:32:44,914 (INFO)- student.views- StudentAnswersSerializer(data={'AUTHKEY': 'student1', 'courses': 'python', 'answers': "{'question1':'q1a1','question2':'q2a1'}"}):
+    AUTHKEY = CharField()
+    courses = CharField(max_length=50)
+    answers = CharField(style={'base_template': 'textarea.html'})
+2025-01-31 21:32:44,920 (INFO)- student.views- hello
+2025-01-31 21:32:44,920 (INFO)- student.views- {'question1': 'q1a1', 'question2': 'q2a1'}
+2025-01-31 21:32:44,920 (INFO)- student.views- python
+2025-01-31 21:32:44,920 (INFO)- student.views- student1
+2025-01-31 21:32:44,961 (ERROR)- django.request- Internal Server Error: /api/answers/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py", line 103, in post
+    exam = Exams.objects.filter(institute=admin.institute, classes = student_data.classes, courses=serializer.validated_data['courses']).first()
+                                          ^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'institute'
+2025-01-31 21:32:45,140 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:32:45,784 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:33:08,560 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MjAyNTE5LCJpYXQiOjE3MzgzMzg1MTksImp0aSI6IjU3MzdkNDNlNTJjMzQzYjc5ZDUwYmFhOTQwODIyNGNhIiwidXNlcl9pZCI6MTJ9.5ef4KXQQvE0PMVHKSMe32vgKU9r0x3_dPvsJdoPs7ic
+2025-01-31 21:33:08,573 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:33:13,842 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MjAyNTE5LCJpYXQiOjE3MzgzMzg1MTksImp0aSI6IjU3MzdkNDNlNTJjMzQzYjc5ZDUwYmFhOTQwODIyNGNhIiwidXNlcl9pZCI6MTJ9.5ef4KXQQvE0PMVHKSMe32vgKU9r0x3_dPvsJdoPs7ic
+2025-01-31 21:33:13,845 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:34:02,376 (INFO)- student.views- StudentAnswersSerializer(data={'AUTHKEY': 'student1', 'courses': 'python', 'answers': "{'question1':'q1a1','question2':'q2a1'}"}):
+    AUTHKEY = CharField()
+    courses = CharField(max_length=50)
+    answers = CharField(style={'base_template': 'textarea.html'})
+2025-01-31 21:34:02,380 (INFO)- student.views- hello
+2025-01-31 21:34:02,381 (INFO)- student.views- {'question1': 'q1a1', 'question2': 'q2a1'}
+2025-01-31 21:34:02,381 (INFO)- student.views- python
+2025-01-31 21:34:02,383 (INFO)- student.views- student1
+2025-01-31 21:34:02,422 (ERROR)- django.request- Internal Server Error: /api/answers/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py", line 103, in post
+    exam = Exams.objects.filter(institute=admin.institute, classes = student_data.classes, courses=serializer.validated_data['courses']).first()
+                                          ^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'institute'
+2025-01-31 21:42:04,830 (WARNING)- django.request- Method Not Allowed: /api/answers/
+2025-01-31 22:09:47,609 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MjA1NTg2LCJpYXQiOjE3MzgzNDE1ODYsImp0aSI6IjAwNWIyZjk2MjM3NTQ5YWJiNDdlNzhhNzVmNTVlNmQ0IiwidXNlcl9pZCI6MTJ9.yThawqhyPqwvvoKx1JunDAU6a9Z1oaB90lwF5cKZyZY
+2025-01-31 22:09:47,609 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 22:09:53,304 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 22:16:57,304 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 22:17:00,461 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 22:17:01,693 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 22:17:03,171 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 22:17:05,300 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 22:19:19,223 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 22:19:19,475 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 22:19:20,766 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 22:19:21,569 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 22:19:21,696 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 22:19:28,502 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 22:19:29,839 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 22:19:30,624 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 22:19:30,710 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 22:19:35,955 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MjA1NTg2LCJpYXQiOjE3MzgzNDE1ODYsImp0aSI6IjAwNWIyZjk2MjM3NTQ5YWJiNDdlNzhhNzVmNTVlNmQ0IiwidXNlcl9pZCI6MTJ9.yThawqhyPqwvvoKx1JunDAU6a9Z1oaB90lwF5cKZyZY
+2025-01-31 22:19:35,957 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 22:20:01,472 (INFO)- student.views- StudentAnswersSerializer(data={'AUTHKEY': 'student1', 'courses': 'Python', 'answers': '{"question1":"q1a1","question2":"not-answered"}'}):
+    AUTHKEY = CharField()
+    courses = CharField(max_length=50)
+    answers = CharField(style={'base_template': 'textarea.html'})
+2025-01-31 22:20:01,475 (INFO)- student.views- hello
+2025-01-31 22:20:01,475 (INFO)- student.views- {'question1': 'q1a1', 'question2': 'not-answered'}
+2025-01-31 22:20:01,475 (INFO)- student.views- Python
+2025-01-31 22:20:01,475 (INFO)- student.views- student1
+2025-01-31 22:20:01,584 (ERROR)- django.request- Internal Server Error: /api/answers/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py", line 107, in post
+    questions_answers_str = exam.questions
+                            ^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'questions'
+2025-01-31 22:20:25,645 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 22:20:26,606 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 22:20:46,640 (INFO)- student.views- StudentAnswersSerializer(data={'AUTHKEY': 'student1', 'courses': 'Python', 'answers': '{"question1":"not-answered","question2":"not-answered"}'}):
+    AUTHKEY = CharField()
+    courses = CharField(max_length=50)
+    answers = CharField(style={'base_template': 'textarea.html'})
+2025-01-31 22:20:46,656 (INFO)- student.views- hello
+2025-01-31 22:20:46,656 (INFO)- student.views- {'question1': 'not-answered', 'question2': 'not-answered'}
+2025-01-31 22:20:46,656 (INFO)- student.views- Python
+2025-01-31 22:20:46,656 (INFO)- student.views- student1
+2025-01-31 22:20:46,656 (INFO)- student.views- None
+2025-01-31 22:20:46,704 (ERROR)- django.request- Internal Server Error: /api/answers/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py", line 107, in post
+    questions_answers_str = exam.questions
+                            ^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'questions'
+2025-01-31 22:21:00,107 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 22:21:01,377 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 22:21:05,558 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 22:21:06,671 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 22:21:13,971 (INFO)- student.views- StudentAnswersSerializer(data={'AUTHKEY': 'student1', 'courses': 'Python', 'answers': '{"question1":"not-answered","question2":"not-answered"}'}):
+    AUTHKEY = CharField()
+    courses = CharField(max_length=50)
+    answers = CharField(style={'base_template': 'textarea.html'})
+2025-01-31 22:21:13,971 (INFO)- student.views- hello
+2025-01-31 22:21:13,971 (INFO)- student.views- {'question1': 'not-answered', 'question2': 'not-answered'}
+2025-01-31 22:21:13,971 (INFO)- student.views- Python
+2025-01-31 22:21:13,971 (INFO)- student.views- student1
+2025-01-31 22:21:13,977 (INFO)- student.views- None
+2025-01-31 22:21:13,977 (INFO)- student.views- None
+2025-01-31 22:21:14,050 (ERROR)- django.request- Internal Server Error: /api/answers/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py", line 107, in post
+    questions_answers_str = exam.questions
+                            ^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'questions'
+2025-01-31 22:21:40,982 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 22:21:42,196 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 22:21:44,714 (INFO)- student.views- StudentAnswersSerializer(data={'AUTHKEY': 'student1', 'courses': 'Python', 'answers': '{"question1":"not-answered","question2":"not-answered"}'}):
+    AUTHKEY = CharField()
+    courses = CharField(max_length=50)
+    answers = CharField(style={'base_template': 'textarea.html'})
+2025-01-31 22:21:44,720 (INFO)- student.views- hello
+2025-01-31 22:21:44,721 (INFO)- student.views- {'question1': 'not-answered', 'question2': 'not-answered'}
+2025-01-31 22:21:44,721 (INFO)- student.views- Python
+2025-01-31 22:21:44,721 (INFO)- student.views- student1
+2025-01-31 22:21:44,725 (INFO)- student.views- IITR
+2025-01-31 22:21:44,725 (INFO)- student.views- Exams object (8)
+2025-01-31 22:21:44,748 (INFO)- student.views- 0
+2025-01-31 22:21:44,748 (INFO)- student.views- ===========================
+2025-01-31 22:21:44,754 (WARNING)- django.request- Bad Request: /api/answers/
+2025-01-31 22:23:17,547 (INFO)- student.views- StudentAnswersSerializer(data={'AUTHKEY': 'student1', 'courses': 'python', 'answers': "{'question1':'not-answered','question2':'not-answered'}"}):
+    AUTHKEY = CharField()
+    courses = CharField(max_length=50)
+    answers = CharField(style={'base_template': 'textarea.html'})
+2025-01-31 22:23:17,547 (INFO)- student.views- hello
+2025-01-31 22:23:17,547 (INFO)- student.views- {'question1': 'not-answered', 'question2': 'not-answered'}
+2025-01-31 22:23:17,547 (INFO)- student.views- python
+2025-01-31 22:23:17,547 (INFO)- student.views- student1
+2025-01-31 22:23:17,563 (INFO)- student.views- IITR
+2025-01-31 22:23:17,563 (INFO)- student.views- None
+2025-01-31 22:23:17,643 (ERROR)- django.request- Internal Server Error: /api/answers/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py", line 107, in post
+    questions_answers_str = exam.questions
+                            ^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'questions'
+2025-01-31 22:32:42,580 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 22:32:44,036 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 22:32:48,928 (INFO)- student.views- StudentAnswersSerializer(data={'AUTHKEY': 'student1', 'courses': 'python', 'answers': "{'question1':'not-answered','question2':'not-answered'}"}):
+    AUTHKEY = CharField()
+    courses = CharField(max_length=50)
+    answers = CharField(style={'base_template': 'textarea.html'})
+2025-01-31 22:32:48,934 (INFO)- student.views- hello
+2025-01-31 22:32:48,934 (INFO)- student.views- {'question1': 'not-answered', 'question2': 'not-answered'}
+2025-01-31 22:32:48,934 (INFO)- student.views- python
+2025-01-31 22:32:48,937 (INFO)- student.views- student1
+2025-01-31 22:32:48,944 (INFO)- student.views- IITR
+2025-01-31 22:32:48,944 (INFO)- student.views- Exams object (7)
+2025-01-31 22:32:48,960 (INFO)- student.views- 0
+2025-01-31 22:32:48,962 (INFO)- student.views- ===========================
+2025-01-31 22:32:48,962 (WARNING)- django.request- Bad Request: /api/answers/
+2025-01-31 22:37:14,924 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 22:37:16,179 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 22:40:19,986 (INFO)- student.views- StudentAnswersSerializer(data={'AUTHKEY': 'student1', 'courses': 'python', 'answers': "{'question1':'not-answered','question2':'not-answered'}"}):
+    AUTHKEY = CharField()
+    courses = CharField(max_length=50)
+    answers = CharField(style={'base_template': 'textarea.html'})
+2025-01-31 22:40:19,986 (INFO)- student.views- hello
+2025-01-31 22:40:19,986 (INFO)- student.views- {'question1': 'not-answered', 'question2': 'not-answered'}
+2025-01-31 22:40:19,986 (INFO)- student.views- python
+2025-01-31 22:40:19,986 (INFO)- student.views- student1
+2025-01-31 22:40:20,001 (INFO)- student.views- IITR
+2025-01-31 22:40:20,001 (INFO)- student.views- Exams object (7)
+2025-01-31 22:40:20,021 (INFO)- student.views- 0
+2025-01-31 22:40:20,021 (INFO)- student.views- ===========================
+2025-01-31 22:40:20,021 (WARNING)- django.request- Bad Request: /api/answers/
+2025-01-31 22:42:26,124 (INFO)- student.views- StudentAnswersSerializer(data={'AUTHKEY': 'student1', 'courses': 'python', 'answers': "{'question1':'not-answered','question2':'not-answered'}"}):
+    AUTHKEY = CharField()
+    courses = CharField(max_length=50)
+    answers = CharField(style={'base_template': 'textarea.html'})
+2025-01-31 22:42:26,124 (INFO)- student.views- hello
+2025-01-31 22:42:26,124 (INFO)- student.views- {'question1': 'not-answered', 'question2': 'not-answered'}
+2025-01-31 22:42:26,124 (INFO)- student.views- python
+2025-01-31 22:42:26,124 (INFO)- student.views- student1
+2025-01-31 22:42:26,140 (INFO)- student.views- IITR
+2025-01-31 22:42:26,141 (INFO)- student.views- Exams object (7)
+2025-01-31 22:42:26,166 (INFO)- student.views- 0
+2025-01-31 22:42:26,168 (INFO)- student.views- ===========================
+2025-01-31 22:42:26,168 (WARNING)- django.request- Bad Request: /api/answers/
+2025-01-31 22:50:19,007 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 22:50:20,327 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 22:50:24,671 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 22:50:25,853 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 22:50:32,885 (INFO)- student.views- StudentAnswersSerializer(data={'AUTHKEY': 'student1', 'courses': 'python', 'answers': "{'question1':'not-answered','question2':'not-answered'}"}):
+    AUTHKEY = CharField()
+    courses = CharField(max_length=50)
+    answers = CharField(style={'base_template': 'textarea.html'})
+2025-01-31 22:50:32,885 (INFO)- student.views- hello
+2025-01-31 22:50:32,885 (INFO)- student.views- {'question1': 'not-answered', 'question2': 'not-answered'}
+2025-01-31 22:50:32,885 (INFO)- student.views- python
+2025-01-31 22:50:32,885 (INFO)- student.views- student1
+2025-01-31 22:50:32,897 (INFO)- student.views- IITR
+2025-01-31 22:50:32,901 (INFO)- student.views- Exams object (7)
+2025-01-31 22:50:32,924 (INFO)- student.views- [{'question': 'kjjkb', 'options': ['kbkjb', 'kkjb', 'kjb', 'obj'], 'correctAnswer': 'Option 4'}]
+2025-01-31 22:50:32,925 (INFO)- student.views- 0
+2025-01-31 22:50:32,925 (INFO)- student.views- ===========================
+2025-01-31 22:50:32,928 (WARNING)- django.request- Bad Request: /api/answers/
+2025-01-31 22:51:13,931 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 22:51:15,266 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 22:51:25,012 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 22:51:26,061 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 22:51:34,772 (INFO)- student.views- StudentAnswersSerializer(data={'AUTHKEY': 'student1', 'courses': 'python', 'answers': "{'question1':'not-answered','question2':'not-answered'}"}):
+    AUTHKEY = CharField()
+    courses = CharField(max_length=50)
+    answers = CharField(style={'base_template': 'textarea.html'})
+2025-01-31 22:51:34,772 (INFO)- student.views- hello
+2025-01-31 22:51:34,772 (INFO)- student.views- {'question1': 'not-answered', 'question2': 'not-answered'}
+2025-01-31 22:51:34,772 (INFO)- student.views- python
+2025-01-31 22:51:34,772 (INFO)- student.views- student1
+2025-01-31 22:51:34,788 (INFO)- student.views- IITR
+2025-01-31 22:51:34,788 (INFO)- student.views- None
+2025-01-31 22:51:34,850 (ERROR)- django.request- Internal Server Error: /api/answers/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py", line 107, in post
+    questions_answers_str = exam.questions
+                            ^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'questions'
+2025-01-31 22:51:55,440 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 22:51:56,398 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 22:52:00,701 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 22:52:01,844 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 22:52:04,882 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 22:52:06,007 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 22:52:07,314 (INFO)- student.views- StudentAnswersSerializer(data={'AUTHKEY': 'student1', 'courses': 'python', 'answers': "{'question1':'not-answered','question2':'not-answered'}"}):
+    AUTHKEY = CharField()
+    courses = CharField(max_length=50)
+    answers = CharField(style={'base_template': 'textarea.html'})
+2025-01-31 22:52:07,314 (INFO)- student.views- hello
+2025-01-31 22:52:07,314 (INFO)- student.views- {'question1': 'not-answered', 'question2': 'not-answered'}
+2025-01-31 22:52:07,314 (INFO)- student.views- python
+2025-01-31 22:52:07,314 (INFO)- student.views- student1
+2025-01-31 22:52:07,314 (INFO)- student.views- IITR
+2025-01-31 22:52:07,314 (INFO)- student.views- python
+2025-01-31 22:52:07,314 (INFO)- student.views- None
+2025-01-31 22:52:07,377 (ERROR)- django.request- Internal Server Error: /api/answers/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py", line 108, in post
+    questions_answers_str = exam.questions
+                            ^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'questions'
+2025-01-31 22:52:31,548 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 22:52:32,673 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 22:52:34,886 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 22:52:35,886 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 22:53:33,694 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 22:53:35,019 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 22:53:39,174 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 22:53:40,405 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 22:53:43,674 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 22:53:44,812 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 22:53:49,294 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 22:53:50,362 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 22:53:58,166 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 22:53:59,247 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 22:54:04,188 (INFO)- student.views- StudentAnswersSerializer(data={'AUTHKEY': 'student1', 'courses': 'python', 'answers': "{'question1':'not-answered','question2':'not-answered'}"}):
+    AUTHKEY = CharField()
+    courses = CharField(max_length=50)
+    answers = CharField(style={'base_template': 'textarea.html'})
+2025-01-31 22:54:04,188 (INFO)- student.views- hello
+2025-01-31 22:54:04,188 (INFO)- student.views- {'question1': 'not-answered', 'question2': 'not-answered'}
+2025-01-31 22:54:04,188 (INFO)- student.views- student1
+2025-01-31 22:54:04,198 (INFO)- student.views- CHE
+2025-01-31 22:54:04,199 (INFO)- student.views- IITR
+2025-01-31 22:54:04,199 (INFO)- student.views- python
+2025-01-31 22:54:04,206 (INFO)- student.views- None
+2025-01-31 22:54:04,262 (ERROR)- django.request- Internal Server Error: /api/answers/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py", line 109, in post
+    questions_answers_str = exam.questions
+                            ^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'questions'
+2025-01-31 22:54:17,554 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 22:54:18,594 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 22:55:30,254 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 22:55:31,437 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 22:55:40,747 (INFO)- student.views- StudentAnswersSerializer(data={'AUTHKEY': 'student1', 'courses': 'python', 'answers': "{'question1':'not-answered','question2':'not-answered'}"}):
+    AUTHKEY = CharField()
+    courses = CharField(max_length=50)
+    answers = CharField(style={'base_template': 'textarea.html'})
+2025-01-31 22:55:40,747 (INFO)- student.views- hello
+2025-01-31 22:55:40,747 (INFO)- student.views- student1
+2025-01-31 22:55:40,747 (INFO)- student.views- CHE
+2025-01-31 22:55:40,760 (INFO)- student.views- IITR
+2025-01-31 22:55:40,760 (INFO)- student.views- python
+2025-01-31 22:55:40,760 (INFO)- student.views- None
+2025-01-31 22:55:40,824 (ERROR)- django.request- Internal Server Error: /api/answers/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py", line 109, in post
+    questions_answers_str = exam.questions
+                            ^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'questions'
+2025-01-31 22:56:15,815 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 22:56:16,873 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 22:56:21,086 (INFO)- student.views- StudentAnswersSerializer(data={'AUTHKEY': 'student1', 'courses': 'python', 'answers': "{'question1':'not-answered','question2':'not-answered'}"}):
+    AUTHKEY = CharField()
+    courses = CharField(max_length=50)
+    answers = CharField(style={'base_template': 'textarea.html'})
+2025-01-31 22:56:21,086 (INFO)- student.views- hello
+2025-01-31 22:56:21,086 (INFO)- student.views- student1
+2025-01-31 22:56:21,096 (INFO)- student.views- CHE
+2025-01-31 22:56:21,097 (INFO)- student.views- dhruvi
+2025-01-31 22:56:21,097 (INFO)- student.views- python
+2025-01-31 22:56:21,104 (INFO)- student.views- None
+2025-01-31 22:56:21,159 (ERROR)- django.request- Internal Server Error: /api/answers/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py", line 109, in post
+    questions_answers_str = exam.questions
+                            ^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'questions'
+2025-01-31 22:56:28,168 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 22:56:29,242 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 23:15:35,454 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 23:15:36,653 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 23:15:43,305 (INFO)- student.views- StudentAnswersSerializer(data={'AUTHKEY': 'student1', 'courses': 'python', 'answers': "{'question1':'not-answered','question2':'not-answered'}"}):
+    AUTHKEY = CharField()
+    courses = CharField(max_length=50)
+    answers = CharField(style={'base_template': 'textarea.html'})
+2025-01-31 23:15:43,305 (INFO)- student.views- hello
+2025-01-31 23:15:43,305 (INFO)- student.views- student1
+2025-01-31 23:15:43,312 (INFO)- student.views- CHE
+2025-01-31 23:15:43,320 (INFO)- student.views- IITR
+2025-01-31 23:15:43,320 (INFO)- student.views- python
+2025-01-31 23:15:43,366 (ERROR)- django.request- Internal Server Error: /api/answers/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py", line 105, in post
+    exam = Exams.objects.get(institute=admin, classes = classes, courses=courses).first()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\query.py", line 649, in get
+    raise self.model.DoesNotExist(
+teacher.models.Exams.DoesNotExist: Exams matching query does not exist.
+2025-01-31 23:16:25,002 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 23:16:26,201 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 23:16:34,518 (INFO)- student.views- StudentAnswersSerializer(data={'AUTHKEY': 'student1', 'courses': 'python', 'answers': "{'question1':'not-answered','question2':'not-answered'}"}):
+    AUTHKEY = CharField()
+    courses = CharField(max_length=50)
+    answers = CharField(style={'base_template': 'textarea.html'})
+2025-01-31 23:16:34,521 (INFO)- student.views- hello
+2025-01-31 23:16:34,521 (INFO)- student.views- student1
+2025-01-31 23:16:34,521 (INFO)- student.views- CHE
+2025-01-31 23:16:34,521 (INFO)- student.views- IITR
+2025-01-31 23:16:34,521 (INFO)- student.views- python
+2025-01-31 23:16:34,600 (ERROR)- django.request- Internal Server Error: /api/answers/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py", line 105, in post
+    exam = Exams.objects.get(classes = classes, courses=courses).first()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\query.py", line 649, in get
+    raise self.model.DoesNotExist(
+teacher.models.Exams.DoesNotExist: Exams matching query does not exist.
+2025-01-31 23:16:45,840 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 23:16:46,830 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 23:16:49,994 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 23:16:51,085 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 23:16:53,211 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 23:16:54,210 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 23:16:55,250 (INFO)- student.views- StudentAnswersSerializer(data={'AUTHKEY': 'student1', 'courses': 'python', 'answers': "{'question1':'not-answered','question2':'not-answered'}"}):
+    AUTHKEY = CharField()
+    courses = CharField(max_length=50)
+    answers = CharField(style={'base_template': 'textarea.html'})
+2025-01-31 23:16:55,250 (INFO)- student.views- hello
+2025-01-31 23:16:55,250 (INFO)- student.views- student1
+2025-01-31 23:16:55,266 (INFO)- student.views- CHE
+2025-01-31 23:16:55,266 (INFO)- student.views- IITR
+2025-01-31 23:16:55,266 (INFO)- student.views- python
+2025-01-31 23:16:55,297 (ERROR)- django.request- Internal Server Error: /api/answers/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py", line 105, in post
+    exam = Exams.objects.get(classes = classes, courses=courses)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\query.py", line 649, in get
+    raise self.model.DoesNotExist(
+teacher.models.Exams.DoesNotExist: Exams matching query does not exist.
+2025-01-31 23:17:07,504 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 23:17:08,494 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 23:17:14,007 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 23:17:15,224 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 23:17:18,790 (INFO)- student.views- StudentAnswersSerializer(data={'AUTHKEY': 'student1', 'courses': 'python', 'answers': "{'question1':'not-answered','question2':'not-answered'}"}):
+    AUTHKEY = CharField()
+    courses = CharField(max_length=50)
+    answers = CharField(style={'base_template': 'textarea.html'})
+2025-01-31 23:17:18,790 (INFO)- student.views- hello
+2025-01-31 23:17:18,790 (INFO)- student.views- student1
+2025-01-31 23:17:18,799 (INFO)- student.views- CHE
+2025-01-31 23:17:18,800 (INFO)- student.views- IITR
+2025-01-31 23:17:18,800 (INFO)- student.views- python
+2025-01-31 23:17:18,850 (ERROR)- django.request- Internal Server Error: /api/answers/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py", line 105, in post
+    exam = Exams.objects.get(institute = admin, classes = classes, courses=courses)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\query.py", line 649, in get
+    raise self.model.DoesNotExist(
+teacher.models.Exams.DoesNotExist: Exams matching query does not exist.
+2025-01-31 23:17:42,178 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 23:17:43,242 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 23:17:45,858 (INFO)- student.views- StudentAnswersSerializer(data={'AUTHKEY': 'student1', 'courses': 'python', 'answers': "{'question1':'not-answered','question2':'not-answered'}"}):
+    AUTHKEY = CharField()
+    courses = CharField(max_length=50)
+    answers = CharField(style={'base_template': 'textarea.html'})
+2025-01-31 23:17:45,860 (INFO)- student.views- hello
+2025-01-31 23:17:45,860 (INFO)- student.views- student1
+2025-01-31 23:17:45,860 (INFO)- student.views- CHE
+2025-01-31 23:17:45,869 (INFO)- student.views- IITR
+2025-01-31 23:17:45,869 (INFO)- student.views- python
+2025-01-31 23:17:45,916 (ERROR)- django.request- Internal Server Error: /api/answers/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py", line 105, in post
+    exam = Exams.objects.get(institute = admin)#, classes = classes, courses=courses)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\query.py", line 652, in get
+    raise self.model.MultipleObjectsReturned(
+teacher.models.Exams.MultipleObjectsReturned: get() returned more than one Exams -- it returned 3!
+2025-01-31 23:17:54,489 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 23:17:55,533 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 23:17:59,405 (INFO)- student.views- StudentAnswersSerializer(data={'AUTHKEY': 'student1', 'courses': 'python', 'answers': "{'question1':'not-answered','question2':'not-answered'}"}):
+    AUTHKEY = CharField()
+    courses = CharField(max_length=50)
+    answers = CharField(style={'base_template': 'textarea.html'})
+2025-01-31 23:17:59,408 (INFO)- student.views- hello
+2025-01-31 23:17:59,408 (INFO)- student.views- student1
+2025-01-31 23:17:59,409 (INFO)- student.views- CHE
+2025-01-31 23:17:59,414 (INFO)- student.views- IITR
+2025-01-31 23:17:59,414 (INFO)- student.views- python
+2025-01-31 23:17:59,414 (INFO)- student.views- <QuerySet [<Exams: Exams object (6)>, <Exams: Exams object (7)>, <Exams: Exams object (8)>]>
+2025-01-31 23:17:59,464 (ERROR)- django.request- Internal Server Error: /api/answers/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py", line 109, in post
+    questions_answers_str = exam.questions
+                            ^^^^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'questions'
+2025-01-31 23:18:13,181 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 23:18:14,252 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 23:18:19,706 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 23:18:20,715 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 23:18:22,661 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 23:18:23,588 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 23:18:27,919 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 23:18:29,120 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 23:18:32,322 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 23:18:33,237 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 23:18:38,309 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 23:18:39,458 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 23:20:12,616 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 23:20:13,776 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 23:20:19,002 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 23:20:20,026 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 23:20:24,001 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 23:20:25,113 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 23:20:28,025 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 23:20:29,167 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 23:20:32,047 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 23:20:33,005 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 23:20:35,980 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 23:20:37,032 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 23:20:38,816 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 23:20:39,702 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 23:20:41,577 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 23:20:42,732 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 23:20:50,054 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 23:20:51,534 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 23:20:56,606 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 23:20:57,932 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 23:21:00,899 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 23:21:01,862 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 23:21:06,970 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 23:21:08,316 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 23:21:10,200 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 23:21:11,180 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 23:21:16,230 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 23:21:17,334 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 23:21:22,498 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 23:21:23,465 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 23:21:27,740 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 23:21:28,952 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 23:21:30,757 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 23:21:31,639 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 23:21:43,559 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 23:21:44,557 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 23:21:50,905 (INFO)- student.views- StudentAnswersSerializer(data={'AUTHKEY': 'student1', 'courses': 'python', 'answers': "{'question1':'not-answered','question2':'not-answered'}"}):
+    AUTHKEY = CharField()
+    courses = CharField(max_length=50)
+    answers = CharField(style={'base_template': 'textarea.html'})
+2025-01-31 23:21:50,905 (INFO)- student.views- hello
+2025-01-31 23:21:50,905 (INFO)- student.views- student1
+2025-01-31 23:21:50,905 (INFO)- student.views- CHE
+2025-01-31 23:21:50,905 (INFO)- student.views- IITR
+2025-01-31 23:21:50,905 (INFO)- student.views- python
+2025-01-31 23:21:50,905 (INFO)- student.views- maa chudaye
+2025-01-31 23:21:50,905 (INFO)- student.views- maa chudaye
+2025-01-31 23:21:50,905 (INFO)- student.views- maa chudaye
+2025-01-31 23:21:50,905 (INFO)- student.views- <QuerySet [<Exams: Exams object (6)>, <Exams: Exams object (7)>, <Exams: Exams object (8)>]>
+2025-01-31 23:21:50,952 (ERROR)- django.request- Internal Server Error: /api/answers/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py", line 114, in post
+    questions_answers_str = exams.questions
+                            ^^^^^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'questions'
+2025-01-31 23:21:51,597 (INFO)- student.views- StudentAnswersSerializer(data={'AUTHKEY': 'student1', 'courses': 'python', 'answers': "{'question1':'not-answered','question2':'not-answered'}"}):
+    AUTHKEY = CharField()
+    courses = CharField(max_length=50)
+    answers = CharField(style={'base_template': 'textarea.html'})
+2025-01-31 23:21:51,597 (INFO)- student.views- hello
+2025-01-31 23:21:51,597 (INFO)- student.views- student1
+2025-01-31 23:21:51,597 (INFO)- student.views- CHE
+2025-01-31 23:21:51,597 (INFO)- student.views- IITR
+2025-01-31 23:21:51,597 (INFO)- student.views- python
+2025-01-31 23:21:51,613 (INFO)- student.views- maa chudaye
+2025-01-31 23:21:51,613 (INFO)- student.views- maa chudaye
+2025-01-31 23:21:51,613 (INFO)- student.views- maa chudaye
+2025-01-31 23:21:51,613 (INFO)- student.views- <QuerySet [<Exams: Exams object (6)>, <Exams: Exams object (7)>, <Exams: Exams object (8)>]>
+2025-01-31 23:21:51,644 (ERROR)- django.request- Internal Server Error: /api/answers/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py", line 114, in post
+    questions_answers_str = exams.questions
+                            ^^^^^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'questions'
+2025-01-31 23:22:09,257 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 23:22:10,292 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 23:22:15,637 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 23:22:16,524 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 23:22:38,571 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 23:22:39,654 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 23:22:46,963 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 23:22:48,062 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 23:22:53,183 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 23:22:54,456 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 23:22:58,636 (INFO)- student.views- StudentAnswersSerializer(data={'AUTHKEY': 'student1', 'courses': 'python', 'answers': "{'question1':'not-answered','question2':'not-answered'}"}):
+    AUTHKEY = CharField()
+    courses = CharField(max_length=50)
+    answers = CharField(style={'base_template': 'textarea.html'})
+2025-01-31 23:22:58,636 (INFO)- student.views- hello
+2025-01-31 23:22:58,636 (INFO)- student.views- student1
+2025-01-31 23:22:58,636 (INFO)- student.views- CHE
+2025-01-31 23:22:58,651 (INFO)- student.views- IITR
+2025-01-31 23:22:58,651 (INFO)- student.views- python
+2025-01-31 23:22:58,889 (INFO)- student.views- <QuerySet [<Exams: Exams object (6)>, <Exams: Exams object (7)>, <Exams: Exams object (8)>]>
+2025-01-31 23:22:58,902 (INFO)- student.views- [{'question': ';oehfkwnf', 'options': [',MN', 'EFLKROG', 'WRKGOK', 'FOJODK'], 'correctAnswer': 'Option 1'}, {'question': 'EWGNLK', 'options': ['F,EMNK', 'FNW', 'WEMNK', 'EW'], 'correctAnswer': 'Option 4'}]
+2025-01-31 23:22:58,903 (INFO)- student.views- 0
+2025-01-31 23:22:58,905 (INFO)- student.views- ===========================
+2025-01-31 23:22:58,907 (WARNING)- django.request- Bad Request: /api/answers/
+2025-01-31 23:23:43,135 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 23:23:44,586 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 23:23:48,792 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 23:23:49,806 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 23:23:54,319 (INFO)- student.views- StudentAnswersSerializer(data={'AUTHKEY': 'student1', 'courses': 'python', 'answers': "{'question1':'not-answered','question2':'not-answered'}"}):
+    AUTHKEY = CharField()
+    courses = CharField(max_length=50)
+    answers = CharField(style={'base_template': 'textarea.html'})
+2025-01-31 23:23:54,319 (INFO)- student.views- hello
+2025-01-31 23:23:54,319 (INFO)- student.views- student1
+2025-01-31 23:23:54,324 (INFO)- student.views- CHE
+2025-01-31 23:23:54,324 (INFO)- student.views- IITR
+2025-01-31 23:23:54,324 (INFO)- student.views- python
+2025-01-31 23:23:54,331 (INFO)- student.views- Physics
+2025-01-31 23:23:54,331 (INFO)- student.views- CSE
+2025-01-31 23:23:54,331 (INFO)- student.views- Physics
+2025-01-31 23:23:54,334 (INFO)- student.views- CHE
+2025-01-31 23:23:54,334 (INFO)- student.views- Python
+2025-01-31 23:23:54,335 (INFO)- student.views- CHE
+2025-01-31 23:23:54,335 (INFO)- student.views- <QuerySet [<Exams: Exams object (6)>, <Exams: Exams object (7)>, <Exams: Exams object (8)>]>
+2025-01-31 23:23:54,346 (INFO)- student.views- [{'question': ';oehfkwnf', 'options': [',MN', 'EFLKROG', 'WRKGOK', 'FOJODK'], 'correctAnswer': 'Option 1'}, {'question': 'EWGNLK', 'options': ['F,EMNK', 'FNW', 'WEMNK', 'EW'], 'correctAnswer': 'Option 4'}]
+2025-01-31 23:23:54,346 (INFO)- student.views- 0
+2025-01-31 23:23:54,349 (INFO)- student.views- ===========================
+2025-01-31 23:23:54,352 (WARNING)- django.request- Bad Request: /api/answers/
+2025-01-31 23:25:41,563 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 23:25:42,665 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 23:25:46,899 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 23:25:48,088 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 23:26:43,084 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 23:26:44,458 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 23:27:00,964 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 23:27:02,042 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 23:27:04,245 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 23:27:05,136 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 23:27:08,189 (INFO)- student.views- StudentAnswersSerializer(data={'AUTHKEY': 'student1', 'courses': 'python', 'answers': "{'question1':'not-answered','question2':'not-answered'}"}):
+    AUTHKEY = CharField()
+    courses = CharField(max_length=50)
+    answers = CharField(style={'base_template': 'textarea.html'})
+2025-01-31 23:27:08,189 (INFO)- student.views- hello
+2025-01-31 23:27:08,189 (INFO)- student.views- student1
+2025-01-31 23:27:08,205 (INFO)- student.views- CHE
+2025-01-31 23:27:08,205 (INFO)- student.views- IITR
+2025-01-31 23:27:08,205 (INFO)- student.views- python
+2025-01-31 23:27:08,205 (INFO)- student.views- Physics
+2025-01-31 23:27:08,205 (INFO)- student.views- CSE
+2025-01-31 23:27:08,205 (INFO)- student.views- Physics
+2025-01-31 23:27:08,205 (INFO)- student.views- CHE
+2025-01-31 23:27:08,205 (INFO)- student.views- Python
+2025-01-31 23:27:08,205 (INFO)- student.views- CHE
+2025-01-31 23:27:08,205 (INFO)- student.views- python
+2025-01-31 23:27:08,205 (INFO)- student.views- CHE
+2025-01-31 23:27:08,205 (INFO)- student.views- <QuerySet [<Exams: Exams object (6)>, <Exams: Exams object (7)>, <Exams: Exams object (8)>]>
+2025-01-31 23:27:08,237 (INFO)- student.views- [{'question': ';oehfkwnf', 'options': [',MN', 'EFLKROG', 'WRKGOK', 'FOJODK'], 'correctAnswer': 'Option 1'}, {'question': 'EWGNLK', 'options': ['F,EMNK', 'FNW', 'WEMNK', 'EW'], 'correctAnswer': 'Option 4'}]
+2025-01-31 23:27:08,237 (INFO)- student.views- 0
+2025-01-31 23:27:08,237 (INFO)- student.views- ===========================
+2025-01-31 23:27:08,237 (WARNING)- django.request- Bad Request: /api/answers/
+2025-01-31 23:33:33,769 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 23:33:35,135 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 23:33:38,218 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 23:33:39,135 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 23:33:40,958 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 23:33:42,068 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 23:33:45,046 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 23:33:46,017 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 23:33:49,322 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 23:33:50,233 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 23:33:52,307 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 23:33:53,167 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 23:34:11,568 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 23:34:12,633 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 23:35:35,464 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 23:35:36,824 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 23:35:49,754 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 23:35:51,072 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 23:35:57,296 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 23:35:58,461 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 23:36:00,279 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 23:36:01,263 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 23:37:06,452 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 23:37:07,707 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 23:37:19,856 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 23:37:21,047 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 23:37:40,300 (INFO)- student.views- StudentAnswersSerializer(data={'AUTHKEY': 'student1', 'courses': 'python', 'answers': "{'question1':'not-answered','question2':'not-answered'}"}):
+    AUTHKEY = CharField()
+    courses = CharField(max_length=50)
+    answers = CharField(style={'base_template': 'textarea.html'})
+2025-01-31 23:37:40,300 (INFO)- student.views- hello
+2025-01-31 23:37:40,300 (INFO)- student.views- student1
+2025-01-31 23:37:40,315 (INFO)- student.views- CHE
+2025-01-31 23:37:40,315 (INFO)- student.views- IITR
+2025-01-31 23:37:40,315 (INFO)- student.views- Python
+2025-01-31 23:37:40,315 (INFO)- student.views- Physics
+2025-01-31 23:37:40,315 (INFO)- student.views- CSE
+2025-01-31 23:37:40,315 (INFO)- student.views- Physics
+2025-01-31 23:37:40,315 (INFO)- student.views- CHE
+2025-01-31 23:37:40,315 (INFO)- student.views- Exams object (8)
+2025-01-31 23:37:40,315 (INFO)- student.views- Python
+2025-01-31 23:37:40,315 (INFO)- student.views- CHE
+2025-01-31 23:37:40,331 (INFO)- student.views- <QuerySet [<Exams: Exams object (6)>, <Exams: Exams object (7)>, <Exams: Exams object (8)>]>
+2025-01-31 23:37:40,352 (INFO)- student.views- [{'question': ';oehfkwnf', 'options': [',MN', 'EFLKROG', 'WRKGOK', 'FOJODK'], 'correctAnswer': 'Option 1'}, {'question': 'EWGNLK', 'options': ['F,EMNK', 'FNW', 'WEMNK', 'EW'], 'correctAnswer': 'Option 4'}]
+2025-01-31 23:37:40,352 (INFO)- student.views- 0
+2025-01-31 23:37:40,363 (INFO)- student.views- ===========================
+2025-01-31 23:37:40,363 (WARNING)- django.request- Bad Request: /api/answers/
+2025-01-31 23:38:01,251 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 23:38:02,319 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 23:38:05,380 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 23:38:06,463 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 23:38:09,647 (INFO)- student.views- StudentAnswersSerializer(data={'AUTHKEY': 'student1', 'courses': 'python', 'answers': "{'question1':'not-answered','question2':'not-answered'}"}):
+    AUTHKEY = CharField()
+    courses = CharField(max_length=50)
+    answers = CharField(style={'base_template': 'textarea.html'})
+2025-01-31 23:38:09,647 (INFO)- student.views- hello
+2025-01-31 23:38:09,647 (INFO)- student.views- student1
+2025-01-31 23:38:09,647 (INFO)- student.views- CHE
+2025-01-31 23:38:09,663 (INFO)- student.views- IITR
+2025-01-31 23:38:09,663 (INFO)- student.views- Python
+2025-01-31 23:38:09,663 (INFO)- student.views- Exams object (8)
+2025-01-31 23:38:09,663 (INFO)- student.views- Python
+2025-01-31 23:38:09,663 (INFO)- student.views- CHE
+2025-01-31 23:38:09,663 (INFO)- student.views- <QuerySet [<Exams: Exams object (8)>]>
+2025-01-31 23:38:09,690 (INFO)- student.views- [{'question': ';oehfkwnf', 'options': [',MN', 'EFLKROG', 'WRKGOK', 'FOJODK'], 'correctAnswer': 'Option 1'}, {'question': 'EWGNLK', 'options': ['F,EMNK', 'FNW', 'WEMNK', 'EW'], 'correctAnswer': 'Option 4'}]
+2025-01-31 23:38:09,690 (INFO)- student.views- 0
+2025-01-31 23:38:09,690 (INFO)- student.views- ===========================
+2025-01-31 23:38:09,695 (WARNING)- django.request- Bad Request: /api/answers/
+2025-01-31 23:38:25,238 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 23:38:26,257 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 23:38:29,528 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 23:38:30,622 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 23:38:49,344 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 23:38:50,736 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 23:38:54,713 (INFO)- student.views- StudentAnswersSerializer(data={'AUTHKEY': 'student1', 'courses': 'python', 'answers': "{'question1':'not-answered','question2':'not-answered'}"}):
+    AUTHKEY = CharField()
+    courses = CharField(max_length=50)
+    answers = CharField(style={'base_template': 'textarea.html'})
+2025-01-31 23:38:54,713 (INFO)- student.views- hello
+2025-01-31 23:38:54,713 (INFO)- student.views- student1
+2025-01-31 23:38:54,713 (INFO)- student.views- CHE
+2025-01-31 23:38:54,728 (INFO)- student.views- IITR
+2025-01-31 23:38:54,728 (INFO)- student.views- Python
+2025-01-31 23:38:54,728 (INFO)- student.views- <QuerySet [<Exams: Exams object (8)>]>
+2025-01-31 23:38:54,793 (ERROR)- django.request- Internal Server Error: /api/answers/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py", line 111, in post
+    questions_answers_str = exams.questions
+                            ^^^^^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'questions'
+2025-01-31 23:39:15,578 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 23:39:16,490 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 23:39:18,960 (INFO)- student.views- StudentAnswersSerializer(data={'AUTHKEY': 'student1', 'courses': 'python', 'answers': "{'question1':'not-answered','question2':'not-answered'}"}):
+    AUTHKEY = CharField()
+    courses = CharField(max_length=50)
+    answers = CharField(style={'base_template': 'textarea.html'})
+2025-01-31 23:39:18,960 (INFO)- student.views- hello
+2025-01-31 23:39:18,960 (INFO)- student.views- student1
+2025-01-31 23:39:18,967 (INFO)- student.views- CHE
+2025-01-31 23:39:18,967 (INFO)- student.views- <class 'admin_app.models.Admin'>
+2025-01-31 23:39:18,970 (INFO)- student.views- Python
+2025-01-31 23:39:18,971 (INFO)- student.views- <QuerySet [<Exams: Exams object (8)>]>
+2025-01-31 23:39:19,034 (ERROR)- django.request- Internal Server Error: /api/answers/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py", line 111, in post
+    questions_answers_str = exams.questions
+                            ^^^^^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'questions'
+2025-01-31 23:39:34,372 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 23:39:35,689 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 23:39:40,286 (INFO)- student.views- StudentAnswersSerializer(data={'AUTHKEY': 'student1', 'courses': 'python', 'answers': "{'question1':'not-answered','question2':'not-answered'}"}):
+    AUTHKEY = CharField()
+    courses = CharField(max_length=50)
+    answers = CharField(style={'base_template': 'textarea.html'})
+2025-01-31 23:39:40,291 (INFO)- student.views- hello
+2025-01-31 23:39:40,291 (INFO)- student.views- student1
+2025-01-31 23:39:40,292 (INFO)- student.views- CHE
+2025-01-31 23:39:40,300 (INFO)- student.views- <class 'admin_app.models.Admin'>
+2025-01-31 23:39:40,300 (INFO)- student.views- Python
+2025-01-31 23:39:40,303 (INFO)- student.views- <class 'django.db.models.query.QuerySet'>
+2025-01-31 23:39:40,366 (ERROR)- django.request- Internal Server Error: /api/answers/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py", line 111, in post
+    questions_answers_str = exams.questions
+                            ^^^^^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'questions'
+2025-01-31 23:39:54,734 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 23:39:56,089 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 23:39:59,905 (INFO)- student.views- StudentAnswersSerializer(data={'AUTHKEY': 'student1', 'courses': 'python', 'answers': "{'question1':'not-answered','question2':'not-answered'}"}):
+    AUTHKEY = CharField()
+    courses = CharField(max_length=50)
+    answers = CharField(style={'base_template': 'textarea.html'})
+2025-01-31 23:39:59,905 (INFO)- student.views- hello
+2025-01-31 23:39:59,905 (INFO)- student.views- student1
+2025-01-31 23:39:59,905 (INFO)- student.views- CHE
+2025-01-31 23:39:59,920 (INFO)- student.views- <class 'admin_app.models.Admin'>
+2025-01-31 23:39:59,920 (INFO)- student.views- Python
+2025-01-31 23:39:59,920 (INFO)- student.views- <class 'teacher.models.Exams'>
+2025-01-31 23:39:59,943 (INFO)- student.views- [{'question': ';oehfkwnf', 'options': [',MN', 'EFLKROG', 'WRKGOK', 'FOJODK'], 'correctAnswer': 'Option 1'}, {'question': 'EWGNLK', 'options': ['F,EMNK', 'FNW', 'WEMNK', 'EW'], 'correctAnswer': 'Option 4'}]
+2025-01-31 23:39:59,943 (INFO)- student.views- 0
+2025-01-31 23:39:59,943 (INFO)- student.views- ===========================
+2025-01-31 23:39:59,943 (WARNING)- django.request- Bad Request: /api/answers/
+2025-01-31 23:40:21,434 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 23:40:22,462 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 23:40:30,177 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 23:40:31,324 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 23:40:40,036 (INFO)- student.views- StudentAnswersSerializer(data={'AUTHKEY': 'student1', 'courses': 'python', 'answers': "{'question1':'not-answered','question2':'not-answered'}"}):
+    AUTHKEY = CharField()
+    courses = CharField(max_length=50)
+    answers = CharField(style={'base_template': 'textarea.html'})
+2025-01-31 23:40:40,037 (INFO)- student.views- hello
+2025-01-31 23:40:40,037 (INFO)- student.views- student1
+2025-01-31 23:40:40,037 (INFO)- student.views- CHE
+2025-01-31 23:40:40,047 (INFO)- student.views- <class 'admin_app.models.Admin'>
+2025-01-31 23:40:40,047 (INFO)- student.views- Python
+2025-01-31 23:40:40,053 (INFO)- student.views- <class 'teacher.models.Exams'>
+2025-01-31 23:40:40,076 (INFO)- student.views- [{'question': ';oehfkwnf', 'options': [',MN', 'EFLKROG', 'WRKGOK', 'FOJODK'], 'correctAnswer': 'Option 1'}, {'question': 'EWGNLK', 'options': ['F,EMNK', 'FNW', 'WEMNK', 'EW'], 'correctAnswer': 'Option 4'}]
+2025-01-31 23:40:40,077 (INFO)- student.views- 0
+2025-01-31 23:40:40,077 (INFO)- student.views- ===========================
+2025-01-31 23:40:40,080 (WARNING)- django.request- Bad Request: /api/answers/
+2025-01-31 23:41:14,554 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 23:41:15,769 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 23:41:18,132 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 23:41:19,032 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 23:41:21,199 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 23:41:22,139 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 23:41:25,741 (INFO)- student.views- StudentAnswersSerializer(data={'AUTHKEY': 'student1', 'courses': 'python', 'answers': "{'question1':'not-answered','question2':'not-answered'}"}):
+    AUTHKEY = CharField()
+    courses = CharField(max_length=50)
+    answers = CharField(style={'base_template': 'textarea.html'})
+2025-01-31 23:41:25,748 (INFO)- student.views- hello
+2025-01-31 23:41:25,749 (INFO)- student.views- student1
+2025-01-31 23:41:25,749 (INFO)- student.views- CHE
+2025-01-31 23:41:25,755 (INFO)- student.views- <class 'admin_app.models.Admin'>
+2025-01-31 23:41:25,755 (INFO)- student.views- Python
+2025-01-31 23:41:25,759 (INFO)- student.views- <class 'teacher.models.Exams'>
+2025-01-31 23:41:25,784 (INFO)- student.views- [{'question': ';oehfkwnf', 'options': [',MN', 'EFLKROG', 'WRKGOK', 'FOJODK'], 'correctAnswer': 'Option 1'}, {'question': 'EWGNLK', 'options': ['F,EMNK', 'FNW', 'WEMNK', 'EW'], 'correctAnswer': 'Option 4'}]
+2025-01-31 23:41:25,784 (INFO)- student.views- 0
+2025-01-31 23:41:25,784 (INFO)- student.views- StudentMarksSerializer(data={'username': <StudentCred: student1>, 'marks': 0, 'courses': 'Python'}):
+    username = PrimaryKeyRelatedField(queryset=StudentCred.objects.all())
+    marks = IntegerField(max_value=9223372036854775807, min_value=-9223372036854775808)
+    courses = CharField(max_length=50)
+2025-01-31 23:41:25,789 (INFO)- student.views- ===========================
+2025-01-31 23:41:25,790 (WARNING)- django.request- Bad Request: /api/answers/
+2025-01-31 23:42:10,813 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 23:42:11,817 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 23:42:12,909 (INFO)- student.views- StudentAnswersSerializer(data={'AUTHKEY': 'student1', 'courses': 'python', 'answers': "{'question1':'not-answered','question2':'not-answered'}"}):
+    AUTHKEY = CharField()
+    courses = CharField(max_length=50)
+    answers = CharField(style={'base_template': 'textarea.html'})
+2025-01-31 23:42:12,909 (INFO)- student.views- hello
+2025-01-31 23:42:12,909 (INFO)- student.views- student1
+2025-01-31 23:42:12,909 (INFO)- student.views- CHE
+2025-01-31 23:42:12,919 (INFO)- student.views- <class 'admin_app.models.Admin'>
+2025-01-31 23:42:12,919 (INFO)- student.views- Python
+2025-01-31 23:42:12,919 (INFO)- student.views- <class 'teacher.models.Exams'>
+2025-01-31 23:42:12,931 (INFO)- student.views- [{'question': ';oehfkwnf', 'options': [',MN', 'EFLKROG', 'WRKGOK', 'FOJODK'], 'correctAnswer': 'Option 1'}, {'question': 'EWGNLK', 'options': ['F,EMNK', 'FNW', 'WEMNK', 'EW'], 'correctAnswer': 'Option 4'}]
+2025-01-31 23:42:12,932 (INFO)- student.views- 0
+2025-01-31 23:42:12,932 (INFO)- student.views- StudentAnswersSerializer(data={'AUTHKEY': 'student1', 'courses': 'python', 'answers': "{'question1':'not-answered','question2':'not-answered'}"}):
+    AUTHKEY = CharField()
+    courses = CharField(max_length=50)
+    answers = CharField(style={'base_template': 'textarea.html'})
+2025-01-31 23:42:12,932 (INFO)- student.views- ===========================
+2025-01-31 23:42:12,932 (WARNING)- django.request- Bad Request: /api/answers/
+2025-01-31 23:42:51,569 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\serializers.py changed, reloading.
+2025-01-31 23:42:52,809 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 23:42:55,657 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\serializers.py changed, reloading.
+2025-01-31 23:42:56,696 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 23:43:07,548 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\serializers.py changed, reloading.
+2025-01-31 23:43:08,659 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 23:43:11,554 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\serializers.py changed, reloading.
+2025-01-31 23:43:12,622 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 23:43:15,881 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\serializers.py changed, reloading.
+2025-01-31 23:43:16,935 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 23:43:39,900 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 23:43:40,899 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 23:43:47,616 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 23:43:48,729 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 23:43:59,868 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 23:44:00,853 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 23:44:23,898 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 23:44:25,242 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 23:44:38,379 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 23:44:39,328 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 23:44:45,799 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\teacher\serializers.py changed, reloading.
+2025-01-31 23:44:46,791 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 23:44:48,849 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\teacher\serializers.py changed, reloading.
+2025-01-31 23:44:49,834 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 23:45:20,687 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 23:45:22,009 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 23:45:26,269 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 23:45:27,299 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 23:45:32,699 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 23:45:33,860 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 23:45:37,051 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 23:45:38,356 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 23:45:42,029 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 23:45:43,328 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 23:45:45,450 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 23:45:46,358 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 23:45:53,982 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 23:45:55,019 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 23:45:57,166 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 23:45:58,044 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 23:46:01,117 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 23:46:02,281 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 23:46:06,714 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 23:46:07,908 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 23:46:10,931 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 23:46:11,948 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 23:46:16,283 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 23:46:17,308 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 23:46:19,081 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 23:46:20,149 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 23:46:25,389 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 23:46:26,456 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 23:46:40,681 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 23:46:42,120 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 23:46:48,529 (INFO)- student.views- StudentAnswersSerializer(data={'AUTHKEY': 'student1', 'courses': 'python', 'answers': "{'question1':'not-answered','question2':'not-answered'}"}):
+    AUTHKEY = CharField()
+    courses = CharField(max_length=50)
+    answers = CharField(style={'base_template': 'textarea.html'})
+2025-01-31 23:46:48,529 (INFO)- student.views- hello
+2025-01-31 23:46:48,539 (INFO)- student.views- student1
+2025-01-31 23:46:48,539 (INFO)- student.views- CHE
+2025-01-31 23:46:48,546 (INFO)- student.views- <class 'admin_app.models.Admin'>
+2025-01-31 23:46:48,547 (INFO)- student.views- Python
+2025-01-31 23:46:48,548 (INFO)- student.views- <class 'teacher.models.Exams'>
+2025-01-31 23:46:48,568 (INFO)- student.views- [{'question': ';oehfkwnf', 'options': [',MN', 'EFLKROG', 'WRKGOK', 'FOJODK'], 'correctAnswer': 'Option 1'}, {'question': 'EWGNLK', 'options': ['F,EMNK', 'FNW', 'WEMNK', 'EW'], 'correctAnswer': 'Option 4'}]
+2025-01-31 23:46:48,568 (INFO)- student.views- 0
+2025-01-31 23:46:48,589 (WARNING)- django.request- Bad Request: /api/answers/
+2025-01-31 23:47:01,849 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 23:47:02,722 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 23:47:05,962 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 23:47:06,979 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 23:47:11,544 (INFO)- student.views- StudentAnswersSerializer(data={'AUTHKEY': 'student1', 'courses': 'python', 'answers': "{'question1':'not-answered','question2':'not-answered'}"}):
+    AUTHKEY = CharField()
+    courses = CharField(max_length=50)
+    answers = CharField(style={'base_template': 'textarea.html'})
+2025-01-31 23:47:11,549 (INFO)- student.views- hello
+2025-01-31 23:47:11,551 (INFO)- student.views- student1
+2025-01-31 23:47:11,551 (INFO)- student.views- CHE
+2025-01-31 23:47:11,559 (INFO)- student.views- <class 'admin_app.models.Admin'>
+2025-01-31 23:47:11,559 (INFO)- student.views- Python
+2025-01-31 23:47:11,562 (INFO)- student.views- <class 'teacher.models.Exams'>
+2025-01-31 23:47:11,579 (INFO)- student.views- [{'question': ';oehfkwnf', 'options': [',MN', 'EFLKROG', 'WRKGOK', 'FOJODK'], 'correctAnswer': 'Option 1'}, {'question': 'EWGNLK', 'options': ['F,EMNK', 'FNW', 'WEMNK', 'EW'], 'correctAnswer': 'Option 4'}]
+2025-01-31 23:47:11,579 (INFO)- student.views- 0
+2025-01-31 23:47:11,599 (WARNING)- django.request- Bad Request: /api/answers/
+2025-01-31 23:48:34,449 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 23:48:35,510 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 23:48:37,350 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 23:48:38,249 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 23:48:40,139 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 23:48:41,548 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 23:48:43,789 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 23:48:45,085 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 23:48:51,668 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 23:48:52,988 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 23:49:05,893 (INFO)- student.views- StudentAnswersSerializer(data={'AUTHKEY': 'student1', 'courses': 'Python', 'answers': '{"question1":"q1a1","question2":"q2a4"}'}):
+    AUTHKEY = CharField()
+    courses = CharField(max_length=50)
+    answers = CharField(style={'base_template': 'textarea.html'})
+2025-01-31 23:49:05,899 (INFO)- student.views- hello
+2025-01-31 23:49:05,899 (INFO)- student.views- student1
+2025-01-31 23:49:05,909 (INFO)- student.views- CHE
+2025-01-31 23:49:05,909 (INFO)- student.views- <class 'admin_app.models.Admin'>
+2025-01-31 23:49:05,909 (INFO)- student.views- Python
+2025-01-31 23:49:05,909 (INFO)- student.views- <class 'teacher.models.Exams'>
+2025-01-31 23:49:05,952 (INFO)- student.views- [{'question': ';oehfkwnf', 'options': [',MN', 'EFLKROG', 'WRKGOK', 'FOJODK'], 'correctAnswer': 'Option 1'}, {'question': 'EWGNLK', 'options': ['F,EMNK', 'FNW', 'WEMNK', 'EW'], 'correctAnswer': 'Option 4'}]
+2025-01-31 23:49:05,958 (INFO)- student.views- 2
+2025-01-31 23:49:05,981 (WARNING)- django.request- Bad Request: /api/answers/

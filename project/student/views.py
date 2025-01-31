@@ -83,7 +83,7 @@ class StudentAnswersAPIView(APIView):
             submitted_answers_str = submitted_answers_str.replace("'", '"') 
             submitted_answers = json.loads(submitted_answers_str)
 
-            logger.info(submitted_answers)
+            #logger.info(submitted_answers)
             studentanswers = list(submitted_answers.values())
             for i in range(len(studentanswers)):
                 if studentanswers[i] == "notAttempted":
@@ -92,20 +92,24 @@ class StudentAnswersAPIView(APIView):
                     option = studentanswers[i][-1]
                     studentanswers[i] = "Option " + option
 
-            courses = serializer.validated_data['courses']
-            logger.info(courses)
+            
             student = serializer.validated_data['AUTHKEY']
             logger.info(student)
             student_data = StudentCred.objects.filter(username = student).first()
+            classes = student_data.classes
+            logger.info(classes)
+            admin = Admin.objects.get(institute=student_data.institute)
+            logger.info(type(admin))
+            courses=serializer.validated_data['courses']
+            courses = courses.title() 
+            logger.info(courses)
+            exams = Exams.objects.get(institute = admin, classes = classes, courses=courses)
             
-            institute = student_data.institute
-            
-            exam = Exams.objects.filter(institute=institute, classes = student_data.classes, courses=serializer.validated_data['courses']).first()
-            
+            logger.info(type(exams))
             data = serializer.save()
             
-            questions_answers_str = exam.questions
-            
+            questions_answers_str = exams.questions
+            logger.info(questions_answers_str)
             questions_answers_str = questions_answers_str.replace("'", '"')
             questions_answers = json.loads(questions_answers_str)
             
@@ -117,13 +121,10 @@ class StudentAnswersAPIView(APIView):
             givenanswers = list(q_and_a.values()) 
             marks = calculatemarks(givenanswers, studentanswers)
             logger.info(marks)
-            marks_serializer = StudentMarksSerializer(data = {'username': student_data, 'marks': marks, 'courses': exam.courses})
-            logger.info("===========================")
-
-            if marks_serializer.is_valid():
-                logger.info("===========================")
-                data = marks_serializer.save()
-            return Response(marks_serializer.errors, status = status.HTTP_400_BAD_REQUEST)
+            #marks_serializer = StudentMarksSerializer(data = {'AUTHKEY': student_data.username, 'marks': marks, 'courses': exams.courses})
+            student_marks = StudentMarks.objects.create(username = student_data, marks = marks, courses = courses)
+            student_marks.save()
+            return Response({"message": "Exam submitted"}, status = status.HTTP_400_BAD_REQUEST)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
     
 
