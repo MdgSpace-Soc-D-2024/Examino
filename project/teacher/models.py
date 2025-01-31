@@ -15,6 +15,7 @@ class TeacherCred(models.Model):
         return self.username
 
 class Exams(models.Model):
+    #examname = models.CharField(max_length=50)
     institute = models.ForeignKey(Admin, on_delete=models.CASCADE)
     classes = models.CharField(max_length=50)
     courses = models.CharField(max_length=32)
@@ -23,3 +24,7 @@ class Exams(models.Model):
     #time_start = models.TimeField()
     #time_end = models.TimeField()
     questions = models.TextField()
+    #class Meta:
+    #    constraints = [
+    #        models.UniqueConstraint(fields=['institute', 'examname'], name='unique_field1_field2')
+    #    ]

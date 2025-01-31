@@ -40,7 +40,7 @@ class TeacherCredAPIView(APIView):
             teacher = serializer.save()
             send_mail(
             subject="Your Login Credentials",
-            message=f"Hello {teacher.username},\n\nYour login credentials are:\n Teachern Username: {teacher.username}\nPassword: {teacher.password}.",
+            message=f"Hello {teacher.username},\n\nYour login credentials are:\n Teacher Username: {teacher.username}\nPassword: {teacher.password}.",
             from_email="dhruvi.purohit06@gmail.com",
             recipient_list=[teacher.email],
             )
@@ -73,10 +73,8 @@ class InstituteClassesGETAPIView(APIView):
             classes = InstituteClass.objects.filter(institute=institute)
 
             classList = json.dumps([class_data.classes for class_data in classes])
-           # print(type(classList))
-
+          
             serializer = InstituteClassesGetSerializerTeacher(data = {'classes': classList})
-            #print(serializer)
             
             if serializer.is_valid():
                 return Response(serializer.data, status=status.HTTP_200_OK)

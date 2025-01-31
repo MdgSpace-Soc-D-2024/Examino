@@ -32,9 +32,9 @@ document.addEventListener("DOMContentLoaded", async (event) => {
         
         for (let i = 0; i < exams_data.length; i++) {
             const exam = exams_data[i];
-            console.log('outside')
+            //console.log('outside')
             if (exam.courses == courses && exam.classes == classes && student_class == classes) {
-                console.log('inside')
+                //console.log('inside')
                 institute = exam.institute
                 console.log(institute)
                 const Questions = JSON.parse(exam.questions.replace(/'/g, '"'));
@@ -95,7 +95,7 @@ document.addEventListener("DOMContentLoaded", async (event) => {
                 document.getElementById('attempted-count').textContent = attemptedCount;
                 document.getElementById('not-attempted-count').textContent = notAttemptedCount;
             
-                document.getElementById('submitBtn').addEventListener('click', async (event) => {
+                document.getElementById('submitBtn').addEventListener('click', (event) => {
                     event.preventDefault();
                     const answer = {};
 
@@ -115,10 +115,10 @@ document.addEventListener("DOMContentLoaded", async (event) => {
                     const payload = {
                         answers: JSON.stringify(answer)
                     }
-                    let original = { courses: courses };
+                    //let original = { courses: courses };
                     const answers = payload.answers
                     const AUTHKEY = window.localStorage.getItem('AUTH_KEY')
-                    original = { AUTHKEY, courses, answers };
+                    const original = { AUTHKEY, courses, answers };
 
                     console.log('outside')
                     const headers = {'Content-Type':'application/json',
@@ -133,13 +133,14 @@ document.addEventListener("DOMContentLoaded", async (event) => {
                             headers: headers,
                             body: JSON.stringify(original),
                         });
-                        console.log('inside') 
+                        //console.log('inside') 
                         if (response.ok){
                             console.log('response.ok')
                             alert('Submission Successful!');
                             //console.log(responseData);
                         } else {
                             console.log('error')
+                            event.preventDefault();
                         }
                     } catch (err) {
                         console.error("Error:", err)
