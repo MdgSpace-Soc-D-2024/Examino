@@ -41769,3 +41769,300 @@ AssertionError: You cannot call `.save()` after accessing `serializer.data`.If y
 2025-01-31 17:11:05,048 (INFO)- student.views- 0
 2025-01-31 17:11:05,053 (INFO)- student.views- ===========================
 2025-01-31 17:11:05,057 (WARNING)- django.request- Bad Request: /api/answers/
+2025-01-31 17:52:30,348 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 17:52:52,251 (INFO)- student.views- StudentAnswersSerializer(data={'AUTHKEY': 'student1', 'courses': 'Python', 'answers': '{"question1":"q1a1","question2":"q2a1"}'}):
+    AUTHKEY = CharField()
+    courses = CharField(max_length=50)
+    answers = CharField(style={'base_template': 'textarea.html'})
+2025-01-31 17:52:52,253 (INFO)- student.views- hello
+2025-01-31 17:52:52,254 (INFO)- student.views- {'question1': 'q1a1', 'question2': 'q2a1'}
+2025-01-31 17:52:52,254 (INFO)- student.views- Python
+2025-01-31 17:52:52,254 (INFO)- student.views- student1
+2025-01-31 17:52:52,276 (INFO)- student.views- 1
+2025-01-31 17:52:52,278 (INFO)- student.views- ===========================
+2025-01-31 17:52:52,281 (WARNING)- django.request- Bad Request: /api/answers/
+2025-01-31 17:54:10,178 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 17:54:11,158 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 17:54:16,538 (INFO)- student.views- StudentAnswersSerializer(data={'AUTHKEY': 'student1', 'courses': 'Python', 'answers': '{"question1":"q1a1","question2":"q2a1"}'}):
+    AUTHKEY = CharField()
+    courses = CharField(max_length=50)
+    answers = CharField(style={'base_template': 'textarea.html'})
+2025-01-31 17:54:16,538 (INFO)- student.views- hello
+2025-01-31 17:54:16,544 (INFO)- student.views- {'question1': 'q1a1', 'question2': 'q2a1'}
+2025-01-31 17:54:16,544 (INFO)- student.views- Python
+2025-01-31 17:54:16,544 (INFO)- student.views- student1
+2025-01-31 17:54:16,583 (INFO)- student.views- 1
+2025-01-31 17:54:16,583 (INFO)- student.views- ===========================
+2025-01-31 17:54:16,588 (WARNING)- django.request- Bad Request: /api/answers/
+2025-01-31 17:54:42,295 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 17:54:43,458 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 17:54:47,698 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 17:54:48,658 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 17:54:53,925 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 17:54:55,212 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 17:55:03,147 (INFO)- student.views- StudentAnswersSerializer(data={'AUTHKEY': 'student1', 'courses': 'Python', 'answers': '{"question1":"q1a1","question2":"q2a1"}'}):
+    AUTHKEY = CharField()
+    courses = CharField(max_length=50)
+    answers = CharField(style={'base_template': 'textarea.html'})
+2025-01-31 17:55:03,149 (INFO)- student.views- hello
+2025-01-31 17:55:03,150 (INFO)- student.views- {'question1': 'q1a1', 'question2': 'q2a1'}
+2025-01-31 17:55:03,151 (INFO)- student.views- Python
+2025-01-31 17:55:03,152 (INFO)- student.views- student1
+2025-01-31 17:55:03,171 (INFO)- student.views- 1
+2025-01-31 17:55:03,172 (INFO)- student.views- ===========================
+2025-01-31 17:55:03,175 (WARNING)- django.request- Bad Request: /api/answers/
+2025-01-31 17:55:47,873 (INFO)- student.views- StudentAnswersSerializer(data={'AUTHKEY': 'student1', 'courses': 'python', 'answers': "{'question1':'q1a1','question2':'q2a1'}"}):
+    AUTHKEY = CharField()
+    courses = CharField(max_length=50)
+    answers = CharField(style={'base_template': 'textarea.html'})
+2025-01-31 17:55:47,877 (INFO)- student.views- hello
+2025-01-31 17:55:48,313 (ERROR)- django.request- Internal Server Error: /api/answers/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py", line 84, in post
+    submitted_answers = json.loads(submitted_answers_str)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\json\decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+               ^^^^^^^^^^^^^^^^^^^^^^
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+2025-01-31 17:57:11,398 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 17:57:12,508 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 17:57:14,804 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 17:57:15,888 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 17:57:20,514 (INFO)- student.views- StudentAnswersSerializer(data={'AUTHKEY': 'student1', 'courses': 'python', 'answers': "{'question1':'q1a1','question2':'q2a1'}"}):
+    AUTHKEY = CharField()
+    courses = CharField(max_length=50)
+    answers = CharField(style={'base_template': 'textarea.html'})
+2025-01-31 17:57:20,518 (INFO)- student.views- hello
+2025-01-31 17:57:20,518 (INFO)- student.views- {'question1': 'q1a1', 'question2': 'q2a1'}
+2025-01-31 17:57:20,519 (INFO)- student.views- python
+2025-01-31 17:57:20,521 (INFO)- student.views- student1
+2025-01-31 17:57:20,569 (ERROR)- django.request- Internal Server Error: /api/answers/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py", line 108, in post
+    questions_answers_str = exam.questions
+                            ^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'questions'
+2025-01-31 18:06:18,128 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 18:06:49,634 (WARNING)- django.request- Method Not Allowed: /api/login/
+2025-01-31 18:06:49,751 (WARNING)- django.request- Not Found: /favicon.ico
+2025-01-31 20:23:11,712 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 20:25:40,137 (WARNING)- django.request- Bad Request: /api/login-student/
+2025-01-31 20:28:31,369 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MTk5NTA5LCJpYXQiOjE3MzgzMzU1MDksImp0aSI6IjZjYmI1MjExMTBiZDRjYWM5Nzg3MjYzY2JmZmQyZTRhIiwidXNlcl9pZCI6MTJ9.kp0CI-yVb8qxU0hkpK9Vz_CG--hs5WuT-MNC4kQ7sXE
+2025-01-31 20:28:31,382 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 20:28:33,824 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:06:21,948 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 21:06:23,429 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:06:40,921 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:06:41,283 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:06:41,698 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:06:42,082 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:06:42,497 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:06:42,881 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:06:43,284 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:06:43,739 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:06:44,150 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:06:44,518 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:06:44,922 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:06:45,363 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:06:45,768 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:06:46,131 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:06:46,526 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:06:46,935 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:06:47,404 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:06:47,832 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:06:48,266 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:06:48,631 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:06:48,986 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:06:49,476 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:06:49,855 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:06:50,267 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:06:50,640 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:06:51,080 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:06:51,510 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:06:51,908 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:06:52,456 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:06:52,906 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:06:53,239 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:06:53,772 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:06:54,120 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:06:54,477 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:06:54,862 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:06:55,285 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:13:12,629 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 21:13:52,073 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MjAyMjMwLCJpYXQiOjE3MzgzMzgyMzAsImp0aSI6IjQzMGI1NTc2MTFkOTQwNDVhOTNhODk2NDJlNmQ0MDliIiwidXNlcl9pZCI6MTJ9.NthmluZZGVqvNNQJA7HuvtD-v4ujcVP7v1q6s7Po0hc
+2025-01-31 21:13:52,081 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:13:54,979 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:14:08,762 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:14:10,202 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:14:10,530 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:14:10,962 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:14:11,387 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:14:11,844 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:14:12,161 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:14:12,586 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:14:12,986 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:14:13,315 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:14:13,910 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:14:27,392 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:14:27,895 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:14:28,451 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:14:28,805 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:14:29,075 (WARNING)- django.request- Not Found: /
+2025-01-31 21:14:29,334 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:14:29,810 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:14:30,240 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:14:30,585 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:14:30,984 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:14:31,414 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:14:31,825 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:14:32,247 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:14:32,635 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:14:33,001 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:14:33,429 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:14:33,826 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:14:34,247 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:14:34,680 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:14:35,053 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:14:35,556 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:14:35,840 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:14:36,290 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:14:36,693 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:14:37,073 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:14:37,468 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:14:37,884 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:14:38,320 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:14:38,734 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:14:39,126 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:14:39,459 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:14:39,951 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:14:40,349 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:14:40,698 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:14:41,153 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:14:41,485 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:14:41,927 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:14:42,337 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:14:42,685 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:14:43,118 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:14:43,557 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:14:43,955 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:14:44,329 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:14:44,709 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:14:45,214 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:14:45,610 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:14:45,956 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:14:46,384 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:14:46,779 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:14:47,243 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:14:47,530 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:14:47,926 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:14:48,330 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:14:48,733 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:14:49,174 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:15:00,823 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\teacher\serializers.py changed, reloading.
+2025-01-31 21:15:02,121 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 21:15:31,756 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MjAyMzMwLCJpYXQiOjE3MzgzMzgzMzAsImp0aSI6ImM5OWE5NjU2YzBhZTRhN2FhNDk3MzllZjY4OTgwZTNiIiwidXNlcl9pZCI6MTJ9.CBcTHxaeHhY4t3FWD5L2obljF4eDayQCjDfT7c7AQ-g
+2025-01-31 21:15:31,756 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:15:33,417 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:15:43,674 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:15:45,225 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:15:58,419 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:15:59,010 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:15:59,468 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:16:00,095 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:16:00,501 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:16:00,789 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:16:01,209 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:16:01,627 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:16:02,024 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:16:02,548 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:16:02,880 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:16:03,283 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:16:03,717 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:16:04,041 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:16:04,474 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:16:38,467 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 21:16:39,856 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:16:40,252 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:16:40,777 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:16:41,242 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:16:41,542 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:16:42,029 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:16:42,344 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:16:42,753 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:16:43,196 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:16:43,649 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:16:44,041 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:16:44,482 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:16:45,221 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:16:46,023 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:18:14,424 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 21:18:40,792 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MjAyNTE5LCJpYXQiOjE3MzgzMzg1MTksImp0aSI6IjU3MzdkNDNlNTJjMzQzYjc5ZDUwYmFhOTQwODIyNGNhIiwidXNlcl9pZCI6MTJ9.5ef4KXQQvE0PMVHKSMe32vgKU9r0x3_dPvsJdoPs7ic
+2025-01-31 21:18:40,808 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:18:42,318 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:18:56,920 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:18:58,402 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:19:14,313 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:19:43,308 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:19:43,844 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 21:19:45,019 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 21:19:46,031 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:19:47,932 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:19:48,355 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 21:19:49,500 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 21:19:50,493 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:19:50,886 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:19:53,499 (INFO)- admin_app.serializers- dhruvi
+2025-01-31 21:19:53,841 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 21:19:54,734 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 21:19:55,711 (INFO)- admin_app.serializers- dhruvi

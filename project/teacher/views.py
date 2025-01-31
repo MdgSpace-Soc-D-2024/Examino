@@ -37,10 +37,10 @@ class TeacherCredAPIView(APIView):
     def post(self, request):
         serializer = TeacherCredSerializer(data = request.data)
         if serializer.is_valid():
-            teacher = serializer.save()
+            teacher, password = serializer.save()
             send_mail(
             subject="Your Login Credentials",
-            message=f"Hello {teacher.username},\n\nYour login credentials are:\n Teacher Username: {teacher.username}\nPassword: {teacher.password}.",
+            message=f"Hello {teacher.username},\n\nYour login credentials are:\n Teacher Username: {teacher.username}\nPassword: {password}.",
             from_email="dhruvi.purohit06@gmail.com",
             recipient_list=[teacher.email],
             )

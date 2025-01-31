@@ -10,6 +10,7 @@ import string
 import secrets
 import json
 import logging
+from django.contrib.auth.hashers import make_password
 logger = logging.getLogger(__name__)
 from admin_app.serializers import get_user_simplejwt
 
@@ -36,8 +37,8 @@ class StudentCredSerializer(serializers.ModelSerializer):
         validated_data.pop('AUTHKEY')
         user = UserNew.objects.get(username = username)
         institute = Admin.objects.get(username = user)
-        student = StudentCred.objects.create(institute=institute, **validated_data)
-        student.password = password
+        student = StudentCred.objects.create(institute=institute, password = make_password(password), **validated_data)
+       # student.password = password
         student.save()
 
         return student

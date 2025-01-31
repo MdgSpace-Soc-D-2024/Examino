@@ -18,12 +18,11 @@ class StudentCredAPIView(APIView):
         serializer = StudentCredSerializer(data = request.data)
 
         if serializer.is_valid():
-            student = serializer.save()
-            refresh = RefreshToken.for_user(student)
-
+            student, password = serializer.save()
+            
             send_mail(
             subject="Your Login Credentials",
-            message=f"Hello {student.username},\n\nYour login credentials are:\n Student Username: {student.username}\nPassword: {student.password}. \n\n Regards, \n {student.institute}",
+            message=f"Hello {student.username},\n\nYour login credentials are:\n Student Username: {student.username}\nPassword: {password}. \n\n Regards, \n {student.institute}",
             from_email="dhruvi.purohit06@gmail.com",
             recipient_list=[student.email],
             )
@@ -80,7 +79,8 @@ class StudentAnswersAPIView(APIView):
         if serializer.is_valid():
             logger.info('hello')
             
-            submitted_answers_str = serializer.validated_data['answers'] 
+            submitted_answers_str = serializer.validated_data['answers']
+            submitted_answers_str = submitted_answers_str.replace("'", '"') 
             submitted_answers = json.loads(submitted_answers_str)
 
             logger.info(submitted_answers)
@@ -117,13 +117,13 @@ class StudentAnswersAPIView(APIView):
             givenanswers = list(q_and_a.values()) 
             marks = calculatemarks(givenanswers, studentanswers)
             logger.info(marks)
-            marks_serializer = StudentMarksSerializer(data = {'username': student_data.username, 'marks': marks, 'courses': exam.courses})
+            marks_serializer = StudentMarksSerializer(data = {'username': student_data, 'marks': marks, 'courses': exam.courses})
             logger.info("===========================")
 
             if marks_serializer.is_valid():
                 logger.info("===========================")
                 data = marks_serializer.save()
-            return Response({"message": "Exam submitted successfully."}, status = status.HTTP_400_BAD_REQUEST)
+            return Response(marks_serializer.errors, status = status.HTTP_400_BAD_REQUEST)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
     
 
