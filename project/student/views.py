@@ -64,17 +64,34 @@ class LoginStudentAPIView(APIView):
         except:
             pass
    
+def calculatemarks(correct, submitted):
+    marks = 0
+    for canswer in correct:
+        for answer in submitted:
+            if canswer == answer:
+                marks+=1
+
+    return marks
+    
+
 class StudentAnswersAPIView(APIView):
     def post(self, request):
         serializer = StudentAnswersSerializer(data = request.data)
         logger.info(serializer)
         if serializer.is_valid():
             logger.info('hello')
+            
+            canswers = serializer.validated_data['answers'] 
+            
+            logger.info(canswers)
             data = serializer.save()
             return Response({"message": "Exam submitted successfully."}, status = status.HTTP_201_CREATED)
         
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
     
+
+
+
 class InstituteClassesGETAPIView(APIView):
     def get(self, request):
         serializer = AUTHKEYSerializer(data = {'AUTHKEY': (request.headers.get('Authorization')).split()[1]})

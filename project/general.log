@@ -39518,3 +39518,140 @@ ValueError: Cannot assign "'student1'": "StudentAnswers.username" must be a "Stu
     answers = CharField(style={'base_template': 'textarea.html'})
 2025-01-31 09:27:39,427 (INFO)- student.views- hello
 2025-01-31 09:37:29,844 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 10:06:27,863 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 10:06:36,340 (INFO)- student.views- StudentAnswersSerializer(data={'AUTHKEY': 'student1', 'courses': 'Physics', 'answers': '{"question1":"q1a1"}'}):
+    AUTHKEY = CharField()
+    courses = CharField(max_length=50)
+    answers = CharField(style={'base_template': 'textarea.html'})
+2025-01-31 10:06:36,343 (INFO)- student.views- hello
+2025-01-31 10:06:36,373 (INFO)- student.views- StudentAnswers object (5)
+2025-01-31 10:06:57,513 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 10:06:58,432 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 10:07:04,713 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 10:07:05,667 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 10:07:07,768 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 10:07:08,984 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 10:16:06,163 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 10:16:13,543 (INFO)- student.views- StudentAnswersSerializer(data={'AUTHKEY': 'student1', 'courses': 'Physics', 'answers': '{"question1":"q1a3"}'}):
+    AUTHKEY = CharField()
+    courses = CharField(max_length=50)
+    answers = CharField(style={'base_template': 'textarea.html'})
+2025-01-31 10:16:13,543 (INFO)- student.views- hello
+2025-01-31 10:16:13,643 (ERROR)- django.request- Internal Server Error: /api/answers/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\fields.py", line 437, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\fields.py", line 104, in get_attribute
+    instance = getattr(instance, attr)
+               ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'StudentAnswers' object has no attribute 'AUTHKEY'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py", line 84, in post
+    canswers = serializer.data['answers']
+              ^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\serializers.py", line 571, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\serializers.py", line 249, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\serializers.py", line 525, in to_representation
+    attribute = field.get_attribute(instance)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\fields.py", line 470, in get_attribute
+    raise type(exc)(msg)
+AttributeError: Got AttributeError when attempting to get a value for field `AUTHKEY` on serializer `StudentAnswersSerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `StudentAnswers` instance.
+Original exception text was: 'StudentAnswers' object has no attribute 'AUTHKEY'.
+2025-01-31 10:17:59,484 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 10:18:00,397 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 10:18:02,407 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 10:18:03,524 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 10:18:09,676 (INFO)- student.views- StudentAnswersSerializer(data={'AUTHKEY': 'student1', 'courses': 'Physics', 'answers': '{"question1":"q1a3"}'}):
+    AUTHKEY = CharField()
+    courses = CharField(max_length=50)
+    answers = CharField(style={'base_template': 'textarea.html'})
+2025-01-31 10:18:09,682 (INFO)- student.views- hello
+2025-01-31 10:18:41,033 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 10:18:42,187 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 10:18:44,114 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 10:18:44,899 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 10:18:46,673 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 10:18:47,793 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 10:18:50,683 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 10:18:51,693 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 10:18:57,063 (INFO)- student.views- StudentAnswersSerializer(data={'AUTHKEY': 'student1', 'courses': 'Physics', 'answers': '{"question1":"q1a3"}'}):
+    AUTHKEY = CharField()
+    courses = CharField(max_length=50)
+    answers = CharField(style={'base_template': 'textarea.html'})
+2025-01-31 10:18:57,063 (INFO)- student.views- hello
+2025-01-31 10:18:57,063 (INFO)- student.views- {"question1":"q1a3"}
+2025-01-31 10:18:57,125 (ERROR)- django.request- Internal Server Error: /api/answers/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py", line 86, in post
+    data = serializer.save()
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\serializers.py", line 194, in save
+    assert not hasattr(self, '_data'), (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: You cannot call `.save()` after accessing `serializer.data`.If you need to access data before committing to the database then inspect 'serializer.validated_data' instead. 
+2025-01-31 10:19:13,081 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 10:19:14,310 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 10:19:17,382 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 10:19:18,423 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-01-31 10:19:23,118 (INFO)- student.views- StudentAnswersSerializer(data={'AUTHKEY': 'student1', 'courses': 'Physics', 'answers': '{"question1":"q1a3"}'}):
+    AUTHKEY = CharField()
+    courses = CharField(max_length=50)
+    answers = CharField(style={'base_template': 'textarea.html'})
+2025-01-31 10:19:23,118 (INFO)- student.views- hello
+2025-01-31 10:19:23,118 (INFO)- student.views- {"question1":"q1a3"}
+2025-01-31 10:34:57,707 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-01-31 10:34:58,327 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader

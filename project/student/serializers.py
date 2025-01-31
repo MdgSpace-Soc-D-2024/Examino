@@ -75,7 +75,7 @@ class StudentAnswersSerializer(serializers.ModelSerializer):
 class StudentMarksSerializer(serializers.ModelSerializer):
     class Meta:
         model = StudentMarks
-        fields = ['marks', 'courses']
+        fields = ['username', 'marks', 'courses']
         
 
 
