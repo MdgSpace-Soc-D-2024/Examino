@@ -31,3 +31,16 @@ gotoviewresults.addEventListener('click', function () {
    
     window.location.href = 'results.html';
 });
+function logout() {
+    clearJSON(); 
+    alert('Logged out successfully');
+    window.location.href = '../home.html'; 
+}
+
+const logoutLink = document.getElementById('Logout');
+if (logoutLink) {
+    logoutLink.addEventListener('click', (event) => {
+        event.preventDefault();
+        logout();
+    });
+}

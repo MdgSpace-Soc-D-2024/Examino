@@ -95,7 +95,7 @@ document.addEventListener("DOMContentLoaded", async (event) => {
                 document.getElementById('attempted-count').textContent = attemptedCount;
                 document.getElementById('not-attempted-count').textContent = notAttemptedCount;
             
-                document.getElementById('submitBtn').addEventListener('click', (event) => {
+                document.getElementById('submitBtn').addEventListener('click', async (event) => {
                     event.preventDefault();
                     const answer = {};
 
@@ -128,7 +128,7 @@ document.addEventListener("DOMContentLoaded", async (event) => {
                     
                     try{   
                         console.log('inside') 
-                        response = fetch(postanswerslink, {
+                        response = await fetch(postanswerslink, {
                             method: 'POST',
                             headers: headers,
                             body: JSON.stringify(original),
@@ -139,10 +139,13 @@ document.addEventListener("DOMContentLoaded", async (event) => {
                             alert('Submission Successful!');
                             //console.log(responseData);
                         } else {
+                            const error = response.JSON();
                             console.log('error')
+                            alert('error', error)
                             event.preventDefault();
                         }
                     } catch (err) {
+                        alert('error')
                         console.error("Error:", err)
                     }
                 });
