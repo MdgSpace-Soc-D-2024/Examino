@@ -30,6 +30,18 @@ class StudentCredAPIView(APIView):
             return Response({"message": "Student added successfully"}, status= status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
     
+class StudentCredGETAPIView(APIView):
+    def get(self, request):
+        serializer = AUTHKEYSerializer(data={'AUTHKEY':(request.headers.get('username')).split()[1]}) 
+        if serializer.is_valid():
+            username = serializer.data['AUTHKEY']
+            user = StudentCred.objects.filter(username=username).first()
+            getserializer = StudentCredGETSerializer(data={'classes':user.classes})
+            if getserializer.is_valid():
+                return Response(getserializer.data, status=status.HTTP_200_OK)
+            return Response(getserializer.errors, status=status.HTTP_400_BAD_REQUEST)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+    
 class LoginStudentAPIView(APIView):
     def post(self, request):
         try:
@@ -57,7 +69,7 @@ class StudentAnswersAPIView(APIView):
         serializer = StudentAnswersSerializer(data = request.data)
         logger.info(serializer)
         if serializer.is_valid():
-            logger.info('valid')
+            logger.info('hello')
             data = serializer.save()
             return Response({"message": "Exam submitted successfully."}, status = status.HTTP_201_CREATED)
         
@@ -73,10 +85,8 @@ class InstituteClassesGETAPIView(APIView):
             classes = InstituteClass.objects.filter(institute=institute)
 
             classList = json.dumps([class_data.classes for class_data in classes])
-           # print(type(classList))
 
             serializer = InstituteGETClassesSerializer(data = {'institute': institute, 'classes': classList})
-            #print(serializer)
             
             if serializer.is_valid():
                 return Response(serializer.data, status=status.HTTP_200_OK)
@@ -99,34 +109,24 @@ class InstituteCoursesGETAPIView(APIView):
                 return Response(serializer.data, status=status.HTTP_200_OK)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
                         
-            
+class ExamsGetAPIView(APIView):
+    def get(self, request):
+        serializer = AUTHKEYSerializer(data = {'AUTHKEY': (request.headers.get('username')).split()[1]})
+        logger.info('abc')
+        if serializer.is_valid():  
+            username = serializer.data['AUTHKEY']
+            user = StudentCred.objects.get(username=username)
+            institute = user.institute
+            print(user)
+            exams = Exams.objects.filter(institute=institute)
+            classList = json.dumps([exams_data.classes for exams_data in exams])
+            courseList = json.dumps([exams_data.courses for exams_data in exams])
+            dateList = json.dumps([exams_data.date_scheduled for exams_data in exams])
+            questionsList = json.dumps([exams_data.questions for exams_data in exams])
 
-#class GiveExams(APIView):
-#    def customurl(self, request, urlreq):
-#        exams = Exams.objects.all()
-#        urlreq = exams.courses
-#       
-#class GiveExams(RetrieveAPIView):
-#    exams = Exams.objects.all()
-#    serializer_class = ExamsGetSerializer
-#    lookup_field = 'courses'
-#
-#
-#
-#class StudentExamsView(ListAPIView):
-#    serializer_class = ExamsGetSerializer
-#    permission_classes = [IsAuthenticated]  # Ensure the user is authenticated
-#
-#    def get_queryset(self):
-#        # Get the logged-in user
-#        user = self.request.user
-#
-#        # Fetch the student's class from StudentCred
-#        try:
-#            student_cred = StudentCred.objects.get(username=user.username)
-#        except StudentCred.DoesNotExist:
-#            return Exams.objects.none()  # Return an empty queryset if no student record is found
-#
-#        # Filter exams based on the student's class
-#        student_class = student_cred.classes
-#        return Exams.objects.filter(classes=student_class)
+            serializer = ExamsGetSerializer(data = {'institute':institute, 'classes': classList, 'courses': courseList, 'date_scheduled': dateList, 'questions': questionsList})
+            
+            if serializer.is_valid():
+                return Response(serializer.data, status=status.HTTP_200_OK)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)            
+

@@ -41,7 +41,6 @@ async function fetchCourses() {
 
         if (response.ok) {
             const courses_data = await response.json();
-            // console.log(courses_data)
             const mycourses = courses_data.courses
             try {
                 courseInput.value = '';

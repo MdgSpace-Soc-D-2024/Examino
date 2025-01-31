@@ -1,40 +1,45 @@
 const getexamlink = "http://localhost:8000/api/exams/get/";
 const postanswerslink = "http://localhost:8000/api/answers/";
-//function getJSON(key) {
-//    return JSON.parse(window.localStorage.getItem(key));
-//}
-//function clearJSON() {
-//    window.localStorage.clear();
-//}
-//
-//
-//
-//document.addEventListener('DOMContentLoaded', () => {
-//    const AUTH_KEY = JSON.stringify(getJSON('AUTH_KEY'));
-//    const IS_STUDENT = getJSON('is_student');
-//    
-//    if (!AUTH_KEY || IS_STUDENT !== true) {
-//        alert('Access denied. Please log in as a student.');
-//        window.location.href = 'login-student.html'; // Redirect to login page
-//    }
-//});
-document.addEventListener("DOMContentLoaded", async () => {
+const studentcredlink = "http://localhost:8000/api/student-info/get/"
+function getJSON(key) {
+    return JSON.parse(window.localStorage.getItem(key));
+}
+function clearJSON() {
+    window.localStorage.clear();
+}
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const AUTH_KEY = window.localStorage.getItem('AUTH_KEY');
+    const IS_STUDENT = getJSON('is_student');
+    
+    if (!AUTH_KEY || IS_STUDENT !== true) {
+        alert('Access denied. Please log in as a student.');
+        window.location.href = 'login-student.html'; // Redirect to login page
+    }
+});
+document.addEventListener("DOMContentLoaded", async (event) => {
+    event.preventDefault();
+    student_class = window.localStorage.getItem('classes')
+    const AUTH_KEY = window.localStorage.getItem('AUTH_KEY');
     try {
         const params = new URLSearchParams(window.location.search);
         const courses = params.get('course'); 
-
+        const classes = params.get('class')
+        //console.log(courses)
         const response = await fetch(getexamlink);
         const exams_data = await response.json();
         
         for (let i = 0; i < exams_data.length; i++) {
             const exam = exams_data[i];
-            if (exam.courses == courses) {
-            //courses = exam.courses
+            console.log('outside')
+            if (exam.courses == courses && exam.classes == classes && student_class == classes) {
+                console.log('inside')
                 institute = exam.institute
-                
+                console.log(institute)
                 const Questions = JSON.parse(exam.questions.replace(/'/g, '"'));
                 document.getElementById('course-name').textContent = courses;
-                document.getElementById('institute-name').textContent = institute;
+                document.getElementById('student-name').textContent = AUTH_KEY;
                 const questionContainer = document.getElementById('question-container');
                 const questionPalette = document.getElementById('question-palette');
                 const totalQuestions = Questions.length;
@@ -90,7 +95,8 @@ document.addEventListener("DOMContentLoaded", async () => {
                 document.getElementById('attempted-count').textContent = attemptedCount;
                 document.getElementById('not-attempted-count').textContent = notAttemptedCount;
             
-                document.getElementById('submitBtn').addEventListener('click', async (event) => {event.preventDefault();
+                document.getElementById('submitBtn').addEventListener('click', async (event) => {
+                    event.preventDefault();
                     const answer = {};
 
                     allRadios.forEach(radio => {
@@ -111,8 +117,8 @@ document.addEventListener("DOMContentLoaded", async () => {
                     }
                     let original = { courses: courses };
                     const answers = payload.answers
-
-                    original = { courses, answers };
+                    const AUTHKEY = window.localStorage.getItem('AUTH_KEY')
+                    original = { AUTHKEY, courses, answers };
 
                     console.log('outside')
                     const headers = {'Content-Type':'application/json',

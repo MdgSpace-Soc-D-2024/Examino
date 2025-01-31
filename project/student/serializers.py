@@ -41,6 +41,18 @@ class StudentCredSerializer(serializers.ModelSerializer):
         student.save()
 
         return student
+    
+class StudentCredGETSerializer(serializers.Serializer):
+    #username = serializers.CharField()
+    #institute = serializers.CharField()
+    #email = serializers.EmailField()
+    classes = serializers.CharField()
+    
+class ExamsGetSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Exams
+        fields = ['institute', 'classes', 'courses', 'date_scheduled', 'questions']
+        unique_together = ["institute", "classes", "courses"]
         
 class StudentAnswersSerializer(serializers.ModelSerializer):
 
@@ -50,9 +62,11 @@ class StudentAnswersSerializer(serializers.ModelSerializer):
         fields = ['AUTHKEY', 'courses', 'answers']
 
     def create(self, validated_data):   
-        username = get_user_simplejwt(validated_data['AUTHKEY']).get('user')
-        student = StudentAnswers.objects.create(**validated_data)
-        student.username = username
+        username = validated_data['AUTHKEY']
+        user = StudentCred.objects.filter(username=username).first()
+        validated_data.pop('AUTHKEY')
+        student = StudentAnswers.objects.create(username = user, **validated_data)
+        
         student.save()
 
         return student
@@ -62,6 +76,7 @@ class StudentMarksSerializer(serializers.ModelSerializer):
     class Meta:
         model = StudentMarks
         fields = ['marks', 'courses']
+        
 
 
 
