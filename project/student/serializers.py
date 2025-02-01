@@ -40,7 +40,7 @@ class StudentCredSerializer(serializers.ModelSerializer):
         student = StudentCred.objects.create(institute=institute, password = make_password(password), **validated_data)
         student.save()
 
-        return student
+        return student, password
     
 class StudentCredGETSerializer(serializers.Serializer):
     #username = serializers.CharField()
@@ -71,12 +71,17 @@ class StudentAnswersSerializer(serializers.ModelSerializer):
 
         return student
     
-
+class CourseSerializer(serializers.Serializer):
+    courses = serializers.CharField()
+    
 class StudentMarksSerializer(serializers.Serializer):
     username = serializers.CharField()
+    institute = serializers.CharField()
     marks = serializers.IntegerField()
     courses = serializers.CharField()
-        
 
-
-
+class AllStudentMarksSerializer(serializers.Serializer):
+    institute = serializers.CharField()
+    student = serializers.CharField()
+    marks = serializers.CharField()
+    courses = serializers.CharField() 

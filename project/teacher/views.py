@@ -8,30 +8,26 @@ from django.contrib.auth import authenticate
 from rest_framework_simplejwt.tokens import RefreshToken
 from django.core.mail import send_mail
 from admin_app.serializers import *
+from django.contrib.auth.hashers import check_password
 import logging
 logger = logging.getLogger(__name__)
 
 class LoginTeacherAPIView(APIView):
     def post(self, request):
-        try:
-            serializer = LoginTeacherSerializer(data=request.data)
-            if serializer.is_valid():
-                username = serializer.data["username"]
-                password = serializer.data["password"]
-                teachers = TeacherCred.objects.all()
-                for teacher in teachers:
-                    if username == teacher.username:
-                        teacher_req = TeacherCred.objects.filter(username = username).first()
-                        if teacher_req.password == password:
-                            return Response({'message': 'Login successful', 'username': username}, status=status.HTTP_200_OK)
-                        else:
-                            return Response({"error": "Invalid credentials"}, status=status.HTTP_401_UNAUTHORIZED)
-                    else:
-                        return Response({"error": "Username doesn't exist"}, status=status.HTTP_401_UNAUTHORIZED)
-            else:
-                return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)       
-        except:
-            pass
+        serializer = LoginTeacherSerializer(data=request.data)
+        
+        if serializer.is_valid():
+            username = serializer.validated_data["username"]
+            password = serializer.validated_data["password"]
+            
+            teacher = TeacherCred.objects.filter(username=username).first()
+
+            if teacher is None:
+                return Response({'error': "Username doesn't exist"}, status=status.HTTP_401_UNAUTHORIZED)
+            if check_password(password, teacher.password):
+                return Response({'message': 'Login Successful', 'username': username}, status=status.HTTP_200_OK)
+            return Response({"error": "Invalid credentials"}, status=status.HTTP_401_UNAUTHORIZED)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
             
 class TeacherCredAPIView(APIView):
     def post(self, request):
@@ -40,7 +36,7 @@ class TeacherCredAPIView(APIView):
             teacher, password = serializer.save()
             send_mail(
             subject="Your Login Credentials",
-            message=f"Hello {teacher.username},\n\nYour login credentials are:\n Teacher Username: {teacher.username}\nPassword: {password}.",
+            message=f"Hello {teacher.username},\n\nYour login credentials are:\n Teacher Username: {teacher.username}\nPassword: {password}",
             from_email="dhruvi.purohit06@gmail.com",
             recipient_list=[teacher.email],
             )

@@ -133,17 +133,19 @@ document.addEventListener("DOMContentLoaded", async (event) => {
                             headers: headers,
                             body: JSON.stringify(original),
                         });
+                        alert('Exam submitted successfully!')
+                        window.location.href = 'results-home.html'
                         //console.log('inside') 
-                        if (response.ok){
-                            console.log('response.ok')
-                            alert('Submission Successful!');
-                            //console.log(responseData);
-                        } else {
-                            const error = response.JSON();
-                            console.log('error')
-                            alert('error', error)
-                            event.preventDefault();
-                        }
+                        //if (response.ok){
+                        //    console.log('response.ok')
+                        //    alert('Submission Successful!');
+                        //    //console.log(responseData);
+                        //} else {
+                        //    const error = response.JSON();
+                        //    console.log('error')
+                        //    alert('error', error)
+                        //    event.preventDefault();
+                        //}
                     } catch (err) {
                         alert('error')
                         console.error("Error:", err)

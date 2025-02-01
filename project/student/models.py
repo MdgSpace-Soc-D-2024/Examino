@@ -20,6 +20,7 @@ class StudentAnswers(models.Model):
 
 class StudentMarks(models.Model):
     username = models.ForeignKey(StudentCred, on_delete=models.CASCADE)
+    institute = models.ForeignKey(Admin, on_delete=models.CASCADE)
     marks = models.IntegerField()
     courses = models.CharField(max_length=50)
 
