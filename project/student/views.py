@@ -23,7 +23,7 @@ class StudentCredAPIView(APIView):
             
             send_mail(
             subject="Your Login Credentials",
-            message=f"Hello {student.username},\n\nYour login credentials are:\n Student Username: {student.username}\nPassword: {password}. \n\n Regards, \n {student.institute}",
+            message=f"Hello {student.username},\n\nYour login credentials are:\n Student Username: {student.username}\nPassword: {password} \n\n Regards, \n {student.institute}",
             from_email="dhruvi.purohit06@gmail.com",
             recipient_list=[student.email],
             )
@@ -215,20 +215,20 @@ class ExamsGetAPIView(APIView):
 
 class StudentResultsAPIView(APIView):
     def get(self, request):
-        serializer = AUTHKEYSerializer(data = {'AUTHKEY': (request.headers.get('username')).split()[1]})
-        if serializer.is_valid():
-            username = serializer.data['AUTHKEY']
-            
-            student = StudentCred.objects.filter(username = username).first()
-            institute = Admin.objects.get(institute=student.institute)
-            result = StudentMarks.objects.get(username = student, institute=institute)
-            logger.info(institute.institute)
-            result_serializer = StudentMarksSerializer(data = [{'username': username, 'institute':institute.institute, 'marks': result.marks, 'courses': result.courses}], many = True)
-            logger.info(result_serializer)
-            if result_serializer.is_valid():
-                logger.info('hello')
-                return Response(result_serializer.data, status=status.HTTP_200_OK)
-            return Response(result_serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-
-
+        try:
+            serializer = AUTHKEYSerializer(data = {'AUTHKEY': (request.headers.get('username')).split()[1]})
+            if serializer.is_valid():
+                username = serializer.data['AUTHKEY']
+                student = StudentCred.objects.filter(username = username).first()
+                institute = Admin.objects.get(institute=student.institute)
+                result = StudentMarks.objects.get(username = student, institute=institute)
+                logger.info(institute.institute)
+                result_serializer = StudentMarksSerializer(data = [{'username': username, 'institute':institute.institute, 'marks': result.marks, 'courses': result.courses}], many = True)
+                logger.info(result_serializer)
+                if result_serializer.is_valid():
+                    logger.info('hello')
+                    return Response(result_serializer.data, status=status.HTTP_200_OK)
+                return Response(result_serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+            return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+        except:
+            return Response('no results')

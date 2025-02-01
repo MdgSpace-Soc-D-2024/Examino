@@ -47621,3 +47621,1637 @@ AssertionError: Expected a `Response`, `HttpResponse` or `StreamingHttpResponse`
     marks = IntegerField()
     courses = CharField()
 2025-02-01 20:47:12,659 (INFO)- student.views- hello
+2025-02-01 22:47:53,302 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-02-01 22:48:09,027 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5Mjk0Mjg4LCJpYXQiOjE3Mzg0MzAyODgsImp0aSI6IjM5YzVjZDA4YzlmYjQ5YTJiMjE5ZTIzNzcwYjNmNDZiIiwidXNlcl9pZCI6MTR9.9LbHOW3F-k7Ix6_L8LFCQs1f0zT4OpbKDGDrpMo3o-o
+2025-02-01 22:48:09,029 (INFO)- admin_app.serializers- admin_app
+2025-02-01 22:48:19,149 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5Mjk0Mjg4LCJpYXQiOjE3Mzg0MzAyODgsImp0aSI6IjM5YzVjZDA4YzlmYjQ5YTJiMjE5ZTIzNzcwYjNmNDZiIiwidXNlcl9pZCI6MTR9.9LbHOW3F-k7Ix6_L8LFCQs1f0zT4OpbKDGDrpMo3o-o
+2025-02-01 22:48:19,165 (INFO)- admin_app.serializers- admin_app
+2025-02-01 22:48:35,927 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5Mjk0Mjg4LCJpYXQiOjE3Mzg0MzAyODgsImp0aSI6IjM5YzVjZDA4YzlmYjQ5YTJiMjE5ZTIzNzcwYjNmNDZiIiwidXNlcl9pZCI6MTR9.9LbHOW3F-k7Ix6_L8LFCQs1f0zT4OpbKDGDrpMo3o-o
+2025-02-01 22:48:35,927 (INFO)- admin_app.serializers- admin_app
+2025-02-01 22:49:36,789 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5Mjk0Mjg4LCJpYXQiOjE3Mzg0MzAyODgsImp0aSI6IjM5YzVjZDA4YzlmYjQ5YTJiMjE5ZTIzNzcwYjNmNDZiIiwidXNlcl9pZCI6MTR9.9LbHOW3F-k7Ix6_L8LFCQs1f0zT4OpbKDGDrpMo3o-o
+2025-02-01 22:49:36,789 (INFO)- admin_app.serializers- admin_app
+2025-02-01 22:49:40,823 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5Mjk0Mjg4LCJpYXQiOjE3Mzg0MzAyODgsImp0aSI6IjM5YzVjZDA4YzlmYjQ5YTJiMjE5ZTIzNzcwYjNmNDZiIiwidXNlcl9pZCI6MTR9.9LbHOW3F-k7Ix6_L8LFCQs1f0zT4OpbKDGDrpMo3o-o
+2025-02-01 22:49:40,823 (INFO)- admin_app.serializers- admin_app
+2025-02-01 22:50:06,846 (INFO)- admin_app.serializers- admin_app
+2025-02-01 22:50:10,577 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5Mjk0Mjg4LCJpYXQiOjE3Mzg0MzAyODgsImp0aSI6IjM5YzVjZDA4YzlmYjQ5YTJiMjE5ZTIzNzcwYjNmNDZiIiwidXNlcl9pZCI6MTR9.9LbHOW3F-k7Ix6_L8LFCQs1f0zT4OpbKDGDrpMo3o-o
+2025-02-01 22:50:10,580 (INFO)- admin_app.serializers- admin_app
+2025-02-01 22:50:20,987 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5Mjk0Mjg4LCJpYXQiOjE3Mzg0MzAyODgsImp0aSI6IjM5YzVjZDA4YzlmYjQ5YTJiMjE5ZTIzNzcwYjNmNDZiIiwidXNlcl9pZCI6MTR9.9LbHOW3F-k7Ix6_L8LFCQs1f0zT4OpbKDGDrpMo3o-o
+2025-02-01 22:50:20,987 (INFO)- admin_app.serializers- admin_app
+2025-02-01 22:50:23,564 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5Mjk0Mjg4LCJpYXQiOjE3Mzg0MzAyODgsImp0aSI6IjM5YzVjZDA4YzlmYjQ5YTJiMjE5ZTIzNzcwYjNmNDZiIiwidXNlcl9pZCI6MTR9.9LbHOW3F-k7Ix6_L8LFCQs1f0zT4OpbKDGDrpMo3o-o
+2025-02-01 22:50:23,571 (INFO)- admin_app.serializers- admin_app
+2025-02-01 22:50:33,455 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5Mjk0Mjg4LCJpYXQiOjE3Mzg0MzAyODgsImp0aSI6IjM5YzVjZDA4YzlmYjQ5YTJiMjE5ZTIzNzcwYjNmNDZiIiwidXNlcl9pZCI6MTR9.9LbHOW3F-k7Ix6_L8LFCQs1f0zT4OpbKDGDrpMo3o-o
+2025-02-01 22:50:33,461 (INFO)- admin_app.serializers- admin_app
+2025-02-01 22:50:34,727 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5Mjk0Mjg4LCJpYXQiOjE3Mzg0MzAyODgsImp0aSI6IjM5YzVjZDA4YzlmYjQ5YTJiMjE5ZTIzNzcwYjNmNDZiIiwidXNlcl9pZCI6MTR9.9LbHOW3F-k7Ix6_L8LFCQs1f0zT4OpbKDGDrpMo3o-o
+2025-02-01 22:50:34,730 (INFO)- admin_app.serializers- admin_app
+2025-02-01 22:50:41,375 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5Mjk0Mjg4LCJpYXQiOjE3Mzg0MzAyODgsImp0aSI6IjM5YzVjZDA4YzlmYjQ5YTJiMjE5ZTIzNzcwYjNmNDZiIiwidXNlcl9pZCI6MTR9.9LbHOW3F-k7Ix6_L8LFCQs1f0zT4OpbKDGDrpMo3o-o
+2025-02-01 22:50:41,378 (INFO)- admin_app.serializers- admin_app
+2025-02-01 22:50:42,742 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5Mjk0Mjg4LCJpYXQiOjE3Mzg0MzAyODgsImp0aSI6IjM5YzVjZDA4YzlmYjQ5YTJiMjE5ZTIzNzcwYjNmNDZiIiwidXNlcl9pZCI6MTR9.9LbHOW3F-k7Ix6_L8LFCQs1f0zT4OpbKDGDrpMo3o-o
+2025-02-01 22:50:42,742 (INFO)- admin_app.serializers- admin_app
+2025-02-01 22:50:46,125 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5Mjk0Mjg4LCJpYXQiOjE3Mzg0MzAyODgsImp0aSI6IjM5YzVjZDA4YzlmYjQ5YTJiMjE5ZTIzNzcwYjNmNDZiIiwidXNlcl9pZCI6MTR9.9LbHOW3F-k7Ix6_L8LFCQs1f0zT4OpbKDGDrpMo3o-o
+2025-02-01 22:50:46,125 (INFO)- admin_app.serializers- admin_app
+2025-02-01 22:50:47,505 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5Mjk0Mjg4LCJpYXQiOjE3Mzg0MzAyODgsImp0aSI6IjM5YzVjZDA4YzlmYjQ5YTJiMjE5ZTIzNzcwYjNmNDZiIiwidXNlcl9pZCI6MTR9.9LbHOW3F-k7Ix6_L8LFCQs1f0zT4OpbKDGDrpMo3o-o
+2025-02-01 22:50:47,512 (INFO)- admin_app.serializers- admin_app
+2025-02-01 22:51:16,903 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5Mjk0Mjg4LCJpYXQiOjE3Mzg0MzAyODgsImp0aSI6IjM5YzVjZDA4YzlmYjQ5YTJiMjE5ZTIzNzcwYjNmNDZiIiwidXNlcl9pZCI6MTR9.9LbHOW3F-k7Ix6_L8LFCQs1f0zT4OpbKDGDrpMo3o-o
+2025-02-01 22:51:16,908 (INFO)- admin_app.serializers- admin_app
+2025-02-01 22:51:18,242 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5Mjk0Mjg4LCJpYXQiOjE3Mzg0MzAyODgsImp0aSI6IjM5YzVjZDA4YzlmYjQ5YTJiMjE5ZTIzNzcwYjNmNDZiIiwidXNlcl9pZCI6MTR9.9LbHOW3F-k7Ix6_L8LFCQs1f0zT4OpbKDGDrpMo3o-o
+2025-02-01 22:51:18,243 (INFO)- admin_app.serializers- admin_app
+2025-02-01 22:51:20,164 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5Mjk0Mjg4LCJpYXQiOjE3Mzg0MzAyODgsImp0aSI6IjM5YzVjZDA4YzlmYjQ5YTJiMjE5ZTIzNzcwYjNmNDZiIiwidXNlcl9pZCI6MTR9.9LbHOW3F-k7Ix6_L8LFCQs1f0zT4OpbKDGDrpMo3o-o
+2025-02-01 22:51:20,166 (INFO)- admin_app.serializers- admin_app
+2025-02-01 22:51:22,398 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5Mjk0Mjg4LCJpYXQiOjE3Mzg0MzAyODgsImp0aSI6IjM5YzVjZDA4YzlmYjQ5YTJiMjE5ZTIzNzcwYjNmNDZiIiwidXNlcl9pZCI6MTR9.9LbHOW3F-k7Ix6_L8LFCQs1f0zT4OpbKDGDrpMo3o-o
+2025-02-01 22:51:22,398 (INFO)- admin_app.serializers- admin_app
+2025-02-01 22:51:50,000 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5Mjk0Mjg4LCJpYXQiOjE3Mzg0MzAyODgsImp0aSI6IjM5YzVjZDA4YzlmYjQ5YTJiMjE5ZTIzNzcwYjNmNDZiIiwidXNlcl9pZCI6MTR9.9LbHOW3F-k7Ix6_L8LFCQs1f0zT4OpbKDGDrpMo3o-o
+2025-02-01 22:51:50,000 (INFO)- admin_app.serializers- admin_app
+2025-02-01 22:51:50,356 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\admin_app\models.py changed, reloading.
+2025-02-01 22:51:51,456 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-02-01 22:51:52,201 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5Mjk0Mjg4LCJpYXQiOjE3Mzg0MzAyODgsImp0aSI6IjM5YzVjZDA4YzlmYjQ5YTJiMjE5ZTIzNzcwYjNmNDZiIiwidXNlcl9pZCI6MTR9.9LbHOW3F-k7Ix6_L8LFCQs1f0zT4OpbKDGDrpMo3o-o
+2025-02-01 22:51:52,228 (INFO)- admin_app.serializers- admin_app
+2025-02-01 22:51:52,435 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5Mjk0Mjg4LCJpYXQiOjE3Mzg0MzAyODgsImp0aSI6IjM5YzVjZDA4YzlmYjQ5YTJiMjE5ZTIzNzcwYjNmNDZiIiwidXNlcl9pZCI6MTR9.9LbHOW3F-k7Ix6_L8LFCQs1f0zT4OpbKDGDrpMo3o-o
+2025-02-01 22:51:52,435 (INFO)- admin_app.serializers- admin_app
+2025-02-01 22:53:39,700 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-02-01 22:53:41,084 (INFO)- admin_app.serializers- admin_app
+2025-02-01 22:53:41,294 (INFO)- admin_app.serializers- admin_app
+2025-02-01 22:53:42,744 (INFO)- admin_app.serializers- admin_app
+2025-02-01 22:53:47,315 (INFO)- admin_app.serializers- admin_app
+2025-02-01 22:53:47,591 (INFO)- admin_app.serializers- admin_app
+2025-02-01 22:53:54,364 (INFO)- admin_app.serializers- admin_app
+2025-02-01 22:53:54,617 (INFO)- admin_app.serializers- admin_app
+2025-02-01 22:54:00,660 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5Mjk0Mjg4LCJpYXQiOjE3Mzg0MzAyODgsImp0aSI6IjM5YzVjZDA4YzlmYjQ5YTJiMjE5ZTIzNzcwYjNmNDZiIiwidXNlcl9pZCI6MTR9.9LbHOW3F-k7Ix6_L8LFCQs1f0zT4OpbKDGDrpMo3o-o
+2025-02-01 22:54:00,662 (INFO)- admin_app.serializers- admin_app
+2025-02-01 22:54:02,405 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5Mjk0Mjg4LCJpYXQiOjE3Mzg0MzAyODgsImp0aSI6IjM5YzVjZDA4YzlmYjQ5YTJiMjE5ZTIzNzcwYjNmNDZiIiwidXNlcl9pZCI6MTR9.9LbHOW3F-k7Ix6_L8LFCQs1f0zT4OpbKDGDrpMo3o-o
+2025-02-01 22:54:02,405 (INFO)- admin_app.serializers- admin_app
+2025-02-01 22:54:02,784 (INFO)- admin_app.serializers- admin_app
+2025-02-01 22:54:08,274 (INFO)- admin_app.serializers- admin_app
+2025-02-01 22:54:08,519 (INFO)- admin_app.serializers- admin_app
+2025-02-01 22:54:13,584 (INFO)- admin_app.serializers- admin_app
+2025-02-01 22:54:13,867 (INFO)- admin_app.serializers- admin_app
+2025-02-01 22:54:17,658 (INFO)- admin_app.serializers- admin_app
+2025-02-01 22:54:17,909 (INFO)- admin_app.serializers- admin_app
+2025-02-01 22:54:19,484 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5Mjk0Mjg4LCJpYXQiOjE3Mzg0MzAyODgsImp0aSI6IjM5YzVjZDA4YzlmYjQ5YTJiMjE5ZTIzNzcwYjNmNDZiIiwidXNlcl9pZCI6MTR9.9LbHOW3F-k7Ix6_L8LFCQs1f0zT4OpbKDGDrpMo3o-o
+2025-02-01 22:54:19,489 (INFO)- admin_app.serializers- admin_app
+2025-02-01 22:54:21,829 (INFO)- admin_app.serializers- admin_app
+2025-02-01 22:54:30,344 (INFO)- admin_app.serializers- admin_app
+2025-02-01 22:54:45,986 (INFO)- admin_app.serializers- admin_app
+2025-02-01 22:54:46,457 (INFO)- admin_app.serializers- admin_app
+2025-02-01 22:54:46,779 (INFO)- admin_app.serializers- admin_app
+2025-02-01 22:54:47,527 (INFO)- admin_app.serializers- admin_app
+2025-02-01 22:55:01,274 (INFO)- admin_app.serializers- admin_app
+2025-02-01 22:55:03,654 (INFO)- admin_app.serializers- admin_app
+2025-02-01 22:55:22,174 (INFO)- admin_app.serializers- admin_app
+2025-02-01 22:55:23,074 (INFO)- admin_app.serializers- admin_app
+2025-02-01 22:55:38,904 (INFO)- admin_app.serializers- admin_app
+2025-02-01 22:55:53,354 (INFO)- admin_app.serializers- admin_app
+2025-02-01 22:55:54,704 (INFO)- admin_app.serializers- admin_app
+2025-02-01 22:56:08,050 (INFO)- admin_app.serializers- admin_app
+2025-02-01 22:56:22,394 (INFO)- admin_app.serializers- admin_app
+2025-02-01 22:56:39,749 (INFO)- admin_app.serializers- admin_app
+2025-02-01 22:56:40,866 (INFO)- admin_app.serializers- admin_app
+2025-02-01 22:56:56,436 (INFO)- admin_app.serializers- admin_app
+2025-02-01 22:57:10,254 (INFO)- admin_app.serializers- admin_app
+2025-02-01 22:57:25,457 (INFO)- admin_app.serializers- admin_app
+2025-02-01 22:57:27,922 (INFO)- admin_app.serializers- admin_app
+2025-02-01 22:57:41,464 (INFO)- admin_app.serializers- admin_app
+2025-02-01 22:57:42,724 (INFO)- admin_app.serializers- admin_app
+2025-02-01 22:57:56,269 (INFO)- admin_app.serializers- admin_app
+2025-02-01 22:57:56,679 (INFO)- admin_app.serializers- admin_app
+2025-02-01 22:57:57,247 (INFO)- admin_app.serializers- admin_app
+2025-02-01 22:58:12,840 (INFO)- admin_app.serializers- admin_app
+2025-02-01 22:58:13,796 (INFO)- admin_app.serializers- admin_app
+2025-02-01 22:58:30,301 (INFO)- admin_app.serializers- admin_app
+2025-02-01 22:58:31,700 (INFO)- admin_app.serializers- admin_app
+2025-02-01 22:58:45,136 (INFO)- admin_app.serializers- admin_app
+2025-02-01 22:58:48,651 (INFO)- admin_app.serializers- admin_app
+2025-02-01 22:58:48,999 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5Mjk0Mjg4LCJpYXQiOjE3Mzg0MzAyODgsImp0aSI6IjM5YzVjZDA4YzlmYjQ5YTJiMjE5ZTIzNzcwYjNmNDZiIiwidXNlcl9pZCI6MTR9.9LbHOW3F-k7Ix6_L8LFCQs1f0zT4OpbKDGDrpMo3o-o
+2025-02-01 22:58:49,013 (INFO)- admin_app.serializers- admin_app
+2025-02-01 23:01:31,755 (INFO)- teacher.views- MIT
+2025-02-01 23:01:52,696 (INFO)- teacher.views- MIT
+2025-02-01 23:01:58,216 (INFO)- teacher.views- MIT
+2025-02-01 23:01:59,715 (INFO)- teacher.views- MIT
+2025-02-01 23:02:22,215 (INFO)- teacher.views- MIT
+2025-02-01 23:02:34,495 (INFO)- teacher.views- MIT
+2025-02-01 23:02:38,377 (INFO)- teacher.views- MIT
+2025-02-01 23:03:13,240 (INFO)- teacher.views- MIT
+2025-02-01 23:04:27,215 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-02-01 23:04:28,330 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-02-01 23:04:59,375 (INFO)- student.views- StudentAnswersSerializer(data={'AUTHKEY': 'mystudent1', 'courses': 'Mathematics', 'answers': '{"question1":"q1a2"}'}):
+    AUTHKEY = CharField()
+    courses = CharField(max_length=50)
+    answers = CharField(style={'base_template': 'textarea.html'})
+2025-02-01 23:04:59,375 (INFO)- student.views- hello
+2025-02-01 23:04:59,375 (INFO)- student.views- mystudent1
+2025-02-01 23:04:59,389 (INFO)- student.views- MnC
+2025-02-01 23:04:59,392 (INFO)- student.views- <class 'admin_app.models.Admin'>
+2025-02-01 23:04:59,395 (INFO)- student.views- Mathematics
+2025-02-01 23:04:59,395 (INFO)- student.views- <class 'teacher.models.Exams'>
+2025-02-01 23:04:59,425 (INFO)- student.views- [{'question': 'vpqelv', 'options': ['wlkvm', 'wlrvm', 'wlrm', 'w,rlm'], 'correctAnswer': 'Option 1'}]
+2025-02-01 23:04:59,425 (INFO)- student.views- 0
+2025-02-01 23:06:19,563 (INFO)- student.views- StudentAnswersSerializer(data={'AUTHKEY': 'mystudent4', 'courses': 'Mathematics', 'answers': '{"question1":"q1a1"}'}):
+    AUTHKEY = CharField()
+    courses = CharField(max_length=50)
+    answers = CharField(style={'base_template': 'textarea.html'})
+2025-02-01 23:06:19,567 (INFO)- student.views- hello
+2025-02-01 23:06:19,567 (INFO)- student.views- mystudent4
+2025-02-01 23:06:19,572 (INFO)- student.views- MnC
+2025-02-01 23:06:19,572 (INFO)- student.views- <class 'admin_app.models.Admin'>
+2025-02-01 23:06:19,572 (INFO)- student.views- Mathematics
+2025-02-01 23:06:19,582 (INFO)- student.views- <class 'teacher.models.Exams'>
+2025-02-01 23:06:19,614 (INFO)- student.views- [{'question': 'vpqelv', 'options': ['wlkvm', 'wlrvm', 'wlrm', 'w,rlm'], 'correctAnswer': 'Option 1'}]
+2025-02-01 23:06:19,618 (INFO)- student.views- 1
+2025-02-01 23:08:12,529 (INFO)- student.views- MIT
+2025-02-01 23:08:12,529 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-01 23:08:12,529 (INFO)- student.views- hello
+2025-02-01 23:08:14,169 (INFO)- student.views- MIT
+2025-02-01 23:08:14,180 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-01 23:08:14,183 (INFO)- student.views- hello
+2025-02-01 23:22:07,814 (INFO)- student.views- MIT
+2025-02-01 23:22:07,814 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-01 23:22:07,817 (INFO)- student.views- hello
+2025-02-01 23:22:08,906 (INFO)- student.views- MIT
+2025-02-01 23:22:08,906 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-01 23:22:08,906 (INFO)- student.views- hello
+2025-02-01 23:22:11,075 (INFO)- student.views- MIT
+2025-02-01 23:22:11,075 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-01 23:22:11,082 (INFO)- student.views- hello
+2025-02-01 23:22:31,865 (INFO)- student.views- MIT
+2025-02-01 23:22:31,867 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-01 23:22:31,870 (INFO)- student.views- hello
+2025-02-01 23:30:20,658 (INFO)- student.views- MIT
+2025-02-01 23:30:20,658 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-01 23:30:20,667 (INFO)- student.views- hello
+2025-02-01 23:30:21,971 (INFO)- student.views- MIT
+2025-02-01 23:30:21,971 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-01 23:30:21,971 (INFO)- student.views- hello
+2025-02-01 23:30:24,619 (INFO)- student.views- MIT
+2025-02-01 23:30:24,619 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-01 23:30:24,619 (INFO)- student.views- hello
+2025-02-01 23:30:28,111 (INFO)- student.views- MIT
+2025-02-01 23:30:28,111 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-01 23:30:28,118 (INFO)- student.views- hello
+2025-02-01 23:30:29,519 (INFO)- student.views- MIT
+2025-02-01 23:30:29,519 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-01 23:30:29,526 (INFO)- student.views- hello
+2025-02-01 23:30:31,578 (INFO)- student.views- MIT
+2025-02-01 23:30:31,578 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-01 23:30:31,578 (INFO)- student.views- hello
+2025-02-01 23:30:34,004 (INFO)- student.views- MIT
+2025-02-01 23:30:34,006 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-01 23:30:34,009 (INFO)- student.views- hello
+2025-02-01 23:31:09,945 (INFO)- student.views- MIT
+2025-02-01 23:31:09,945 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-01 23:31:09,945 (INFO)- student.views- hello
+2025-02-01 23:31:39,023 (INFO)- student.views- MIT
+2025-02-01 23:31:39,032 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-01 23:31:39,032 (INFO)- student.views- hello
+2025-02-02 00:36:28,743 (INFO)- student.views- MIT
+2025-02-02 00:36:28,749 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 00:36:28,749 (INFO)- student.views- hello
+2025-02-02 00:36:30,115 (INFO)- student.views- MIT
+2025-02-02 00:36:30,118 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 00:36:30,118 (INFO)- student.views- hello
+2025-02-02 00:36:33,130 (INFO)- student.views- MIT
+2025-02-02 00:36:33,130 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 00:36:33,138 (INFO)- student.views- hello
+2025-02-02 00:36:36,258 (INFO)- student.views- MIT
+2025-02-02 00:36:36,258 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 00:36:36,258 (INFO)- student.views- hello
+2025-02-02 00:36:55,179 (INFO)- student.views- MIT
+2025-02-02 00:36:55,187 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 00:36:55,189 (INFO)- student.views- hello
+2025-02-02 00:37:15,483 (INFO)- student.views- MIT
+2025-02-02 00:37:15,488 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 00:37:15,488 (INFO)- student.views- hello
+2025-02-02 00:37:46,444 (INFO)- student.views- MIT
+2025-02-02 00:37:46,444 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 00:37:46,444 (INFO)- student.views- hello
+2025-02-02 00:37:48,431 (INFO)- student.views- MIT
+2025-02-02 00:37:48,431 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 00:37:48,434 (INFO)- student.views- hello
+2025-02-02 00:37:49,168 (INFO)- student.views- MIT
+2025-02-02 00:37:49,170 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 00:37:49,171 (INFO)- student.views- hello
+2025-02-02 00:38:13,503 (INFO)- student.views- MIT
+2025-02-02 00:38:13,506 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 00:38:13,508 (INFO)- student.views- hello
+2025-02-02 00:38:17,408 (INFO)- student.views- MIT
+2025-02-02 00:38:17,412 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 00:38:17,412 (INFO)- student.views- hello
+2025-02-02 00:38:18,648 (INFO)- student.views- MIT
+2025-02-02 00:38:18,648 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 00:38:18,654 (INFO)- student.views- hello
+2025-02-02 00:38:33,930 (INFO)- student.views- MIT
+2025-02-02 00:38:33,930 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 00:38:33,938 (INFO)- student.views- hello
+2025-02-02 00:38:39,083 (INFO)- student.views- MIT
+2025-02-02 00:38:39,083 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 00:38:39,087 (INFO)- student.views- hello
+2025-02-02 00:39:10,758 (INFO)- student.views- MIT
+2025-02-02 00:39:10,762 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 00:39:10,765 (INFO)- student.views- hello
+2025-02-02 00:39:13,098 (INFO)- student.views- MIT
+2025-02-02 00:39:13,098 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 00:39:13,098 (INFO)- student.views- hello
+2025-02-02 00:42:37,370 (INFO)- student.views- MIT
+2025-02-02 00:42:37,371 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 00:42:37,371 (INFO)- student.views- hello
+2025-02-02 00:42:37,400 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\models.py changed, reloading.
+2025-02-02 00:42:38,690 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-02-02 00:42:55,901 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\models.py changed, reloading.
+2025-02-02 00:42:56,718 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-02-02 00:43:02,184 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\models.py changed, reloading.
+2025-02-02 00:43:02,968 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-02-02 00:43:19,945 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\models.py changed, reloading.
+2025-02-02 00:43:20,889 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-02-02 00:43:29,409 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\models.py changed, reloading.
+2025-02-02 00:43:30,318 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-02-02 00:43:31,028 (INFO)- student.views- MIT
+2025-02-02 00:43:31,028 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 00:43:31,036 (INFO)- student.views- hello
+2025-02-02 00:43:31,209 (INFO)- student.views- MIT
+2025-02-02 00:43:31,209 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 00:43:31,209 (INFO)- student.views- hello
+2025-02-02 00:43:33,460 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\models.py changed, reloading.
+2025-02-02 00:43:34,629 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-02-02 00:43:35,511 (INFO)- student.views- MIT
+2025-02-02 00:43:35,511 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 00:43:35,511 (INFO)- student.views- hello
+2025-02-02 00:43:41,845 (INFO)- student.views- MIT
+2025-02-02 00:43:41,845 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 00:43:41,845 (INFO)- student.views- hello
+2025-02-02 00:43:42,168 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\models.py changed, reloading.
+2025-02-02 00:43:43,189 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-02-02 00:43:45,523 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\models.py changed, reloading.
+2025-02-02 00:43:46,429 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-02-02 00:43:59,200 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\models.py changed, reloading.
+2025-02-02 00:44:00,238 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-02-02 00:54:35,417 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-02-02 00:54:36,656 (INFO)- student.views- MIT
+2025-02-02 00:54:36,656 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 00:54:36,656 (INFO)- student.views- hello
+2025-02-02 00:54:49,501 (INFO)- student.views- MIT
+2025-02-02 00:54:49,503 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 00:54:49,503 (INFO)- student.views- hello
+2025-02-02 00:54:53,622 (INFO)- student.views- MIT
+2025-02-02 00:54:53,622 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 00:54:53,637 (INFO)- student.views- hello
+2025-02-02 00:55:04,164 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\serializers.py changed, reloading.
+2025-02-02 00:55:05,187 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-02-02 00:55:16,976 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\serializers.py changed, reloading.
+2025-02-02 00:55:18,290 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-02-02 00:55:27,849 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\serializers.py changed, reloading.
+2025-02-02 00:55:28,995 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-02-02 00:55:40,989 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\serializers.py changed, reloading.
+2025-02-02 00:55:42,563 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-02-02 00:55:47,696 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\serializers.py changed, reloading.
+2025-02-02 00:55:48,735 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-02-02 00:55:58,255 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\serializers.py changed, reloading.
+2025-02-02 00:55:59,731 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-02-02 00:56:00,667 (INFO)- student.views- MIT
+2025-02-02 00:56:00,682 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 00:56:00,682 (INFO)- student.views- hello
+2025-02-02 00:56:01,511 (INFO)- student.views- MIT
+2025-02-02 00:56:01,511 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 00:56:01,511 (INFO)- student.views- hello
+2025-02-02 00:56:01,848 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\serializers.py changed, reloading.
+2025-02-02 00:56:02,918 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-02-02 00:56:03,697 (INFO)- student.views- MIT
+2025-02-02 00:56:03,697 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 00:56:03,697 (INFO)- student.views- hello
+2025-02-02 00:56:03,857 (INFO)- student.views- MIT
+2025-02-02 00:56:03,857 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 00:56:03,857 (INFO)- student.views- hello
+2025-02-02 00:56:24,600 (INFO)- student.views- MIT
+2025-02-02 00:56:24,605 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 00:56:24,608 (INFO)- student.views- hello
+2025-02-02 00:56:25,291 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-02-02 00:56:26,158 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-02-02 00:56:35,682 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-02-02 00:56:37,233 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-02-02 00:56:39,238 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-02-02 00:56:40,320 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-02-02 00:56:53,316 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-02-02 00:56:54,369 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-02-02 01:01:02,553 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-02-02 01:01:03,767 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-02-02 01:01:04,618 (INFO)- student.views- MIT
+2025-02-02 01:01:04,620 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 01:01:04,620 (INFO)- student.views- hello
+2025-02-02 01:01:05,225 (INFO)- student.views- MIT
+2025-02-02 01:01:05,225 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 01:01:05,234 (INFO)- student.views- hello
+2025-02-02 01:01:19,512 (INFO)- student.views- MIT
+2025-02-02 01:01:19,516 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 01:01:19,516 (INFO)- student.views- hello
+2025-02-02 01:01:20,822 (INFO)- student.views- MIT
+2025-02-02 01:01:20,824 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 01:01:20,825 (INFO)- student.views- hello
+2025-02-02 01:01:23,285 (INFO)- student.views- MIT
+2025-02-02 01:01:23,285 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 01:01:23,285 (INFO)- student.views- hello
+2025-02-02 01:01:30,012 (INFO)- student.views- MIT
+2025-02-02 01:01:30,023 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 01:01:30,023 (INFO)- student.views- hello
+2025-02-02 01:01:31,478 (INFO)- student.views- MIT
+2025-02-02 01:01:31,478 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 01:01:31,478 (INFO)- student.views- hello
+2025-02-02 01:02:01,256 (INFO)- student.views- MIT
+2025-02-02 01:02:01,257 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 01:02:01,257 (INFO)- student.views- hello
+2025-02-02 01:02:03,582 (INFO)- student.views- MIT
+2025-02-02 01:02:03,582 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 01:02:03,582 (INFO)- student.views- hello
+2025-02-02 01:06:18,844 (INFO)- student.views- MIT
+2025-02-02 01:06:18,844 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 01:06:18,849 (INFO)- student.views- hello
+2025-02-02 01:06:20,172 (INFO)- student.views- MIT
+2025-02-02 01:06:20,172 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 01:06:20,172 (INFO)- student.views- hello
+2025-02-02 01:06:26,742 (INFO)- student.views- MIT
+2025-02-02 01:06:26,743 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 01:06:26,743 (INFO)- student.views- hello
+2025-02-02 01:06:28,226 (INFO)- student.views- MIT
+2025-02-02 01:06:28,227 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 01:06:28,228 (INFO)- student.views- hello
+2025-02-02 01:06:58,741 (INFO)- student.views- MIT
+2025-02-02 01:06:58,741 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 01:06:58,745 (INFO)- student.views- hello
+2025-02-02 01:07:01,325 (INFO)- student.views- MIT
+2025-02-02 01:07:01,331 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 01:07:01,331 (INFO)- student.views- hello
+2025-02-02 01:07:08,732 (INFO)- student.views- MIT
+2025-02-02 01:07:08,732 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 01:07:08,732 (INFO)- student.views- hello
+2025-02-02 01:07:08,779 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-02-02 01:07:09,801 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-02-02 01:07:17,303 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-02-02 01:07:18,152 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-02-02 01:07:21,128 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-02-02 01:07:22,196 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-02-02 01:07:26,478 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-02-02 01:07:27,426 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-02-02 01:07:31,324 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-02-02 01:07:32,511 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-02-02 01:07:33,592 (INFO)- student.views- MIT
+2025-02-02 01:07:33,592 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 01:07:33,592 (INFO)- student.views- hello
+2025-02-02 01:07:35,622 (INFO)- student.views- MIT
+2025-02-02 01:07:35,622 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 01:07:35,622 (INFO)- student.views- hello
+2025-02-02 01:07:36,112 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-02-02 01:07:37,167 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-02-02 01:07:38,171 (INFO)- student.views- MIT
+2025-02-02 01:07:38,171 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 01:07:38,171 (INFO)- student.views- hello
+2025-02-02 01:07:38,421 (INFO)- student.views- MIT
+2025-02-02 01:07:38,421 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 01:07:38,421 (INFO)- student.views- hello
+2025-02-02 01:07:39,001 (INFO)- student.views- MIT
+2025-02-02 01:07:39,001 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 01:07:39,005 (INFO)- student.views- hello
+2025-02-02 01:07:39,791 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-02-02 01:07:40,677 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-02-02 01:07:41,711 (INFO)- student.views- MIT
+2025-02-02 01:07:41,711 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 01:07:41,711 (INFO)- student.views- hello
+2025-02-02 01:07:44,824 (INFO)- student.views- MIT
+2025-02-02 01:07:44,824 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 01:07:44,824 (INFO)- student.views- hello
+2025-02-02 01:07:45,111 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-02-02 01:07:46,127 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-02-02 01:07:46,941 (INFO)- student.views- MIT
+2025-02-02 01:07:46,941 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 01:07:46,941 (INFO)- student.views- hello
+2025-02-02 01:07:56,361 (INFO)- student.views- MIT
+2025-02-02 01:07:56,369 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 01:07:56,371 (INFO)- student.views- hello
+2025-02-02 01:08:00,273 (INFO)- student.views- MIT
+2025-02-02 01:08:00,273 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 01:08:00,279 (INFO)- student.views- hello
+2025-02-02 01:08:02,041 (INFO)- student.views- MIT
+2025-02-02 01:08:02,041 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 01:08:02,041 (INFO)- student.views- hello
+2025-02-02 01:08:10,521 (INFO)- student.views- MIT
+2025-02-02 01:08:10,521 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 01:08:10,521 (INFO)- student.views- hello
+2025-02-02 01:08:11,851 (INFO)- student.views- MIT
+2025-02-02 01:08:11,851 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 01:08:11,851 (INFO)- student.views- hello
+2025-02-02 01:08:13,957 (INFO)- student.views- MIT
+2025-02-02 01:08:13,957 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 01:08:13,961 (INFO)- student.views- hello
+2025-02-02 01:08:15,246 (INFO)- student.views- MIT
+2025-02-02 01:08:15,246 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 01:08:15,251 (INFO)- student.views- hello
+2025-02-02 01:08:17,641 (INFO)- student.views- MIT
+2025-02-02 01:08:17,641 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 01:08:17,651 (INFO)- student.views- hello
+2025-02-02 01:08:18,995 (INFO)- student.views- MIT
+2025-02-02 01:08:19,001 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 01:08:19,002 (INFO)- student.views- hello
+2025-02-02 01:08:22,671 (INFO)- student.views- MIT
+2025-02-02 01:08:22,671 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 01:08:22,671 (INFO)- student.views- hello
+2025-02-02 01:08:23,904 (INFO)- student.views- MIT
+2025-02-02 01:08:23,904 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 01:08:23,904 (INFO)- student.views- hello
+2025-02-02 01:08:29,851 (INFO)- student.views- MIT
+2025-02-02 01:08:29,857 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 01:08:29,857 (INFO)- student.views- hello
+2025-02-02 01:08:30,593 (INFO)- student.views- MIT
+2025-02-02 01:08:30,593 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 01:08:30,593 (INFO)- student.views- hello
+2025-02-02 01:08:40,250 (INFO)- student.views- MIT
+2025-02-02 01:08:40,251 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 01:08:40,251 (INFO)- student.views- hello
+2025-02-02 01:08:41,532 (INFO)- student.views- MIT
+2025-02-02 01:08:41,534 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 01:08:41,534 (INFO)- student.views- hello
+2025-02-02 01:08:43,101 (INFO)- student.views- MIT
+2025-02-02 01:08:43,101 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 01:08:43,101 (INFO)- student.views- hello
+2025-02-02 01:08:45,453 (INFO)- student.views- MIT
+2025-02-02 01:08:45,453 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 01:08:45,453 (INFO)- student.views- hello
+2025-02-02 01:08:46,154 (INFO)- student.views- MIT
+2025-02-02 01:08:46,154 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 01:08:46,154 (INFO)- student.views- hello
+2025-02-02 01:08:47,197 (INFO)- student.views- MIT
+2025-02-02 01:08:47,197 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 01:08:47,197 (INFO)- student.views- hello
+2025-02-02 01:08:48,548 (INFO)- student.views- MIT
+2025-02-02 01:08:48,548 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 01:08:48,551 (INFO)- student.views- hello
+2025-02-02 01:08:49,243 (INFO)- student.views- MIT
+2025-02-02 01:08:49,243 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 01:08:49,243 (INFO)- student.views- hello
+2025-02-02 01:08:50,784 (INFO)- student.views- MIT
+2025-02-02 01:08:50,784 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 01:08:50,784 (INFO)- student.views- hello
+2025-02-02 01:08:51,614 (INFO)- student.views- MIT
+2025-02-02 01:08:51,614 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 01:08:51,614 (INFO)- student.views- hello
+2025-02-02 01:09:27,596 (INFO)- student.views- MIT
+2025-02-02 01:09:27,596 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 01:09:27,600 (INFO)- student.views- hello
+2025-02-02 01:09:28,821 (INFO)- student.views- MIT
+2025-02-02 01:09:28,821 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 01:09:28,821 (INFO)- student.views- hello
+2025-02-02 01:09:32,571 (INFO)- student.views- MIT
+2025-02-02 01:09:32,571 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 01:09:32,579 (INFO)- student.views- hello
+2025-02-02 01:09:33,668 (INFO)- student.views- MIT
+2025-02-02 01:09:33,668 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 01:09:33,671 (INFO)- student.views- hello
+2025-02-02 01:09:34,941 (INFO)- student.views- MIT
+2025-02-02 01:09:34,941 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 01:09:34,941 (INFO)- student.views- hello
+2025-02-02 01:09:43,901 (INFO)- student.views- MIT
+2025-02-02 01:09:43,901 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 01:09:43,901 (INFO)- student.views- hello
+2025-02-02 01:09:45,272 (INFO)- student.views- MIT
+2025-02-02 01:09:45,272 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 01:09:45,272 (INFO)- student.views- hello
+2025-02-02 01:09:47,171 (INFO)- student.views- MIT
+2025-02-02 01:09:47,171 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 01:09:47,171 (INFO)- student.views- hello
+2025-02-02 01:09:48,594 (INFO)- student.views- MIT
+2025-02-02 01:09:48,594 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 01:09:48,601 (INFO)- student.views- hello
+2025-02-02 01:09:51,592 (INFO)- student.views- MIT
+2025-02-02 01:09:51,592 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 01:09:51,601 (INFO)- student.views- hello
+2025-02-02 01:09:52,961 (INFO)- student.views- MIT
+2025-02-02 01:09:52,964 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 01:09:52,966 (INFO)- student.views- hello
+2025-02-02 01:09:54,251 (INFO)- student.views- MIT
+2025-02-02 01:09:54,251 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 01:09:54,251 (INFO)- student.views- hello
+2025-02-02 01:09:55,555 (INFO)- student.views- MIT
+2025-02-02 01:09:55,561 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 01:09:55,561 (INFO)- student.views- hello
+2025-02-02 01:09:58,851 (INFO)- student.views- MIT
+2025-02-02 01:09:58,851 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 01:09:58,861 (INFO)- student.views- hello
+2025-02-02 01:10:00,146 (INFO)- student.views- MIT
+2025-02-02 01:10:00,146 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 01:10:00,146 (INFO)- student.views- hello
+2025-02-02 01:10:13,761 (INFO)- student.views- MIT
+2025-02-02 01:10:13,761 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 01:10:13,761 (INFO)- student.views- hello
+2025-02-02 01:10:14,854 (INFO)- student.views- MIT
+2025-02-02 01:10:14,854 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 01:10:14,858 (INFO)- student.views- hello
+2025-02-02 01:10:20,507 (INFO)- student.views- MIT
+2025-02-02 01:10:20,511 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 01:10:20,511 (INFO)- student.views- hello
+2025-02-02 01:10:27,792 (INFO)- student.views- MIT
+2025-02-02 01:10:27,792 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 01:10:27,792 (INFO)- student.views- hello
+2025-02-02 01:10:29,737 (INFO)- student.views- MIT
+2025-02-02 01:10:29,741 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 01:10:29,741 (INFO)- student.views- hello
+2025-02-02 01:10:30,494 (INFO)- student.views- MIT
+2025-02-02 01:10:30,494 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 01:10:30,494 (INFO)- student.views- hello
+2025-02-02 01:10:32,851 (INFO)- student.views- MIT
+2025-02-02 01:10:32,855 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 01:10:32,858 (INFO)- student.views- hello
+2025-02-02 01:10:36,151 (INFO)- student.views- MIT
+2025-02-02 01:10:36,151 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 01:10:36,161 (INFO)- student.views- hello
+2025-02-02 01:10:37,951 (INFO)- student.views- MIT
+2025-02-02 01:10:37,951 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 01:10:37,951 (INFO)- student.views- hello
+2025-02-02 01:10:39,301 (INFO)- student.views- MIT
+2025-02-02 01:10:39,302 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 01:10:39,302 (INFO)- student.views- hello
+2025-02-02 01:10:43,291 (INFO)- student.views- MIT
+2025-02-02 01:10:43,291 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 01:10:43,291 (INFO)- student.views- hello
+2025-02-02 01:10:44,681 (INFO)- student.views- MIT
+2025-02-02 01:10:44,681 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 01:10:44,688 (INFO)- student.views- hello
+2025-02-02 01:10:46,292 (INFO)- student.views- MIT
+2025-02-02 01:10:46,301 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 01:10:46,302 (INFO)- student.views- hello
+2025-02-02 01:10:47,535 (INFO)- student.views- MIT
+2025-02-02 01:10:47,535 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 01:10:47,541 (INFO)- student.views- hello
+2025-02-02 01:10:52,645 (INFO)- student.views- MIT
+2025-02-02 01:10:52,645 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 01:10:52,651 (INFO)- student.views- hello
+2025-02-02 01:10:53,945 (INFO)- student.views- MIT
+2025-02-02 01:10:53,945 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 01:10:53,945 (INFO)- student.views- hello
+2025-02-02 01:11:24,561 (INFO)- student.views- MIT
+2025-02-02 01:11:24,561 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 01:11:24,562 (INFO)- student.views- hello
+2025-02-02 01:11:26,936 (INFO)- student.views- MIT
+2025-02-02 01:11:26,941 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 01:11:26,943 (INFO)- student.views- hello
+2025-02-02 01:13:45,696 (ERROR)- django.request- Internal Server Error: /api/results/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py", line 220, in get
+    serializer = AUTHKEYSerializer(data = {'AUTHKEY': (request.headers.get('username')).split()[1]})
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'split'
+2025-02-02 01:14:00,423 (ERROR)- django.request- Internal Server Error: /api/results/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py", line 220, in get
+    serializer = AUTHKEYSerializer(data = {'AUTHKEY': (request.headers.get('username')).split()[1]})
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'split'
+2025-02-02 01:14:05,007 (ERROR)- django.request- Internal Server Error: /api/results/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py", line 220, in get
+    serializer = AUTHKEYSerializer(data = {'AUTHKEY': (request.headers.get('username')).split()[1]})
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'split'
+2025-02-02 01:14:06,321 (ERROR)- django.request- Internal Server Error: /api/results/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py", line 220, in get
+    serializer = AUTHKEYSerializer(data = {'AUTHKEY': (request.headers.get('username')).split()[1]})
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'split'
+2025-02-02 01:14:06,873 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-02-02 01:14:08,005 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-02-02 01:14:12,051 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-02-02 01:14:13,118 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-02-02 01:14:21,603 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-02-02 01:14:22,580 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-02-02 01:14:30,993 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-02-02 01:14:32,074 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-02-02 01:14:38,447 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-02-02 01:14:39,701 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-02-02 01:14:46,461 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-02-02 01:14:47,463 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-02-02 01:14:48,164 (ERROR)- django.request- Internal Server Error: /api/results/
+Traceback (most recent call last):
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py", line 219, in get
+    serializer = AUTHKEYSerializer(data = {'AUTHKEY': (request.headers.get('username')).split()[1]})
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'split'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py", line 235, in get
+    return Re
+           ^^
+NameError: name 'Re' is not defined
+2025-02-02 01:14:48,360 (ERROR)- django.request- Internal Server Error: /api/results/
+Traceback (most recent call last):
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py", line 219, in get
+    serializer = AUTHKEYSerializer(data = {'AUTHKEY': (request.headers.get('username')).split()[1]})
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'split'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py", line 235, in get
+    return Re
+           ^^
+NameError: name 'Re' is not defined
+2025-02-02 01:14:49,379 (ERROR)- django.request- Internal Server Error: /api/results/
+Traceback (most recent call last):
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py", line 219, in get
+    serializer = AUTHKEYSerializer(data = {'AUTHKEY': (request.headers.get('username')).split()[1]})
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'split'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py", line 235, in get
+    return Response()
+           ^^
+NameError: name 'Re' is not defined
+2025-02-02 01:14:49,604 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-02-02 01:14:50,580 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-02-02 01:14:52,720 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-02-02 01:14:53,761 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-02-02 01:15:12,211 (INFO)- student.views- MIT
+2025-02-02 01:15:12,220 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 01:15:12,221 (INFO)- student.views- hello
+2025-02-02 01:15:34,981 (ERROR)- django.request- Internal Server Error: /api/student-info/get/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py", line 39, in get
+    getserializer = StudentCredGETSerializer(data={'classes':user.classes})
+                                                             ^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'classes'
+2025-02-02 01:24:27,601 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-02-02 01:24:28,949 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-02-02 01:24:30,930 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-02-02 01:24:32,018 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-02-02 01:24:36,996 (INFO)- student.views- MIT
+2025-02-02 01:24:36,996 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 01:24:36,996 (INFO)- student.views- hello
+2025-02-02 01:30:31,194 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-02-02 01:30:32,625 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-02-02 01:35:18,381 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-02-02 01:35:19,517 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-02-02 01:35:24,888 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-02-02 01:35:26,056 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-02-02 01:35:33,354 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-02-02 01:35:34,867 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-02-02 01:35:36,768 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-02-02 01:35:37,715 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-02-02 01:35:40,884 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-02-02 01:35:41,941 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-02-02 01:41:49,151 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-02-02 01:41:50,320 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-02-02 01:42:14,905 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-02-02 01:42:16,108 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-02-02 01:42:17,071 (ERROR)- django.request- Internal Server Error: /api/results/
+Traceback (most recent call last):
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py", line 219, in get
+    serializer = AUTHKEYSerializer(data = {'AUTHKEY': (request.headers.get('username')).split()[1]})
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'split'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py", line 235, in get
+    return Response(null)
+                    ^^^^
+NameError: name 'null' is not defined
+2025-02-02 01:42:17,241 (ERROR)- django.request- Internal Server Error: /api/results/
+Traceback (most recent call last):
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py", line 219, in get
+    serializer = AUTHKEYSerializer(data = {'AUTHKEY': (request.headers.get('username')).split()[1]})
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'split'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py", line 235, in get
+    return Response(null)
+                    ^^^^
+NameError: name 'null' is not defined
+2025-02-02 01:42:19,126 (ERROR)- django.request- Internal Server Error: /api/results/
+Traceback (most recent call last):
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py", line 219, in get
+    serializer = AUTHKEYSerializer(data = {'AUTHKEY': (request.headers.get('username')).split()[1]})
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'split'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py", line 235, in get
+    return Response()
+                    ^^
+NameError: name 'null' is not defined
+2025-02-02 01:42:19,488 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-02-02 01:42:20,494 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-02-02 01:42:22,525 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-02-02 01:42:23,361 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-02-02 01:42:24,212 (ERROR)- django.request- Internal Server Error: /api/results/
+Traceback (most recent call last):
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py", line 219, in get
+    serializer = AUTHKEYSerializer(data = {'AUTHKEY': (request.headers.get('username')).split()[1]})
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'split'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py", line 235, in get
+    return Response(js)
+                    ^^
+NameError: name 'js' is not defined
+2025-02-02 01:42:24,889 (ERROR)- django.request- Internal Server Error: /api/results/
+Traceback (most recent call last):
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py", line 219, in get
+    serializer = AUTHKEYSerializer(data = {'AUTHKEY': (request.headers.get('username')).split()[1]})
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'split'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py", line 235, in get
+    return Response(js)
+                    ^^
+NameError: name 'js' is not defined
+2025-02-02 01:42:26,033 (ERROR)- django.request- Internal Server Error: /api/results/
+Traceback (most recent call last):
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py", line 219, in get
+    serializer = AUTHKEYSerializer(data = {'AUTHKEY': (request.headers.get('username')).split()[1]})
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'split'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py", line 235, in get
+    return Response(json.)
+                    ^^
+NameError: name 'js' is not defined
+2025-02-02 01:42:26,628 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-02-02 01:42:27,712 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-02-02 01:42:29,608 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-02-02 01:42:30,655 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-02-02 01:42:34,074 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-02-02 01:42:35,153 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-02-02 01:46:59,633 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-02-02 01:47:00,846 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-02-02 01:47:18,221 (WARNING)- django.request- Method Not Allowed: /api/answers/
+2025-02-02 01:47:29,152 (WARNING)- django.request- Method Not Allowed: /api/answers/
+2025-02-02 01:47:31,070 (INFO)- student.views- MIT
+2025-02-02 01:47:31,073 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 01:47:31,075 (INFO)- student.views- hello
+2025-02-02 01:47:52,650 (WARNING)- django.request- Method Not Allowed: /api/answers/
+2025-02-02 01:48:29,243 (WARNING)- django.request- Method Not Allowed: /api/answers/
+2025-02-02 01:48:37,405 (WARNING)- django.request- Method Not Allowed: /api/answers/
+2025-02-02 01:49:44,309 (INFO)- student.views- MIT
+2025-02-02 01:49:44,325 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 01:49:44,325 (INFO)- student.views- hello
+2025-02-02 01:50:00,626 (WARNING)- django.request- Method Not Allowed: /api/answers/
+2025-02-02 01:51:02,414 (WARNING)- django.request- Method Not Allowed: /api/answers/
+2025-02-02 01:51:32,640 (WARNING)- django.request- Method Not Allowed: /api/answers/
+2025-02-02 01:52:07,578 (WARNING)- django.request- Method Not Allowed: /api/answers/
+2025-02-02 02:15:37,201 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\student\views.py changed, reloading.
+2025-02-02 02:15:38,571 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-02-02 02:16:25,395 (INFO)- student.views- MIT
+2025-02-02 02:16:25,395 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 02:16:25,401 (INFO)- student.views- hello
+2025-02-02 02:16:27,776 (INFO)- student.views- MIT
+2025-02-02 02:16:27,779 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 02:16:27,781 (INFO)- student.views- hello
+2025-02-02 02:16:29,132 (INFO)- student.views- MIT
+2025-02-02 02:16:29,141 (INFO)- student.views- StudentMarksSerializer(data=[{'username': 'mystudent4', 'institute': 'MIT', 'marks': 1, 'courses': 'Mathematics'}], many=True):
+    username = CharField()
+    institute = CharField()
+    marks = IntegerField()
+    courses = CharField()
+2025-02-02 02:16:29,145 (INFO)- student.views- hello

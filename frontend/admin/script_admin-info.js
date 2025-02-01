@@ -44,6 +44,7 @@ document.getElementById('form-admin-info').addEventListener('submit', async func
             const data = await response.json();
             
             alert('successful');
+            window.location.href = 'admin.html'
         } else {
             console.log('not hello')
             alert('Error submitting institute details.');

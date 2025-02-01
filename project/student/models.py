@@ -24,4 +24,12 @@ class StudentMarks(models.Model):
     marks = models.IntegerField()
     courses = models.CharField(max_length=50)
 
+class ExamAttempt(models.Model):
+    username = models.ForeignKey(StudentCred, on_delete=models.CASCADE)
+    exam = models.ForeignKey(StudentAnswers, on_delete=models.CASCADE)
+
+    class Meta:
+        unique_together = ('username', 'exam')
+        
+
     

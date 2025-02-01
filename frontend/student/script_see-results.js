@@ -133,7 +133,7 @@ document.addEventListener("DOMContentLoaded", async(event) => {
         if (response.ok) {
             const leaderboardData = [];
             const results = await response.json();
-            console.log(results)
+            //console.log(results)
             // Convert JSON string to array
             const objstudent = JSON.parse(results.student);
             const objmarks = JSON.parse(results.marks);
@@ -141,10 +141,12 @@ document.addEventListener("DOMContentLoaded", async(event) => {
             objstudent.forEach((user, index) => {
                 const studentMarks = objmarks[index]; // Ensure marks exist
                 const data = { name: user, score: studentMarks };
-                console.log(data)
+                //console.log(data)
                 leaderboardData.push(data);
             });
-        
+
+            leaderboardData.sort((a, b) => b.score - a.score);
+            console.log(leaderboardData)
             const leaderboardEl = document.getElementById("leaderboard");
             leaderboardData.forEach((student, index) => {
                 const li = document.createElement("li");
@@ -161,3 +163,17 @@ document.addEventListener("DOMContentLoaded", async(event) => {
 
     
 });
+
+function logout() {
+    clearJSON(); 
+    alert('Logged out successfully');
+    window.location.href = '../home.html'; 
+}
+
+const logoutLink = document.getElementById('Logout');
+if (logoutLink) {
+    logoutLink.addEventListener('click', (event) => {
+        event.preventDefault();
+        logout();
+    });
+}

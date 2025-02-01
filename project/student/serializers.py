@@ -85,3 +85,8 @@ class AllStudentMarksSerializer(serializers.Serializer):
     student = serializers.CharField()
     marks = serializers.CharField()
     courses = serializers.CharField() 
+
+class ExamAttemptSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = ExamAttempt
+        fields = ['username', 'exam']
