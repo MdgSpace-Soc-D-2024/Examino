@@ -13,7 +13,7 @@ urlpatterns = [
 
     path('admin-info/', admin_views.AdminInfoView.as_view()),
     path('admin-info/get/', admin_views.AdminDataToFrontendAPIView.as_view()),
-
+    path('student-info/get/', student_views.StudentCredGETAPIView.as_view()),
     path('teacher-exam/', teacher_views.ExamsAPIView.as_view()),
 
     path('admin-class/post/', admin_views.InstituteClassPOSTAPIView.as_view()),
@@ -31,4 +31,7 @@ urlpatterns = [
     
     path('exams/get/', teacher_views.getExamAPIView.as_view()),  
     path('answers/', student_views.StudentAnswersAPIView.as_view()),
+
+    path('results/', student_views.StudentResultsAPIView.as_view()),
+    path('results/all/', student_views.AllStudentMarksAPIView.as_view()),
 ]

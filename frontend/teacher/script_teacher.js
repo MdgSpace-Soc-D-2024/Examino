@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     if (!AUTH_KEY || IS_TEACHER !== true) {
         alert('Access denied. Please log in as a teacher.');
-        window.location.href = 'login-teacher.html'; // Redirect to login page
+        window.location.href = 'login.html'; // Redirect to login page
     }
 });
 
@@ -31,3 +31,16 @@ gotoviewresults.addEventListener('click', function () {
    
     window.location.href = 'results.html';
 });
+function logout() {
+    clearJSON(); 
+    alert('Logged out successfully');
+    window.location.href = '../home.html'; 
+}
+
+const logoutLink = document.getElementById('Logout');
+if (logoutLink) {
+    logoutLink.addEventListener('click', (event) => {
+        event.preventDefault();
+        logout();
+    });
+}

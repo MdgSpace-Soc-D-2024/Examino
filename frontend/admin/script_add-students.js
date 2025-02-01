@@ -9,7 +9,7 @@ function clearJSON() {
 }
 const institute = null;
 document.addEventListener('DOMContentLoaded', () => {
-    const AUTH_KEY = JSON.stringify(getJSON('AUTH_KEY'));
+    const AUTH_KEY = window.localStorage.getItem('AUTH_KEY')
     const IS_ADMIN = getJSON('is_admin');
     //const institute = getJSON('institute')
     if (!AUTH_KEY || IS_ADMIN !== true) {

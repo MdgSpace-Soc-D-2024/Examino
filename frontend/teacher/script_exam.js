@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     if (!AUTH_KEY || IS_TEACHER !== true) {
         alert('Access denied. Please log in as a teacher.');
-        window.location.href = 'login-teacher.html'; // Redirect to login page
+        window.location.href = 'login.html'; 
     }
 });
 

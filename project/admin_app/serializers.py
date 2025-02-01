@@ -41,6 +41,7 @@ class InstituteClassesSerializer(serializers.ModelSerializer):
     class Meta:
         model = InstituteClass
         fields = ['AUTHKEY', 'classes']
+        unique_together = ['AUTHKEY', 'classes']
     def create(self, validated_data):   
         username = get_user_simplejwt(validated_data['AUTHKEY'])
         validated_data.pop('AUTHKEY')
@@ -57,6 +58,7 @@ class InstituteCoursesSerializer(serializers.ModelSerializer):
     class Meta:
         model = InstituteCourses
         fields = ['AUTHKEY', 'courses']
+        unique_together = ['AUTHKEY', 'courses']
     def create(self, validated_data):   
         username = get_user_simplejwt(validated_data['AUTHKEY'])
         validated_data.pop('AUTHKEY')

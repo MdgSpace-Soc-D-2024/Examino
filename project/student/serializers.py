@@ -10,6 +10,7 @@ import string
 import secrets
 import json
 import logging
+from django.contrib.auth.hashers import make_password
 logger = logging.getLogger(__name__)
 from admin_app.serializers import get_user_simplejwt
 
@@ -36,11 +37,22 @@ class StudentCredSerializer(serializers.ModelSerializer):
         validated_data.pop('AUTHKEY')
         user = UserNew.objects.get(username = username)
         institute = Admin.objects.get(username = user)
-        student = StudentCred.objects.create(institute=institute, **validated_data)
-        student.password = password
+        student = StudentCred.objects.create(institute=institute, password = make_password(password), **validated_data)
         student.save()
 
-        return student
+        return student, password
+    
+class StudentCredGETSerializer(serializers.Serializer):
+    #username = serializers.CharField()
+    #institute = serializers.CharField()
+    #email = serializers.EmailField()
+    classes = serializers.CharField()
+    
+class ExamsGetSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Exams
+        fields = ['institute', 'classes', 'courses', 'date_scheduled', 'questions']
+        unique_together = ["institute", "classes", "courses"]
         
 class StudentAnswersSerializer(serializers.ModelSerializer):
 
@@ -50,18 +62,31 @@ class StudentAnswersSerializer(serializers.ModelSerializer):
         fields = ['AUTHKEY', 'courses', 'answers']
 
     def create(self, validated_data):   
-        username = get_user_simplejwt(validated_data['AUTHKEY']).get('user')
-        student = StudentAnswers.objects.create(**validated_data)
-        student.username = username
+        username = validated_data['AUTHKEY']
+        user = StudentCred.objects.filter(username=username).first()
+        validated_data.pop('AUTHKEY')
+        student = StudentAnswers.objects.create(username = user, **validated_data)
+        
         student.save()
 
         return student
     
+class CourseSerializer(serializers.Serializer):
+    courses = serializers.CharField()
+    
+class StudentMarksSerializer(serializers.Serializer):
+    username = serializers.CharField()
+    institute = serializers.CharField()
+    marks = serializers.IntegerField()
+    courses = serializers.CharField()
 
-class StudentMarksSerializer(serializers.ModelSerializer):
+class AllStudentMarksSerializer(serializers.Serializer):
+    institute = serializers.CharField()
+    student = serializers.CharField()
+    marks = serializers.CharField()
+    courses = serializers.CharField() 
+
+class ExamAttemptSerializer(serializers.ModelSerializer):
     class Meta:
-        model = StudentMarks
-        fields = ['marks', 'courses']
-
-
-
+        model = ExamAttempt
+        fields = ['username', 'exam']

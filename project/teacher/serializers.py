@@ -10,6 +10,7 @@ import string
 import secrets
 import json
 import logging
+from django.contrib.auth.hashers import make_password
 logger = logging.getLogger(__name__)
 from admin_app.serializers import get_user_simplejwt
 
@@ -30,11 +31,11 @@ class TeacherCredSerializer(serializers.ModelSerializer):
         validated_data.pop('AUTHKEY')
         user = UserNew.objects.get(username = username)
         institute = Admin.objects.get(username = user)
-        teacher = TeacherCred.objects.create(institute=institute, **validated_data)
-        teacher.password = password
+        teacher = TeacherCred.objects.create(institute=institute, password = make_password(password), **validated_data)
+        #teacher.password = password
         teacher.save()
 
-        return teacher
+        return teacher, password
 
 class LoginTeacherSerializer(serializers.ModelSerializer):
     class Meta:
@@ -49,6 +50,7 @@ class ExamsSerializer(serializers.ModelSerializer):
     class Meta:
         model = Exams
         fields = ['AUTHKEY', 'classes', 'courses', 'date_scheduled', 'questions']
+        #unique_together = ['AUTHKEY', '']
     def create(self, validated_data):
         username = validated_data['AUTHKEY']
         user = TeacherCred.objects.get(username = username)

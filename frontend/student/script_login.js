@@ -13,7 +13,7 @@ document.getElementById("loginModal").addEventListener("submit", async (event) =
     const password = document.getElementById("loginPassword").value
     
     const headers = {'Content-Type':'application/json',
-        'Access-Control-Allow-Origin':'*',
+        'access-control-allow-origin':'*',
         'Access-Control-Allow-Methods':'POST,PATCH,OPTIONS'}
     try {
         console.log("hello login")
