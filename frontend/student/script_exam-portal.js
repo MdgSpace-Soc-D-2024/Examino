@@ -160,3 +160,10 @@ document.addEventListener("DOMContentLoaded", async (event) => {
         
         
 
+//const examStartTime = new Date(exam.start_time + " UTC");
+//const currentTime = new Date();
+//if (currentTime < examStartTime) {
+//    alert(`The exam will be available at ${examStartTime.toLocaleString()}`);
+//    window.location.href = "exam-home.html"; // Redirect back
+//    return;
+//}
