@@ -25,19 +25,19 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     const results = await response.json();
     console.log(JSON.stringify(results) == JSON.stringify('no results'))
-    console.log('kya hai')
+    
     if (!AUTH_KEY || IS_STUDENT !== true) {
-        console.log('kyu')
+        
         alert('Access denied. Please log in as a student.');
         window.location.href = 'login.html'; // Redirect to login page
 
     } else if (results != "no results"){
-        console.log('bkl')
+        
         alert('You have already given the exam. Check results!');
         window.location.href = 'result-home.html'
 
     } else {
-        console.log('hello bc')
+        
         student_class = window.localStorage.getItem('classes')
         const AUTH_KEY = window.localStorage.getItem('AUTH_KEY');
 
