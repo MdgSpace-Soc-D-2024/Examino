@@ -64,9 +64,9 @@ async function fetchCourses() {
     
     } catch (error) {
         console.error('Error adding course:', error);
-    }
-        
-}       
+    }      
+} 
+      
 document.getElementById("addCourseBtn").addEventListener('click', async (event) => {event.preventDefault();
     const courseInput = document.getElementById('courseInput');
     const courses = courseInput.value.trim();
@@ -99,3 +99,17 @@ document.getElementById("addCourseBtn").addEventListener('click', async (event) 
 });
 
 fetchCourses();
+function logout() {
+    clearJSON(); 
+    alert('Logged out successfully');
+    window.location.href = '../home.html'; 
+}
+
+
+const logoutLink = document.getElementById('Logout');
+if (logoutLink) {
+    logoutLink.addEventListener('click', (event) => {
+        event.preventDefault();
+        logout();
+    });
+}

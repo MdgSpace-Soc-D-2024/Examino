@@ -4,22 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Credential Entry</title>
-    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
-            background-color: #f8f9fa;
+            background: linear-gradient(to bottom, #2d1b59, #3b216c);
+            color: #e0e0e0;
+            min-height: 100vh;
         }
         .form-container {
-            margin-top: 50px;
+            background: #44307b;
             padding: 30px;
-            background-color: #ffffff;
             border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .topbar a {
+            color: white;
+            transition: color 0.3s;
+        }
+        .topbar a:hover {
+            color: #d3b8ff;
+        }
+        .btn-primary {
+            background-color: #6a4dad;
+            border: none;
+        }
+        .btn-primary:hover {
+            background-color: #7e5dc7;
         }
     </style>
 </head>
 <body>
+    <div class="topbar">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Examino</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav"> 
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="admin.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Exams</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Results</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="admin-info.html">Profile</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-outline-light ms-3" href="#" id="Logout">Logout</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
     <div class="container d-flex justify-content-center align-items-center min-vh-100">
         <div class="form-container col-md-6">
             <h3 class="text-center mb-4">Admin Credential Entry</h3>
@@ -44,8 +87,6 @@
             </form>
         </div>
     </div>
-
-    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script_admin-info.js"></script>
 </body>

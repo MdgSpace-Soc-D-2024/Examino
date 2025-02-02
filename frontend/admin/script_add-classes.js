@@ -13,8 +13,6 @@ function clearJSON() {
     window.localStorage.clear();
 }
 
-
-
 document.addEventListener('DOMContentLoaded', () => {
     const AUTH_KEY = JSON.stringify(getJSON('AUTH_KEY'));
     const IS_ADMIN = getJSON('is_admin');
@@ -100,3 +98,18 @@ document.getElementById('addClassBtn').addEventListener('click', async (event) =
 });
 
 fetchClasses();
+
+function logout() {
+    clearJSON(); 
+    alert('Logged out successfully');
+    window.location.href = '../home.html'; 
+}
+
+
+const logoutLink = document.getElementById('Logout');
+if (logoutLink) {
+    logoutLink.addEventListener('click', (event) => {
+        event.preventDefault();
+        logout();
+    });
+}

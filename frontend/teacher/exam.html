@@ -7,14 +7,59 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
     body {
+      background: linear-gradient(to bottom, #2e0052, #d18bef);
+      color: #ffffff;
+      min-height: 100vh;
+      padding-top: 60px; /* Prevent content from overlapping with navbar */
       padding: 20px;
     }
     .question-container {
       margin-top: 20px;
+      background-color: #9c6beb;
+    }
+    .card {
+      background-color: #9c6beb;
+    }
+    .form-select, .form-control {
+      background-color: #6f3dc1;
+    }
+    .navbar {
+      background-color: #1b022e;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+    .navbar-brand, .nav-link {
+      color: #ffffff !important;
     }
   </style>
 </head>
 <body>
+  
+
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Online Exam Platform</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="Logout">Logout</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+  </nav>
+  <br> <br> <br>
   <div class="container">
     <h1 class="text-center mb-4">Exam Scheduler</h1>
 

@@ -7,80 +7,103 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         body {
-            background-color: #f4f7f6;
-            padding-top: 50px;
+            background: linear-gradient(to bottom, #2d1b59, #3b216c);
+            color: #e0e0e0;
+            min-height: 100vh;
         }
-        .container {
-            background-color: #fff;
-            padding: 20px;
+        .form-container {
+            background: #44307b;
+            padding: 30px;
             border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
-        .add-student-btn {
-            margin-bottom: 20px;
+        .topbar a {
+            color: white;
+            transition: color 0.3s;
         }
-        .form-row {
-            display: flex;
-            justify-content: space-between;
+        .topbar a:hover {
+            color: #d3b8ff;
         }
-        .form-group {
-            flex: 1;
-            margin-right: 10px;
+        .btn-primary {
+            background-color: #6a4dad;
+            border: none;
         }
-        .form-group:last-child {
-            margin-right: 0;
+        .btn-primary:hover {
+            background-color: #7e5dc7;
         }
         .btn-success {
-            align-self: flex-end;
-            margin-left: 10px;
+            background-color: #4caf50;
+            border: none;
         }
     </style>
 </head>
 <body>
-
-<div class="container">
-    <h2 class="text-center mb-4">Admin Portal - Add Students</h2>
-    
-    <!-- Add Student Button -->
-    <div class="text-center add-student-btn">
-        <button id="addStudentBtn" class="btn btn-primary">Add Student</button>
+    <div class="topbar">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Examino</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav"> 
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="admin.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Exams</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Results</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="admin-info.html">Profile</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-outline-light ms-3" href="#" id="Logout">Logout</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </div>
     
-    <!-- Student Form (Initially Hidden) -->
-    <div id="studentForm" class="d-none">
-        <form id="studentFormFields">
-            <div class="form-row">
-                <div class="form-group">
+    <br><br><br>
+
+    <div class="container form-container">
+        <h2 class="text-center mb-4">Admin Portal - Add Students</h2>
+
+        <div class="text-center add-student-btn">
+            <button id="addStudentBtn" class="btn btn-primary">Add Student</button>
+        </div>
+
+        <div id="studentForm" class="d-none">
+            <form id="studentFormFields">
+                <div class="mb-3">
                     <label for="username">Student Username:</label>
                     <input type="text" class="form-control" id="username" placeholder="Enter student username" required>
                 </div>
-
-                <div class="form-group">
-                    <label for="email">Student Email:</label>
+                <div class="mb-3">
+                    <label for="email">Student Email</label>
                     <input type="email" class="form-control" id="email" placeholder="Enter student email" required>
                 </div>
-                
-                <div class="form-group">
+                <div class="mb-3">
                     <label for="institute">Institute Name:</label>
                     <input type="text" class="form-control" id="institute" readonly>
                 </div>
-
-                <div class="form-group">
-                    <label for="class">Class:</label>
-                    <select class="form-control" id="classDropdown" required>
-                        <option value="">Select a class</option>
-                        <!-- Options will be populated by JavaScript -->
+                <div class="mb-3">
+                    <label for="course">Course:</label>
+                    <select class="form-control" id="courseDropdown" required>
+                        <option value="">Select a course</option>
                     </select>
                 </div>
-
-                <button type="submit" class="btn btn-success">Submit</button>
-            </div>
-        </form>
+                <button type="submit" class="btn btn-success w-100">Submit</button>
+            </form>
+        </div>
     </div>
-</div>
 
-<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-<script src="script_add-students.js"></script>
-
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="script_add-students.js"></script>
 </body>
 </html>

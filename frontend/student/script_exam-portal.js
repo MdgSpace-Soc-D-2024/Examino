@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     });
 
     const results = await response.json();
-    console.log(JSON.stringify(results) == JSON.stringify('no results'))
+    //console.log(JSON.stringify(results) == JSON.stringify('no results'))
     
     if (!AUTH_KEY || IS_STUDENT !== true) {
         

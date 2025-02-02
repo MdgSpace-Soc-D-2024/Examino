@@ -7,71 +7,99 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <style>
-        body {
+        /* Ensure the entire body takes up the viewport */
+        html, body {
             font-family: 'Poppins', sans-serif;
-            background-color: #000;
-            color: #fff;
+            background: linear-gradient(180deg, #0C0A2F 0%, #3C267D 50%, #7330D2 100%); /* Dark blue to purple gradient */
+            color: #F2EFE7; /* light beige */
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
         }
         .navbar {
-            background-color: #608BC1; /* Muted Blue */
+            background-color: #1C1A3D; /* Dark purple */
         }
         .navbar-brand {
             font-weight: bold;
-            color: #FFFFFF; /* White */
+            color: #F2EFE7; /* light beige */
+        }
+        .nav-link {
+            color: #C1ACFF; /* light purple */
+            font-weight: 600;
         }
         .hero {
             text-align: center;
             padding: 100px 20px;
+            background-image: url('https://via.placeholder.com/1920x600'); /* Placeholder image for the card or design */
+            background-size: cover;
+            background-position: center;
+            color: #F2EFE7;
+            flex-grow: 1;
         }
         .hero h1 {
-            color: #F3F3E0; /* Light Cream Yellow */
+            color: #F2EFE7;
             font-size: 3rem;
             font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
         }
         .hero p {
-            color: #CBDCEB; /* Light Blue-Gray */
+            color: #9ACBD0; /* Light teal */
             font-size: 1.25rem;
+            margin-bottom: 30px;
         }
         .btn-primary {
-            background-color: #133E87; /* Dark Blue */
+            background-color: #48A6A7; /* medium teal */
             border: none;
-            color: #fff;
+            color: #F2EFE7; /* light beige */
             font-weight: 600;
+            padding: 10px 20px;
         }
         .btn-primary:hover {
-            background-color: #F3F3E0; /* Light Cream Yellow */
-        }
-        .footer {
-            background-color: #111;
-            text-align: center;
-            padding: 20px;
-            margin-top: 50px;
+            background-color: #9ACBD0; /* Light teal */
+             /* Adds a shadow effect on hover */
         }
 
-        /* Container for the options */
+        
         .options-container {
             display: none;
             margin-top: 20px;
             text-align: center;
         }
-
         .options-container a {
-            background-color: #133E87; /* Dark Blue */
-            color: #fff;
+            background-color: #48A6A7; /* medium teal */
+            color: #F2EFE7; /* light beige */
             font-weight: 600;
             padding: 10px 20px;
             margin: 0 15px;
             text-decoration: none;
             border-radius: 5px;
         }
-
         .options-container a:hover {
-            background-color: #F3F3E0; /* Light Cream Yellow */
+            background-color: #9ACBD0; /* light teal */
+        }
+        .dropdown-menu {
+            background-color: #1C1A3D; /* Dark purple for dropdown */
+        }
+        .dropdown-item {
+            color: #C1ACFF; /* Light purple for dropdown text */
+        }
+        .dropdown-item:hover {
+            background-color: #9ACBD0; /* light teal on hover */
+            color: #F2EFE7; /* light beige */
+        }
+        /* Footer pushed to the bottom */
+        .footer {
+            background-color: #1C1A3D; /* Dark purple */
+            text-align: center;
+            padding: 20px;
+            color: #C1ACFF;
+            width: 100%;
         }
     </style>
 </head>
 <body>
-    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg">
         <div class="container">
             <a class="navbar-brand" href="#">EXAMINO</a>
@@ -80,24 +108,20 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link text-white" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="#">About</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="#">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-    
-    <!-- Hero Section -->
+
     <div class="hero">
         <h1>Welcome to EXAMINO</h1>
         <p>Your ultimate online examination platform.</p>
         <a href="#" class="btn btn-primary" id="getStartedBtn">Get Started</a>
-        
-        <!-- Options Container -->
         <div class="options-container" id="optionsContainer">
             <div class="d-flex justify-content-center">
-                <!-- Login Dropdown -->
                 <div class="dropdown mx-2">
                     <button class="btn btn-outline-primary dropdown-toggle" type="button" id="loginDropdown" data-bs-toggle="dropdown" aria-expanded="false">
                         Login
@@ -108,8 +132,6 @@
                         <li><a class="dropdown-item" href="student/login.html">As Student</a></li>
                     </ul>
                 </div>
-        
-                <!-- Register Dropdown -->
                 <div class="dropdown mx-2">
                     <button class="btn btn-primary dropdown-toggle" type="button" id="registerDropdown" data-bs-toggle="dropdown" aria-expanded="false">
                         Register
@@ -120,19 +142,27 @@
                 </div>
             </div>
         </div>
-        
     </div>
+
+    <footer class="footer mt-auto py-3 text-center">
+        <div class="container d-flex justify-content-center align-items-center gap-3"> <!-- Added gap-3 here -->
+            <p class="mb-0 me-3">Made with love <<<3</p>
+            <a href="..//instagram.com">
+                <img src="https://img.icons8.com/?size=100&id=43625&format=png&color=000000" alt="Icon" style="width: 40px; height: 40px;">
+            </a>
+            <a href="..//discord.com">
+                <img src="https://img.icons8.com/?size=100&id=61604&format=png&color=000000" alt="Icon" style="width: 40px; height: 40px;">
+            </a>
+        </div>
+    </footer>
     
-    <!-- Footer 
-    <footer class="footer">
-        <p>&copy; 2025 EXAMINO. All Rights Reserved.</p>
-    </footer> -->
     
+    
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-        // Toggle the options container when "Get Started" is clicked
         document.getElementById("getStartedBtn").addEventListener("click", function(event) {
-            event.preventDefault(); // Prevent the default link action
+            event.preventDefault();
             var optionsContainer = document.getElementById("optionsContainer");
             optionsContainer.style.display = optionsContainer.style.display === "block" ? "none" : "block";
         });

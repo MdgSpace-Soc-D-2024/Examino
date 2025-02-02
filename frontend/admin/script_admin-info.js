@@ -42,7 +42,6 @@ document.getElementById('form-admin-info').addEventListener('submit', async func
 
         if (response.ok) {
             const data = await response.json();
-            
             alert('successful');
             window.location.href = 'admin.html'
         } else {

@@ -1,0 +1,62 @@
+Here's a breakdown of the color schemes used in your website:
+
+1. Background Gradient
+Gradient: Dark blue to purple.
+#0C0A2F (Dark Blue)
+#3C267D (Medium Purple)
+#7330D2 (Purple)
+This is applied to the body using a linear gradient:
+css
+Copy
+Edit
+background: linear-gradient(180deg, #0C0A2F 0%, #3C267D 50%, #7330D2 100%);
+2. Text Color
+Main Text Color: Light beige
+#F2EFE7
+Applied to the body and hero section text for contrast against the dark background.
+Secondary Text Color (used for less important text, like descriptions): Light teal
+#9ACBD0
+Footer Text Color: Light purple
+#C1ACFF
+3. Navbar
+Navbar Background Color: Dark purple
+#1C1A3D
+Navbar Brand Text Color: Light beige
+#F2EFE7
+Navbar Link Color: Light purple
+#C1ACFF
+Navbar Link Hover Color: Light teal
+#9ACBD0
+4. Button Colors
+Primary Button Background: Medium teal
+#48A6A7
+Primary Button Hover Background: Light teal
+#9ACBD0
+Dropdown Menu Button Background: Transparent with dark borders (inherit styles from .btn-outline-primary)
+Dropdown Button Hover Background: Light teal
+#9ACBD0
+Dropdown Menu Item Background: Dark purple
+#1C1A3D
+Dropdown Menu Item Text Color: Light purple
+#C1ACFF
+Dropdown Menu Item Hover Background: Light teal
+#9ACBD0
+Dropdown Menu Item Hover Text Color: Light beige
+#F2EFE7
+5. Footer
+Footer Background Color: Dark purple
+#1C1A3D
+Footer Icon Links Background Color: None (transparent)
+Footer Social Media Icons: Custom icons for Instagram and Discord. These are in black color by default, but you can adjust the icon color to match the theme.
+6. Hover Effects
+For buttons and links (like .btn-primary and .dropdown-item), the hover effect is applied with a background change to light teal (#9ACBD0).
+Color Palette Summary:
+Dark Blue: #0C0A2F
+Medium Purple: #3C267D
+Purple: #7330D2
+Light Beige: #F2EFE7
+Light Teal: #9ACBD0
+Light Purple: #C1ACFF
+Dark Purple: #1C1A3D
+Medium Teal: #48A6A7
+This color palette gives a calm, modern aesthetic with a mix of dark tones and vibrant accents, making it suitable for an online examination portal.
