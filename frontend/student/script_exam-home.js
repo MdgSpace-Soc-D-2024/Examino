@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', async(event) => { event.preventDef
                         <div class="card-body">
                             <h5 class="card-title">${exam.courses}</h5>
                             <p class="card-text">Scheduled on: ${exam.date_scheduled}</p>
-                            <a href="student-exam-portal.html?course=${exam.courses}&class=${exam.classes}"> TAKE EXAM </a>
+                            <a href="student-exam-portal.html?course=${exam.courses}&class=${exam.classes}&examname=${exam.examname}"> TAKE EXAM </a>
                         </div>
                     </div>
                 </div>

@@ -1,4 +1,4 @@
-const linktoseeresults = "http://localhost:8000/api/results/";
+const linktoseeresults = "http://localhost:8000/api/results/view/";
 
 function getJSON(key) {
     return JSON.parse(window.localStorage.getItem(key));
@@ -35,16 +35,26 @@ document.addEventListener('DOMContentLoaded', async (event) => {
         if (response.ok){
             const data = await response.json();
             const resultsContainer = document.getElementById('results-declared');
-            console.log(data)
+            console.log('data', data)
             //resultsContainer.innerHTML = '';
             const classes = window.localStorage.getItem('classes')
-            data.forEach(result => {
+            const objexams = JSON.parse(data.examname)
+            const objcourse = JSON.parse(data.courses)
+            const data_new = [];
+            objexams.forEach((exam, index) => {
+                const course = objcourse[index]; // Ensure marks exist
+                const data_dict = { examname: exam, courses: course };
+                //console.log(data)
+                data_new.push(data_dict);
+            });
+
+            data_new.forEach(result => {
                 const resultCard = `
                     <div class="col-md-4">
                         <div class="card result-card p-3">
                             <div class="card-body">
                                 <h5 class="card-title">${result.courses}</h5>
-                                <a href="see-results.html?course=${result.courses}&class=${classes}">SEE RESULTS</a>
+                                <a href="see-results.html?course=${result.courses}&class=${classes}&examname=${result.examname}">SEE RESULTS</a>
                             </div>
                         </div>
                     </div>

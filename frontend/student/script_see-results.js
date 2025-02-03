@@ -1,5 +1,5 @@
-const linktoseeresults = "http://localhost:8000/api/results/";
-const linktoseeall = "http://localhost:8000/api/results/all"
+const linktoseeresults = "http://localhost:8000/api/results/view/";
+const linktoseeall = "http://localhost:8000/api/results/all/"
 
 function getJSON(key) {
     return JSON.parse(window.localStorage.getItem(key));
@@ -26,30 +26,33 @@ document.addEventListener("DOMContentLoaded", async(event) => {
     try{
         const params = new URLSearchParams(window.location.search);
         const courses = params.get('course'); 
-        const classes = params.get('class')
+        const classes = params.get('class');
+        const examname = params.get('examname');
         response = await fetch(linktoseeresults, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
                 'username': `Bearer ${AUTH_KEY}`,
+                'examname': `Bearer ${examname}`
             },
         });
         if (response.ok) {
             const results = await response.json();
-            const subjects = [];
-            const scores = [];
-            results.forEach(result => {
+            console.log('results', results)
                 
-                subjects.push(result.courses)
-                scores.push(result.marks)
-                
-                if (result.courses == courses){
-                    document.getElementById("course").textContent = courses;
-                    document.getElementById("totalmarks").textContent = result.marks;
-                }
-            });
+            const subjects = JSON.parse(results.courses)
+            const scores = JSON.parse(results.marks)
+            //console.log(subjects)
+            subjects.forEach((subject, index) => {
+            if (subject == courses){
+                document.getElementById("course").textContent = courses;
+                document.getElementById("totalmarks").textContent = scores[index];
+            }
+        });
+        
             const ctx = document.getElementById("resultChart").getContext("2d");
-            
+            //const subjects = JSON.parse(results.courses)
+            //const marks = JSON.parse(results.marks)
             new Chart(ctx, {
                 type: "bar",
                 data: {
@@ -98,33 +101,13 @@ document.addEventListener("DOMContentLoaded", async(event) => {
                     }
                 }
             });
-        
-            const lineCtx = document.getElementById("lineChart").getContext("2d");
-            new Chart(lineCtx, {
-                type: "line",
-                data: {
-                    labels: subjects,
-                    datasets: [{
-                        label: "Progress Over Time",
-                        data: scores,
-                        borderColor: 'rgba(255, 255, 255, 1)',
-                        backgroundColor: 'rgb(255, 255, 255)',
-                        fill: false
-                    }]
-                },
-                options: {
-                    plugins: {
-                        legend: { labels: { color: 'white' } }
-                    },
-                    scales: {
-                        x: { ticks: { color: 'white' } },
-                        y: { ticks: { color: 'white' } }
-                    }
-                }
-            });
-        } else {
+            
+        }
+            
+         else {
             console.log(response.error)
         }
+    
     
     } catch(error) {
         console.log(error)
@@ -142,22 +125,26 @@ document.addEventListener("DOMContentLoaded", async(event) => {
         const params = new URLSearchParams(window.location.search);
         const courses = params.get('course'); 
         const classes = params.get('class')
+        const examname = params.get('examname')
         response = await fetch(linktoseeall, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
                 'username': `Bearer ${AUTH_KEY}`,
                 'courses': `Bearer ${courses}`,
+                'examname': `Bearer ${examname}`
             },
         });
         if (response.ok) {
-            const leaderboardData = [];
             const results = await response.json();
-            //console.log(results)
-            // Convert JSON string to array
+            console.log('hello', result)
+            const leaderboardData = [];
+            
+            
+            //// Convert JSON string to array
             const objstudent = JSON.parse(results.student);
             const objmarks = JSON.parse(results.marks);
-            
+            console.log(objstudent)
             objstudent.forEach((user, index) => {
                 const studentMarks = objmarks[index]; // Ensure marks exist
                 const data = { name: user, score: studentMarks };
@@ -165,6 +152,8 @@ document.addEventListener("DOMContentLoaded", async(event) => {
                 leaderboardData.push(data);
             });
 
+            console.log(results)
+            
             leaderboardData.sort((a, b) => b.score - a.score);
             console.log(leaderboardData)
             const leaderboardEl = document.getElementById("leaderboard");

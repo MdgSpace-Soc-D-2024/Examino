@@ -49,7 +49,8 @@ class ExamsSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Exams
-        fields = ['AUTHKEY', 'classes', 'courses', 'date_scheduled', 'start_time', 'end_time', 'questions']
+        fields = ['examname', 'AUTHKEY', 'classes', 'courses', 'date_scheduled', 'start_time', 'end_time', 'questions']
+
     def create(self, validated_data):
         username = validated_data['AUTHKEY']
         user = TeacherCred.objects.get(username = username)
@@ -67,9 +68,7 @@ class ExamsSerializer(serializers.ModelSerializer):
         representation = super().to_representation(instance)
         representation['questions'] = json.loads(instance.questions)  # Convert string to list
         return representation
-
-    
-
+   
 class ExamsGetSerializer(serializers.ModelSerializer):
     class Meta:
         model = Exams

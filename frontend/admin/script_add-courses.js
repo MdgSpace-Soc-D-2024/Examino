@@ -57,10 +57,10 @@ async function fetchCourses() {
             } catch (ex) {
                 console.error(ex);
             }
-         } else {
-             const errorData = await response.json();
-             alert(`Error adding course: ${errorData.detail || 'Unknown error'}`);
-         }
+        } else {
+            const errorData = await response.json();
+            alert(`Error adding course: ${errorData.detail || 'Unknown error'}`);
+        }
     
     } catch (error) {
         console.error('Error adding course:', error);

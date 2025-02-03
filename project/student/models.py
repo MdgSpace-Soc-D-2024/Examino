@@ -2,6 +2,7 @@ from django.db import models
 from home.models import *
 from django.contrib.auth.models import User
 from admin_app.models import *
+from teacher.models import *
 
 class StudentCred(models.Model):
     username = models.CharField(max_length=100)
@@ -15,21 +16,23 @@ class StudentCred(models.Model):
     
 class StudentAnswers(models.Model):
     username = models.ForeignKey(StudentCred, on_delete=models.CASCADE)
+    examname = models.ForeignKey(Exams, on_delete=models.CASCADE)
     courses = models.CharField(max_length=50)
     answers = models.TextField()
 
 class StudentMarks(models.Model):
     username = models.ForeignKey(StudentCred, on_delete=models.CASCADE)
     institute = models.ForeignKey(Admin, on_delete=models.CASCADE)
+    examname = models.ForeignKey(Exams, on_delete=models.CASCADE)
     marks = models.IntegerField()
     courses = models.CharField(max_length=50)
 
 class ExamAttempt(models.Model):
     username = models.ForeignKey(StudentCred, on_delete=models.CASCADE)
-    exam = models.ForeignKey(StudentAnswers, on_delete=models.CASCADE)
+    examname = models.ForeignKey(Exams, on_delete=models.CASCADE)
 
     class Meta:
-        unique_together = ('username', 'exam')
+        unique_together = ('username', 'examname')
         
 
     

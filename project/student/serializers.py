@@ -48,11 +48,11 @@ class StudentCredGETSerializer(serializers.Serializer):
     #email = serializers.EmailField()
     classes = serializers.CharField()
     
-class ExamsGetSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Exams
-        fields = ['institute', 'classes', 'courses', 'date_scheduled', 'questions']
-        unique_together = ["institute", "classes", "courses"]
+#class ExamsGetSerializer(serializers.ModelSerializer):
+#    class Meta:
+#        model = Exams
+#        fields = ['institute', 'classes', 'courses', 'date_scheduled', 'questions']
+#        #unique_together = ["institute", "classes", "courses"]
         
 class StudentAnswersSerializer(serializers.ModelSerializer):
 
@@ -73,11 +73,14 @@ class StudentAnswersSerializer(serializers.ModelSerializer):
     
 class CourseSerializer(serializers.Serializer):
     courses = serializers.CharField()
+class ExamnameSerializer(serializers.Serializer):
+    examname = serializers.CharField()
     
 class StudentMarksSerializer(serializers.Serializer):
     username = serializers.CharField()
     institute = serializers.CharField()
-    marks = serializers.IntegerField()
+    examname = serializers.CharField()
+    marks = serializers.CharField()
     courses = serializers.CharField()
 
 class AllStudentMarksSerializer(serializers.Serializer):

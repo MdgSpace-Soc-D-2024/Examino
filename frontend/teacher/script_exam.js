@@ -144,6 +144,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const examDate = document.getElementById("examDate").value;
       const examstartTime = document.getElementById("examstartTime").value;
       const examendTime = document.getElementById("examendTime").value;
+      const examname = document.getElementById("examname").value;
     
       if (!classSelected || !courseSelected || !examDate) {
         alert("Please fill in all exam details.");
@@ -176,6 +177,7 @@ document.addEventListener("DOMContentLoaded", () => {
       // Serialize questions array to JSON string before sending to backend
       const examData = {
         AUTHKEY: AUTHKEY,
+        examname: examname,
         classes: classSelected,
         courses: courseSelected,
         date_scheduled: examDate,

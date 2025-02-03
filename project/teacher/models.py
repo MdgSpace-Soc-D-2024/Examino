@@ -14,7 +14,7 @@ class TeacherCred(models.Model):
         return self.username
 
 class Exams(models.Model):
-    #examname = models.CharField(max_length=50)
+    examname = models.CharField(max_length=50)
     institute = models.ForeignKey(Admin, on_delete=models.CASCADE)
     classes = models.CharField(max_length=50)
     courses = models.CharField(max_length=32)
@@ -23,7 +23,7 @@ class Exams(models.Model):
     start_time = models.TimeField(default=timezone.now)
     end_time = models.TimeField(default=timezone.now)
     questions = models.TextField()
-    #class Meta:
-    #    constraints = [
-    #        models.UniqueConstraint(fields=['institute', 'examname'], name='unique_field1_field2')
-    #    ]
+    class Meta:
+        constraints = [
+            models.UniqueConstraint(fields=['institute', 'examname'], name='unique_field1_field2')
+        ]
