@@ -142,6 +142,8 @@ document.addEventListener("DOMContentLoaded", () => {
       const classSelected = document.getElementById("classDropdown").value;
       const courseSelected = document.getElementById("courseDropdown").value;
       const examDate = document.getElementById("examDate").value;
+      const examstartTime = document.getElementById("examstartTime").value;
+      const examendTime = document.getElementById("examendTime").value;
     
       if (!classSelected || !courseSelected || !examDate) {
         alert("Please fill in all exam details.");
@@ -177,6 +179,8 @@ document.addEventListener("DOMContentLoaded", () => {
         classes: classSelected,
         courses: courseSelected,
         date_scheduled: examDate,
+        start_time: examstartTime,
+        end_time: examendTime,
         questions: JSON.stringify(questions) // Convert array to JSON string
       };
     
@@ -206,3 +210,16 @@ document.addEventListener("DOMContentLoaded", () => {
     
     
   });
+  function logout() {
+    clearJSON(); 
+    alert('Logged out successfully');
+    window.location.href = '../home.html'; 
+}
+
+const logoutLink = document.getElementById('Logout');
+if (logoutLink) {
+    logoutLink.addEventListener('click', (event) => {
+        event.preventDefault();
+        logout();
+    });
+}

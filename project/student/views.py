@@ -20,12 +20,13 @@ class StudentCredAPIView(APIView):
 
         if serializer.is_valid():
             student, password = serializer.save()
-            
+            admin = Admin.objects.get(institute = student.institute)
+            admin_mail = admin.email
             send_mail(
             subject="Your Login Credentials",
             message=f"Hello {student.username},\n\nYour login credentials are:\n Student Username: {student.username}\nPassword: {password} \n\n Regards, \n {student.institute}",
             from_email="dhruvi.purohit06@gmail.com",
-            recipient_list=[student.email],
+            recipient_list=[admin_mail],
             )
             return Response({"message": "Student added successfully"}, status= status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
@@ -127,7 +128,7 @@ class StudentAnswersAPIView(APIView):
             student_marks = StudentMarks.objects.create(username = student_data, institute = admin, marks = marks, courses = courses)
             student_marks.save()
             return Response({"message": "Exam submitted"}, status = status.HTTP_202_ACCEPTED)
-        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+        return Response(serializer.errors)
     
 class AllStudentMarksAPIView(APIView):
     def get(self, request):

@@ -57,8 +57,8 @@ document.addEventListener("DOMContentLoaded", async(event) => {
                     datasets: [{
                         label: "Student Scores",
                         data: scores,
-                        backgroundColor: "rgba(54, 162, 235, 0.6)",
-                        borderColor: "rgba(54, 162, 235, 1)",
+                        backgroundColor: "rgb(245, 248, 250)",
+                        borderColor: "rgb(253, 254, 254)",
                         borderWidth: 1
                     }]
                 },
@@ -69,6 +69,13 @@ document.addEventListener("DOMContentLoaded", async(event) => {
                             beginAtZero: true,
                             max: 10
                         }
+                    },
+                    plugins: {
+                        legend: { labels: { color: 'white' } }
+                    },
+                    scales: {
+                        x: { ticks: { color: 'white' } },
+                        y: { ticks: { color: 'white' } }
                     }
                 }
             });
@@ -86,6 +93,9 @@ document.addEventListener("DOMContentLoaded", async(event) => {
                 options: {
                     responsive: true,
                     maintainAspectRatio: false,
+                    plugins: {
+                        legend: { labels: { color: 'white' } }
+                    }
                 }
             });
         
@@ -97,9 +107,19 @@ document.addEventListener("DOMContentLoaded", async(event) => {
                     datasets: [{
                         label: "Progress Over Time",
                         data: scores,
-                        borderColor: "blue",
+                        borderColor: 'rgba(255, 255, 255, 1)',
+                        backgroundColor: 'rgb(255, 255, 255)',
                         fill: false
                     }]
+                },
+                options: {
+                    plugins: {
+                        legend: { labels: { color: 'white' } }
+                    },
+                    scales: {
+                        x: { ticks: { color: 'white' } },
+                        y: { ticks: { color: 'white' } }
+                    }
                 }
             });
         } else {

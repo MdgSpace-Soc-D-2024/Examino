@@ -49,8 +49,7 @@ class ExamsSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Exams
-        fields = ['AUTHKEY', 'classes', 'courses', 'date_scheduled', 'questions']
-        #unique_together = ['AUTHKEY', '']
+        fields = ['AUTHKEY', 'classes', 'courses', 'date_scheduled', 'start_time', 'end_time', 'questions']
     def create(self, validated_data):
         username = validated_data['AUTHKEY']
         user = TeacherCred.objects.get(username = username)

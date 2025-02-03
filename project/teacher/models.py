@@ -2,8 +2,7 @@ from django.db import models
 from django.contrib.auth.models import User
 from home.models import *
 from admin_app.models import *
-#from project.settings import AUTH_USER_MODEL
-
+from django.utils import timezone
 class TeacherCred(models.Model):
     username = models.CharField(max_length = 100)
     email = models.EmailField()
@@ -21,8 +20,8 @@ class Exams(models.Model):
     courses = models.CharField(max_length=32)
     #created = models.DateTimeField(auto_now_add=True)
     date_scheduled = models.DateField()
-    #time_start = models.TimeField()
-    #time_end = models.TimeField()
+    start_time = models.TimeField(default=timezone.now)
+    end_time = models.TimeField(default=timezone.now)
     questions = models.TextField()
     #class Meta:
     #    constraints = [

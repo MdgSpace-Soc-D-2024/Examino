@@ -168,12 +168,13 @@ document.addEventListener('DOMContentLoaded', async () => {
                         } catch (err) {
                             //alert('error')
                             alert('yayy submitted')
-                            console.error("Error:", err)
+                            //console.error("Error:", err)
                         }
                     });
                 }   
             }
         } catch (error) {
+            
             console.error('Error adding exam paper:', error);
         }
         
