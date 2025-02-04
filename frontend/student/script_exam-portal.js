@@ -3,6 +3,8 @@ const postanswerslink = "http://localhost:8000/api/answers/";
 const studentcredlink = "http://localhost:8000/api/student-info/get/"
 const linktoseeresults = "http://localhost:8000/api/results/check/";
 
+const allRadios = document.querySelectorAll('input[type="radio"]');
+
 function setJSON(key, value) {
     window.localStorage.setItem(key, value);
 }
@@ -12,16 +14,16 @@ function getJSON(key) {
 function clearJSON() {
     window.localStorage.clear();
 }
-
+const params = new URLSearchParams(window.location.search);
+const courses = params.get('course'); 
+const classes = params.get('class');
+const examname = params.get('examname')
 
 document.addEventListener('DOMContentLoaded', async () => {
     const AUTH_KEY = window.localStorage.getItem('AUTH_KEY');
     const IS_STUDENT = getJSON('is_student');
     const no_results = JSON.stringify('no results');
-    const params = new URLSearchParams(window.location.search);
-    const courses = params.get('course'); 
-    const classes = params.get('class');
-    const examname = params.get('examname')
+    
     //setJSON('examname', examname)
     response = await fetch(linktoseeresults, {
         method: 'GET',
@@ -68,16 +70,19 @@ document.addEventListener('DOMContentLoaded', async () => {
                         const start = parseTime(startTime);
                         const end = parseTime(endTime);
                         let timer = Math.floor((end - new Date()) / 1000);
-            
+                        let starttimer = Math.floor((start - new Date()) / 1000);
                         if (timer <= 0) {
                             document.getElementById('exam-timer').textContent = "Time's Up";
                             return;
+                        } else if (starttimer > 0){
+                            alert("Exam hasn't started yet!")
+                            window.location.href = "exam-home.html";
                         }
             
                         setInterval(function () {
                             if (timer <= 0) {
                                 document.getElementById('exam-timer').textContent = "Time's Up";
-                                alert("Time's up!");
+                                alert("Time's up!")
                                 submitexam();
                                 window.location.href = 'result-home.html'
                             }
@@ -132,7 +137,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                         questionPalette.appendChild(circle);
                     });
 
-                    const allRadios = document.querySelectorAll('input[type="radio"]');
+                    
                     allRadios.forEach(radio => {
                         radio.addEventListener('change', function () {
                             const questionIndex = this.getAttribute('data-question-index');
@@ -158,72 +163,12 @@ document.addEventListener('DOMContentLoaded', async () => {
 
                     document.getElementById('attempted-count').textContent = attemptedCount;
                     document.getElementById('not-attempted-count').textContent = notAttemptedCount;
-                    
-                    
                     document.getElementById('submitBtn').addEventListener('click', async (event) => {
                         event.preventDefault();
-                        async function submitexam(){
-                            
-                            const answer = {};
-
-                            allRadios.forEach(radio => {
-                                const questionIndex = radio.getAttribute('data-question-index');
-                                const questionKey = `question${parseInt(questionIndex) + 1}`;
-
-                                if (!answer[questionKey]){
-                                    answer[questionKey] = 'not-answered';
-                                }
-                                if (radio.checked){
-                                    answer[questionKey] = radio.id;
-                                }
-                            });
-
-
-                            const payload = {
-                                answers: JSON.stringify(answer)
-                            }
-                            //let original = { courses: courses };
-                            const answers = payload.answers
-                            const AUTHKEY = window.localStorage.getItem('AUTH_KEY')
-                            const original = { AUTHKEY, courses, answers };
-
-                            console.log('outside')
-                            const headers = {'Content-Type':'application/json',
-                                'Access-Control-Allow-Origin':'*',
-                                'Access-Control-Allow-Methods':'POST,PATCH,OPTIONS',
-                                'examname': `Bearer ${examname}`}
-                            
-                            
-                            try{   
-                                console.log('inside') 
-                                const response =  await fetch(postanswerslink, {
-                                    method: 'POST',
-                                    headers: headers,
-                                    body: JSON.stringify(original),
-                                });
-                                //alert('Exam submitted successfully!')
-                                //
-                                console.log('inside') 
-                                if (response.ok){
-                                    console.log('response.ok')
-                                    //
-                                    window.location.href = 'result-home.html'
-                                    alert('Submission Successful!');
-                                    
-                                } else {
-                                    const error = await response.json();
-                                    console.log('error')
-                                    alert('error', error)
-                                    event.preventDefault();
-                                }
-                            } catch (err) {
-                                alert(err)
-                                
-                                console.error("Error:", err)
-                            }
-                        }
                         submitexam();
                     });
+                    
+                    
                     }
                 }   
             
@@ -236,5 +181,80 @@ document.addEventListener('DOMContentLoaded', async () => {
 });
         
 
+async function submitexam(){
+        
+    const answer = {};
+    const allRadios = document.querySelectorAll('input[type="radio"]');
+    allRadios.forEach(radio => {
+        radio.addEventListener('change', function () {
+            const questionIndex = this.getAttribute('data-question-index');
+            const circle = document.querySelector(`.question-circle[data-question-index="${questionIndex}"]`);
+            if (!circle.classList.contains('attempted')) {
+                circle.classList.remove('not-seen', 'seen');
+                circle.classList.add('attempted');
+                attemptedCount++;
+                notAttemptedCount--;
+                document.getElementById('attempted-count').textContent = attemptedCount;
+                document.getElementById('not-attempted-count').textContent = notAttemptedCount;
+            }
+        });
+    });
+    allRadios.forEach(radio => {
+        const questionIndex = radio.getAttribute('data-question-index');
+        const questionKey = `question${parseInt(questionIndex) + 1}`;
 
+        if (!answer[questionKey]){
+            answer[questionKey] = 'not-answered';
+        }
+        if (radio.checked){
+            answer[questionKey] = radio.id;
+        }
+    });
+
+
+    const payload = {
+        answers: JSON.stringify(answer)
+    }
+    const params = new URLSearchParams(window.location.search);
+    const courses = params.get('course'); 
+    //let original = { courses: courses };
+    const answers = payload.answers
+    const AUTHKEY = window.localStorage.getItem('AUTH_KEY')
+    const original = { AUTHKEY, courses, answers };
+    
+    console.log('outside')
+    const headers = {'Content-Type':'application/json',
+        'Access-Control-Allow-Origin':'*',
+        'Access-Control-Allow-Methods':'POST,PATCH,OPTIONS',
+        'examname': `Bearer ${examname}`}
+    
+    console.log(original)
+    try{   
+        console.log('inside') 
+        const response =  await fetch(postanswerslink, {
+            method: 'POST',
+            headers: headers,
+            body: JSON.stringify(original),
+        });
+        //alert('Exam submitted successfully!')
+        //
+        console.log('inside') 
+        if (response.ok){
+            console.log('response.ok')
+            //
+            window.location.href = 'result-home.html'
+            alert('Submission Successful!');
+            
+        } else {
+            const error = await response.json();
+            console.log('error')
+            alert('error', error)
+            //event.preventDefault();
+        }
+    } catch (err) {
+        alert(err)
+        
+        console.error("Error:", err)
+    }
+}
 

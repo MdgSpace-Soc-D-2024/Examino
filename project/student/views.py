@@ -64,6 +64,7 @@ class StudentCredGETAPIView(APIView):
 
 def calculatemarks(correct, submitted):
     marks = 0
+    logger.info(submitted)
     for i in range(len(correct)):
         if correct[i] == submitted[i]:
             marks+=1
