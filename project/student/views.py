@@ -43,8 +43,8 @@ class StudentCredAPIView(APIView):
             send_mail(
             subject="Your Login Credentials",
             message=f"Hello {student.username},\n\nYour login credentials are:\n Student Username: {student.username}\nPassword: {password} \n\n Regards, \n {student.institute}",
-            from_email="dhruvi.purohit06@gmail.com",
-            recipient_list=[admin_mail],
+            from_email=admin_mail,
+            recipient_list=[student.email],
             )
             return Response({"message": "Student added successfully"}, status= status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)

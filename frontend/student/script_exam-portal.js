@@ -152,13 +152,15 @@ document.addEventListener('DOMContentLoaded', async () => {
                             }
                         });
                     });
-
+                   
                     const allCircles = document.querySelectorAll('.question-circle');
                     allCircles.forEach(circle => {
+                        
                         circle.addEventListener('click', function () {
                             this.classList.remove('not-seen');
                             this.classList.add('seen');
-                        });
+                           
+                        }); 
                     });
 
                     document.getElementById('attempted-count').textContent = attemptedCount;

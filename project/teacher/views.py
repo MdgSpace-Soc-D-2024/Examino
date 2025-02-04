@@ -34,10 +34,12 @@ class TeacherCredAPIView(APIView):
         serializer = TeacherCredSerializer(data = request.data)
         if serializer.is_valid():
             teacher, password = serializer.save()
+            admin = Admin.objects.get(institute = teacher.institute)
+            admin_mail = admin.email
             send_mail(
             subject="Your Login Credentials",
             message=f"Hello {teacher.username},\n\nYour login credentials are:\n Teacher Username: {teacher.username}\nPassword: {password}",
-            from_email="dhruvi.purohit06@gmail.com",
+            from_email=admin_mail,
             recipient_list=[teacher.email],
             )
             return Response({"message": "Teacher added successfully"}, status= status.HTTP_201_CREATED)

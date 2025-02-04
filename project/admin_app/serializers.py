@@ -84,3 +84,8 @@ class AdminDataUsernameSerializer(serializers.Serializer):
     username = serializers.CharField()
     institute = serializers.CharField()
 
+class MoreAdminDataSerializer(serializers.Serializer):
+    students = serializers.IntegerField()
+    teachers = serializers.IntegerField()
+    exams = serializers.IntegerField()
+

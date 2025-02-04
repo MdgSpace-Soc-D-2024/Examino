@@ -12,9 +12,11 @@
             background: linear-gradient(to bottom, #8141db, #a0edf7);
             color: #ffffff;
             min-height: 100vh;
+            padding-bottom: 5%;
         }
         .navbar {
-            background-color: #820cdd;        }
+            background-color: #7939da;
+        }
         .leaderboard {
             max-width: 400px;
             margin: auto;
@@ -46,30 +48,37 @@
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container">
-            <a class="navbar-brand" href="#">Student Analysis</a>
-        </div>
-        <div class="collapse navbar-collapse " id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#" id="studentHome">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#" id="exams">Exams</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#" id="results">Results</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#" id="profile">Profile</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link btn btn-outline-primary ms-3" href="#" id="Logout">Logout</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+    <div class="topbar">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Examino</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="student.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="exam-home.html">Exams</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="result-home.html">Results</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Profile</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-outline-primary ms-3" href="#" id="Logout">Logout</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <br> <br> 
 
     <div class="container mt-5">
         <h2 class="text-center">Student Result Analysis</h2>

@@ -91,6 +91,29 @@ class AdminDataToFrontendAPIView(APIView):
             return Response(serializer.data)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
+class MoreAdminDataToFrontendAPIView(APIView):
+    def get(self, request):
+        serializer = AUTHKEYSerializer(data={'AUTHKEY':(request.headers.get('username')).split()[1]}) 
+        if serializer.is_valid():
+            AUTHKEY = serializer.data['AUTHKEY']
+            username = get_user_simplejwt(AUTHKEY)
+            try:
+                admin = Admin.objects.get(username=username)
+                institute = admin.institute
+                students = StudentCred.objects.filter(institute=admin)
+                teachers = TeacherCred.objects.filter(institute=admin)
+                exams = Exams.objects.filter(institute = admin)
+                numstudents = len(students)
+                numteachers = len(teachers)
+                numexams = len(exams)
+            except:
+                numteachers = 0
+                numstudents = 0
+                numexams = 0
+            data_serializer = MoreAdminDataSerializer({'students':numstudents, 'teachers':numteachers, 'exams': numexams})
+            return Response(data_serializer.data)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
     
  
             

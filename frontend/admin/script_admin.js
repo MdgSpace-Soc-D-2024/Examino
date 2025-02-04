@@ -3,7 +3,7 @@ const gotoadmininfo = document.getElementById("Dashboard")
 const addCourses = document.getElementById("addCourses")
 const usernameElement = document.getElementById('username')
 const getusernamelink =  "http://localhost:8000/api/admin-info/get/"
-
+const getdatalink = "http://localhost:8000/api/admin-info/get/data/"
 function setJSON(key, value){
     window.localStorage.setItem(key, value)
 }
@@ -43,6 +43,30 @@ document.addEventListener('DOMContentLoaded', async(event) => {
             }
         } catch (error) {
             console.error('Error fetching username:', error);
+        }
+
+        try{
+            console.log('abc')
+            const response = await fetch(getdatalink, {
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json', 
+                    'username': `Bearer ${AUTHKEY}`  
+                }  
+            });
+            if (response.ok) {
+                result = await response.json();
+                const students = result.students
+                const teachers = result.teachers
+                const exams = result.exams
+                document.getElementById('students').textContent = students;
+                document.getElementById('teachers').textContent = teachers;
+                document.getElementById('exams').textContent = exams;
+            } else {
+                console.error('Failed to fetch data');
+            }
+        } catch (error) {
+            console.error('Error fetching data:', error);
         }
     }
 });
