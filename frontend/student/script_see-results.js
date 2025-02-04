@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", async(event) => {
         });
         if (response.ok) {
             const results = await response.json();
-            console.log('results', results)
+            //console.log('results', results)
                 
             const subjects = JSON.parse(results.courses)
             const scores = JSON.parse(results.marks)
@@ -119,7 +119,6 @@ document.addEventListener("DOMContentLoaded", async(event) => {
 document.addEventListener("DOMContentLoaded", async(event) => {
     event.preventDefault();
     const AUTH_KEY = window.localStorage.getItem('AUTH_KEY');
-    
     const classes = window.localStorage.getItem('classes');
 
     try{
@@ -145,7 +144,7 @@ document.addEventListener("DOMContentLoaded", async(event) => {
             //// Convert JSON string to array
             const objstudent = JSON.parse(results.student);
             const objmarks = JSON.parse(results.marks);
-            console.log(objstudent)
+           // console.log(objstudent)
             objstudent.forEach((user, index) => {
                 const studentMarks = objmarks[index]; // Ensure marks exist
                 const data = { name: user, score: studentMarks };
@@ -153,10 +152,10 @@ document.addEventListener("DOMContentLoaded", async(event) => {
                 leaderboardData.push(data);
             });
 
-            console.log(results)
+           // console.log(results)
             
             leaderboardData.sort((a, b) => b.score - a.score);
-            console.log(leaderboardData)
+            //console.log(leaderboardData)
             const leaderboardEl = document.getElementById("leaderboard");
             leaderboardData.forEach((student, index) => {
                 const li = document.createElement("li");
@@ -186,7 +185,7 @@ document.addEventListener('DOMContentLoaded', async (event) => {
     });
     if (response.ok){
         const result = await response.json(); 
-        console.log(result)
+        //console.log(result)
         const marks = JSON.parse(result.marks);
         const exams = JSON.parse(result.examname);
         const lineCtx = document.getElementById("lineChart").getContext("2d");

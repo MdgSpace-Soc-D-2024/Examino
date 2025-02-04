@@ -136,7 +136,6 @@ class AllStudentMarksAPIView(APIView):
         exam_serializer = ExamnameSerializer(data={'examname': (request.headers.get('examname')).split()[1]})
         course_serializer = CourseSerializer(data = {'courses': (request.headers.get('courses')).split()[1]})
         if serializer.is_valid() and exam_serializer.is_valid() and course_serializer.is_valid(): 
-
             username = serializer.data['AUTHKEY']
             examname = exam_serializer.data['examname']
             student = StudentCred.objects.get(username=username)
@@ -144,7 +143,7 @@ class AllStudentMarksAPIView(APIView):
             courses=course_serializer.data['courses']
             courses = courses.title() 
             exam = Exams.objects.get(examname = examname, institute=institute)
-            marks = StudentMarks.objects.filter(examname = exam, institute=institute)
+            marks = StudentMarks.objects.filter(examname = exam, institute=institute, courses=courses)
             marksList = json.dumps([mark.marks for mark in marks])
             users = []
             for i in marks:
