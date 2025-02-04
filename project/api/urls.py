@@ -35,4 +35,5 @@ urlpatterns = [
     path('results/check/', student_views.StudentResultsAPIView.as_view()),
     path('results/view/', student_views.StudentsResultPageAPIView.as_view()),
     path('results/all/', student_views.AllStudentMarksAPIView.as_view()),
+    path('results/coursewise/', student_views.CourseWiseResultView.as_view()),
 ]

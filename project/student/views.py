@@ -151,7 +151,7 @@ class AllStudentMarksAPIView(APIView):
             userList = json.dumps([user for user in users])
             #logger.info(users)
             abc = StudentMarks.objects.filter(institute=institute)
-            logger.info(marks)
+            #logger.info(marks)
             #classList = json.dumps([classes.classes for classes in student])
 
             student_serializer = AllStudentMarksSerializer(data = {'examname': examname, 'institute': institute.institute, 'student': userList, 'marks': marksList, 'courses': courses})
@@ -216,6 +216,34 @@ class InstituteCoursesGETAPIView(APIView):
 #            if serializer.is_valid():
 #                return Response(serializer.data, status=status.HTTP_200_OK)
 #        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)            
+
+class CourseWiseResultView(APIView):
+    def get(self, request):
+        serializer = AUTHKEYSerializer(data = {'AUTHKEY': (request.headers.get('username')).split()[1]})
+        course_serializer = CourseSerializer(data = {'courses': (request.headers.get('courses')).split()[1]})
+        if serializer.is_valid() and course_serializer.is_valid():
+            courses = course_serializer.data['courses']
+            username = serializer.data['AUTHKEY']
+            user = StudentCred.objects.get(username = username)
+            institute = Admin.objects.get(institute = user.institute)
+            exams = Exams.objects.filter(courses=courses, institute=institute)
+            logger.info(exams)
+            
+            results = StudentMarks.objects.filter(username = user, institute=institute, courses = courses)
+            logger.info(results)
+            #logger.info('heelo', results)
+            
+            examnameList = json.dumps([result.examname.examname for result in results])
+            marksList = json.dumps([result.marks for result in results])
+
+            marks_serializer = StudentMarksSerializer(data = {'username': username, 'institute': institute.institute, 'examname': examnameList, 'marks': marksList, 'courses': courses})
+
+            if marks_serializer.is_valid():
+                return Response(marks_serializer.data, status=status.HTTP_200_OK)
+            return Response(marks_serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+
 
 class StudentResultsAPIView(APIView):
     def get(self, request):

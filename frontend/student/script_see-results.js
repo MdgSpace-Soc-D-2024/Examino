@@ -1,6 +1,10 @@
 const linktoseeresults = "http://localhost:8000/api/results/view/";
 const linktoseeall = "http://localhost:8000/api/results/all/"
-
+const linktoseecourse = "http://localhost:8000/api/results/coursewise/"
+const params = new URLSearchParams(window.location.search);
+const courses = params.get('course'); 
+const classes = params.get('class');
+const examname = params.get('examname');
 function getJSON(key) {
     return JSON.parse(window.localStorage.getItem(key));
 }
@@ -24,10 +28,7 @@ document.addEventListener("DOMContentLoaded", async(event) => {
     //const classes = window.localStorage.getItem('classes');
 
     try{
-        const params = new URLSearchParams(window.location.search);
-        const courses = params.get('course'); 
-        const classes = params.get('class');
-        const examname = params.get('examname');
+        
         response = await fetch(linktoseeresults, {
             method: 'GET',
             headers: {
@@ -137,7 +138,7 @@ document.addEventListener("DOMContentLoaded", async(event) => {
         });
         if (response.ok) {
             const results = await response.json();
-            console.log('hello', result)
+            console.log('hello', results)
             const leaderboardData = [];
             
             
@@ -172,6 +173,43 @@ document.addEventListener("DOMContentLoaded", async(event) => {
 
     
 });
+
+document.addEventListener('DOMContentLoaded', async (event) => {
+    const AUTH_KEY = window.localStorage.getItem('AUTH_KEY');
+    response = await fetch(linktoseecourse, {
+        method: 'GET',
+        headers: {
+            'Content-Type': 'application/json',
+            'username': `Bearer ${AUTH_KEY}`,
+            'courses': `Bearer ${courses}`
+        },
+    });
+    if (response.ok){
+        const result = await response.json(); 
+        console.log(result)
+        const marks = JSON.parse(result.marks);
+        const exams = JSON.parse(result.examname);
+        const lineCtx = document.getElementById("lineChart").getContext("2d");
+        new Chart(lineCtx, {
+            type: "line",
+            data: {
+                labels: exams,
+                datasets: [{
+                    label: `Progress Over Time of ${courses}`,
+                    data: marks,
+                    borderColor: "blue",
+                    fill: false
+                }]
+            },
+            options: {
+                scales: {  
+                    beginAtZero: true
+                }
+            }
+        });
+    }
+})
+
 
 function logout() {
     clearJSON(); 
