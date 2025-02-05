@@ -196,16 +196,27 @@ document.addEventListener('DOMContentLoaded', async (event) => {
                 datasets: [{
                     label: `Progress Over Time of ${courses}`,
                     data: marks,
-                    borderColor: "blue",
+                    backgroundColor: "rgb(245, 248, 250)",
+                    borderColor: "rgb(253, 254, 254)",
                     fill: false
                 }]
             },
             options: {
                 scales: {  
-                    beginAtZero: true
+                    x: { 
+                        ticks: { color: 'white' } 
+                    },
+                    y: { 
+                        beginAtZero: true,
+                        ticks: { color: 'white' } 
+                    }
+                },
+                plugins: {
+                    legend: { labels: { color: 'white' } }
                 }
             }
         });
+        
     }
 })
 
