@@ -2,7 +2,8 @@ Examino is an online Examination Portal
 
 Tech stack used: 
   Frontend: HTML, CSS (bootstrap framework) and JavaScript
-  Backend: Django Rest Framework 
+ <br>
+ Backend: Django Rest Framework 
 
 Features: 
   It serves all three types of users: Institute Administrator, Teachers and Students.
