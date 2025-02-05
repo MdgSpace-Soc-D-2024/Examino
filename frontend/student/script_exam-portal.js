@@ -73,10 +73,14 @@ document.addEventListener('DOMContentLoaded', async () => {
                         let starttimer = Math.floor((start - new Date()) / 1000);
                         if (timer <= 0) {
                             document.getElementById('exam-timer').textContent = "Time's Up";
-                            return;
                         } else if (starttimer > 0){
                             alert("Exam hasn't started yet!")
                             window.location.href = "exam-home.html";
+                        }
+
+                        if (document.getElementById('exam-timer').textContent == "Time's Up"){
+                            alert("Time's up")
+                            window.location.href = "exam-home.html"
                         }
             
                         setInterval(function () {
