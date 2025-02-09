@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 
 from pathlib import Path
 import os
+from os import environ 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -25,7 +26,7 @@ SECRET_KEY = 'django-insecure-g@mgdgut_r2c_&_*p@gl3%n22ed1ban!go6!jms_usea4=2$5k
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -185,12 +186,25 @@ REST_FRAMEWORK = {
     )
     
 }
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_USE_TLS = True
-EMAIL_PORT = 587
-EMAIL_HOST_USER = 'dhruvi.purohit06@gmail.com'
-EMAIL_HOST_PASSWORD = 'irhk jcha ucbk bsad'
+
+environ.Env.read_env()
+
+def get_api_data():
+    EMAIL_BACKEND = os.environ['EMAIL_BACKEND']
+    EMAIL_HOST = os.environ['EMAIL_HOST']
+    EMAIL_USE_TLS = os.environ['EMAIL_USE_TLS']
+    EMAIL_PORT = os.environ['EMAIL_PORT']
+    EMAIL_HOST_USER = os.environ['EMAIL_HOST_USER']
+    EMAIL_HOST_PASSWORD = os.environ['EMAIL_HOST_PASSWORD']
+
+    return(EMAIL_BACKEND, EMAIL_HOST, EMAIL_USE_TLS, EMAIL_PORT, EMAIL_HOST_USER, EMAIL_HOST_PASSWORD)
+
+EMAIL_BACKEND = get_api_data()[0]
+EMAIL_HOST = get_api_data()[1]
+EMAIL_USE_TLS = get_api_data()[2]
+EMAIL_PORT = get_api_data()[3]
+EMAIL_HOST_USER = get_api_data()[4]
+EMAIL_HOST_PASSWORD = get_api_data()[5]
 
 from datetime import timedelta
 SIMPLE_JWT = {

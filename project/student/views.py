@@ -42,7 +42,7 @@ class StudentCredAPIView(APIView):
             admin_mail = admin.email
             send_mail(
             subject="Your Login Credentials",
-            message=f"Hello {student.username},\n\nYour login credentials are:\n Student Username: {student.username}\nPassword: {password} \n\n Regards, \n {student.institute}",
+            message=f"Hello {student.username},\n\nYour login credentials are:\nStudent Username: {student.username}\nPassword: {password} \n\n Regards, \n {student.institute}",
             from_email=admin_mail,
             recipient_list=[student.email],
             )

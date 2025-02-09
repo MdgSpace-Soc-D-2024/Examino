@@ -97,7 +97,7 @@ document.getElementById('addClassBtn').addEventListener('click', async (event) =
     }
 });
 
-fetchClasses();
+fetchClasses(); // IIFE
 
 function logout() {
     clearJSON(); 

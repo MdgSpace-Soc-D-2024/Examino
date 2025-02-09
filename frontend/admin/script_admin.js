@@ -4,6 +4,7 @@ const addCourses = document.getElementById("addCourses")
 const usernameElement = document.getElementById('username')
 const getusernamelink =  "http://localhost:8000/api/admin-info/get/"
 const getdatalink = "http://localhost:8000/api/admin-info/get/data/"
+
 function setJSON(key, value){
     window.localStorage.setItem(key, value)
 }
@@ -21,7 +22,7 @@ document.addEventListener('DOMContentLoaded', async(event) => {
     
     if (!AUTHKEY || IS_ADMIN !== true) {
         alert('Access denied. Please log in as an admin.');
-        window.location.href = 'login.html'; // Redirect to login page
+        window.location.href = 'login.html'; 
     } else {
         console.log('hello')
         try {

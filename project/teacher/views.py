@@ -38,7 +38,7 @@ class TeacherCredAPIView(APIView):
             admin_mail = admin.email
             send_mail(
             subject="Your Login Credentials",
-            message=f"Hello {teacher.username},\n\nYour login credentials are:\n Teacher Username: {teacher.username}\nPassword: {password}",
+            message=f"Hello {teacher.username},\n\nYour login credentials are:\nTeacher Username: {teacher.username}\nPassword: {password}",
             from_email=admin_mail,
             recipient_list=[teacher.email],
             )

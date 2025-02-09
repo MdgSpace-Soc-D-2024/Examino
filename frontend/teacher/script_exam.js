@@ -9,7 +9,8 @@ function clearJSON() {
     window.localStorage.clear();
 }
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', (event) => {
+  event.preventDefault();
     const AUTH_KEY = JSON.stringify(getJSON('AUTH_KEY'));
     const IS_TEACHER = getJSON('is_teacher');
     
@@ -19,7 +20,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", (event) => {
+  event.preventDefault();
   async function fetchClasses() {
     const AUTHKEY = window.localStorage.getItem('AUTH_KEY')
     try {
@@ -60,7 +62,8 @@ document.addEventListener("DOMContentLoaded", () => {
   } 
 
   fetchClasses();
-  async function fetchCourses() {
+  async function fetchCourses(event) {
+    // event.preventDefault();
     const AUTHKEY = window.localStorage.getItem('AUTH_KEY')
     try {
         const response = await fetch(coursegetApiUrl, {
