@@ -190,22 +190,15 @@ REST_FRAMEWORK = {
 
 
 
-def get_api_data():
-    EMAIL_BACKEND = os.getenv('EMAIL_BACKEND')
-    EMAIL_HOST = os.getenv('EMAIL_HOST')
-    EMAIL_USE_TLS = os.getenv('EMAIL_USE_TLS')
-    EMAIL_PORT = os.getenv('EMAIL_PORT')
-    EMAIL_HOST_USER = os.getenv('EMAIL_HOST_USER')
-    EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD')
 
-    return(EMAIL_BACKEND, EMAIL_HOST, EMAIL_USE_TLS, EMAIL_PORT, EMAIL_HOST_USER, EMAIL_HOST_PASSWORD)
+EMAIL_BACKEND = os.getenv('EMAIL_BACKEND')
+EMAIL_HOST = os.getenv('EMAIL_HOST')
+EMAIL_USE_TLS = os.getenv('EMAIL_USE_TLS')
+EMAIL_PORT = os.getenv('EMAIL_PORT')
+EMAIL_HOST_USER = os.getenv('EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD')
 
-EMAIL_BACKEND = get_api_data()[0]
-EMAIL_HOST = get_api_data()[1]
-EMAIL_USE_TLS = get_api_data()[2]
-EMAIL_PORT = get_api_data()[3]
-EMAIL_HOST_USER = get_api_data()[4]
-EMAIL_HOST_PASSWORD = get_api_data()[5]
+
 
 from datetime import timedelta
 SIMPLE_JWT = {
