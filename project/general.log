@@ -571,3 +571,172 @@ teacher.models.TeacherCred.DoesNotExist: TeacherCred matching query does not exi
 2025-02-07 14:00:16,400 (INFO)- teacher.views- MIT
 2025-02-07 14:00:59,270 (INFO)- student.views- <QuerySet []>
 2025-02-07 14:00:59,270 (INFO)- student.views- <QuerySet [<StudentMarks: StudentMarks object (19)>, <StudentMarks: StudentMarks object (21)>]>
+2025-02-10 23:32:23,762 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-02-10 23:33:26,532 (INFO)- teacher.views- MIT
+2025-02-10 23:34:11,906 (INFO)- teacher.views- MIT
+2025-02-10 23:34:25,110 (INFO)- teacher.views- MIT
+2025-02-10 23:34:25,618 (INFO)- teacher.views- MIT
+2025-02-10 23:34:25,967 (INFO)- teacher.views- MIT
+2025-02-10 23:34:26,366 (INFO)- teacher.views- MIT
+2025-02-10 23:34:26,679 (INFO)- teacher.views- MIT
+2025-02-10 23:34:27,028 (INFO)- teacher.views- MIT
+2025-02-10 23:34:27,488 (INFO)- teacher.views- MIT
+2025-02-10 23:34:27,878 (INFO)- teacher.views- MIT
+2025-02-10 23:34:28,268 (INFO)- teacher.views- MIT
+2025-02-10 23:34:28,664 (INFO)- teacher.views- MIT
+2025-02-10 23:34:29,108 (INFO)- teacher.views- MIT
+2025-02-10 23:34:29,504 (INFO)- teacher.views- MIT
+2025-02-10 23:34:29,885 (INFO)- teacher.views- MIT
+2025-02-10 23:34:30,297 (INFO)- teacher.views- MIT
+2025-02-10 23:34:30,736 (INFO)- teacher.views- MIT
+2025-02-10 23:34:31,107 (INFO)- teacher.views- MIT
+2025-02-10 23:34:31,501 (INFO)- teacher.views- MIT
+2025-02-10 23:34:31,953 (INFO)- teacher.views- MIT
+2025-02-10 23:34:32,254 (INFO)- teacher.views- MIT
+2025-02-10 23:34:32,682 (INFO)- teacher.views- MIT
+2025-02-10 23:34:33,080 (INFO)- teacher.views- MIT
+2025-02-10 23:34:33,503 (INFO)- teacher.views- MIT
+2025-02-10 23:34:47,964 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-02-10 23:34:49,352 (INFO)- teacher.views- MIT
+2025-02-10 23:34:49,620 (INFO)- teacher.views- MIT
+2025-02-10 23:34:49,982 (INFO)- teacher.views- MIT
+2025-02-10 23:34:50,395 (INFO)- teacher.views- MIT
+2025-02-10 23:34:50,864 (INFO)- teacher.views- MIT
+2025-02-10 23:34:51,274 (INFO)- teacher.views- MIT
+2025-02-10 23:34:51,528 (INFO)- teacher.views- MIT
+2025-02-10 23:34:51,913 (INFO)- teacher.views- MIT
+2025-02-10 23:34:52,352 (INFO)- teacher.views- MIT
+2025-02-10 23:34:52,767 (INFO)- teacher.views- MIT
+2025-02-10 23:34:53,159 (INFO)- teacher.views- MIT
+2025-02-10 23:34:53,543 (INFO)- teacher.views- MIT
+2025-02-10 23:34:53,991 (INFO)- teacher.views- MIT
+2025-02-10 23:34:54,391 (INFO)- teacher.views- MIT
+2025-02-10 23:34:54,819 (INFO)- teacher.views- MIT
+2025-02-10 23:34:55,237 (INFO)- teacher.views- MIT
+2025-02-10 23:34:55,617 (INFO)- teacher.views- MIT
+2025-02-10 23:34:55,993 (INFO)- teacher.views- MIT
+2025-02-10 23:34:56,408 (INFO)- teacher.views- MIT
+2025-02-10 23:39:32,021 (WARNING)- django.request- Not Found: /
+2025-02-10 23:39:32,219 (WARNING)- django.request- Not Found: /favicon.ico
+2025-02-13 20:41:08,085 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-02-13 20:42:38,421 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-02-13 20:43:25,186 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\admin_app\models.py changed, reloading.
+2025-02-13 20:43:26,289 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-02-13 20:43:29,215 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\project\settings.py changed, reloading.
+2025-02-13 20:43:30,293 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-02-13 21:51:55,761 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-02-18 18:20:32,647 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-02-18 18:37:25,963 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\project\settings.py changed, reloading.
+2025-02-18 18:37:27,193 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-02-18 18:37:39,700 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\project\settings.py changed, reloading.
+2025-02-18 18:37:40,492 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-02-18 18:40:18,144 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-02-18 18:40:41,162 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\project\settings.py changed, reloading.
+2025-02-18 18:40:42,229 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-02-18 18:40:47,400 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\project\settings.py changed, reloading.
+2025-02-18 18:40:48,313 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-02-18 18:40:54,396 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\project\settings.py changed, reloading.
+2025-02-18 18:40:55,655 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-02-18 18:44:40,490 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\project\settings.py changed, reloading.
+2025-02-18 18:44:42,310 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-02-18 18:53:32,861 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\project\settings.py changed, reloading.
+2025-02-18 18:53:33,783 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-02-18 18:54:18,299 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\project\settings.py changed, reloading.
+2025-02-18 18:54:19,260 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-02-18 19:11:04,457 (ERROR)- django.request- Internal Server Error: /api/login/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 511, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 423, in finalize_response
+    assert isinstance(response, HttpResponseBase), (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Expected a `Response`, `HttpResponse` or `StreamingHttpResponse` to be returned from the view, but received a `<class 'NoneType'>`
+2025-02-18 19:11:25,951 (ERROR)- django.request- Internal Server Error: /api/login/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 511, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 423, in finalize_response
+    assert isinstance(response, HttpResponseBase), (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Expected a `Response`, `HttpResponse` or `StreamingHttpResponse` to be returned from the view, but received a `<class 'NoneType'>`
+2025-02-18 19:12:23,701 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-02-18 19:12:26,471 (ERROR)- django.request- Internal Server Error: /api/login/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 511, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 423, in finalize_response
+    assert isinstance(response, HttpResponseBase), (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Expected a `Response`, `HttpResponse` or `StreamingHttpResponse` to be returned from the view, but received a `<class 'NoneType'>`
+2025-02-18 19:14:04,911 (INFO)- django.utils.autoreload- C:\Users\hp\OneDrive\Desktop\Examino\project\project\settings.py changed, reloading.
+2025-02-18 19:14:05,543 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2025-02-18 19:14:13,921 (WARNING)- django.request- Unauthorized: /api/login/
+2025-02-18 19:14:27,768 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNzUwMjY1LCJpYXQiOjE3Mzk4ODYyNjUsImp0aSI6ImVkZTY4OTQ4MzA1ZDRlNmFiODAyZGQ2Y2NmOWM4ZDU3IiwidXNlcl9pZCI6MTR9.Rvp421nMvYQXZLtKU9KY5uCkPTWKB60rnVx2b1dovPA
+2025-02-18 19:14:27,771 (INFO)- admin_app.serializers- admin_app
+2025-02-18 19:14:27,826 (INFO)- admin_app.serializers- admin_app
+2025-02-18 19:14:30,044 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNzUwMjY1LCJpYXQiOjE3Mzk4ODYyNjUsImp0aSI6ImVkZTY4OTQ4MzA1ZDRlNmFiODAyZGQ2Y2NmOWM4ZDU3IiwidXNlcl9pZCI6MTR9.Rvp421nMvYQXZLtKU9KY5uCkPTWKB60rnVx2b1dovPA
+2025-02-18 19:14:30,051 (INFO)- admin_app.serializers- admin_app
+2025-02-18 19:14:30,123 (INFO)- admin_app.serializers- admin_app
+2025-02-18 19:14:30,384 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNzUwMjY1LCJpYXQiOjE3Mzk4ODYyNjUsImp0aSI6ImVkZTY4OTQ4MzA1ZDRlNmFiODAyZGQ2Y2NmOWM4ZDU3IiwidXNlcl9pZCI6MTR9.Rvp421nMvYQXZLtKU9KY5uCkPTWKB60rnVx2b1dovPA
+2025-02-18 19:14:30,384 (INFO)- admin_app.serializers- admin_app
+2025-02-18 19:14:30,461 (INFO)- admin_app.serializers- admin_app
+2025-02-18 19:14:30,784 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNzUwMjY1LCJpYXQiOjE3Mzk4ODYyNjUsImp0aSI6ImVkZTY4OTQ4MzA1ZDRlNmFiODAyZGQ2Y2NmOWM4ZDU3IiwidXNlcl9pZCI6MTR9.Rvp421nMvYQXZLtKU9KY5uCkPTWKB60rnVx2b1dovPA
+2025-02-18 19:14:30,791 (INFO)- admin_app.serializers- admin_app
+2025-02-18 19:14:30,861 (INFO)- admin_app.serializers- admin_app
+2025-02-18 19:14:31,184 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNzUwMjY1LCJpYXQiOjE3Mzk4ODYyNjUsImp0aSI6ImVkZTY4OTQ4MzA1ZDRlNmFiODAyZGQ2Y2NmOWM4ZDU3IiwidXNlcl9pZCI6MTR9.Rvp421nMvYQXZLtKU9KY5uCkPTWKB60rnVx2b1dovPA
+2025-02-18 19:14:31,188 (INFO)- admin_app.serializers- admin_app
+2025-02-18 19:14:31,264 (INFO)- admin_app.serializers- admin_app
+2025-02-18 19:14:31,580 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNzUwMjY1LCJpYXQiOjE3Mzk4ODYyNjUsImp0aSI6ImVkZTY4OTQ4MzA1ZDRlNmFiODAyZGQ2Y2NmOWM4ZDU3IiwidXNlcl9pZCI6MTR9.Rvp421nMvYQXZLtKU9KY5uCkPTWKB60rnVx2b1dovPA
+2025-02-18 19:14:31,581 (INFO)- admin_app.serializers- admin_app
+2025-02-18 19:14:31,641 (INFO)- admin_app.serializers- admin_app
+2025-02-18 19:14:31,991 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNzUwMjY1LCJpYXQiOjE3Mzk4ODYyNjUsImp0aSI6ImVkZTY4OTQ4MzA1ZDRlNmFiODAyZGQ2Y2NmOWM4ZDU3IiwidXNlcl9pZCI6MTR9.Rvp421nMvYQXZLtKU9KY5uCkPTWKB60rnVx2b1dovPA
+2025-02-18 19:14:31,991 (INFO)- admin_app.serializers- admin_app
+2025-02-18 19:14:32,063 (INFO)- admin_app.serializers- admin_app
+2025-02-18 19:14:32,371 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNzUwMjY1LCJpYXQiOjE3Mzk4ODYyNjUsImp0aSI6ImVkZTY4OTQ4MzA1ZDRlNmFiODAyZGQ2Y2NmOWM4ZDU3IiwidXNlcl9pZCI6MTR9.Rvp421nMvYQXZLtKU9KY5uCkPTWKB60rnVx2b1dovPA
+2025-02-18 19:14:32,379 (INFO)- admin_app.serializers- admin_app
+2025-02-18 19:14:32,431 (INFO)- admin_app.serializers- admin_app
+2025-02-18 19:14:32,791 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNzUwMjY1LCJpYXQiOjE3Mzk4ODYyNjUsImp0aSI6ImVkZTY4OTQ4MzA1ZDRlNmFiODAyZGQ2Y2NmOWM4ZDU3IiwidXNlcl9pZCI6MTR9.Rvp421nMvYQXZLtKU9KY5uCkPTWKB60rnVx2b1dovPA
+2025-02-18 19:14:32,791 (INFO)- admin_app.serializers- admin_app
+2025-02-18 19:14:32,891 (INFO)- admin_app.serializers- admin_app
+2025-02-18 19:14:33,187 (INFO)- admin_app.views- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNzUwMjY1LCJpYXQiOjE3Mzk4ODYyNjUsImp0aSI6ImVkZTY4OTQ4MzA1ZDRlNmFiODAyZGQ2Y2NmOWM4ZDU3IiwidXNlcl9pZCI6MTR9.Rvp421nMvYQXZLtKU9KY5uCkPTWKB60rnVx2b1dovPA
+2025-02-18 19:14:33,191 (INFO)- admin_app.serializers- admin_app
+2025-02-18 19:14:33,261 (INFO)- admin_app.serializers- admin_app
